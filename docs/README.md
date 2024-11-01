@@ -8,6 +8,8 @@ Welcome to CG3207! In this repository, you will find the manuals for each of the
 
 Test
 
+
+
 ## Lab outline
 
 All labs will be conducted at Digital Systems and Applications laboratory, E4A-04-08. 
