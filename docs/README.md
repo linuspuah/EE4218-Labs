@@ -4,6 +4,8 @@ permalink: /
 ---
 # EE4218 Lab Manuals
 
+Welcome to EE4218! In this repository, you will find the manuals for each of the 4 lab exercises you will complete for this course, as well as instructions on how to set up the tools you'll need.
+
 Information
 ===========
 
@@ -14,93 +16,30 @@ Welcome to the exciting world of embedded systems. We have prepared a series of 
 Lab Info
 ========
 
+
 ##### Lab Description
 
 | Lab | Description | Weight | Remarks |
 | 1 | Introduction to Hardware Design | 7% |  |
-| 2 |
-
-Introduction to Hardware/Software Co-design
-
- | 7% |  |
+| 2 | Introduction to Hardware/Software Co-design | 7% |  |
 | 3 | Integrating the Co-processor | 7% |  |
 | 4 | High-Level Synthesis | 7% |  |
-| 5 | Mini Project |
-
-22%
-
- |
-
-2% for Progress Evaluation
-
-20% for Final Demo
-
- |
+| 5 | Mini Project | 22% | 2% for Progress Evaluation 20% for Final Demo |
 
 ##### Lab Schedule
 
-|
-
-Week
-
- |
-
-Date
-
- |
-
-Activity
-
- |
-
-Remarks
-
- |
-|
-
-3
-
- | 31 Jan, 1 Feb |
-
-Lab 1 Intro
-
- |  |
-|
-
-4
-
- | 7 Feb, 8 Feb |
-
-Lab 1 Consultation, Lab 2 Intro
-
- |  |
-|
-
-5
-
- | 14 Feb, 15 Feb |
-
-Lab 1 Demo, Lab 2 Consultation
-
- |  |
-|
-
-6
-
- | 21 Feb, 22 Feb |
-
-**Lab 2 Demo**, Lab 3 Intro
-
- |  |
+| Week | Date | Activity | Remarks |
+| 3 | 31 Jan, 1 Feb | Lab 1 Intro |  |
+| 4 | 7 Feb, 8 Feb | Lab 1 Consultation, Lab 2 Intro |  |
+| 5 | 14 Feb, 15 Feb | Lab 1 Demo, Lab 2 Consultation |  |
+| 6 | 21 Feb, 22 Feb | **Lab 2 Demo**, Lab 3 Intro |  |
 | Recess | No session | Work on Lab 3 |  |
 | 7 | 6 Mar, 7 Mar | **Lab 3 Demo**, Lab 4 Intro |  |
 | 8 | 13 Mar, 14 Mar | Project Intro |  |
 | 9 | 20 Mar, 21 Mar | **Lab 4 Demo**, Project Consultation |  |
-| 10 | 27 Mar, 28 Mar (wellness day, alternate arrangements will be done), |
-
-**Project Progress Evaluation **and Consultation
-
- |  |
+| 10 | 27 Mar, 28 Mar (wellness day, alternate arrangements will be done) | **Project Progress Evaluation**and Consultation |  |
+| 11 | 3 Apr | Project Consultation |  |
+| 12 | 10 Apr (public holiday, alternate arrangements will be done), 11 Apr | **Project Demo** |  | **Project Progress Evaluation**and Consultation  |  |
 | 11 | 3 Apr | Project Consultation |  |
 | 12 | 10 Apr (public holiday, alternate arrangements will be done), 11 Apr | **Project Demo** |  |
 
@@ -115,7 +54,7 @@ Policies
 
 For each assessment, you **must** demonstrate on the stipulated date during your schedule time slot as given in the assessment schedule. If you don't, you get a **0 mark** for that lab!
 
-You are supposed to submit your codes to Canvas by the deadline for uploading - if you submit after the deadline, you will be given a **10% discount **in marks. You are expected to submit the exact same code used for evaluation - any bug fixes/improvements after the demo could you useful for future labs and project, but will not result in an increase in marks after the demo.
+You are supposed to submit your codes to Canvas by the deadline for uploading - if you submit after the deadline, you will be given a **10% discount**in marks. You are expected to submit the exact same code used for evaluation - any bug fixes/improvements after the demo could you useful for future labs and project, but will not result in an increase in marks after the demo.
 
 A late demo is allowed (with no penalty) only if you can produce documented evidence to justify the late demo/submission - in such a case, please let us know immediately as and when such a situation arises.
 
@@ -129,11 +68,11 @@ It might be tempting to 'refer' to the code found in the textbook / online sourc
 
 If you think renaming variables / rearranging code helps circumvent plagiarism detection, you might want to read this - <http://en.wikipedia.org/wiki/Plagiarism_detection#In_source_code>.
 
-Discussions are encouraged, but 'we had discussed' is not a valid excuse if your codes turn out to be uncomfortably similar. 
+Discussions are encouraged, but 'we had discussed' is not a valid excuse if your codes turn out to be uncomfortably similar.
 
-Though there will be intra-team differentiation in marks according to the contribution levels, a team will be collectively responsible for plagiarized code. Your teammates might be better off with no contribution at all from you than to receive plagiarized code.   
+Though there will be intra-team differentiation in marks according to the contribution levels, a team will be collectively responsible for plagiarized code. Your teammates might be better off with no contribution at all from you than to receive plagiarized code.
 
-Updates 
+Updates
 ========
 
 ------------------------------------
@@ -144,19 +83,19 @@ Updates 
 
 If you have any questions regarding the content of any of the labs, please follow these steps, *in this order*, to answer them.  
 
-1. Please read the lab manual closely. We will try our best to keep the manual updated with any common errors, or issues, that you may face. 
+1. Please read the lab manual closely. We will try our best to keep the manual updated with any common errors, or issues, that you may face.
 
-2. If the lab manual does not answer your question, [the skeleton file repository](https://github.com/nus-cg3207/lab-skeletons) has a [discussions page](https://github.com/NUS-CG3207/lab-skeletons/discussions). Please search here for your question, in case it has already been answered before. We will leave questions and answers from previous semesters on this page, so over time, more and more information should be covered between here and the manuals. 
+2. If the lab manual does not answer your question, [the skeleton file repository](https://github.com/nus-EE4218/lab-skeletons) has a [discussions page](https://github.com/NUS-EE4218/lab-skeletons/discussions). Please search here for your question, in case it has already been answered before. We will leave questions and answers from previous semesters on this page, so over time, more and more information should be covered between here and the manuals.
 
-3. If you cannot find an answer to your question in the discussions either, then please create a new discussion. Make sure your title is as succinct, but descriptive, as possible, for the benefit of others who may search the issues page later. Also, do make sure you include all relevant details in the discussion content. [This webpage](https://www.freecodecamp.org/news/how-to-ask-good-technical-questions/) offers some helpful advice on how to ask good technical questions. 
+3. If you cannot find an answer to your question in the discussions either, then please create a new discussion. Make sure your title is as succinct, but descriptive, as possible, for the benefit of others who may search the issues page later. Also, do make sure you include all relevant details in the discussion content. [This webpage](https://www.freecodecamp.org/news/how-to-ask-good-technical-questions/) offers some helpful advice on how to ask good technical questions.
 
-4. Please **DO NOT** send emails to the teaching staff asking technical questions regarding the lab activities. We will ignore all such emails, with no exception. Post all technical questions to the discussions page. This benefits others, because anyone who has the issue in the future can solve it quickly with a search. It also benefits you, because you may receive an answer faster from a classmate, than from us. 
+4. Please **DO NOT** send emails to the teaching staff asking technical questions regarding the lab activities. We will ignore all such emails, with no exception. Post all technical questions to the discussions page. This benefits others, because anyone who has the issue in the future can solve it quickly with a search. It also benefits you, because you may receive an answer faster from a classmate, than from us.
 
-On that subject, please do join in and help each other out in the discussions as far as possible. 
+On that subject, please do join in and help each other out in the discussions as far as possible.
 
 ## Board Handling Guidelines
 
-Like most development boards and PCBs, your FPGA board is fragile. Treat it with care and respect, as if it were your own. It is reasonably expensive at over S$500, and not so easy to get replaced. 
+Like most development boards and PCBs, your FPGA board is fragile. Treat it with care and respect, as if it were your own. It is reasonably expensive at over S$500, and not so easy to get replaced.
 
 Here are some tips to take good care of your board:
 
@@ -167,4 +106,4 @@ Here are some tips to take good care of your board:
 * Avoid plugging and unplugging the micro-USB cable more than necessary. To reset the board, you can use the power switch on the top left of the board, or unplug the USB-A connector from your computer if really necessary. Micro USB is a notoriously fragile connector, and it's best to avoid putting more strain on it than necessary. USB-A is much sturdier so that end of the cable is not as much of a concern.
 * Apply common sense and standard practices for taking care of electronics: don't eat or drink near your board in case you get crumbs (or worse, a spill) on the board. Don't throw the board around. Plug and unplug accessories with care. Be gentle when using the switches and buttons.## License
 
- [NUS CG3207 Lab Manuals](https://github.com/nus-cg3207/lab-manuals) © 2024 by [NUS CG3207 Team](https://github.com/nus-cg3207) is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1)  
+ [NUS EE4218 Lab Manuals](https://github.com/nus-EE4218/lab-manuals) © 2024 by [NUS EE4218 Team](https://github.com/nus-EE4218) is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1)  
