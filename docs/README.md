@@ -4,47 +4,141 @@ permalink: /
 ---
 # EE4218 Lab Manuals
 
-Welcome to CG3207! In this repository, you will find the manuals for each of the 4 lab exercises you will complete for this course, as well as instructions on how to set up the tools you'll need.  
+Information
+===========
 
-## Lab outline
+Welcome to the exciting world of embedded systems. We have prepared a series of labs for this course to give you hands-on experience in Hardware/Software Co-design. Each lab consists of two parts: 1) the first part consists of a tutorial with step-by-step guidance and 2) the second part is an assignment to allow students to use practical knowledge gained from the first part to solve a fairly simple design and implementation problem.
 
-All labs will be conducted at Digital Systems and Applications laboratory, E4A-04-08. 
+**Lab Venue : Digital Electronics Lab**
 
-| Lab | Description                                                         | Marks  | Remarks                   |
-|-----|---------------------------------------------------------------------|--------|---------------------------|
-| 1   | [Familiarisation with HDL/FPGA and Assembly Language](lab1/lab1.md).  <br/> Omae wa mou shindeiru. | 10     | Individual exercise       |
-| 2   | [Basic CPU design](lab2/lab2.md).   <br/> All your base are belong to us.                                | 30     | Teams of 2 or 3 students  |
-| 3   | [ALU Design](lab3/lab3.md).  <br/> Billions of blue blistering barnacles.                                         | 20+5$  | Teams of 2 or 3 students  |
-| 4   | [Advanced CPU design](lab4/lab4.md).   <br/>   It was the best of times, it was the worst of times.                                 | 15+10$ | Teams of 2 or 3 students  |
-|     |**Total**                                                            | 90     | = 45% of the module grade |
+Lab Info
+========
 
-[The skeleton file repository](https://github.com/nus-cg3207/lab-skeletons) contains all the files you need to download. 
+##### Lab Description
 
-## Other useful pages
+| Lab | Description | Weight | Remarks |
+| 1 | Introduction to Hardware Design | 7% |  |
+| 2 |
 
-[Vivado Installation Guide](vivado_install_guide/vivado_install_guide.md)
+Introduction to Hardware/Software Co-design
 
-[RISC-V Memory Map](rv_memmap.md)
+ | 7% |  |
+| 3 | Integrating the Co-processor | 7% |  |
+| 4 | High-Level Synthesis | 7% |  |
+| 5 | Mini Project |
 
-[RISC-V Programming Guide](rv_programming.md)
+22%
 
-[ARM Memory Map](arm_memmap.md)
+ |
 
-[ARM Programming Guide](arm_programming.md)
+2% for Progress Evaluation
 
-## Lab Schedule (Tentative)
-| Week   | Monday Lab Date (18:00-21:00) | Friday Lab Date (09:00-12:00) | Activity                    | Remarks |
-|--------|-------------------------------|-------------------------------|-----------------------------|---------|
-| 4      | 2 Sep 2024                    | 6 Sep 2024                    | Lab 1 Intro                 |         |
-| 5      | 9 Sep 2024                    | 13 Sep 2024                   | Lab 1 Demo, Lab 2 Intro     |         |
-| 6      | 16 Sep 2024                   | 20 Sep 2024                   | Lab 2 Consultation          |         |
-| Recess | 23 Sep 2024                   | 27 Sep 2024                   | No Lab Session              |         |
-| 7      | 30 Sep 2024                   | 4 Oct 2024                    | Lab 2 Demo, Lab 3 Intro     |         |
-| 8      | 7 Oct 2024                    | 11 Oct 2024                   | Lab 3 Consultation          |         |
-| 9      | 14 Oct 2024                   | 18 Oct 2024                   | Lab 3 Demo, Lab 4 Intro     |         |
-| 10     | 21 Oct 2024                   | 25 Oct 2024                   | Lab 4 Consultation          |         |
-| 11     | 28 Oct 2024                   | 1 Nov 2024                    | No Lab - NUS Well-Being Day |         |
-| 12     | 4 Nov 2024                    | 8 Nov 2024                    | Lab 4 Demo                  |         |
+20% for Final Demo
+
+ |
+
+##### Lab Schedule
+
+|
+
+Week
+
+ |
+
+Date
+
+ |
+
+Activity
+
+ |
+
+Remarks
+
+ |
+|
+
+3
+
+ | 31 Jan, 1 Feb |
+
+Lab 1 Intro
+
+ |  |
+|
+
+4
+
+ | 7 Feb, 8 Feb |
+
+Lab 1 Consultation, Lab 2 Intro
+
+ |  |
+|
+
+5
+
+ | 14 Feb, 15 Feb |
+
+Lab 1 Demo, Lab 2 Consultation
+
+ |  |
+|
+
+6
+
+ | 21 Feb, 22 Feb |
+
+**Lab 2 Demo**, Lab 3 Intro
+
+ |  |
+| Recess | No session | Work on Lab 3 |  |
+| 7 | 6 Mar, 7 Mar | **Lab 3 Demo**, Lab 4 Intro |  |
+| 8 | 13 Mar, 14 Mar | Project Intro |  |
+| 9 | 20 Mar, 21 Mar | **Lab 4 Demo**, Project Consultation |  |
+| 10 | 27 Mar, 28 Mar (wellness day, alternate arrangements will be done), |
+
+**Project Progress Evaluation **and Consultation
+
+ |  |
+| 11 | 3 Apr | Project Consultation |  |
+| 12 | 10 Apr (public holiday, alternate arrangements will be done), 11 Apr | **Project Demo** |  |
+
+##### Kria Board
+
+You will be provided a Kria KV260 SOM Vision Starter Kit containing a Xilinx Zynq Ultrascale+ SoC. More information about the board can be found at <https://www.xilinx.com/products/som/kria/kv260-vision-starter-kit/kv260-getting-started/getting-started.html> (scroll down).
+
+Policies
+========
+
+##### **Late demo / submission policy**
+
+For each assessment, you **must** demonstrate on the stipulated date during your schedule time slot as given in the assessment schedule. If you don't, you get a **0 mark** for that lab!
+
+You are supposed to submit your codes to Canvas by the deadline for uploading - if you submit after the deadline, you will be given a **10% discount **in marks. You are expected to submit the exact same code used for evaluation - any bug fixes/improvements after the demo could you useful for future labs and project, but will not result in an increase in marks after the demo.
+
+A late demo is allowed (with no penalty) only if you can produce documented evidence to justify the late demo/submission - in such a case, please let us know immediately as and when such a situation arises.
+
+##### **Email policy**
+
+Kindly *DO NOT send emails regarding labs* wherever possible. Post them on the wiki. Only if the matter is personal / administrative, please contact the lecturer via Canvas Inbox (not emails).
+
+##### Plagiarism Warning
+
+It might be tempting to 'refer' to the code found in the textbook / online sources. However, please note that we take dishonesty very very seriously. If we are confident that you did plagiarize, you might not even be given a chance to explain. Consequences can range from an unpleasant surprise on the day of the release of results to having an interview with the NUS board of discipline.
+
+If you think renaming variables / rearranging code helps circumvent plagiarism detection, you might want to read this - <http://en.wikipedia.org/wiki/Plagiarism_detection#In_source_code>.
+
+Discussions are encouraged, but 'we had discussed' is not a valid excuse if your codes turn out to be uncomfortably similar. 
+
+Though there will be intra-team differentiation in marks according to the contribution levels, a team will be collectively responsible for plagiarized code. Your teammates might be better off with no contribution at all from you than to receive plagiarized code.   
+
+Updates 
+========
+
+------------------------------------
+
+------------------------------------
 
 ## How to get help
 
