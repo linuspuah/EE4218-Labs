@@ -6,6 +6,8 @@ permalink: /
 
 Welcome to CG3207! In this repository, you will find the manuals for each of the 4 lab exercises you will complete for this course, as well as instructions on how to set up the tools you'll need. 
 
+
+
 ## Lab outline
 
 All labs will be conducted at Digital Systems and Applications laboratory, E4A-04-08. 
