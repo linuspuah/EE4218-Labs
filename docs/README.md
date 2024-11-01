@@ -8,7 +8,8 @@ Welcome to CG3207! In this repository, you will find the manuals for each of the
 
 Test
 
-hh
+fdfkndfkd
+dfkndfkdnf
 
 
 ## Lab outline
