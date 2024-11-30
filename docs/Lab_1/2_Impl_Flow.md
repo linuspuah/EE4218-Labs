@@ -19,7 +19,7 @@ Click **Next** again and make sure the **RTL Project** is selected and the **Do 
 
 Now we need to select the FPGA device that we are working on. The board we use is **Kria KV260 Vision AI Starter Kit SOM**
 
-**![image.png](https://canvas.nus.edu.sg/courses/53567/files/3547801/preview)**
+**![image.png](Impl_Flow/image-1.png)**
 
 Click **Next** to go to **New Project Summary** and **Finish** to create the project.
 
@@ -36,19 +36,19 @@ The **Sources** window shows all the files used in the project.
 
 Click on **Add Sources** under **Project Manager** in the **Flow Navigator** pane to add the design sources. Make sure that the **Add or Create DesignSources** is selected.
 
-![image.png](https://canvas.nus.edu.sg/courses/53567/files/3547806/preview)
+![image.png](Impl_Flow/image-2.png)
 
 
 Click **Next** then **Create File.** Select **VHDL**/**Verilog** as appropriate in the drop-down list. Specify the desired file name, for example, **adder** Click **OK** then **Finish**
 
-**![image.png](https://canvas.nus.edu.sg/courses/53567/files/3547807/preview)**
+**![image.png](Impl_Flow/image-3.png)**
 
 
 After that, we define the module as in the picture on the left.
 
 Since this is the simple half adder, the input and output ports are only one bit. Click **OK** to generate the HDL file.
 
-![image.png](https://canvas.nus.edu.sg/courses/53567/files/3547812/preview)
+![image.png](Impl_Flow/image-4.png)
 
 
 New the newly created file is added to the project under **Design Sources.** Double click the file to open it and add the following lines to the architecture / module and save the file.
@@ -65,9 +65,9 @@ assign SUM = A ^ B;
 
 assign CARRY = A & B;
 
-![image.png](https://canvas.nus.edu.sg/courses/53567/files/3547817/preview)
+![image.png](Impl_Flow/image-5.png)
 
-![image.png](https://canvas.nus.edu.sg/courses/53567/files/3547818/preview)
+![image.png](Impl_Flow/image-6.png)
 
 
 Basically, Vivado checks the syntax of HDL code whenever you save the file.
