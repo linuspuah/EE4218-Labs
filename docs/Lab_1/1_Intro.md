@@ -4,7 +4,7 @@ Specific instructions and template files are subject to changes. Important chang
 
 Introduction
 
-The purpose of Lab 1 is to introduce you to systematic hardware design. The lab has a refresher of the hardware design flow from EE2026. **Lab 1 can be done on any version of Vivado/Vitis without issues. Lab 1 does not require the FGPA board - it is pure simulation.**
+The purpose of Lab 1 is to introduce you to systematic hardware design. The lab has a refresher of the hardware design flow from EE2026. **Lab 1 can be done on any version of Vivado/Vitis without issues. Lab 1 does not require the FPGA board - it is pure simulation.**
 
 To learn further, you will be doing an assignment that involves creating a coprocessor for matrix multiplication. Testing on real hardware will require a complete computer system (hardware-software co-design framework), which will be introduced in Lab 2. The actual integration will be done in Lab 3. When integrated into the system, the main processor can just stream the data to be processed to the coprocessor, which will do the computations and stream the results back to the main processor.
 
