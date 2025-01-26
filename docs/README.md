@@ -20,6 +20,7 @@ Lab Info
 ##### Lab Description
 
 | Lab | Description | Weight | Remarks |
+| --- | ----------- | ------ | ------- |
 | 1 | Introduction to Hardware Design | 7% |  |
 | 2 | Introduction to Hardware/Software Co-design | 7% |  |
 | 3 | Integrating the Co-processor | 7% |  |
@@ -29,6 +30,7 @@ Lab Info
 ##### Lab Schedule
 
 | Week | Date | Activity | Remarks |
+| ---- | ---- | -------- | ------- |
 | 3 | 31 Jan, 1 Feb | Lab 1 Intro |  |
 | 4 | 7 Feb, 8 Feb | Lab 1 Consultation, Lab 2 Intro |  |
 | 5 | 14 Feb, 15 Feb | Lab 1 Demo, Lab 2 Consultation |  |
