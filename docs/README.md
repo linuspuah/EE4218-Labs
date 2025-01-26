@@ -19,13 +19,14 @@ Lab Info
 
 ##### Lab Description
 
-| Lab | Description | Weight | Remarks |
-| --- | ----------- | ------ | ------- |
-| 1 | Introduction to Hardware Design | 7% |  |
-| 2 | Introduction to Hardware/Software Co-design | 7% |  |
-| 3 | Integrating the Co-processor | 7% |  |
-| 4 | High-Level Synthesis | 7% |  |
-| 5 | Mini Project | 22% | 2% for Progress Evaluation 20% for Final Demo |
+| Lab | Description | Weight | Remarks | Demo Week | Canvas Submission Deadline |     
+| --- | ----------- | ------ | ------- | --------- | -------------------------- |
+| 1 | Introduction to Hardware Design | 7% |  | Week 5 | [**11:59 PM**, **15 Febuary 2024**](https://nus-ee4218.github.io/labs/Lab_1/1_Intro/#submission-info) |
+| 2 | Introduction to Hardware/Software Co-design | 7% |  | Week 6 | tbc |
+| 3 | Integrating the Co-processor | 7% |  | Week 7 | [11:59 PM, **7th March 2024**](https://nus-ee4218.github.io/labs/Lab_3/1_IntegratingCoPro/#assignment-3)
+| 4 | High-Level Synthesis | 7% |  | Week 9 | [11:59 PM, **21 Mar 2024**](https://nus-ee4218.github.io/labs/Lab_4/1_HLSIntro/#submission-info) |
+| 5 | Mini Project | 22% | 2% for Progress Evaluation 20% for Final Demo | Week 12 | [**12 April.**](https://nus-ee4218.github.io/labs/Project/2_EvalCrit/#list-of-deliverables) |
+
 
 ##### Lab Schedule
 
@@ -41,7 +42,7 @@ Lab Info
 | 9 | 20 Mar, 21 Mar | **Lab 4 Demo**, Project Consultation |  |
 | 10 | 27 Mar, 28 Mar (wellness day, alternate arrangements will be done) | **Project Progress Evaluation**and Consultation |  |
 | 11 | 3 Apr | Project Consultation |  |
-| 12 | 10 Apr (public holiday, alternate arrangements will be done), 11 Apr | **Project Demo** |  | **Project Progress Evaluation**and Consultation  |  |
+| 12 | 10 Apr (public holiday, alternate arrangements will be done), 11 Apr | **Project Demo**, **Project Progress Evaluation**and Consultation |  |
 | 11 | 3 Apr | Project Consultation |  |
 | 12 | 10 Apr (public holiday, alternate arrangements will be done), 11 Apr | **Project Demo** |  |
 
