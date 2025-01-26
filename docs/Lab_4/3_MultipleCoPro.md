@@ -1,4 +1,4 @@
-#Connecting Multiple Coprocessors (Optional)
+# Connecting Multiple Coprocessors (Optional)
 
 This document describes how you can (optional) connect multiple coprocessors to your system.
 
