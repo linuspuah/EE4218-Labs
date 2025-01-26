@@ -4,6 +4,7 @@ This document describes how you can (optional) connect multiple coprocessors to 
 
 It is possible to connect 2 coprocessors through 2 AXI FIFOs (or AXI DMAs). This is not a requirement, but not a bad idea as you can compare the software, HLS, and HDL versions in one go. You just need to add one more AXI Stream FIFO IP from the IP catalog and make connections the same way you did for the first one. On the C side, the following should help. A similar idea can be used if you have 2 coprocessors connected through 2 AXI DMAs (or for any two instances of the same IP for that matter).
 
+```c
 XLlFifo FifoInstance0;     // Device 0 instance
 XLlFifo *InstancePtr0 = &FifoInstance0; // Device 0 pointer
 XLlFifo FifoInstance1;     // Device 1 instance
@@ -45,3 +46,4 @@ int main()
  
     Status0 = XLlFifo_Status(InstancePtr0); // use the correct driver pointer depending on the device instance you are interacting with.
     Status1 = XLlFifo_Status(InstancePtr1);
+```
