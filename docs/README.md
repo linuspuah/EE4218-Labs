@@ -40,9 +40,9 @@ Lab Info
 | 7 | 6 Mar, 7 Mar | **Lab 3 Demo**, Lab 4 Intro |  |
 | 8 | 13 Mar, 14 Mar | Project Intro |  |
 | 9 | 20 Mar, 21 Mar | **Lab 4 Demo**, Project Consultation |  |
-| 10 | 27 Mar, 28 Mar (wellness day, alternate arrangements will be done) | **Project Progress Evaluation**and Consultation |  |
+| 10 | 27 Mar, 28 Mar (wellness day, alternate arrangements will be done) | **Project Progress Evaluation**a nd Consultation |  |
 | 11 | 3 Apr | Project Consultation |  |
-| 12 | 10 Apr (public holiday, alternate arrangements will be done), 11 Apr | **Project Demo**, **Project Progress Evaluation**and Consultation |  |
+| 12 | 10 Apr (public holiday, alternate arrangements will be done), 11 Apr | **Project Demo**, **Project Progress Evaluation** and Consultation |  |
 | 11 | 3 Apr | Project Consultation |  |
 | 12 | 10 Apr (public holiday, alternate arrangements will be done), 11 Apr | **Project Demo** |  |
 
