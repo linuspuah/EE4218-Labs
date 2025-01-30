@@ -4,7 +4,7 @@ The complete development suite from AMD/Xilinx is also called Vitis, which inclu
 
 Installation in Linux is recommended, especially if you want to explore more. Some tools/features such as AI Engine Development Flow, Petalinux, etc are available only for Linux. The performance and stability are generally better under Linux too. The basic requirements in EE4218 can be met by a Windows installation. WSL2 seems to work too but YMMV.
 
-Vitis IDE is switching from being Eclipse-based to Visual Studio Code-based. However, we still recommend the Eclipse-based 'Vitis Classic' IDE as the VS based 'Vitis IDE' one does have shortcomings (e.g.: driver generation for peripherals in PL).
+Vitis IDE is switching from being Eclipse-based to Visual Studio Code-based. However, we still recommend the Eclipse-based 'Vitis Classic' IDE as the VS based 'Vitis IDE' one does have shortcomings (e.g.: driver generation for peripherals in PL). Newer (2024.x) versions of Vitis based on Visual Studio code seems to be ok though.
 
 It is **not recommended** to install on MacOS through a virtual machine. If you use a Mac, install Windows and/or Linux for a dual/triple boot.
 
