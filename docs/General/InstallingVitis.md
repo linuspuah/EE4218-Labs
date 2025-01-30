@@ -18,69 +18,63 @@ Windows
 
 Below are the steps to be followed to install **Xilinx Vitis 2023.2**. The instructions are for web installer, which is recommended to avoid the hassle of downloading the full installer and uncompressing it.
 
-*   You need a Xilinx account. If you don't, please create one.
-    
-*   Xilinx unified web installer is downloadable from Xilinx website (Google for it).
-    
-*   Run the downloaded file.
-    
-*   Click Next, and enter your Xilinx account details. In the selection below, choose 'Download and Install Now'.
-    
-*   Agree all the license agreements on the next page.
-    
-*   On the next page, select Vitis.
-    
-*   On the next page, click Next.
-    
-*   Do the selection as given in the screenshot below. Must haves are Vitis, Vivado, Vitis HLS, Install Devices for Kria SOMs and Starter Kits, Zynq UltraScale+ MPSoC, Install Cable Drivers.
-    
-    *   Zynq-7000 is not essential, but install it if space permits. In case you have issues with the new Kria board and have to fall back on the older Zedboard, having this installed is useful.
-        
-    *   Artix-7 should be selected if you plan to take CG3207/EE2026 in the future, else uncheck it. 
-        
-    *   If you plan to try Alveo on Nimbix cloud in the future, select that too. It is unnecessary for EE4218 labs.
-        
+* You need a Xilinx account. If you don't, please create one.
 
-*   Click Next and Select a suitable directory, Next, and Install. If you are prompted to allow installation of some hardware, firewall warnings about opening certain ports, etc, simply click allow without changing the default options. This may also happen during the first run of certain tools after installation. Make sure you allow or you will have a tough time fixing it later.
-    
-*   When the installation is completed, click Finish to close the wizard.
-    
+* Xilinx unified web installer is downloadable from Xilinx website (Google for it).
+
+* Run the downloaded file.
+
+* Click Next, and enter your Xilinx account details. In the selection below, choose 'Download and Install Now'.
+
+* Agree all the license agreements on the next page.
+
+* On the next page, select Vitis.
+
+* On the next page, click Next.
+
+* Do the selection as given in the screenshot below. Must haves are Vitis, Vivado, Vitis HLS, Install Devices for Kria SOMs and Starter Kits, Zynq UltraScale+ MPSoC, Install Cable Drivers.
+
+  * Artix-7 should be selected if you plan to take CG3207/EE2026 in the future, else uncheck it.
+
+  * If you plan to try Alveo on Nimbix cloud in the future, select that too. It is unnecessary for EE4218 labs.
+
+* Click Next and Select a suitable directory, Next, and Install. If you are prompted to allow installation of some hardware, firewall warnings about opening certain ports, etc, simply click allow without changing the default options. This may also happen during the first run of certain tools after installation. Make sure you allow or you will have a tough time fixing it later.
+
+* When the installation is completed, click Finish to close the wizard.
 
 Linux
 -----
 
 Vitis/Vivado works very well in RHEL (best-supported)/Fedora/Ubuntu. The instructions below are for Ubuntu.
 
-*   You need a Xilinx account. If you don't, please create one.
-    
-*   Xilinx unified web installer for Linux is downloadable from Xilinx website (Google for it).
-    
-*   cd to download directory
-    
-*   chmod +x .bin.
-    
-*   \- no need sudo unless you want to install in the default /opt directory. It is fine to install under /home/, and sudo is not needed. Please make sure you install to an Ext4 directory, not NTFS.
-    
-*   Select the options as detailed in the Windows section above and complete the installation.
-    
-*   If the desktop icon does not work or if you are ssh-ing into a remote Linux system with x forwarding, in command line : source //Xilinx/Vivado/2023.2/settings64.sh, followed by the command vivado.
-    
-*   Additional libraries such as libtinfo5 may need to be installed. If starting from GUI fails, run from command line to identify the missing library and install it.
-    
+* You need a Xilinx account. If you don't, please create one.
+
+* Xilinx unified web installer for Linux is downloadable from Xilinx website (Google for it).
+
+* cd to download directory
+
+* chmod +x .bin.
+
+* \- no need sudo unless you want to install in the default /opt directory. It is fine to install under /home/, and sudo is not needed. Please make sure you install to an Ext4 directory, not NTFS.
+
+* Select the options as detailed in the Windows section above and complete the installation.
+
+* If the desktop icon does not work or if you are ssh-ing into a remote Linux system with x forwarding, in command line : source //Xilinx/Vivado/2023.2/settings64.sh, followed by the command vivado.
+
+* Additional libraries such as libtinfo5 may need to be installed. If starting from GUI fails, run from command line to identify the missing library and install it.
 
 If you want to be able to access local hardware, do the following. If you are using FPGA remotely, this is not needed.
 
-*   //Xilinx/Vitis/2023.2/data/xicom/cable\_drivers/lin64/install\_script/install\_drivers
-    
-*   Do sudo adduser $USER dialout if you want to be able to access local hardware without sudo.
-    
-*   If you have trouble connecting to the board even after that, perhaps you should run sudo ufw allow 3121/tcp.
-    
+* //Xilinx/Vitis/2023.2/data/xicom/cable\_drivers/lin64/install\_script/install\_drivers
+
+* Do sudo adduser $USER dialout if you want to be able to access local hardware without sudo.
+
+* If you have trouble connecting to the board even after that, perhaps you should run sudo ufw allow 3121/tcp.
 
 Installing Vitis HLS License
 ----------------------------
 
-Go to [https://www.xilinx.com/getlicenseLinks to an external site.](https://www.xilinx.com/getlicense). Login, fill up the license form.
+Go to [https://www.xilinx.com/getlicenseLinks](https://www.xilinx.com/getlicense). Login, fill up the license form.
 
 Under Certificate based license > Vivado HLS License > Generate Node-Locked License > System Information > Host ID > Enter the details.
 
