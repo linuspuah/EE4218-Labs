@@ -1,8 +1,9 @@
 # Introduction to Hardware Design
 
-Specific instructions and template files are subject to changes. Important changes will be highlighted in red. Non-essential changes will be in burnt orange color. Please keep checking the wiki often.
+!!! tip
+    Contents are suject to change. Important changes will be highlighted in red. Non-essential changes will be in burnt orange color. Please keep checking the lab manuals often.
 
-Introduction
+## Introduction
 
 The purpose of Lab 1 is to introduce you to systematic hardware design. The lab has a refresher of the hardware design flow from EE2026. **Lab 1 can be done on any version of Vivado/Vitis without issues. Lab 1 does not require the FGPA board - it is pure simulation.**
 
@@ -48,7 +49,7 @@ Let **A** be an *m* × *n* matrix of your choice, containing elements between
 
 Let **B** be an *n* × *1* matrix of your choice, received through S_AXIS_DATA in a similar manner as **A**, after all the elements of **A** have been received. In other words, the first *m*\**n* elements belong to matrix **A**, and the next *n* elements belong to matrix **B**.
 
-The coprocessor needs to find the product of **A** and **B** and divide it by 256. i.e **RES** =**(A** * **B) / 256**. Naturally, **RES** has to be an *m* x 1 matrix.
+The coprocessor needs to find the product of **A** and **B** and divide it by 256. i.e **RES** =**(A** \* **B) / 256**. Naturally, **RES** has to be an *m* × 1 matrix.
 
 The elements of **RES** should be sent out of the coprocessor through M_AXIS_DATA following the AXIS  bus protocol, one element per clock.
 
