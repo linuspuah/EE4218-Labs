@@ -10,7 +10,7 @@ To learn further, you will be doing an assignment that involves creating a copro
 
 ## Creating and Simulating HDL Sources and Programming FPGA
 
-Those who are already familiar with Vivado and FPGA implementation can skip this step and go straight to the assignment problem. Others can refer to the [Hardware Implementation Flow](2_Impl_Flow.md) manual, which contains step-by-step instructions for the creation of HDL files, simulation, and FPGA implementation.
+Those who are already familiar with Vivado and FPGA implementation can skip this step and go straight to the assignment problem. Others can refer to the [CS2100DE Lab 1](https://nus-cs2100de.github.io/labs/manuals/01/lab_01/) manual, which contains step-by-step instructions for the creation of HDL files, simulation, and FPGA implementation. The FPGA used in this course is different from that used in CS2100DE, so the input/output pin numbers to be used in the .xdc file are different.
 
 ## Assignment 1
 
@@ -25,13 +25,12 @@ The accelerator IP that we create needs to be interfaced with the rest of the sy
 For now, we will start with Stream-based which is perhaps the easiest to get started.
 
 ### Introduction to AXI Stream
---------------------------
 
 The hardware we are going to develop makes use of the Advanced eXtensible Interface (AXI) Stream interface to simplify the data receiving and sending processes. The AXI-Stream (AXIS) channels are 32-bit synchronous, master-slave, simplex (uni-directional flow of data per channel), point-to-point (only 2 devices are involved - no addressing needed) communication interfaces. A typical coprocessor needs one AXIS channel for inputs (AXIS Slave) and one AXIS channel for outputs (AXIS Master).
 
 To see more on AXIS: <http://www.xilinx.com/support/documentation/ip_documentation/ug761_axi_reference_guide.pdf>
 
-![image.png](https://canvas.nus.edu.sg/courses/53567/files/3547055/preview)
+![image.png](Intro/AXIS_waveform.png)
 
 The AXIS bus protocol is illustrated below (taken from the document in the link above).
 
@@ -44,11 +43,10 @@ Data transfer is always from a Master interface to a Slave interface. This means
 **TLAST** is an indication from the master to slave that the current data word is the last. TLAST is considered a sideband signal and is optional for AXIS. All the other signals mentioned above are essential signals for AXIS. It is useful in scenarios where the slave doesn't know exactly how many data words are sent by the master and is required if the slave is AXI Stream FIFO or AXI DMA, as these IPs (we will see in Lab 3) expect it.
 
 ### AXIS Matrix Multiplication Coprocessor
---------------------------------------
 
-Let **A** be an *m *x *n* matrix of your choice, containing elements between 0 and 127, each value represented as an 8-bit unsigned number. The coprocessor receives the elements of **A** as 32-bit numbers, of which the most significant 24-bits are 0s*, one element per clock cycle through S_AXIS_DATA following the AXIS  bus protocol. You can assume a [row-major order](https://en.wikipedia.org/wiki/Row-_and_column-major_order), i.e., the first *n* values received are elements of the first row, the next *n* values elements of the second row, and so on. For now, let us assume that *m* = 2 and *n* = 4.
+Let **A** be an *m* × *n* matrix of your choice, containing elements between 0 and 127, each value represented as an 8-bit unsigned number. The coprocessor receives the elements of **A** as 32-bit numbers, of which the most significant 24-bits are 0sᶿ, one element per clock cycle through S_AXIS_DATA following the AXIS  bus protocol. You can assume a [row-major order](https://en.wikipedia.org/wiki/Row-_and_column-major_order), i.e., the first *n* values received are elements of the first row, the next *n* values elements of the second row, and so on. For now, let us assume that *m* = 2 and *n* = 4.
 
-Let **B** be an *n *x *1* matrix of your choice, received through S_AXIS_DATA in a similar manner as **A**, after all the elements of **A** have been received. In other words, the first *m***n* elements belong to matrix **A**, and the next *n* elements belong to matrix **B**.
+Let **B** be an *n* × *1* matrix of your choice, received through S_AXIS_DATA in a similar manner as **A**, after all the elements of **A** have been received. In other words, the first *m*\**n* elements belong to matrix **A**, and the next *n* elements belong to matrix **B**.
 
 The coprocessor needs to find the product of **A** and **B** and divide it by 256. i.e **RES** =**(A** * **B) / 256**. Naturally, **RES** has to be an *m* x 1 matrix.
 
@@ -56,7 +54,7 @@ The elements of **RES** should be sent out of the coprocessor through M_AXIS_DAT
 
 The system should be able to operate continuously. Soon after (doesn't necessarily mean the very next clock cycle; within 2-4 clock cycles is ok), the coprocessor should be able to receive the next set of inputs, i.e., the next **A** and **B** without the need to assert an external reset.
 
-*In fact, the most significant 25 bits are 0s since the number is between 0 and 127. However, let us just stick to the principle that we are dealing with an 8-bit unsigned number^$^. Think of the values you send as representing the fractional part alone in unsigned fixed-point notation (0.8 - 0 bits for the integer part and 8 bits for the fractional part), i.e., using an implicit scale factor of 256. This requires us to adjust the position of the point by dividing by the scale factor after multiplication. This adjustment is unnecessary for addition and subtraction. Does this ring a bell? In EE/CG2028 Assignment #1, you used a scale factor to avoid dealing with fractions. Same story here; the scale factor is 256 instead of a power of 10.
+ᶿIn fact, the most significant 25 bits are 0s since the number is between 0 and 127. However, let us just stick to the principle that we are dealing with an 8-bit unsigned number. Think of the values you send as representing the fractional part alone in unsigned fixed-point notation (0.8 - 0 bits for the integer part and 8 bits for the fractional part), i.e., using an implicit scale factor of 256. This requires us to adjust the position of the point by dividing by the scale factor after multiplication. This adjustment is unnecessary for addition and subtraction. Does this ring a bell? In EE/CG2028 Assignment #1, you used a scale factor to avoid dealing with fractions. Same story here; the scale factor is 256 instead of a power of 10.
 
 ### Coprocessor Logic
 
@@ -68,7 +66,7 @@ The system should be able to operate continuously. Soon after (doesn't necessari
 - After this, the system goes back to 'Idle' state. Note that you do not have to reset the RAM contents. However, other counters, etc might need to be reset.
 - 'Start' and 'Done' can be implemented /assumed to last for exactly one cycle.
 
-## Design Considerations
+### Design Considerations
 
 - There is no need to implement your own multiplier, you can use the * operator.
 - Division by 256 is easy and does not require a division operation. Say you want to divide a 16-bit number P by 256 to get an 8-bit result Q. It is as simple as Q = P[15:8]. This wouldn't have been possible if the scale factor was a power of 10 - humans like decimal number system as we have 10 fingers and it is easier for us to do math modulo 10, computers don't.
@@ -90,10 +88,10 @@ The system should be able to operate continuously. Soon after (doesn't necessari
 - Your design should be such that it is easy to change matrix dimensions (*m* and *n*) with minimal effort. Ideally, it should be parameterized, but at the least should be designed in a flexible enough manner. The second dimension for B can be fixed to 1 for simplicity.
 - Having a separate Matrix_Multiply unit is inefficient with respect to performance as well as hardware usage, in comparison with doing everything in the top-level module. That would have allowed you to start computations earlier, and send out the elements of RES as soon as they were computed. However, in practical designs, such inefficiencies are generally tolerated in favor of modularity. Modularity allows for different parts of the hardware to be independently designed, debugged, tested, and improved, possibly by different people or teams. It also allows for modules to be reused across designs, allowing for faster time to market.
 - For a coprocessor to be useful in practice, the overhead associated with sending the data from the main memory (system DDR RAM) to the coprocessor local RAM and receiving the results back should be more than compensated by the acceleration provided by the coprocessor. We will do a comparison when we do the project.
-- Elements of the input matrices being between 0 and 127 will guarantee that the result will not exceed the representation range possible with 8-bits. *n**127*127/256, where *n* = 4  is less than 255. In terms of decimal numbers, each number is less than 1/2, so each element of the result will be less than 1. An element being 1 or more will be troublesome, as we have 0 bits to represent the integer part.
+- Elements of the input matrices being between 0 and 127 will guarantee that the result will not exceed the representation range possible with 8-bits. *n*\*127\*127/256, where *n* = 4 is less than 255. In terms of decimal numbers, each number is less than 1/2, so each element of the result will be less than 1. An element being 1 or more will be troublesome, as we have 0 bits to represent the integer part.
 - An 8-bit (or any #bit) binary pattern can be used to represent a lot of things, not just integers. For example, it could be an integer between -128 to 127 (signed 8-bit integer), 0 to 255 (unsigned 8-bit integer), 0 to 255/256 (unsigned 0.8 fixed-point format), 0 to 1+127/128 (unsigned 1.7 fixed-point format), -1 to 127/128 (signed 0.7 fixed-point format), a [mini floating-point number](https://en.wikipedia.org/wiki/Minifloat) (in floating-point representation, the position of the point is explicitly encoded as an 'exponent', unlike fixed point where the position of the point is fixed/implicit), a character (ASCII or UTF-8), 2 digits to be displayed on 7-segment LEDs (BCD format), or even the on/off status of 8 lights in a room. As a designer (hardware and/or software), we have to make sure that the operations we perform, the adjustments we make, and the interpretation of results should all be consistent with the representation system we use.
 
-## Files / Templates
+### Files / Templates
 
 You can find all lab 1 files [here](https://github.com/NUS-EE4218/labs/tree/main/Lab_1)
 
@@ -138,5 +136,5 @@ Verilog and VHDL files can be freely mixed. For example, you can use memory_RAM
 
 ## Submission Info
 
-Demonstrate during your designated slot in **Week 5**.\
+Demonstrate during your designated slot in **Week 5**.
 Upload a very short (<=2 pages) report explaining your system architecture, FSM, resource usage details such as the number of slices/LUTs, etc., as well as the relevant .v/.vhd (RTL and testbenches) and .txt/.mem files (i.e., only those files you have created/modified, not the entire project folder) **used for the demo** (not modified to fix issues that became apparent during the demo) to Canvas within 1 hour of your demo. It should be as a .zip archive, with the filename <Wed/Fri>_<group_no>_Lab1.zip.
