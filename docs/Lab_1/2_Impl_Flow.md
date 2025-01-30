@@ -1,3 +1,8 @@
+---
+search:
+  exclude: true
+---
+
 # Hardware Implementation Flow
 
 This manual contains step-by-step instructions for the creation of HDL files, simulation, and FPGA implementation. Those who are already familiar with Vivado and FPGA implementation can skip this step and go straight to the [assignment problem](https://canvas.nus.edu.sg/display/ee4218/Lab+1+%3A+Introduction+to+Hardware+Design).
@@ -74,7 +79,7 @@ Basically, Vivado checks the syntax of HDL code whenever you save the file.
 
 If you want further analysis of the design files without going through the lengthy complete synthesis process, you can click **Open Elaborated Design** under **RTL Analysis** in the **Flow Navigator**. It will also show the schematic of the design if there is no problem with it.
 
-![image.png](https://canvas.nus.edu.sg/courses/53567/files/3547819/preview)
+![image.png](Impl_Flow/image-7.png)
 
 
 **3A. Behavioural Simulation: Using Test Bench for Combinational Circuits**
@@ -85,24 +90,24 @@ Click **Next** then **Create File** to create the new HDL file.
 
 Choose the **VHDL** / **Verilog** file type and specify the name of the testbench, **test_adder_vhdl** / **test_adder_v.** Click **OK** then **Finish**.
 
-![image.png](https://canvas.nus.edu.sg/courses/53567/files/3547820/preview)
+![image.png](Impl_Flow/image-59d85500-67a3-4012-a2f0-e5e011f4f66f.png)
 
 
 The **Define Module** will appear but we do not need to define the I/O ports because this is the testbench. Click **OK** then **Yes** to create the file.
 
-![image.png](https://canvas.nus.edu.sg/courses/53567/files/3547823/preview)
+![image.png](Impl_Flow/image-adf45cec-70bf-46b9-b9e4-6b032c100247.png)
 
 
 
 Then you see that there is a Syntax Error in the just created file. Try to open the **Messages** tab and locate the error.
 
-![image.png](https://canvas.nus.edu.sg/courses/53567/files/3547826/preview)
+![image.png](Impl_Flow/image-6c807622-d91b-4c8f-b828-93eb075c6d92.png)
 
 
 
 Make the testbench for the **half_adder** module we've just created.
 
-![image.png](https://canvas.nus.edu.sg/courses/53567/files/3547828/preview)
+![image.png](Impl_Flow/image-f67edd40-02a6-4079-8c48-45810f7f4263.png)
 
 You can make a testbench by yourself or use any other tool to make a template for you base on the I/O interfaces of your design. Add the following stimuli to the HDL test bench code:
 
@@ -116,11 +121,11 @@ You can make a testbench by yourself or use any other tool to make a template fo
 
 
 
-![image.png](https://canvas.nus.edu.sg/courses/53567/files/3547831/preview)
+![image.png](Impl_Flow/image-9b9961bb-5e0e-463f-a767-d7c42862e369.png)
 
 Remember to do a component declaration after the begin of the architecture and before the signal declarations as shown in the code above.
 
- | ![image.png](https://canvas.nus.edu.sg/courses/53567/files/3547832/preview) |
+ | ![image.png](Impl_Flow/image-ec85d821-7a1a-40f6-9d88-abbbf78714ff.png) |
 
 
 
@@ -130,7 +135,7 @@ Click **Run Simulation** under **Simulation** then
 
 **Run Behavioral Simulation.**
 
-**![image.png](https://canvas.nus.edu.sg/courses/53567/files/3547834/preview)**
+**![image.png](Impl_Flow/image-796f051f-6eae-4643-b42e-e5553e47cb72.png)**
 
 
 
@@ -140,13 +145,13 @@ Try to play with the tools on the left to navigate around the waveform. Initial
 
 You need to switch to full view. Select **View** **Zoom Fit** or the **Zoom Fit** icon (fifth from top on the panel to the left).
 
-![image.png](https://canvas.nus.edu.sg/courses/53567/files/3547836/preview)
+![image.png](Impl_Flow/image-fd9af319-b156-49d2-830b-573d475a31f9.png)
 
 
 
 You can click on any place inside the waveform to move the yellow vertical line along the timeline, the corresponding values of input and output are shown in the **Value** column. ***a** *and ***b** *are the stimuli value, in other words, the input. ***sum** *and ***carry** *are the results of the stimuli, in other words, the output. To exit the Simulation, click the **cross** icon as shown in red circle.
 
-![image.png](https://canvas.nus.edu.sg/courses/53567/files/3547838/preview)
+![image.png](Impl_Flow/image-7d7ed0b3-67a1-4866-8ff5-fb9b857f56f4.png)
 
 
 **3B. Test Bench for Clocked Circuits**
@@ -155,9 +160,9 @@ You can click on any place inside the waveform to move the yellow vertical line 
 
 Similar to steps 1 to 3 of **Section 2**,create the HDL code for a D-flip-flop, as shown in the figure.
 
-![image.png](https://canvas.nus.edu.sg/courses/53567/files/3547840/preview)
+![image.png](Impl_Flow/image-8b21fd3b-c3d2-4146-ae20-52b2007cbf77.png)
 
-![image.png](https://canvas.nus.edu.sg/courses/53567/files/3547843/preview)
+![image.png](Impl_Flow/image-c9fa6a84-413b-4fbf-bd38-687ccf428414.png)
 
 
 
@@ -165,7 +170,7 @@ After the syntax has been determined to be correct, create a Test Bench for this
 
 In this case, we need to make a **clk_process** to generate the clock to the design. Please use the clock period of **100 ns**. If you are using Verilog, make sure the first line in your code is `timescale 1ns / 1ps
 
-![image.png](https://canvas.nus.edu.sg/courses/53567/files/3547849/preview)
+![image.png](Impl_Flow/image-d6d1a171-96ee-41e9-922f-f4597a49addd.png)
 
 
 
@@ -173,9 +178,9 @@ Insert the stimuli as shown in the figure.
 
 Note that the **wait for 25 ns** / **#25** should preferably be **wait for 75 ns** / **#75** if negative edge-triggered circuits are used. If there is more than one input, these inputs can be changed simultaneously in between the stimuli. In this example, D is the only input that is being changed in between stimuli.
 
-![image.png](https://canvas.nus.edu.sg/courses/53567/files/3547850/preview)
+![image.png](Impl_Flow/image-c2cecdbc-572e-4fff-a0ce-69382e1b38f6.png)
 
-![image.png](https://canvas.nus.edu.sg/courses/53567/files/3547851/preview)
+![image.png](Impl_Flow/image-349a5804-3da9-466d-9b1c-0c189979b171.png)
 
 
 
@@ -183,7 +188,7 @@ Do the Behavioral Simulation similar to **Step 5** onwards of **Section 3A** to 
 
 In this figure, the D-flip-flop is triggered at every positive clock edge.
 
-![image.png](https://canvas.nus.edu.sg/courses/53567/files/3547853/preview)
+![image.png](Impl_Flow/image-db87b993-c987-46c4-99a0-b36d13c8d3d9.png)
 
 
 **4\. FPGA Implementation: Half-Adder (Not required unless we interface with physical pins, and not applicable for Kria board. NOT required for Lab 1 - please read through nevertheless)**
@@ -194,7 +199,7 @@ First, make sure that the **half_adder** entity is selected as **Top.**
 
 Check whether the icon is shown next to the design file. If not, right-click at choose **Set as Top**.
 
-![image.png](https://canvas.nus.edu.sg/courses/53567/files/3547856/preview)
+![image.png](Impl_Flow/image-085217fa-12e3-4d12-aa02-f584d57ec07c.png)
 
 
 
@@ -202,7 +207,7 @@ Then click **Project Settings** in the Flow Navigator to to verify that the corr
 
 This is very important because the configuration file generated by Vivado is unique for each device.
 
-![image.png](https://canvas.nus.edu.sg/courses/53567/files/3547859/preview)
+![image.png](Impl_Flow/image-21f7835e-33c0-484a-aad8-5646fb6f57c2.png)
 
 
 
@@ -210,13 +215,13 @@ We need to add a constraint file to tell Vivado where we want to map the input/o
 
 Click **Add Sources** and select **Add or Create Constraints**.
 
-![image.png](https://canvas.nus.edu.sg/courses/53567/files/3547860/preview)
+![image.png](Impl_Flow/image-972e82f6-eec4-4def-9f54-4ee6bc775be9.png)
 
 
 
 Specify the configurations as the picture on the left. And click **Finish** to generate the file.
 
-![image.png](https://canvas.nus.edu.sg/courses/53567/files/3547861/preview)
+![image.png](Impl_Flow/image-5ff5f8ce-c26a-4c53-998d-80e6a5936268.png)
 
 
 
@@ -250,7 +255,7 @@ Double click to open it, add the constraints below and save it.
 
 A better practice is to uncomment the required lines in the **master .xdc** file for the board, and change the input/output port names appropriately in the .xdc file.
 
-![image.png](https://canvas.nus.edu.sg/courses/53567/files/3547863/preview)
+![image.png](Impl_Flow/image-d080a81b-31bb-46d6-93ac-da1ed1072982.png)
 
 
 
@@ -260,15 +265,15 @@ There may be a dialog asking you to also launch the Synthesis and other processe
 
 It takes a while to generate bitstream.
 
-![image.png](https://canvas.nus.edu.sg/courses/53567/files/3547864/preview)
+![image.png](Impl_Flow/image-b03cac63-f5b0-43d5-8e2b-c804f48ca394.png)
 
-![image.png](https://canvas.nus.edu.sg/courses/53567/files/3547866/preview)
+![image.png](Impl_Flow/image-1531dee9-52ef-436b-9442-d4d3e2bedbd5.png)
 
 
 
 After finishing, Vivado asks you to **Open Implemented Design** to view the layout on FPGA or only view the **Reports**. Choose **Open Implemented Design** then **OK.**
 
-**![image.png](https://canvas.nus.edu.sg/courses/53567/files/3547867/preview)**
+**![image.png](Impl_Flow/image-abd03ad0-61d3-46b9-9502-3ec64a65de03.png)**
 
 
 
@@ -276,7 +281,7 @@ The layout of the implemented design (**half_adder**) on FPGA will be shown.
 
 Since this is a very small design, it's hard to see from the full view. You can click on the instance listed in the red box, it will zoom in to its location on FPGA.
 
-![image.png](https://canvas.nus.edu.sg/courses/53567/files/3547869/preview)
+![image.png](Impl_Flow/image-fb4c3ee3-f3f8-44be-bff6-22c7356cbb67.png)
 
 
 
@@ -284,7 +289,7 @@ Click on **Project Summary** tab to view the utilization of the design. In this 
 
 Can you explain why?
 
-![image.png](https://canvas.nus.edu.sg/courses/53567/files/3547871/preview)
+![image.png](Impl_Flow/image-6433ef48-d3ac-416b-a04c-6195a71d92f1.png)
 
 
 
@@ -294,7 +299,7 @@ Before going further, make sure you have connected the **Programming Port** on t
 
 In addition, verify the position of the jumpers as the picture.
 
-![image.png](https://canvas.nus.edu.sg/courses/53567/files/3547875/preview)
+![image.png](Impl_Flow/image-91fdb828-232a-4d83-85f8-010fd89d3368.png)
 
 After that, in the **Flow Navigator,** click **Open Target** > **Open New Target**.
 
@@ -306,7 +311,7 @@ In the **Hardware Server Settings,** select **Local server** then **Next**.
 
 It takes a while for Vivado to detect the connected device.
 
-![image.png](https://canvas.nus.edu.sg/courses/53567/files/3547877/preview)
+![image.png](Impl_Flow/image-90d49643-20a9-42e7-9b1d-30f154f36325.png)
 
 
 
@@ -321,25 +326,25 @@ Click the dropdown box of **JTAG Clock Frequency** then select **30000000 Hz.**
 
 Select the **xc7z020_1** device. Click **Next** and **Finish** to save the settings.
 
-![image.png](https://canvas.nus.edu.sg/courses/53567/files/3547878/preview)
+![image.png](Impl_Flow/image-048c67d1-66e9-4de9-8f15-e08676c5a707.png)
 
 
 
 Now, we are ready to download the bitstream to FPGA. Click **Program Device** then **xc7z020_1**.
 
-![image.png](https://canvas.nus.edu.sg/courses/53567/files/3547898/preview)
+![image.png](Impl_Flow/image-106b159d-3042-4296-8179-42c442a319d1.png)
 
 
 
 Click **Program** to download the bitstream. The process should take less than 30 seconds.
 
-![image.png](https://canvas.nus.edu.sg/courses/53567/files/3547902/preview)
+![image.png](Impl_Flow/image-c8f3d015-7bf5-40f7-89ba-d73ff2cae20c.png)
 
 
 
 After that, try to adjust the switches on the board and see the changes of LEDs.
 
-![image.png](https://canvas.nus.edu.sg/courses/53567/files/3547905/preview)
+![image.png](Impl_Flow/image-43184bdc-64c8-4a79-9b51-386a3812fcc4.png)
 
 
 **5\. Notes for Clocked Circuits**
@@ -420,5 +425,3 @@ We need to select the Clocking Wizard IP in block design, and enter the input an
 Advantage:  Can be used to multiply frequencies too. In the board, modules can go up to 400+ MHz from a 100 Mhz clock. Multiple frequencies which are in phase with each other can be generated. This can be useful in computer systems that have components requiring different clock frequencies which are all in sync.
 
 Disadvantage:  The lowest frequency achievable is about 5 MHz from a 100 MHz clock. This is not sufficient if a very slow apparent clock is required (to show on LEDs, for example).
-
- |
