@@ -1,5 +1,4 @@
-Installing Vitis 2023.2
-=======================
+## Installing Vitis 2023.2
 
 The complete development suite from AMD/Xilinx is also called Vitis, which includes Vivado - i.e., if you install Vitis, Vivado also gets installed. Vitis is used for the software part, Vivado is used for the hardware part.
 
@@ -13,8 +12,7 @@ Any version of Vivado is good enough for lab 1. For later labs, use the recommen
 
 Some features of Vitis HLS require installing a free license, which has to be generated on the Xilinx/AMD website. Instructions for that are in the last section of this page. This is not needed for the first 3 labs, so you can install the license later too.
 
-Windows
--------
+### Windows
 
 Below are the steps to be followed to install **Xilinx Vitis 2023.2**. The instructions are for web installer, which is recommended to avoid the hassle of downloading the full installer and uncompressing it.
 
@@ -34,7 +32,9 @@ Below are the steps to be followed to install **Xilinx Vitis 2023.2**. The inst
 
 * Do the selection as given in the screenshot below. Must haves are Vitis, Vivado, Vitis HLS, Install Devices for Kria SOMs and Starter Kits, Zynq UltraScale+ MPSoC, Install Cable Drivers.
 
-  * Artix-7 should be selected if you plan to take CG3207/EE2026 in the future, else uncheck it.
+![](Vivado_Install/Device_Selection.png)
+
+  * Artix-7 should be selected if you plan to take CG3207/EE2026/CS2100DE in the future, else uncheck it.
 
   * If you plan to try Alveo on Nimbix cloud in the future, select that too. It is unnecessary for EE4218 labs.
 
@@ -42,8 +42,7 @@ Below are the steps to be followed to install **Xilinx Vitis 2023.2**. The inst
 
 * When the installation is completed, click Finish to close the wizard.
 
-Linux
------
+### Linux
 
 Vitis/Vivado works very well in RHEL (best-supported)/Fedora/Ubuntu. The instructions below are for Ubuntu.
 
@@ -53,9 +52,7 @@ Vitis/Vivado works very well in RHEL (best-supported)/Fedora/Ubuntu. The instruc
 
 * cd to download directory
 
-* chmod +x .bin.
-
-* \- no need sudo unless you want to install in the default /opt directory. It is fine to install under /home/, and sudo is not needed. Please make sure you install to an Ext4 directory, not NTFS.
+* chmod +x .bin. No need sudo unless you want to install in the default /opt directory. It is fine to install under /home/, and sudo is not needed. Please make sure you install to an Ext4 directory, not NTFS.
 
 * Select the options as detailed in the Windows section above and complete the installation.
 
@@ -71,8 +68,7 @@ If you want to be able to access local hardware, do the following. If you are us
 
 * If you have trouble connecting to the board even after that, perhaps you should run sudo ufw allow 3121/tcp.
 
-Installing Vitis HLS License
-----------------------------
+## Installing Vitis HLS License
 
 Go to [https://www.xilinx.com/getlicenseLinks](https://www.xilinx.com/getlicense). Login, fill up the license form.
 
@@ -80,6 +76,6 @@ Under Certificate based license > Vivado HLS License > Generate Node-Locked Lice
 
 Host ID is your PC/Laptop hostname. Select the appropriate OS. Select Host ID Type as Ethernet MAC. Put in your MAC address as the Host ID value. You can find the MAC address using the ipconfig /all command in windows (search for cmd in the start menu) and ifconfig command in Linux. Click Add and Next, Next.
 
-You can now download the license file . It will also be emailed to you.
+You can now download the license file ![](Vivado_Install/License_Download.png). It will also be emailed to you.
 
 Now, in the start menu, open Xilinx Design Tools > Manage Licenses 2023.2. Now Get License > Load License > Copy License, and navigate to and select the .lic file. Restart all Xilinx programs (Vivado/Vitis, etc). Done!
