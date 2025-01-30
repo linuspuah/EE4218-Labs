@@ -2,8 +2,6 @@
 
 Welcome to the exciting world of embedded systems. We have prepared a series of labs for this course to give you hands-on experience in Hardware/Software Co-design. Each lab consists of two parts: 1) the first part consists of a tutorial with step-by-step guidance and 2) the second part is an assignment to allow students to use practical knowledge gained from the first part to solve a fairly simple design and implementation problem.
 
-**Lab Venue : Digital Electronics Lab**
-
 ## Lab Info
 
 ### Lab Venue
@@ -34,7 +32,7 @@ Lab Venue : Digital Electronics Lab (E4 level 5)
 | 9 | 19 Mar, 21 Mar | **Lab 4 Demo**, Project Consultation |  |
 | 10 | 26 Mar, 28 Mar (wellness day, alternate arrangements will be done) | **Project Progress Evaluation** and Consultation |  |
 | 11 | 2 Apr, 4 Apr | Project Consultation |  |
-| 12 | 9 Apr, 11 Apr | **Project Demo** |  | **Project Progress Evaluation** and Consultation  |  |
+| 12 | 9 Apr, 11 Apr | **Project Demo** |  **Project Progress Evaluation** and Consultation  |
 
 ### Kria Board
 
@@ -53,8 +51,7 @@ Here are some tips to take good care of your board:
 * Avoid plugging and unplugging the micro-USB cable more than necessary. To reset the board, you can use the power switch on the top left of the board, or unplug the USB-A connector from your computer if really necessary. Micro USB is a notoriously fragile connector, and it's best to avoid putting more strain on it than necessary. USB-A is much sturdier so that end of the cable is not as much of a concern.
 * Apply common sense and standard practices for taking care of electronics: don't eat or drink near your board in case you get crumbs (or worse, a spill) on the board. Don't throw the board around. Plug and unplug accessories with care. Be gentle when using the switches and buttons.
 
-Policies
-========
+## Policies
 
 ### Late demo / submission policy
 
@@ -92,9 +89,7 @@ Discussions are encouraged, but 'we had discussed' is not a valid excuse if your
 
 Though there will be intra-team differentiation in marks according to the contribution levels, a team will be collectively responsible for plagiarized code. Your teammates might be better off with no contribution at all from you than to receive plagiarized code.
 
-
-Updates
-========
+## Updates
 
 ------------------------------------
 

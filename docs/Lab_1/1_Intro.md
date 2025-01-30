@@ -1,8 +1,5 @@
 # Introduction to Hardware Design
 
-!!! tip
-    Contents are suject to change. Important changes will be highlighted in red. Non-essential changes will be in burnt orange color. Please keep checking the lab manuals often.
-
 ## Introduction
 
 The purpose of Lab 1 is to introduce you to systematic hardware design. The lab has a refresher of the hardware design flow from EE2026. **Lab 1 can be done on any version of Vivado/Vitis without issues. Lab 1 does not require the FGPA board - it is pure simulation.**
