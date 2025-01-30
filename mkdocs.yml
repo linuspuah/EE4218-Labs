@@ -2,6 +2,8 @@ site_name: EE4218 Labs
 site_url: https://nus-ee4218.github.io/labs
 theme:
   name: material
+  features:
+    - content.tooltips
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -10,3 +12,6 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - abbr
+  - attr_list
+  - pymdownx.snippets
