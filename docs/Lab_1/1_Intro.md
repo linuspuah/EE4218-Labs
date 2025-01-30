@@ -10,7 +10,7 @@ To learn further, you will be doing an assignment that involves creating a copro
 
 ## Creating and Simulating HDL Sources and Programming FPGA
 
-Those who are already familiar with Vivado and FPGA implementation can skip this step and go straight to the assignment problem. Others can refer to the [Hardware Implementation Flow](https://canvas.nus.edu.sg/courses/53567/pages/lab-1-hardware-implementation-flow-2 "Lab 1: Hardware Implementation Flow") manual, which contains step-by-step instructions for the creation of HDL files, simulation, and FPGA implementation.
+Those who are already familiar with Vivado and FPGA implementation can skip this step and go straight to the assignment problem. Others can refer to the [Hardware Implementation Flow](2_Impl_Flow.md) manual, which contains step-by-step instructions for the creation of HDL files, simulation, and FPGA implementation.
 
 ## Assignment 1
 
@@ -27,7 +27,7 @@ For now, we will start with Stream-based which is perhaps the easiest to get sta
 ### Introduction to AXI Stream
 --------------------------
 
-The hardware we are going to develop makes use of the Advanced eXtensible Interface (AXI) Stream interface to simplify the data receiving and sending processes. The AXI-Stream (AXIS) channels are dedicated [simplex](https://wiki.nus.edu.sg/display/EE2028/Topic+8+%3A+Interfacing+Concepts#Topic8:InterfacingConcepts-ClassificationofProtocols) (uni-directional flow of data) 32-bit [point-to-point](https://wiki.nus.edu.sg/display/EE2028/Topic+8+%3A+Interfacing+Concepts#Topic8:InterfacingConcepts-ClassificationofProtocols) (only 2 devices are involved - no addressing needed) communication interfaces. A typical coprocessor needs one AXIS channel for inputs (AXIS Slave) and one AXIS channel for outputs (AXIS Master).
+The hardware we are going to develop makes use of the Advanced eXtensible Interface (AXI) Stream interface to simplify the data receiving and sending processes. The AXI-Stream (AXIS) channels are 32-bit synchronous, master-slave, simplex (uni-directional flow of data per channel), point-to-point (only 2 devices are involved - no addressing needed) communication interfaces. A typical coprocessor needs one AXIS channel for inputs (AXIS Slave) and one AXIS channel for outputs (AXIS Master).
 
 To see more on AXIS: <http://www.xilinx.com/support/documentation/ip_documentation/ug761_axi_reference_guide.pdf>
 
@@ -76,13 +76,11 @@ The system should be able to operate continuously. Soon after (doesn't necessari
 - You are allowed to make reasonable changes to the RAM, but the RAM reading should not be made asynchronous.
 - You can choose to have a single RAM to store both **A** and **B**, read the appropriate elements later, one at a time, and then operate on them. This will be slower (our current implementation of the RAM allows reading of only one value at a time). However, it is possible to change the RAM design by giving it the ability to read two values simultaneously (dual port).
 - You can also Google Block RAMs (also called Dedicated RAMs), Distributed RAMs, and Registers in Xilinx FPGAs (it is also explained in the [synthesis manual](https://www.xilinx.com/support/documentation/sw_manuals/xilinx2019_2/ug901-vivado-synthesis.pdf)), and how they can be used in your design. It is recommended to use synchronous read for most applications, as it gives you good timing performance. Note that Ultra RAM is not available for Zedboard.
-
 - Registers - Can read multiple values asynchronously, that is, we get the data in the specified address location without waiting for a clock edge. High synthesis time, poor timing performance (adds significantly to the critical path), and overall hardware utilization. A number of CLBs are required even for relatively small registers.
 - Block RAM - Can be read only synchronously, that is, we need to give address, and wait for a clock edge before we can read data. Very good timing performance and does not use up CLBs. Up to 2 values can be read in a cycle.
 - Distributed RAM - A Xilinx special way of implementing RAM using LUTs. Can be read asynchronously, up to 2 values. Uses up LUTs and timing performance is average. Small synchronous-read memories also may infer BRAMs, with registered outputs.
 - Writes are always synchronous, irrespective of the type of storage used.
 - Read up about instantiation vs inference!
-
 - Think about the implications of having a single Read_Inputs state vs splitting it into two states (hint: as is with many things in hardware, it is not easy to tell, but the implications are likely not very big)!
 - Implement your system in a modular, systematic manner. Do not write a C-like code. You should be able to justify all your design choices.
 - How many cycles does it take for your hardware to complete the operation? Note: You should be able to calculate this based on your design (since you know the exact sequence of operations, i.e., what happens in each cycle), without having to look at your simulation result (you look at the simulation results to *verify* it).
@@ -97,7 +95,7 @@ The system should be able to operate continuously. Soon after (doesn't necessari
 
 ## Files / Templates
 
-Here is an archive with all the files - [Lab 1 Files.zip](https://canvas.nus.edu.sg/courses/53567/files/3543176/download)
+You can find all lab 1 files [here](https://github.com/NUS-EE4218/labs/tree/main/Lab_1)
 
 myip_v1_0.v / myip_v1_0.vhd - top-level module implementing the AXIS coprocessor. Currently, it simply takes in 4 words over 4 cycles and returns their sum, sum+1, sum+2, and sum+3 over 4 cycles. You need to modify this appropriately to interact with RAMs and Matrix_Multiply unit. You should not modify the inputs/outputs of myip_v1_0.v / myip_v1_0.vhd, as they should follow the AXIS standard. Synthesizing this will yield 56 warnings (could change slightly depending on the version of the tool) which are expected since memory and matrix multiply units are not used in the template code.
 
@@ -141,4 +139,4 @@ Verilog and VHDL files can be freely mixed. For example, you can use memory_RAM
 ## Submission Info
 
 Demonstrate during your designated slot in **Week 5**.\
-Upload a very short (<=2 pages) report explaining your system architecture, FSM, resource usage details such as the number of slices/LUTs, etc., as well as the relevant .v/.vhd (RTL and testbenches) and .txt/.mem files (i.e., only those files you have created/modified, not the entire project folder) **used for the demo** (not modified to fix issues that became apparent during the demo) to Canvas by **11:59 PM**, **15 Feb 2024**. It should be as a .zip archive, with the filename <Wed/Thu>_<group_no>_1.zip.
+Upload a very short (<=2 pages) report explaining your system architecture, FSM, resource usage details such as the number of slices/LUTs, etc., as well as the relevant .v/.vhd (RTL and testbenches) and .txt/.mem files (i.e., only those files you have created/modified, not the entire project folder) **used for the demo** (not modified to fix issues that became apparent during the demo) to Canvas within 1 hour of your demo. It should be as a .zip archive, with the filename <Wed/Fri>_<group_no>_Lab1.zip.
