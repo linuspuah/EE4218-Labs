@@ -6,7 +6,7 @@ Welcome to the exciting world of embedded systems. We have prepared a series of 
 
 ### Lab Venue
 
-Lab Venue : Digital Electronics Lab (E4 level 5)
+Lab Venue : Digital Electronics Lab (E4 level 3)  - Outreach Room
 
 ### Lab Description
 
