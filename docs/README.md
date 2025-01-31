@@ -57,7 +57,7 @@ Here are some tips to take good care of your board:
 
 For each assessment, you **must** demonstrate on the stipulated date during your schedule time slot as given in the assessment schedule. If you don't, you get a **0 mark** for that lab!
 
-You are supposed to submit your codes to Canvas by the deadline for uploading - if you submit after the deadline, you will be given a **10% discount**in marks. You are expected to submit the exact same code used for evaluation - any bug fixes/improvements after the demo could you useful for future labs and project, but will not result in an increase in marks after the demo.
+You are supposed to submit your codes to Canvas by the deadline for uploading - if you submit after the deadline, you will be given a **10% discount** in marks. You are expected to submit the exact same code used for evaluation - any bug fixes/improvements after the demo could you useful for future labs and project, but will not result in an increase in marks after the demo.
 
 A late demo is allowed (with no penalty) only if you can produce documented evidence to justify the late demo/submission - in such a case, please let us know immediately as and when such a situation arises.
 
