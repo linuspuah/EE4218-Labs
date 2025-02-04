@@ -27,8 +27,7 @@ You can do most of the testing of your C program logic without accessing the FPG
 
 \*An editor such as Notepad++ can show you all characters, including non-printable characters such as \\r (CR-carriage return) and \\n (LF-linefeed). You can view it by going to View>Show Symbol>Show All Characters. When sending using the 'Send ASCII' option in RealTerm, make sure you append \\r or \\n.
 
-Submission Info
----------------
+## Submission Info
 
 Assignment 2 (7 marks)
 
@@ -42,8 +41,7 @@ It should be as a .zip archive, with the filename  <Wed/Thu>\_<group\_no>\_2.zi
 
 Please **DO NOT** upload the whole project!
 
-Dataset Description (Optional Read)
------------------------------------
+## Dataset Description (Optional Read)
 
 Here, we use a modified version of the Wine dataset from [https://archive.ics.uci.edu/ml/datasets/wine](https://archive.ics.uci.edu/ml/datasets/wine). You can read up the description and more if you are interested.
 
@@ -53,8 +51,7 @@ Here, we use a modified version of the Wine dataset from [https://archive.ics.u
 *   You can visualize the data using some easy-to-use programming language such as Python or Matlab ([https://octave-online.net/](https://octave-online.net/) is pretty cool), or even Excel.
 *   What we do in this lab is essentially the prediction / inference step in machine learning / classification. The classifier is trained using [Fisher's linear discriminant](https://en.wikipedia.org/wiki/Linear_discriminant_analysis) method (matrix **B** in the description above is the weight vector), with some modifications to accommodate the 8-bit format.
 
-Tips and Suggestions
-====================
+## Tips and Suggestions
 
 Embedded system tools and boards have a relatively short lifespan - so you need to be able to pick up things on your own as and when required, often based on partial documentation and self-exploration. Lab 2 manuals have purposely left out detailed step by step instructions (esp. on the software part) - to let you explore the various options, think, search and find out things on your own. If you know precisely how to do it (that is, if we give you detailed steps), doing it shouldn’t take you much time and is not worth 7% of you grades :D. Some tips are given below.
 

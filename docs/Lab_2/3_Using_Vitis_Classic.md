@@ -1,12 +1,10 @@
-Lab 2: Software development using Vitis Classic
-===============================================
+# Software development using Vitis Classic
 
 This page details the steps involved in creating a software application using Vitis, an Eclipse-based IDE, to run on the hardware platform created using Vivado. You should be using a Vitis version that matches your Vivado version.
 
 Note: There are slight differences in GUI and options based on the version. The spirit of what is being done remains the same.
 
-Vitis Classic
-=============
+## Vitis Classic
 
 Open the VItis IDE from the start menu or by clicking the desktop icon. Do NOT start from Tools > Launch Vitis IDE from Vivado, as it will launch VS Code based IDE, which we won't be using for now.
 
@@ -116,8 +114,7 @@ Go to drivers, and select the example for axi\_fifo\_mm\_s\_0 as shown in the fi
 
 Run and see the results, which should show a success message in the Serial (UART) console.
 
-Optional Exercise
-=================
+## Optional Exercise
 
 Simple input/output : Write a simple program in Vitis to read a character from the console and print that character to the console (echo).
 

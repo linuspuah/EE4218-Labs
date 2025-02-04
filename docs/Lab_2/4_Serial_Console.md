@@ -1,7 +1,6 @@
-Lab 2: Serial Console - RealTerm
-================================
+# Serial Console - RealTerm
 
-Note: See the last tip in [Lab 2 : (main) Introduction to Hardware/Software Co-design](https://canvas.nus.edu.sg/courses/53567/pages/lab-2-main-introduction-to-hardware-slash-software-co-design "Lab 2 : (main) Introduction to Hardware/Software Co-design") page for an important tip.
+Note: See the last tip in [Lab 2 : (main) Introduction to Hardware/Software Co-design](1_Intro) page for an important tip.
 
 RealTerm is a terminal program specially designed for capturing and sending data through various protocols (UART, Raw TCP sockets etc). The purpose is similar to that of TeraTerm or PuTTY or GTKTerm or Serial Monitor (Arduino), but RealTerm is WAAY more feature-rich than any other serial console program.
 
@@ -17,7 +16,7 @@ The next step is to open the port. Click on **Open** to open the port. The statu
 
 Note: Ensure that the port you are trying to connect to in RealTerm is not selected in Vitis.
 
-#### Few notes on the usage of RealTerm
+## Few notes on the usage of RealTerm
 
 Sending bytes using RealTerm: Click on the **Send** tab, type a number and click **Send Numbers/Send ASCII**. If you input, say 20 there and press Send Numbers, it will send 0x14. You can also enter directly as hexadecimal 0x14 and press Send Numbers.
 
