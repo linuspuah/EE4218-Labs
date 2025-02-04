@@ -37,8 +37,6 @@ Demonstrate during **Week 6** lab session.
 
 Upload the .xsa file, C/H, and input/output test files (i.e., only those files you have created/modified, not the entire project folder) **used for the demo** (not modified to fix issues that became apparent during the demo) to Canvas within 1 hour of your demo. It should be as a .zip archive, with the filename Wed/Fri_GroupNum_Lab2.zip.
 
-It should be as a .zip archive, with the filename  <Wed/Thu>\_<group\_no>\_2.zip. 
-
 Please **DO NOT** upload the whole project!
 
 ## Dataset Description (Optional Read)
