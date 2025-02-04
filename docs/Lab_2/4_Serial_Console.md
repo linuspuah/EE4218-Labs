@@ -1,6 +1,6 @@
 # Serial Console - RealTerm
 
-Note: See the last tip in [Lab 2 : (main) Introduction to Hardware/Software Co-design](1_Intro) page for an important tip.
+Note: See the last tip in [Introduction to Hardware/Software Co-design](1_Intro.md) page for an important tip.
 
 RealTerm is a terminal program specially designed for capturing and sending data through various protocols (UART, Raw TCP sockets etc). The purpose is similar to that of TeraTerm or PuTTY or GTKTerm or Serial Monitor (Arduino), but RealTerm is WAAY more feature-rich than any other serial console program.
 
