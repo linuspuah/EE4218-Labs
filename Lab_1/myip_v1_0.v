@@ -82,35 +82,35 @@ module myip_v1_0
 	
 // wires (or regs) to connect to RAMs and matrix_multiply_0 for assignment 1
 // those which are assigned in an always block of myip_v1_0 shoud be changes to reg.
-	wire	A_write_en;								// myip_v1_0 -> A_RAM. To be assigned within myip_v1_0. Possibly reg.
-	wire	[A_depth_bits-1:0] A_write_address;		// myip_v1_0 -> A_RAM. To be assigned within myip_v1_0. Possibly reg. 
-	wire	[width-1:0] A_write_data_in;			// myip_v1_0 -> A_RAM. To be assigned within myip_v1_0. Possibly reg.
+	reg	A_write_en;								// myip_v1_0 -> A_RAM. To be assigned within myip_v1_0. Possibly reg.
+	reg	[A_depth_bits-1:0] A_write_address = 0;		// myip_v1_0 -> A_RAM. To be assigned within myip_v1_0. Possibly reg. 
+	reg	[width-1:0] A_write_data_in;			// myip_v1_0 -> A_RAM. To be assigned within myip_v1_0. Possibly reg.
 	wire	A_read_en;								// matrix_multiply_0 -> A_RAM.
 	wire	[A_depth_bits-1:0] A_read_address;		// matrix_multiply_0 -> A_RAM.
 	wire	[width-1:0] A_read_data_out;			// A_RAM -> matrix_multiply_0.
-	wire	B_write_en;								// myip_v1_0 -> B_RAM. To be assigned within myip_v1_0. Possibly reg.
-	wire	[B_depth_bits-1:0] B_write_address;		// myip_v1_0 -> B_RAM. To be assigned within myip_v1_0. Possibly reg.
-	wire	[width-1:0] B_write_data_in;			// myip_v1_0 -> B_RAM. To be assigned within myip_v1_0. Possibly reg.
+	reg	B_write_en;								// myip_v1_0 -> B_RAM. To be assigned within myip_v1_0. Possibly reg.
+	reg	[B_depth_bits-1:0] B_write_address = 0;		// myip_v1_0 -> B_RAM. To be assigned within myip_v1_0. Possibly reg.
+	reg	[width-1:0] B_write_data_in;			// myip_v1_0 -> B_RAM. To be assigned within myip_v1_0. Possibly reg.
 	wire	B_read_en;								// matrix_multiply_0 -> B_RAM.
 	wire	[B_depth_bits-1:0] B_read_address;		// matrix_multiply_0 -> B_RAM.
 	wire	[width-1:0] B_read_data_out;			// B_RAM -> matrix_multiply_0.
 	wire	RES_write_en;							// matrix_multiply_0 -> RES_RAM.
 	wire	[RES_depth_bits-1:0] RES_write_address;	// matrix_multiply_0 -> RES_RAM.
 	wire	[width-1:0] RES_write_data_in;			// matrix_multiply_0 -> RES_RAM.
-	wire	RES_read_en;  							// myip_v1_0 -> RES_RAM. To be assigned within myip_v1_0. Possibly reg.
-	wire	[RES_depth_bits-1:0] RES_read_address;	// myip_v1_0 -> RES_RAM. To be assigned within myip_v1_0. Possibly reg.
+	reg	RES_read_en;  							// myip_v1_0 -> RES_RAM. To be assigned within myip_v1_0. Possibly reg.
+	reg	[RES_depth_bits-1:0] RES_read_address = 0;	// myip_v1_0 -> RES_RAM. To be assigned within myip_v1_0. Possibly reg.
 	wire	[width-1:0] RES_read_data_out;			// RES_RAM -> myip_v1_0
 	
 	// wires (or regs) to connect to matrix_multiply for assignment 1
-	wire	Start; 								// myip_v1_0 -> matrix_multiply_0. To be assigned within myip_v1_0. Possibly reg.
+	reg	Start; 								// myip_v1_0 -> matrix_multiply_0. To be assigned within myip_v1_0. Possibly reg.
 	wire	Done;								// matrix_multiply_0 -> myip_v1_0. 
 			
 				
 	// Total number of input data.
-	localparam NUMBER_OF_INPUT_WORDS  = 4; // 2**A_depth_bits + 2**B_depth_bits = 12 for assignment 1
+	localparam NUMBER_OF_INPUT_WORDS  = 12; // 2**A_depth_bits + 2**B_depth_bits = 12 for assignment 1
 
 	// Total number of output data
-	localparam NUMBER_OF_OUTPUT_WORDS = 4; // 2**RES_depth_bits = 2 for assignment 1
+	localparam NUMBER_OF_OUTPUT_WORDS = 2; // 2**RES_depth_bits = 2 for assignment 1
 
 	// Define the states of state machine (one hot encoding)
 	localparam Idle  = 4'b1000;
@@ -122,7 +122,15 @@ module myip_v1_0
 
 	// Accumulator to hold sum of inputs read at any point in time
 	reg [31:0] sum;
-
+    
+    // Valid Result Data 
+    reg valid_res_data = 0;
+    reg read_in_state = write_A;
+    reg is_fin_writing = 0;
+    reg has_start_writing = 0;
+	localparam write_A = 1'b0;
+    localparam write_B = 1'b1;
+    
 	// Counters to store the number inputs read & outputs written.
 	// Could be done using the same counter if reads and writes are not overlapped (i.e., no dataflow optimization)
 	// Left as separate for ease of debugging
@@ -151,7 +159,7 @@ module myip_v1_0
 				Idle:
 				begin
 					read_counter 	<= 0;
-					write_counter 	<= 0;
+					//write_counter 	<= 0;
 					sum          	<= 0;
 					S_AXIS_TREADY 	<= 0;
 					M_AXIS_TVALID 	<= 0;
@@ -159,37 +167,96 @@ module myip_v1_0
 					if (S_AXIS_TVALID == 1)
 					begin
 						state       	<= Read_Inputs;
-						S_AXIS_TREADY 	<= 1; 
+						S_AXIS_TREADY 	<= 0; 
 						// start receiving data once you go into Read_Inputs
 					end
 				end
 
 				Read_Inputs:
 				begin
-					S_AXIS_TREADY 	<= 1;
-					if (S_AXIS_TVALID == 1) 
-					begin
-						// Coprocessor function (adding the numbers together) happens here (partly)
-						sum  	<=	sum + S_AXIS_TDATA;
-						// If we are expecting a variable number of words, we should make use of S_AXIS_TLAST.
-						// Since the number of words we are expecting is fixed, we simply count and receive 
-						// the expected number (NUMBER_OF_INPUT_WORDS) instead.
-						if (read_counter == NUMBER_OF_INPUT_WORDS-1)
-						begin
-							state      		<= Compute;
-							S_AXIS_TREADY 	<= 0;
-						end
-						else
-						begin
-							read_counter 	<= read_counter + 1;
-						end
-					end
-				end
+				    case (read_in_state)
+                        write_A:
+                        begin
+                            if (is_fin_writing)
+                            begin
+                                A_write_en <= 0;
+                                read_in_state <= write_B;
+                                A_write_address <= 0;
+                                is_fin_writing <= 0;
+                                has_start_writing <= 0;
+                            end
+                            else
+                            begin
+                                S_AXIS_TREADY <= 1; //change to next word
+                                A_write_en <= 1;
+                                if (S_AXIS_TVALID && S_AXIS_TREADY)
+                                begin
+                                    A_write_data_in <= S_AXIS_TDATA;
+                                    has_start_writing <= 1;
+                                    if (has_start_writing) //only increment after first on is written
+                                    begin
+                                        A_write_address <= A_write_address + 1;
+                                    end
+                                    S_AXIS_TREADY <= 0; //change to next word
+                                end
+                                if (A_write_address ==  (1 << A_depth_bits) - 1)
+                                begin
+                                    is_fin_writing <= 1;
+                                    S_AXIS_TREADY <= 0;
+                                end
+                            end
+                        end
+                        write_B:
+                        begin
+                            if (is_fin_writing)
+                            begin
+                                //S_AXIS_TREADY <= 1; // clear axi
+                                B_write_en <= 0;
+                                read_in_state <= write_A;
+                                B_write_address <= 0;
+                                is_fin_writing <= 0;
+                                has_start_writing <= 0;
+                                state <= Compute;
+                                Start <= 1;	
+                            end
+                            else
+                            begin
+                                S_AXIS_TREADY <= 1; //change to next word
+                                B_write_en <= 1;
+                                if (S_AXIS_TVALID && S_AXIS_TREADY) 
+                                begin
+                                    B_write_data_in <= S_AXIS_TDATA;
+                                    has_start_writing <= 1;
+                                    if (has_start_writing)
+                                    begin
+                                        B_write_address <= B_write_address + 1;
+                                    end
+                                    S_AXIS_TREADY <= 0; //change to next word
+                                    end
+                                if (B_write_address ==  (1 << B_depth_bits) - 1)
+                                begin
+                                    is_fin_writing <= 1;
+                                end
+                            end
+                        end
+                    endcase
+                end
             
 				Compute:
 				begin
-					// Coprocessor function to be implemented (matrix multiply) should be here. Right now, nothing happens here.
-					state		<= Write_Outputs;
+					if(Done)
+					begin
+					   RES_read_en <= 1;
+					   RES_read_address <= 0;
+                       Start <= 0;
+                       state <= Write_Outputs;
+					end
+                    else					
+                    begin
+				        Start <= 1;	
+				        A_write_en      <= 0;
+                        B_write_en      <= 0; 			   
+					end
 					// Possible to save a cycle by asserting M_AXIS_TVALID and presenting M_AXIS_TDATA just before going into 
 					// Write_Outputs state. However, need to adjust write_counter limits accordingly
 					// Alternatively, M_AXIS_TVALID and M_AXIS_TDATA can be asserted combinationally to save a cycle.
@@ -197,21 +264,27 @@ module myip_v1_0
 			
 				Write_Outputs:
 				begin
-					M_AXIS_TVALID	<= 1;
-					M_AXIS_TDATA	<= sum + write_counter;
-					// Coprocessor function (adding 1 to sum in each iteration = adding iteration count to sum) happens here (partly)
-					if (M_AXIS_TREADY == 1) 
+				    M_AXIS_TVALID	<= 0;
+					//RES_read_address <= write_counter;
+					M_AXIS_TDATA <= RES_read_data_out;
+					if (!valid_res_data)
 					begin
-						if (write_counter == NUMBER_OF_OUTPUT_WORDS-1)
-						begin
-							state	<= Idle;
-							M_AXIS_TLAST	<= 1;
-							// M_AXIS_TLAST, though optional in AXIS, is necessary in practice as AXI Stream FIFO and AXI DMA expects it.
-						end
-						else
-						begin
-							write_counter	<= write_counter + 1;
-						end
+                       valid_res_data <= 1;
+					end
+					else 
+					begin
+                        if (M_AXIS_TREADY) // Update res address upon ready signal and valid data
+                        begin
+                            M_AXIS_TVALID	<= 1;
+                            RES_read_address <= RES_read_address + 1;
+                            valid_res_data	<= 0;
+                            if (RES_read_address == NUMBER_OF_OUTPUT_WORDS -1)
+                            begin
+                                // M_AXIS_TLAST, though optional in AXIS, is necessary in practice as AXI Stream FIFO and AXI DMA expects it.
+                                state	<= Idle;
+                                M_AXIS_TLAST	<= 1;
+                            end
+                        end
 					end
 				end
 			endcase
