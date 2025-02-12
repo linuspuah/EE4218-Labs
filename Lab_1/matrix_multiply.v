@@ -44,18 +44,14 @@ module matrix_multiply
 	// implement the logic to read A_RAM, read B_RAM, do the multiplication and write the results to RES_RAM
 	// Note: A_RAM and B_RAM are to be read synchronously. Read the wiki for more details.
 	reg [31:0] sum = 0;
-	reg [31:0] prev_sum = 0;
-	reg [1:0] is_writing = 0;
-	reg valid_data = 0;  // Flag to indicate when valid data is ready
-	reg [A_depth_bits-1:0] row_counter = 0;
 	reg [B_depth_bits-1:0] sum_counter = 0;
 	
 	// Define the states of state machine (one hot encoding)
 	localparam wait_for_data  = 4'b1000;
 	localparam summing = 4'b0100;
 	localparam write_to_mem = 4'b0010;
-
 	reg [3:0] state = wait_for_data;
+	
 	always@ (posedge clk)
 	begin
         if (Start)
@@ -120,67 +116,4 @@ module matrix_multiply
         end
 	end
 endmodule
-//    always@(posedge clk)
-//    begin
-//        if (Start)
-//        begin
-//            Done <= 0;
-//            A_read_en <= 1;
-//            B_read_en <= 1;
-//            if (A_read_en == 1 && !valid_data)  // First cycle: Latch read data, but don't process yet
-//            begin
-//                RES_write_en <= 0;
-//                valid_data <= 1;
-//                //A_read_address <= A_read_address + 1;
-//                //B_read_address <= B_read_address + 1;
-                
-//            end
-//            else if (A_read_en && B_read_en)// Second cycle onwards: Now valid data can be used
-//            // Delay state for one cycle to allow data read
-//            begin
-//                // Use registered read data (delayed)
-//                if (!is_writing)
-//                begin
-//                    sum <= sum + (A_read_data_out * B_read_data_out);
-//                    sum_counter <= sum_counter + 1;
-//                    A_read_address <= A_read_address + 1;
-//                    B_read_address <= B_read_address + 1;
-//                    valid_data <= 0;
-//                    if (sum_counter == (1 << B_depth_bits) - 1) // End of row
-//                    begin
-//                        is_writing <= 1;
-////                        prev_sum <= sum + (A_read_data_out * B_read_data_out);
-//                        A_read_address <= (1 << B_depth_bits);
-//                        B_read_address <= 0;
-                        
-//                        sum_counter <= 0;
-//                        RES_write_address <= curr_row;
-//                        curr_row <= curr_row + 1;
-//                    end
-//                end
-//                else // write data to res RAM
-//                begin
-//                    RES_write_en <= 1;
-//                    RES_write_data_in <= (sum >> 8);
-//                    sum <= 0;
-//                    is_writing <= 0;
-//                    valid_data <= 0;
-//                    // Done when last address is written
-//                    if (RES_write_address == (1 << RES_depth_bits) - 1)
-//                    begin
-//                        A_read_en <= 0;
-//                        B_read_en <= 0;
-//                        A_read_address <= 0;
-//                        B_read_address <= 0;
-//                        //RES_write_address <= 0;
-//                        curr_row <= 0;
-//                        valid_data <= 0;
-//                        Done <= 1;
-//                    end
-//                end
-//            end
-//        end
-//    end
-//endmodule
-
 

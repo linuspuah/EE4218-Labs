@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Fri Feb  7 15:52:56 2025
+| Date         : Tue Feb 11 19:47:10 2025
 | Host         : LAPTOP-MBJHTN7L running 64-bit major release  (build 9200)
 | Command      : report_utilization -file myip_v1_0_utilization_synth.rpt -pb myip_v1_0_utilization_synth.pb
 | Design       : myip_v1_0
@@ -32,13 +32,13 @@ Table of Contents
 +----------------------------+------+-------+------------+-----------+-------+
 |          Site Type         | Used | Fixed | Prohibited | Available | Util% |
 +----------------------------+------+-------+------------+-----------+-------+
-| CLB LUTs*                  |  163 |     0 |          0 |    117120 |  0.14 |
-|   LUT as Logic             |  139 |     0 |          0 |    117120 |  0.12 |
+| CLB LUTs*                  |  168 |     0 |          0 |    117120 |  0.14 |
+|   LUT as Logic             |  144 |     0 |          0 |    117120 |  0.12 |
 |   LUT as Memory            |   24 |     0 |          0 |     57600 |  0.04 |
 |     LUT as Distributed RAM |   24 |     0 |            |           |       |
 |     LUT as Shift Register  |    0 |     0 |            |           |       |
-| CLB Registers              |  109 |     0 |          0 |    234240 |  0.05 |
-|   Register as Flip Flop    |  109 |     0 |          0 |    234240 |  0.05 |
+| CLB Registers              |  107 |     0 |          0 |    234240 |  0.05 |
+|   Register as Flip Flop    |  107 |     0 |          0 |    234240 |  0.05 |
 |   Register as Latch        |    0 |     0 |          0 |    234240 |  0.00 |
 | CARRY8                     |    8 |     0 |          0 |     14640 |  0.05 |
 | F7 Muxes                   |    0 |     0 |          0 |     58560 |  0.00 |
@@ -63,8 +63,8 @@ Warning! LUT value is adjusted to account for LUT combining.
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
-| 2     |          Yes |         Set |            - |
-| 107   |          Yes |       Reset |            - |
+| 1     |          Yes |         Set |            - |
+| 106   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -159,19 +159,19 @@ Warning! LUT value is adjusted to account for LUT combining.
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |  107 |            Register |
-| LUT6     |   58 |                 CLB |
-| LUT2     |   54 |                 CLB |
+| FDRE     |  106 |            Register |
+| LUT6     |   59 |                 CLB |
+| LUT2     |   50 |                 CLB |
 | OBUF     |   35 |                 I/O |
-| LUT4     |   26 |                 CLB |
+| LUT4     |   27 |                 CLB |
 | RAMS32   |   24 |                 CLB |
-| LUT3     |   15 |                 CLB |
+| LUT3     |   20 |                 CLB |
+| LUT5     |   18 |                 CLB |
 | INBUF    |   12 |                 I/O |
 | IBUFCTRL |   12 |              Others |
-| LUT5     |   11 |                 CLB |
 | CARRY8   |    8 |                 CLB |
-| LUT1     |    5 |                 CLB |
-| FDSE     |    2 |            Register |
+| LUT1     |    2 |                 CLB |
+| FDSE     |    1 |            Register |
 | BUFGCE   |    1 |               Clock |
 +----------+------+---------------------+
 
