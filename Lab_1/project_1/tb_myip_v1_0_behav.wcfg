@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="4,267.500 ns"></ZoomStartTime>
-      <ZoomEndTime time="4,966.501 ns"></ZoomEndTime>
-      <Cursor1Time time="4,471.500 ns"></Cursor1Time>
+      <ZoomStartTime time="5,605.570 ns"></ZoomStartTime>
+      <ZoomEndTime time="6,584.492 ns"></ZoomEndTime>
+      <Cursor1Time time="6,025.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="247"></NameColumnWidth>
-      <ValueColumnWidth column_width="85"></ValueColumnWidth>
+      <ValueColumnWidth column_width="81"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="25" />
+   <WVObjectSize size="26" />
    <wvobject fp_name="/tb_myip_v1_0/ACLK" type="logic">
       <obj_property name="ElementShortName">ACLK</obj_property>
       <obj_property name="ObjectShortName">ACLK</obj_property>
@@ -87,6 +87,10 @@
       <obj_property name="CustomSignalColor">#00FFFF</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
+   <wvobject fp_name="/tb_myip_v1_0/S_AXIS_TREADY" type="logic">
+      <obj_property name="ElementShortName">S_AXIS_TREADY</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_TREADY</obj_property>
+   </wvobject>
    <wvobject fp_name="/tb_myip_v1_0/U1/S_AXIS_TDATA" type="array">
       <obj_property name="ElementShortName">S_AXIS_TDATA[31:0]</obj_property>
       <obj_property name="ObjectShortName">S_AXIS_TDATA[31:0]</obj_property>
@@ -129,8 +133,7 @@
       <obj_property name="ObjectShortName">M_AXIS_TDATA[31:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_myip_v1_0/result_memory" type="array">
-      <obj_property name="ElementShortName">result_memory[0:3][7:0]</obj_property>
-      <obj_property name="ObjectShortName">result_memory[0:3][7:0]</obj_property>
-      <obj_property name="isExpanded"></obj_property>
+      <obj_property name="ElementShortName">result_memory[0:7][7:0]</obj_property>
+      <obj_property name="ObjectShortName">result_memory[0:7][7:0]</obj_property>
    </wvobject>
 </wave_config>

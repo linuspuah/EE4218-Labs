@@ -123,13 +123,14 @@ module myip_v1_0
 	// Accumulator to hold sum of inputs read at any point in time
 	reg [31:0] sum;
     
-    // Valid Result Data 
+    // Param for Read Inputs State
+    localparam write_A = 1'b0;
+    localparam write_B = 1'b1;
     reg valid_res_data = 0;
     reg read_in_state = write_A;
     reg is_fin_writing = 0;
     reg has_start_writing = 0;
-	localparam write_A = 1'b0;
-    localparam write_B = 1'b1;
+	
     
 	// Counters to store the number inputs read & outputs written.
 	// Could be done using the same counter if reads and writes are not overlapped (i.e., no dataflow optimization)
