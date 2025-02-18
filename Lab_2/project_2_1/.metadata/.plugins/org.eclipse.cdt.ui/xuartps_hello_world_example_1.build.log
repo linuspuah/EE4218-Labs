@@ -1,0 +1,21 @@
+16:35:45 **** Incremental Build of configuration Debug for project xuartps_hello_world_example_1 ****
+make all 
+'Building file: ../src/xuartps_hello_world_example.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xuartps_hello_world_example.o" -IC:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/export/project_2_1_vitis/sw/project_2_1_vitis/standalone_domain/bspinclude/include -MMD -MP -MF"src/xuartps_hello_world_example.d" -MT"src/xuartps_hello_world_example.o" -o "src/xuartps_hello_world_example.o" "../src/xuartps_hello_world_example.c"
+'Finished building: ../src/xuartps_hello_world_example.c'
+' '
+'Building target: xuartps_hello_world_example_1.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/export/project_2_1_vitis/sw/project_2_1_vitis/standalone_domain/bsplib/lib -o "xuartps_hello_world_example_1.elf"  ./src/xuartps_hello_world_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: xuartps_hello_world_example_1.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size xuartps_hello_world_example_1.elf  |tee "xuartps_hello_world_example_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35374	   2192	  20858	  58424	   e438	xuartps_hello_world_example_1.elf
+'Finished building: xuartps_hello_world_example_1.elf.size'
+' '
+
+16:35:47 Build Finished (took 2s.80ms)
+
