@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="xuartps_hello_world_example_1" location="C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/xuartps_hello_world_example_1" platform="C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/export/project_2_1_vitis/project_2_1_vitis.xpfm" platformUID="xilinx:kv260_som::0.0(custom)" systemProject="xuartps_hello_world_example_1_system" sysConfig="project_2_1_vitis" runtime="C/C++" cpu="standalone_domain" cpuInstance="psu_cortexa53_0" os="standalone" mssSignature="995241dda5889668681e530b20c50a24">
+  <configuration name="Debug" id="xilinx.gnu.arm.a53.exe.debug.347416621" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.arm.a53.exe.release.1840413060" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>
