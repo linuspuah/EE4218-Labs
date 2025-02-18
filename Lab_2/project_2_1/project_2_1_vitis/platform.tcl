@@ -18,3 +18,4 @@ platform active {project_2_1_vitis}
 bsp reload
 platform clean
 platform generate
+platform generate
