@@ -1,4 +1,4 @@
-21:43:01 **** Incremental Build of configuration Debug for project xuartps_low_echo_example_1 ****
+01:17:01 **** Incremental Build of configuration Debug for project xuartps_low_echo_example_1 ****
 make all 
 'Building file: ../src/xuartps_low_echo_example.c'
 'Invoking: ARM v8 gcc compiler'
@@ -17,5 +17,5 @@ aarch64-none-elf-size xuartps_low_echo_example_1.elf  |tee "xuartps_low_echo_exa
 'Finished building: xuartps_low_echo_example_1.elf.size'
 ' '
 
-21:43:02 Build Finished (took 1s.19ms)
+01:17:02 Build Finished (took 894ms)
 
