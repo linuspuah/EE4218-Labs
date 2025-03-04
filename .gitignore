@@ -1,0 +1,11 @@
+# Ignore Vivado simulation files and directories
+**/sim_*/          # Any folder starting with sim_
+**/*.wdb           # Vivado waveform database files
+**/*.sim           # Vivado simulation files
+**/xsim/           # Vivado simulation directory
+**/*.vcd           # Value change dump files
+**/*.bit           # Bitstream files
+**/*.ltx           # Vivado log files
+**/*.log           # Simulation log files
+**/*.jou           # Vivado journal files
+**/*.bak           # Backup files
