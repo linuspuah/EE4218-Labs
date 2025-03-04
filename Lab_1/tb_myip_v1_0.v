@@ -46,8 +46,8 @@ module tb_myip_v1_0(
                 .M_AXIS_TREADY(M_AXIS_TREADY)
 	);
 	
-	localparam NUMBER_OF_INPUT_WORDS  = 12;  // length of an input vector
-	localparam NUMBER_OF_OUTPUT_WORDS  = 2;  // length of an output vector
+	localparam NUMBER_OF_INPUT_WORDS  = 520;  // length of an input vector
+	localparam NUMBER_OF_OUTPUT_WORDS  = 64;  // length of an output vector
 	localparam NUMBER_OF_TEST_VECTORS  = 4;  // number of such test vectors (cases)
 	localparam width  = 8;  // width of an input vector
            

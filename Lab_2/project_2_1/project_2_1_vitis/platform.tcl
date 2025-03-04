@@ -19,3 +19,5 @@ bsp reload
 platform clean
 platform generate
 platform generate
+platform active {project_2_1_vitis}
+platform generate -domains 

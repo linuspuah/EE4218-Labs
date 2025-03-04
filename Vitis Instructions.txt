@@ -1,0 +1,28 @@
+Vitis Instructions
+Display
+uncheck 'Direct Capture' 
+check 'Half Duplex' and 'newLine mode' 
+To see everything that is sent and received on the console.
+
+Error - Error while launching program: Memory write error at 0x0. Cortex-A53 #0: EDITR not ready:
+connect
+targets -set -nocase -filter {name =~ "\*PSU\*"}  
+mwr 0xff5e0200 0x0100  
+rst -system
+
+Capture:
+direct capture off
+use start overwrite
+
+Send:
+Delays 3ms (per char), 5ms (newline)
+*** ADD NEW LINE TO LAST LINE OF INPUT FILE
+
+Port:
+Use port 4 only
+
+Lab 2:
+Send matrix A
+Turn on capture
+Send matrix B
+turn off capture

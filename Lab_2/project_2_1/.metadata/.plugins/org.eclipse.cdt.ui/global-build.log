@@ -1,15 +1,22 @@
-Nothing to build in platform 'project_2_1_vitis'
-
-01:17:01 **** Incremental Build of configuration Debug for project xuartps_low_echo_example_1 ****
+13:34:57 **** Incremental Build of project project_2_1_vitis ****
+buildplatform.bat 49962 project_2_1_vitis no_domain_build 
+ECHO is off.
+ECHO is off.
+XSDB Server Channel: tcfchan#2
+13:35:04 **** Clean-only build of configuration Debug for project xuartps_low_echo_example_1 ****
+make clean 
+rm -rf  ./src/xuartps_low_echo_example.o  ./src/xuartps_low_echo_example.d  xuartps_low_echo_example_1.elf.size  xuartps_low_echo_example_1.elf
+' '
+13:35:05 **** Incremental Build of configuration Debug for project xuartps_low_echo_example_1 ****
 make all 
-'Building file: ../src/xuartps_low_echo_example.c'
+'Building file: ../src/axis_matrix_mult.c'
 'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xuartps_low_echo_example.o" -IC:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/export/project_2_1_vitis/sw/project_2_1_vitis/standalone_domain/bspinclude/include -MMD -MP -MF"src/xuartps_low_echo_example.d" -MT"src/xuartps_low_echo_example.o" -o "src/xuartps_low_echo_example.o" "../src/xuartps_low_echo_example.c"
-'Finished building: ../src/xuartps_low_echo_example.c'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/axis_matrix_mult.o" -IC:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/export/project_2_1_vitis/sw/project_2_1_vitis/standalone_domain/bspinclude/include -MMD -MP -MF"src/axis_matrix_mult.d" -MT"src/axis_matrix_mult.o" -o "src/axis_matrix_mult.o" "../src/axis_matrix_mult.c"
+'Finished building: ../src/axis_matrix_mult.c'
 ' '
 'Building target: xuartps_low_echo_example_1.elf'
 'Invoking: ARM v8 gcc linker'
-aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/export/project_2_1_vitis/sw/project_2_1_vitis/standalone_domain/bsplib/lib -o "xuartps_low_echo_example_1.elf"  ./src/xuartps_low_echo_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/export/project_2_1_vitis/sw/project_2_1_vitis/standalone_domain/bsplib/lib -o "xuartps_low_echo_example_1.elf"  ./src/axis_matrix_mult.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 'Finished building target: xuartps_low_echo_example_1.elf'
 ' '
 'Invoking: ARM v8 Print Size'

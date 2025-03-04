@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;xuartps_low_echo_example_1/src/xuartps_low_echo_example.c&apos; to &apos;axis_matrix_mult.c&apos;" description="Rename resource &apos;xuartps_low_echo_example.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/xuartps_low_echo_example.c" name="axis_matrix_mult.c" stamp="1739943255914" updateReferences="true"/>
+</session>

@@ -1,0 +1,8 @@
+2025-03-02T22:43:24.477239500255-22:43:24 **** Incremental Build of project integrated_coprocessor_fifo ****
+000-buildplatform.bat 50652 integrated_coprocessor_fifo no_domain_build 
+000-ECHO is off.
+000-ECHO is off.
+000-XSDB Server Channel: tcfchan#1
+00255-
+22:43:29 Build Finished (took 5s.459ms)
+

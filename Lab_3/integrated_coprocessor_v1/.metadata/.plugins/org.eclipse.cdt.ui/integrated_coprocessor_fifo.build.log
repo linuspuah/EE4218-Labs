@@ -1,0 +1,8 @@
+22:43:24 **** Incremental Build of project integrated_coprocessor_fifo ****
+buildplatform.bat 50652 integrated_coprocessor_fifo no_domain_build 
+ECHO is off.
+ECHO is off.
+XSDB Server Channel: tcfchan#1
+
+22:43:29 Build Finished (took 5s.459ms)
+

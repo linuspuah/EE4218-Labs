@@ -1,2 +1,8 @@
-2025-02-19T01:17:01.4494571000-Nothing to build in platform 'project_2_1_vitis'
+2025-02-19T13:34:57.588508400255-13:34:57 **** Incremental Build of project project_2_1_vitis ****
+000-buildplatform.bat 49962 project_2_1_vitis no_domain_build 
+000-ECHO is off.
+000-ECHO is off.
+000-XSDB Server Channel: tcfchan#2
+00255-
+13:35:03 Build Finished (took 6s.371ms)
 

@@ -24,9 +24,9 @@ set mode [expr [mrd -value 0xFF5E0200] & 0xf]
 targets -set -nocase -filter {name =~ "*A53*#0"}
 rst -processor
 dow C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/export/project_2_1_vitis/sw/project_2_1_vitis/boot/fsbl.elf
-set bp_18_23_fsbl_bp [bpadd -addr &XFsbl_Exit]
+set bp_43_7_fsbl_bp [bpadd -addr &XFsbl_Exit]
 con -block -timeout 60
-bpremove $bp_18_23_fsbl_bp
+bpremove $bp_43_7_fsbl_bp
 targets -set -nocase -filter {name =~ "*A53*#0"}
 rst -processor
 dow C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/xuartps_low_echo_example_1/Debug/xuartps_low_echo_example_1.elf

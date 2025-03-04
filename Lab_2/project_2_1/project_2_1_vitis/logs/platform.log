@@ -6406,3 +6406,684 @@ C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_
 C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
 
 TRACE::2025-02-19.00:20:45::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-02-19.13:10:52::SCWPlatform::Trying to open the hw design at C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:10:52::SCWPlatform::DSA given C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:10:52::SCWPlatform::DSA absoulate path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:10:52::SCWPlatform::DSA directory C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw
+TRACE::2025-02-19.13:10:52::SCWPlatform:: Platform Path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:10:52::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-02-19.13:10:52::SCWPlatform::Do not have an existing db opened. 
+TRACE::2025-02-19.13:11:01::SCWPlatform::Opened new HwDB with name design_1_wrapper
+TRACE::2025-02-19.13:11:01::SCWReader::Active system found as  project_2_1_vitis
+TRACE::2025-02-19.13:11:01::SCWReader::Handling sysconfig project_2_1_vitis
+TRACE::2025-02-19.13:11:01::SCWDomain::checking for install qemu data   : 
+TRACE::2025-02-19.13:11:01::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2023.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/
+TRACE::2025-02-19.13:11:01::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2023.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/qemu_args.txt
+TRACE::2025-02-19.13:11:01::SCWDomain:: Using the PMUQEMU args from install at  : C:/Xilinx/Vitis/2023.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/pmu_args.txt
+TRACE::2025-02-19.13:11:01::SCWPlatform::Trying to open the hw design at C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:01::SCWPlatform::DSA given C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:01::SCWPlatform::DSA absoulate path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:01::SCWPlatform::DSA directory C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw
+TRACE::2025-02-19.13:11:01::SCWPlatform:: Platform Path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:01::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-02-19.13:11:01::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-02-19.13:11:01::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-02-19.13:11:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-19.13:11:01::SCWPlatform::Trying to open the hw design at C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:01::SCWPlatform::DSA given C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:01::SCWPlatform::DSA absoulate path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:01::SCWPlatform::DSA directory C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw
+TRACE::2025-02-19.13:11:01::SCWPlatform:: Platform Path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:01::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-02-19.13:11:01::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-02-19.13:11:01::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-02-19.13:11:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-19.13:11:01::SCWPlatform::Trying to open the hw design at C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:01::SCWPlatform::DSA given C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:01::SCWPlatform::DSA absoulate path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:01::SCWPlatform::DSA directory C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw
+TRACE::2025-02-19.13:11:01::SCWPlatform:: Platform Path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:01::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-02-19.13:11:01::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-02-19.13:11:01::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-02-19.13:11:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-19.13:11:01::SCWReader::Boot application domain added for zynqmp_fsbl
+TRACE::2025-02-19.13:11:01::SCWPlatform::Trying to open the hw design at C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:01::SCWPlatform::DSA given C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:01::SCWPlatform::DSA absoulate path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:01::SCWPlatform::DSA directory C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw
+TRACE::2025-02-19.13:11:01::SCWPlatform:: Platform Path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:01::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-02-19.13:11:01::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-02-19.13:11:01::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-02-19.13:11:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-19.13:11:01::SCWMssOS::Checking the sw design at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-02-19.13:11:01::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2025-02-19.13:11:01::SCWMssOS::No sw design opened at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-02-19.13:11:01::SCWMssOS::mss exists loading the mss file  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-02-19.13:11:01::SCWMssOS::Opened the sw design from mss  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-02-19.13:11:01::SCWMssOS::Adding the swdes entry C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss with des name system
+TRACE::2025-02-19.13:11:01::SCWMssOS::updating the scw layer about changes
+TRACE::2025-02-19.13:11:01::SCWMssOS::Opened the sw design.  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-02-19.13:11:01::SCWPlatform::Trying to open the hw design at C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:01::SCWPlatform::DSA given C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:01::SCWPlatform::DSA absoulate path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:01::SCWPlatform::DSA directory C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw
+TRACE::2025-02-19.13:11:01::SCWPlatform:: Platform Path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:01::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-02-19.13:11:01::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-02-19.13:11:01::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-02-19.13:11:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-19.13:11:01::SCWMssOS::Checking the sw design at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-02-19.13:11:01::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2025-02-19.13:11:01::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-02-19.13:11:01::SCWMssOS:: library already available in sw design:  xilffs:5.1
+TRACE::2025-02-19.13:11:01::SCWPlatform::Trying to open the hw design at C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:01::SCWPlatform::DSA given C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:01::SCWPlatform::DSA absoulate path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:01::SCWPlatform::DSA directory C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw
+TRACE::2025-02-19.13:11:01::SCWPlatform:: Platform Path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:01::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-02-19.13:11:01::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-02-19.13:11:01::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-02-19.13:11:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-19.13:11:01::SCWMssOS::Checking the sw design at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-02-19.13:11:01::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2025-02-19.13:11:01::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-02-19.13:11:01::SCWMssOS:: library already available in sw design:  xilsecure:5.2
+TRACE::2025-02-19.13:11:01::SCWPlatform::Trying to open the hw design at C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:01::SCWPlatform::DSA given C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:01::SCWPlatform::DSA absoulate path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA directory C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Platform Path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-19.13:11:02::SCWMssOS::Checking the sw design at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2025-02-19.13:11:02::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWMssOS:: library already available in sw design:  xilpm:5.1
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to open the hw design at C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA given C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA absoulate path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA directory C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Platform Path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-19.13:11:02::SCWMssOS::Checking the sw design at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2025-02-19.13:11:02::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to open the hw design at C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA given C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA absoulate path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA directory C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Platform Path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-19.13:11:02::SCWMssOS::Checking the sw design at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2025-02-19.13:11:02::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to open the hw design at C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA given C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA absoulate path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA directory C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Platform Path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-19.13:11:02::SCWMssOS::Checking the sw design at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2025-02-19.13:11:02::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to open the hw design at C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA given C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA absoulate path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA directory C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Platform Path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-19.13:11:02::SCWMssOS::Checking the sw design at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2025-02-19.13:11:02::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to open the hw design at C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA given C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA absoulate path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA directory C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Platform Path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-19.13:11:02::SCWMssOS::Checking the sw design at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2025-02-19.13:11:02::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to open the hw design at C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA given C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA absoulate path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA directory C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Platform Path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-19.13:11:02::SCWMssOS::Checking the sw design at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2025-02-19.13:11:02::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to open the hw design at C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA given C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA absoulate path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA directory C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Platform Path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-19.13:11:02::SCWMssOS::Checking the sw design at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2025-02-19.13:11:02::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to open the hw design at C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA given C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA absoulate path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA directory C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Platform Path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-19.13:11:02::SCWMssOS::Checking the sw design at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2025-02-19.13:11:02::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWMssOS::Saving the mss changes C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-02-19.13:11:02::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-02-19.13:11:02::SCWMssOS::Commit changes completed.
+TRACE::2025-02-19.13:11:02::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2025-02-19.13:11:02::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to open the hw design at C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA given C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA absoulate path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA directory C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Platform Path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-19.13:11:02::SCWMssOS::Checking the sw design at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2025-02-19.13:11:02::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWReader::No isolation master present  
+TRACE::2025-02-19.13:11:02::SCWDomain::checking for install qemu data   : 
+TRACE::2025-02-19.13:11:02::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2023.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/
+TRACE::2025-02-19.13:11:02::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2023.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/qemu_args.txt
+TRACE::2025-02-19.13:11:02::SCWDomain:: Using the PMUQEMU args from install at  : C:/Xilinx/Vitis/2023.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/pmu_args.txt
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to open the hw design at C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA given C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA absoulate path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA directory C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Platform Path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-19.13:11:02::SCWReader::Boot application domain added for zynqmp_pmufw
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to open the hw design at C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA given C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA absoulate path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA directory C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Platform Path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-19.13:11:02::SCWMssOS::Checking the sw design at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2025-02-19.13:11:02::SCWMssOS::No sw design opened at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWMssOS::mss exists loading the mss file  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWMssOS::Opened the sw design from mss  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWMssOS::Adding the swdes entry C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss with des name system_0
+TRACE::2025-02-19.13:11:02::SCWMssOS::updating the scw layer about changes
+TRACE::2025-02-19.13:11:02::SCWMssOS::Opened the sw design.  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to open the hw design at C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA given C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA absoulate path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA directory C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Platform Path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-19.13:11:02::SCWMssOS::Checking the sw design at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-02-19.13:11:02::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWMssOS:: library already available in sw design:  xilfpga:6.5
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to open the hw design at C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA given C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA absoulate path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA directory C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Platform Path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-19.13:11:02::SCWMssOS::Checking the sw design at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-02-19.13:11:02::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWMssOS:: library already available in sw design:  xilsecure:5.2
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to open the hw design at C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA given C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA absoulate path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA directory C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Platform Path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-19.13:11:02::SCWMssOS::Checking the sw design at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-02-19.13:11:02::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWMssOS:: library already available in sw design:  xilskey:7.5
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to open the hw design at C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA given C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA absoulate path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA directory C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Platform Path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-19.13:11:02::SCWMssOS::Checking the sw design at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-02-19.13:11:02::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to open the hw design at C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA given C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA absoulate path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA directory C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Platform Path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-19.13:11:02::SCWMssOS::Checking the sw design at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-02-19.13:11:02::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWMssOS::Saving the mss changes C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-02-19.13:11:02::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-02-19.13:11:02::SCWMssOS::Commit changes completed.
+TRACE::2025-02-19.13:11:02::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2025-02-19.13:11:02::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to open the hw design at C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA given C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA absoulate path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA directory C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Platform Path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-19.13:11:02::SCWMssOS::Checking the sw design at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-02-19.13:11:02::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWReader::No isolation master present  
+TRACE::2025-02-19.13:11:02::SCWDomain::checking for install qemu data   : 
+TRACE::2025-02-19.13:11:02::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2023.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/
+TRACE::2025-02-19.13:11:02::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2023.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/qemu_args.txt
+TRACE::2025-02-19.13:11:02::SCWDomain:: Using the PMUQEMU args from install at  : C:/Xilinx/Vitis/2023.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/pmu_args.txt
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to open the hw design at C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA given C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA absoulate path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA directory C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Platform Path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to open the hw design at C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA given C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA absoulate path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA directory C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Platform Path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to open the hw design at C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA given C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA absoulate path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA directory C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Platform Path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-19.13:11:02::SCWMssOS::Checking the sw design at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-02-19.13:11:02::SCWMssOS::No sw design opened at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWMssOS::mss exists loading the mss file  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWMssOS::Opened the sw design from mss  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWMssOS::Adding the swdes entry C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/psu_cortexa53_0/standalone_domain/bsp/system.mss with des name system_1
+TRACE::2025-02-19.13:11:02::SCWMssOS::updating the scw layer about changes
+TRACE::2025-02-19.13:11:02::SCWMssOS::Opened the sw design.  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWMssOS::Saving the mss changes C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-02-19.13:11:02::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-02-19.13:11:02::SCWMssOS::Commit changes completed.
+TRACE::2025-02-19.13:11:02::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2025-02-19.13:11:02::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to open the hw design at C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA given C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA absoulate path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform::DSA directory C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Platform Path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:11:02::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-02-19.13:11:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-02-19.13:11:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-19.13:11:02::SCWMssOS::Checking the sw design at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-02-19.13:11:02::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-02-19.13:11:02::SCWReader::No isolation master present  
+LOG::2025-02-19.13:35:02::SCWPlatform::Started generating the artifacts platform project_2_1_vitis
+TRACE::2025-02-19.13:35:02::SCWPlatform::Sanity checking of platform is completed
+LOG::2025-02-19.13:35:02::SCWPlatform::Started generating the artifacts for system configuration project_2_1_vitis
+LOG::2025-02-19.13:35:02::SCWSystem::Checking the domain zynqmp_fsbl
+LOG::2025-02-19.13:35:02::SCWSystem::Doing application build for :  zynqmp_fsbl
+TRACE::2025-02-19.13:35:02::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2025-02-19.13:35:02::SCWDomain::Skipping the build for domain :  zynqmp_fsbl
+LOG::2025-02-19.13:35:02::SCWSystem::Checking the domain zynqmp_pmufw
+LOG::2025-02-19.13:35:02::SCWSystem::Doing application build for :  zynqmp_pmufw
+TRACE::2025-02-19.13:35:02::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2025-02-19.13:35:02::SCWDomain::Skipping the build for domain :  zynqmp_pmufw
+LOG::2025-02-19.13:35:02::SCWSystem::Checking the domain standalone_domain
+LOG::2025-02-19.13:35:02::SCWSystem::Not a boot domain 
+LOG::2025-02-19.13:35:02::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2025-02-19.13:35:02::SCWDomain::Generating domain artifcats
+TRACE::2025-02-19.13:35:02::SCWMssOS::Generating standalone artifcats
+TRACE::2025-02-19.13:35:02::SCWMssOS::Copying the qemu file from  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/resources/project_2_1_vitis/standalone_domain/qemu_args.txt To C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/export/project_2_1_vitis/sw/project_2_1_vitis/qemu/
+TRACE::2025-02-19.13:35:02::SCWMssOS::Copying the qemu file from  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/resources/project_2_1_vitis/standalone_domain/qemu_args.txt To C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/export/project_2_1_vitis/sw/project_2_1_vitis/qemu/
+TRACE::2025-02-19.13:35:02::SCWMssOS::Copying the qemu file from  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/resources/project_2_1_vitis/standalone_domain/qemu_args.txt To C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/export/project_2_1_vitis/sw/project_2_1_vitis/standalone_domain/qemu/
+TRACE::2025-02-19.13:35:02::SCWMssOS::Copying the qemu file from  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/resources/project_2_1_vitis/standalone_domain/qemu_args.txt To C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/export/project_2_1_vitis/sw/project_2_1_vitis/standalone_domain/qemu/
+TRACE::2025-02-19.13:35:02::SCWMssOS:: Copying the user libraries. 
+TRACE::2025-02-19.13:35:02::SCWPlatform::Trying to open the hw design at C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:35:02::SCWPlatform::DSA given C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:35:02::SCWPlatform::DSA absoulate path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:35:02::SCWPlatform::DSA directory C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw
+TRACE::2025-02-19.13:35:02::SCWPlatform:: Platform Path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:35:02::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-02-19.13:35:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-02-19.13:35:02::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-02-19.13:35:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-19.13:35:02::SCWMssOS::Checking the sw design at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-02-19.13:35:02::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-02-19.13:35:02::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-02-19.13:35:02::SCWMssOS::Completed writing the mss file at C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/psu_cortexa53_0/standalone_domain/bsp
+TRACE::2025-02-19.13:35:02::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-02-19.13:35:02::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2025-02-19.13:35:02::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2025-02-19.13:35:02::SCWDomain::Skipping the build for domain :  standalone_domain
+TRACE::2025-02-19.13:35:02::SCWMssOS::skipping the bsp build ... 
+TRACE::2025-02-19.13:35:02::SCWMssOS::Copying to export directory.
+TRACE::2025-02-19.13:35:03::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2025-02-19.13:35:03::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2025-02-19.13:35:03::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2025-02-19.13:35:03::SCWSystem::Completed Processing the sysconfig project_2_1_vitis
+LOG::2025-02-19.13:35:03::SCWPlatform::Completed generating the artifacts for system configuration project_2_1_vitis
+TRACE::2025-02-19.13:35:03::SCWPlatform::Started preparing the platform 
+TRACE::2025-02-19.13:35:03::SCWSystem::Writing the bif file for system config project_2_1_vitis
+TRACE::2025-02-19.13:35:03::SCWSystem::dir created 
+TRACE::2025-02-19.13:35:03::SCWSystem::Writing the bif 
+TRACE::2025-02-19.13:35:03::SCWPlatform::Started writing the spfm file 
+TRACE::2025-02-19.13:35:03::SCWPlatform::Started writing the xpfm file 
+TRACE::2025-02-19.13:35:03::SCWPlatform::Completed generating the platform
+TRACE::2025-02-19.13:35:03::SCWMssOS::Saving the mss changes C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-02-19.13:35:03::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-02-19.13:35:03::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-02-19.13:35:03::SCWMssOS::Commit changes completed.
+TRACE::2025-02-19.13:35:03::SCWMssOS::Saving the mss changes C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-02-19.13:35:03::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-02-19.13:35:03::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-02-19.13:35:03::SCWMssOS::Commit changes completed.
+TRACE::2025-02-19.13:35:03::SCWMssOS::Saving the mss changes C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-02-19.13:35:03::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-02-19.13:35:03::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-02-19.13:35:03::SCWMssOS::Commit changes completed.
+TRACE::2025-02-19.13:35:03::SCWPlatform::Trying to open the hw design at C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:35:03::SCWPlatform::DSA given C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:35:03::SCWPlatform::DSA absoulate path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:35:03::SCWPlatform::DSA directory C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw
+TRACE::2025-02-19.13:35:03::SCWPlatform:: Platform Path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:35:03::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-02-19.13:35:03::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-02-19.13:35:03::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-02-19.13:35:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-19.13:35:03::SCWMssOS::Checking the sw design at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-02-19.13:35:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-02-19.13:35:03::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-02-19.13:35:03::SCWPlatform::Trying to open the hw design at C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:35:03::SCWPlatform::DSA given C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:35:03::SCWPlatform::DSA absoulate path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:35:03::SCWPlatform::DSA directory C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw
+TRACE::2025-02-19.13:35:03::SCWPlatform:: Platform Path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:35:03::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-02-19.13:35:03::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-02-19.13:35:03::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-02-19.13:35:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-19.13:35:03::SCWMssOS::Checking the sw design at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-02-19.13:35:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-02-19.13:35:03::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-02-19.13:35:03::SCWPlatform::Trying to open the hw design at C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:35:03::SCWPlatform::DSA given C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:35:03::SCWPlatform::DSA absoulate path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:35:03::SCWPlatform::DSA directory C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw
+TRACE::2025-02-19.13:35:03::SCWPlatform:: Platform Path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:35:03::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-02-19.13:35:03::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-02-19.13:35:03::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-02-19.13:35:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-19.13:35:03::SCWMssOS::Checking the sw design at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-02-19.13:35:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-02-19.13:35:03::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-02-19.13:35:03::SCWWriter::formatted JSON is {
+	"platformName":	"project_2_1_vitis",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"project_2_1_vitis",
+	"platHandOff":	"C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynqMP",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"psu_cortexa53_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP      -Wall -fmessage-length=0 -DARMA53_64 -Os -flto -ffat-lto-objects  ",
+	"pmufwExtraCompilerFlags":	"-MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-objects  ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"project_2_1_vitis",
+	"systems":	[{
+			"systemName":	"project_2_1_vitis",
+			"systemDesc":	"project_2_1_vitis",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"project_2_1_vitis",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynqmp_fsbl",
+					"domainDispName":	"zynqmp_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"psu_cortexa53_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.0",
+					"mssFile":	"",
+					"md5Digest":	"ac2f0ae35d54894129548cc8b2fe40f9",
+					"compatibleApp":	"zynqmp_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"64-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:5.1", "xilsecure:5.2", "xilpm:5.1"],
+					"libOptions":	{
+						"standalone":	{
+							"zynqmp_fsbl_bsp":	"true",
+							"libOptionNames":	["zynqmp_fsbl_bsp"]
+						},
+						"xilffs":	{
+							"read_only":	"true",
+							"use_mkfs":	"false",
+							"libOptionNames":	["read_only", "use_mkfs"]
+						},
+						"xilsecure":	{
+							"tpm_support":	"true",
+							"libOptionNames":	["tpm_support"]
+						},
+						"libsContainingOptions":	["standalone", "xilffs", "xilsecure"]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"zynqmp_pmufw",
+					"domainDispName":	"zynqmp_pmufw",
+					"domainDesc":	"PMUFW Application BSP - Auto Generated.",
+					"processors":	"psu_pmu_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.0",
+					"mssFile":	"",
+					"md5Digest":	"572ff85f5811e6b6eb1dc7becdbf59e0",
+					"compatibleApp":	"zynqmp_pmufw",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilfpga:6.5", "xilsecure:5.2", "xilskey:7.5"],
+					"libOptions":	{
+						"psu_pmu_0":	{
+							"extra_compiler_flags":	"-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns  -Os -flto -ffat-lto-objects",
+							"libOptionNames":	["extra_compiler_flags"]
+						},
+						"libsContainingOptions":	["psu_pmu_0"]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on psu_cortexa53_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"psu_cortexa53_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/project_2_1_vitis/standalone_domain/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/project_2_1_vitis/standalone_domain/qemu",
+					"pmuQemuArgs":	"<platformDir>/resources/project_2_1_vitis/standalone_domain/pmu_args.txt",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.0",
+					"mssFile":	"",
+					"md5Digest":	"746666051f6472fe5f619e68412098d9",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"64-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2025-02-19.13:35:03::SCWPlatform::updated the xpfm file.
+TRACE::2025-02-19.13:35:03::SCWPlatform::Trying to open the hw design at C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:35:03::SCWPlatform::DSA given C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:35:03::SCWPlatform::DSA absoulate path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:35:03::SCWPlatform::DSA directory C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw
+TRACE::2025-02-19.13:35:03::SCWPlatform:: Platform Path C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/hw/design_1_wrapper.xsa
+TRACE::2025-02-19.13:35:03::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-02-19.13:35:03::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-02-19.13:35:03::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-02-19.13:35:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-02-19.13:35:03::SCWMssOS::Checking the sw design at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-02-19.13:35:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-02-19.13:35:03::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_2/project_2_1/project_2_1_vitis/psu_cortexa53_0/standalone_domain/bsp/system.mss
