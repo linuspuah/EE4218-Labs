@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/2fcd/hdl" --include "../../../../integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/e07b/hdl/verilog" --include "C:/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
+"../../../../integrated_coprocessor_v1.srcs/sim_1/new/tb_HLS_ip_v1_0.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

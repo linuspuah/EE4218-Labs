@@ -3,12 +3,12 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Fri Feb 28 13:36:57 2025
-# Process ID: 28000
-# Current directory: C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_3/integrated_coprocessor_v1/integrated_coprocessor_v1.runs/impl_1
+# Start of session at: Mon Mar 17 18:27:47 2025
+# Process ID: 18664
+# Current directory: C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.runs/impl_1
 # Command line: vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
-# Log file: C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_3/integrated_coprocessor_v1/integrated_coprocessor_v1.runs/impl_1/design_1_wrapper.vdi
-# Journal file: C:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_3/integrated_coprocessor_v1/integrated_coprocessor_v1.runs/impl_1\vivado.jou
-# Running On: LAPTOP-MBJHTN7L, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 4, Host memory: 16968 MB
+# Log file: C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.runs/impl_1/design_1_wrapper.vdi
+# Journal file: C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.runs/impl_1\vivado.jou
+# Running On: linus_zenbook, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 4, Host memory: 16968 MB
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace

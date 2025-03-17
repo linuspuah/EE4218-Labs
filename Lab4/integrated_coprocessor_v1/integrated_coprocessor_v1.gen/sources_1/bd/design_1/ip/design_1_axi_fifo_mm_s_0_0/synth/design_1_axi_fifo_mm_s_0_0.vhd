@@ -118,6 +118,11 @@ ENTITY design_1_axi_fifo_mm_s_0_0 IS
     axi_str_txd_tready : IN STD_LOGIC;
     axi_str_txd_tlast : OUT STD_LOGIC;
     axi_str_txd_tdata : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    mm2s_cntrl_reset_out_n : OUT STD_LOGIC;
+    axi_str_txc_tvalid : OUT STD_LOGIC;
+    axi_str_txc_tready : IN STD_LOGIC;
+    axi_str_txc_tlast : OUT STD_LOGIC;
+    axi_str_txc_tdata : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     s2mm_prmry_reset_out_n : OUT STD_LOGIC;
     axi_str_rxd_tvalid : IN STD_LOGIC;
     axi_str_rxd_tready : OUT STD_LOGIC;
@@ -261,7 +266,7 @@ ARCHITECTURE design_1_axi_fifo_mm_s_0_0_arch OF design_1_axi_fifo_mm_s_0_0 IS
   ATTRIBUTE CHECK_LICENSE_TYPE OF design_1_axi_fifo_mm_s_0_0_arch : ARCHITECTURE IS "design_1_axi_fifo_mm_s_0_0,axi_fifo_mm_s,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
   ATTRIBUTE CORE_GENERATION_INFO OF design_1_axi_fifo_mm_s_0_0_arch: ARCHITECTURE IS "design_1_axi_fifo_mm_s_0_0,axi_fifo_mm_s,{x_ipProduct=Vivado 2023.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_fifo_mm_s,x_ipVersion=4.3,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_FAMILY=zynquplus,C_S_AXI_ID_WIDTH=16,C_S_AXI_ADDR_WIDTH=32,C_S_AXI_DATA_WIDTH=32,C_S_AXI4_DATA_WIDTH=32,C_TX_FIFO_DEPTH=1024,C_RX_FIFO_DEPTH=512,C_TX_CASCADE_HEIGHT=0,C_RX_CASCADE_HEIGHT=0,C_TX_FIFO_PF_THRESHOLD=507,C_TX_FIFO_PE_THRESHOLD=5,C_RX_FIFO_PF_THRESHOLD=507,C_RX_FIFO_PE_THRESHOLD=5" & 
-",C_USE_TX_CUT_THROUGH=0,C_DATA_INTERFACE_TYPE=1,C_TX_ENABLE_ECC=0,C_RX_ENABLE_ECC=0,C_TX_HAS_ECC_ERR_INJECT=0,C_RX_HAS_ECC_ERR_INJECT=0,C_BASEADDR=0xA0000000,C_HIGHADDR=0xA000FFFF,C_AXI4_BASEADDR=0xA0010000,C_AXI4_HIGHADDR=0xA001FFFF,C_HAS_AXIS_TID=0,C_HAS_AXIS_TDEST=0,C_HAS_AXIS_TUSER=0,C_HAS_AXIS_TSTRB=0,C_HAS_AXIS_TKEEP=0,C_AXIS_TID_WIDTH=4,C_AXIS_TDEST_WIDTH=4,C_AXIS_TUSER_WIDTH=4,C_USE_RX_CUT_THROUGH=0,C_USE_TX_DATA=1,C_USE_TX_CTRL=0,C_USE_RX_DATA=1}";
+",C_USE_TX_CUT_THROUGH=0,C_DATA_INTERFACE_TYPE=1,C_TX_ENABLE_ECC=0,C_RX_ENABLE_ECC=0,C_TX_HAS_ECC_ERR_INJECT=0,C_RX_HAS_ECC_ERR_INJECT=0,C_BASEADDR=0xA0000000,C_HIGHADDR=0xA000FFFF,C_AXI4_BASEADDR=0xA0010000,C_AXI4_HIGHADDR=0xA001FFFF,C_HAS_AXIS_TID=0,C_HAS_AXIS_TDEST=0,C_HAS_AXIS_TUSER=0,C_HAS_AXIS_TSTRB=0,C_HAS_AXIS_TKEEP=0,C_AXIS_TID_WIDTH=4,C_AXIS_TDEST_WIDTH=4,C_AXIS_TUSER_WIDTH=4,C_USE_RX_CUT_THROUGH=0,C_USE_TX_DATA=1,C_USE_TX_CTRL=1,C_USE_RX_DATA=1}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_INFO OF axi_str_rxd_tdata: SIGNAL IS "xilinx.com:interface:axis:1.0 AXI_STR_RXD TDATA";
@@ -269,6 +274,11 @@ ARCHITECTURE design_1_axi_fifo_mm_s_0_0_arch OF design_1_axi_fifo_mm_s_0_0 IS
   ATTRIBUTE X_INTERFACE_INFO OF axi_str_rxd_tready: SIGNAL IS "xilinx.com:interface:axis:1.0 AXI_STR_RXD TREADY";
   ATTRIBUTE X_INTERFACE_PARAMETER OF axi_str_rxd_tvalid: SIGNAL IS "XIL_INTERFACENAME AXI_STR_RXD, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 99999001, PHASE 0.0, CLK_DOMAIN design_1_zynq_ultra_ps_e_0_0_pl_clk0, LAYERED_METADATA undef, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF axi_str_rxd_tvalid: SIGNAL IS "xilinx.com:interface:axis:1.0 AXI_STR_RXD TVALID";
+  ATTRIBUTE X_INTERFACE_INFO OF axi_str_txc_tdata: SIGNAL IS "xilinx.com:interface:axis:1.0 AXI_STR_TXC TDATA";
+  ATTRIBUTE X_INTERFACE_INFO OF axi_str_txc_tlast: SIGNAL IS "xilinx.com:interface:axis:1.0 AXI_STR_TXC TLAST";
+  ATTRIBUTE X_INTERFACE_INFO OF axi_str_txc_tready: SIGNAL IS "xilinx.com:interface:axis:1.0 AXI_STR_TXC TREADY";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF axi_str_txc_tvalid: SIGNAL IS "XIL_INTERFACENAME AXI_STR_TXC, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 99999001, PHASE 0.0, CLK_DOMAIN design_1_zynq_ultra_ps_e_0_0_pl_clk0, LAYERED_METADATA undef, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_INFO OF axi_str_txc_tvalid: SIGNAL IS "xilinx.com:interface:axis:1.0 AXI_STR_TXC TVALID";
   ATTRIBUTE X_INTERFACE_INFO OF axi_str_txd_tdata: SIGNAL IS "xilinx.com:interface:axis:1.0 AXI_STR_TXD TDATA";
   ATTRIBUTE X_INTERFACE_INFO OF axi_str_txd_tlast: SIGNAL IS "xilinx.com:interface:axis:1.0 AXI_STR_TXD TLAST";
   ATTRIBUTE X_INTERFACE_INFO OF axi_str_txd_tready: SIGNAL IS "xilinx.com:interface:axis:1.0 AXI_STR_TXD TREADY";
@@ -276,6 +286,8 @@ ARCHITECTURE design_1_axi_fifo_mm_s_0_0_arch OF design_1_axi_fifo_mm_s_0_0 IS
   ATTRIBUTE X_INTERFACE_INFO OF axi_str_txd_tvalid: SIGNAL IS "xilinx.com:interface:axis:1.0 AXI_STR_TXD TVALID";
   ATTRIBUTE X_INTERFACE_PARAMETER OF interrupt: SIGNAL IS "XIL_INTERFACENAME interrupt_intf, SENSITIVITY LEVEL_HIGH, PORTWIDTH 1";
   ATTRIBUTE X_INTERFACE_INFO OF interrupt: SIGNAL IS "xilinx.com:signal:interrupt:1.0 interrupt_intf INTERRUPT";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF mm2s_cntrl_reset_out_n: SIGNAL IS "XIL_INTERFACENAME rst_axi_str_txc, POLARITY ACTIVE_LOW, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_INFO OF mm2s_cntrl_reset_out_n: SIGNAL IS "xilinx.com:signal:reset:1.0 rst_axi_str_txc RST";
   ATTRIBUTE X_INTERFACE_PARAMETER OF mm2s_prmry_reset_out_n: SIGNAL IS "XIL_INTERFACENAME rst_axi_str_txd, POLARITY ACTIVE_LOW, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF mm2s_prmry_reset_out_n: SIGNAL IS "xilinx.com:signal:reset:1.0 rst_axi_str_txd RST";
   ATTRIBUTE X_INTERFACE_PARAMETER OF s2mm_prmry_reset_out_n: SIGNAL IS "XIL_INTERFACENAME rst_axi_str_rxd, POLARITY ACTIVE_LOW, INSERT_VIP 0";
@@ -376,7 +388,7 @@ BEGIN
       C_AXIS_TUSER_WIDTH => 4,
       C_USE_RX_CUT_THROUGH => 0,
       C_USE_TX_DATA => 1,
-      C_USE_TX_CTRL => 0,
+      C_USE_TX_CTRL => 1,
       C_USE_RX_DATA => 1
     )
     PORT MAP (
@@ -440,7 +452,11 @@ BEGIN
       axi_str_txd_tready => axi_str_txd_tready,
       axi_str_txd_tlast => axi_str_txd_tlast,
       axi_str_txd_tdata => axi_str_txd_tdata,
-      axi_str_txc_tready => '0',
+      mm2s_cntrl_reset_out_n => mm2s_cntrl_reset_out_n,
+      axi_str_txc_tvalid => axi_str_txc_tvalid,
+      axi_str_txc_tready => axi_str_txc_tready,
+      axi_str_txc_tlast => axi_str_txc_tlast,
+      axi_str_txc_tdata => axi_str_txc_tdata,
       s2mm_prmry_reset_out_n => s2mm_prmry_reset_out_n,
       axi_str_rxd_tvalid => axi_str_rxd_tvalid,
       axi_str_rxd_tready => axi_str_rxd_tready,

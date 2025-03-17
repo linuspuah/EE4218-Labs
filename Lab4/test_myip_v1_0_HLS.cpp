@@ -35,13 +35,24 @@ void myip_v1_0_HLS(hls::stream<AXIS_wLAST>& S_AXIS, hls::stream<AXIS_wLAST>& M_A
 /***************** Macros *********************/
 #define NUMBER_OF_INPUT_WORDS 520  // length of an input vector
 #define NUMBER_OF_OUTPUT_WORDS 64  // length of an input vector
-#define NUMBER_OF_TEST_VECTORS 2  // number of such test vectors (cases)
+#define NUMBER_OF_TEST_VECTORS 4  // number of such test vectors (cases)
 
 
 /************************** Variable Definitions *****************************/
 int test_input_memory [NUMBER_OF_TEST_VECTORS*NUMBER_OF_INPUT_WORDS]; // = {0x01, 0x02, 0x03, 0x04, 0x02, 0x03, 0x04, 0x05}; // 4 inputs * 2
 int test_result_expected_memory [NUMBER_OF_TEST_VECTORS*NUMBER_OF_OUTPUT_WORDS];// 4 outputs *2
 int result_memory [NUMBER_OF_TEST_VECTORS*NUMBER_OF_OUTPUT_WORDS]; // same size as test_result_expected_memory
+
+void print_array(int *arr, int size, const char *name) {
+    printf("%s: \n", name);
+    for (int i = 0; i < size; i++) {
+        printf("0x%02X ", arr[i]); // Print each value in hexadecimal format
+        if ((i + 1) % 8 == 0) {   // Print 8 values per line for readability
+            printf("\n");
+        }
+    }
+    printf("\n");
+}
 
 // Load matrices from file
 void load_memory_from_file(const char* filename, int* memory, int size) {
@@ -70,6 +81,9 @@ int main()
     // Load the input matrices from memory files
     load_memory_from_file("C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/test_input.mem", test_input_memory, NUMBER_OF_TEST_VECTORS * NUMBER_OF_INPUT_WORDS);
     load_memory_from_file("C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/test_result_expected.mem", test_result_expected_memory, NUMBER_OF_TEST_VECTORS * NUMBER_OF_OUTPUT_WORDS);
+    // Print test_result_expected_memory array
+    print_array(test_result_expected_memory, NUMBER_OF_TEST_VECTORS * NUMBER_OF_OUTPUT_WORDS, "test_result_expected_memory");
+    print_array(test_input_memory, NUMBER_OF_TEST_VECTORS * NUMBER_OF_INPUT_WORDS, "test_input_memory");
 
 	for (test_case_cnt=0 ; test_case_cnt < NUMBER_OF_TEST_VECTORS ; test_case_cnt++){
 
@@ -119,7 +133,10 @@ int main()
 	printf(" Comparing data ...\r\n");
 	for(word_cnt=0; word_cnt < NUMBER_OF_TEST_VECTORS*NUMBER_OF_OUTPUT_WORDS; word_cnt++){
 		success = success & (result_memory[word_cnt] == test_result_expected_memory[word_cnt]);
-	}
+        if (result_memory[word_cnt] != test_result_expected_memory[word_cnt]) {
+			printf("Mismatch at index %d: Expected %d, Got %d\n", word_cnt, test_result_expected_memory[word_cnt], result_memory[word_cnt]);
+		}
+    }
 
 	if (success != 1){
 		printf("Test Failed\r\n");

@@ -51,19 +51,19 @@ int word_cnt;
     const int C_ROWS = A_ROWS, C_COLS = B_COLS; // Resultant matrix C
 
     // Declare matrices A, B, and C
-    ap_int<8> A[A_ROWS][A_COLS]; // Matrix A
-    ap_int<8> B[B_ROWS][B_COLS]; // Matrix B
-    ap_int<8> C[C_ROWS][C_COLS]; // Result matrix C
+    ap_uint<8> A[A_ROWS][A_COLS]; // Matrix A
+    ap_uint<8> B[B_ROWS][B_COLS]; // Matrix B
+    ap_uint<8> C[C_ROWS][C_COLS]; // Result matrix C
 
     // Load matrices A and B from the input stream
     for (word_cnt = 0; word_cnt < A_ROWS * A_COLS; word_cnt++) {
-// #pragma HLS UNROLL
+#pragma HLS UNROLL
         read_input = S_AXIS.read();
         A[word_cnt / A_COLS][word_cnt % A_COLS] = read_input.data;  // Fill matrix A from stream
     }
 
     for (word_cnt = 0; word_cnt < B_ROWS * B_COLS; word_cnt++) {
-// #pragma HLS UNROLL
+#pragma HLS UNROLL
         read_input = S_AXIS.read();
         B[word_cnt / B_COLS][word_cnt % B_COLS] = read_input.data;  // Fill matrix B from stream
     }
@@ -71,18 +71,18 @@ int word_cnt;
     // Perform matrix multiplication C = A * B and shift right by 8 (divide by 256)
     for (int i = 0; i < C_ROWS; i++) {
         for (int j = 0; j < C_COLS; j++) {
-// #pragma HLS PIPELINE II=1
+#pragma HLS PIPELINE II=1
             sum = 0;
             for (int k = 0; k < A_COLS; k++) {
                 sum += A[i][k] * B[k][j]; // Perform the sum of products
             }
-            C[i][j] = sum >> 8; // Right shift by 8 bits (equivalent to dividing by 256)
+            C[i][j] = (sum >> 8) & 0xFF; // Right shift by 8 bits (equivalent to dividing by 256)
         }
     }
 
     // Send the result matrix C through the output stream
     for (word_cnt = 0; word_cnt < C_ROWS * C_COLS; word_cnt++) {
-// #pragma HLS UNROLL
+#pragma HLS UNROLL
         write_output.data = C[word_cnt / C_COLS][word_cnt % C_COLS];  // Write each element of C to the stream
         write_output.last = (word_cnt == C_ROWS * C_COLS - 1) ? 1 : 0;  // Set TLAST for the last element
         M_AXIS.write(write_output); // Write to the output stream

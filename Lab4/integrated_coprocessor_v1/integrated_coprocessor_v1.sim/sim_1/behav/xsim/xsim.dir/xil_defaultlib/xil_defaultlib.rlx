@@ -1,0 +1,6 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,axi_vip_v1_1_15;xilinx_vip;zynq_ultra_ps_e_vip_v1_0_15,,,,,,
+C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.srcs/sim_1/new/tb_HLS_ip_v1_0.v,1742202593,verilog,,,,tb_HLS_ip_v1_0,,axi_vip_v1_1_15;xilinx_vip;zynq_ultra_ps_e_vip_v1_0_15,../../../../integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/2fcd/hdl;../../../../integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/e07b/hdl/verilog;../../../../integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/ec67/hdl;C:/Xilinx/Vivado/2023.2/data/xilinx_vip/include,,,,,
