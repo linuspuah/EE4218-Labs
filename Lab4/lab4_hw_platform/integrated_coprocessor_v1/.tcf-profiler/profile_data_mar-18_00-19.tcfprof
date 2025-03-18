@@ -1,0 +1,22 @@
+{
+  "sampleCount": 380,
+  "entries": [
+    {
+      "addr": 900,
+      "line": 0,
+      "count": 253,
+      "total": 253.0,
+      "callerMap": {},
+      "calleeMap": {}
+    },
+    {
+      "addr": 512,
+      "line": 0,
+      "count": 127,
+      "total": 127.0,
+      "callerMap": {},
+      "calleeMap": {}
+    }
+  ],
+  "stackTrace": false
+}

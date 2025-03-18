@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;matrix_mult_lab4/src/helloworld.c&apos; to &apos;matrix_mult_lab4.c&apos;" description="Rename resource &apos;helloworld.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/helloworld.c" name="matrix_mult_lab4.c" stamp="1742226287548" updateReferences="true"/>
+</session>

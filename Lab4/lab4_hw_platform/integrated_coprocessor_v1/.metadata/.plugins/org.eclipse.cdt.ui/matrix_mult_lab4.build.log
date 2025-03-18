@@ -1,0 +1,21 @@
+01:09:09 **** Incremental Build of configuration Debug for project matrix_mult_lab4 ****
+make all 
+'Building file: ../src/matrix_mult_lab4.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/matrix_mult_lab4.o" -IC:/Users/sunil/VivadoProjects/EE4218-Labs/Lab_3/integrated_coprocessor_v1/lab4_v2/export/lab4_v2/sw/lab4_v2/standalone_domain/bspinclude/include -MMD -MP -MF"src/matrix_mult_lab4.d" -MT"src/matrix_mult_lab4.o" -o "src/matrix_mult_lab4.o" "../src/matrix_mult_lab4.c"
+'Finished building: ../src/matrix_mult_lab4.c'
+' '
+'Building target: matrix_mult_lab4.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/sunil/VivadoProjects/EE4218-Labs/Lab_3/integrated_coprocessor_v1/lab4_v2/export/lab4_v2/sw/lab4_v2/standalone_domain/bsplib/lib -o "matrix_mult_lab4.elf"  ./src/matrix_mult_lab4.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: matrix_mult_lab4.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size matrix_mult_lab4.elf  |tee "matrix_mult_lab4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 135596	   4808	  23660	 164064	  280e0	matrix_mult_lab4.elf
+'Finished building: matrix_mult_lab4.elf.size'
+' '
+
+01:09:10 Build Finished (took 821ms)
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>matrix_mult_lab4_Traces</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.linuxtools.tmf.project.nature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>Traces/Run_Mar-18_00-04/APM_Trace_Mar-18_00-04/APM_Trace_Mar-18_00-04_</name>
+			<type>1</type>
+			<location>C:/Users/sunil/VivadoProjects/EE4218-Labs/Lab_3/integrated_coprocessor_v1/matrix_mult_lab4_Traces/Traces/.bookmarks</location>
+		</link>
+		<link>
+			<name>Traces/Run_Mar-18_00-04/PS_Trace_Mar-18_00-04/PS_Trace_Mar-18_00-04_</name>
+			<type>1</type>
+			<location>C:/Users/sunil/VivadoProjects/EE4218-Labs/Lab_3/integrated_coprocessor_v1/matrix_mult_lab4_Traces/Traces/.bookmarks</location>
+		</link>
+		<link>
+			<name>Traces/Run_Mar-18_00-10/APM_Trace_Mar-18_00-10/APM_Trace_Mar-18_00-10_</name>
+			<type>1</type>
+			<location>C:/Users/sunil/VivadoProjects/EE4218-Labs/Lab_3/integrated_coprocessor_v1/matrix_mult_lab4_Traces/Traces/.bookmarks</location>
+		</link>
+		<link>
+			<name>Traces/Run_Mar-18_00-10/PS_Trace_Mar-18_00-10/PS_Trace_Mar-18_00-10_</name>
+			<type>1</type>
+			<location>C:/Users/sunil/VivadoProjects/EE4218-Labs/Lab_3/integrated_coprocessor_v1/matrix_mult_lab4_Traces/Traces/.bookmarks</location>
+		</link>
+	</linkedResources>
+</projectDescription>
