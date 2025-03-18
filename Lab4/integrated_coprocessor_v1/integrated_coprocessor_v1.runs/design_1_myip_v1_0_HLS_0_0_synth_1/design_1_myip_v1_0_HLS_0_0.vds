@@ -3,8 +3,8 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Mon Mar 17 18:23:16 2025
-# Process ID: 13520
+# Start of session at: Wed Mar 19 02:09:43 2025
+# Process ID: 16288
 # Current directory: C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.runs/design_1_myip_v1_0_HLS_0_0_synth_1
 # Command line: vivado.exe -log design_1_myip_v1_0_HLS_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_myip_v1_0_HLS_0_0.tcl
 # Log file: C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.runs/design_1_myip_v1_0_HLS_0_0_synth_1/design_1_myip_v1_0_HLS_0_0.vds
@@ -12,9 +12,10 @@
 # Running On: linus_zenbook, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 4, Host memory: 16968 MB
 #-----------------------------------------------------------
 source design_1_myip_v1_0_HLS_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 456.207 ; gain = 182.934
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 455.559 ; gain = 183.035
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/ip_repo/myip_1_1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sunil/VitisHLSip/myip_v1_unoptimized_HLS'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sunil/VitisHLSip/myip_v1_0_HLS/myip_v1_0_HLS'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
@@ -27,68 +28,68 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
 INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 7640
+INFO: [Synth 8-7075] Helper process launched with PID 16008
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1863.348 ; gain = 380.316
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1861.414 ; gain = 379.586
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_myip_v1_0_HLS_0_0' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ip/design_1_myip_v1_0_HLS_0_0/synth/design_1_myip_v1_0_HLS_0_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS.v:9]
-INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_A_RAM_AUTO_1R1W' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS_A_RAM_AUTO_1R1W.v:7]
-INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_A_RAM_AUTO_1R1W' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS_A_RAM_AUTO_1R1W.v:7]
-INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_A_RAM_AUTO_1R1W' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_A_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_A_RAM_AUTO_1R1W' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_A_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3.v:9]
 WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
 WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
-INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_mul_8ns_8ns_16_1_1' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS_mul_8ns_8ns_16_1_1.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_mul_8ns_8ns_16_1_1' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS_mul_8ns_8ns_16_1_1.v:5]
-INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:49]
-INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:10]
-INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:10]
-INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:49]
-INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_flow_control_loop_pipe_sequential_init' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS_flow_control_loop_pipe_sequential_init.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_flow_control_loop_pipe_sequential_init' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS_flow_control_loop_pipe_sequential_init.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3.v:9]
-INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_regslice_both' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS_regslice_both.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_regslice_both' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS_regslice_both.v:11]
-INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_regslice_both__parameterized0' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS_regslice_both.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_regslice_both__parameterized0' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS_regslice_both.v:11]
-INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_regslice_both__parameterized1' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS_regslice_both.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_regslice_both__parameterized1' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS_regslice_both.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_mul_8ns_8ns_16_1_1' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mul_8ns_8ns_16_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_mul_8ns_8ns_16_1_1' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mul_8ns_8ns_16_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:49]
+INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:49]
+INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_flow_control_loop_pipe_sequential_init' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_flow_control_loop_pipe_sequential_init' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_regslice_both' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_regslice_both' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_regslice_both.v:11]
+INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_regslice_both__parameterized0' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_regslice_both__parameterized0' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_regslice_both.v:11]
+INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_regslice_both__parameterized1' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_regslice_both__parameterized1' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS.v:9]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_myip_v1_0_HLS_0_0' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ip/design_1_myip_v1_0_HLS_0_0/synth/design_1_myip_v1_0_HLS_0_0.v:53]
 WARNING: [Synth 8-7129] Port rst in module myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port reset in module myip_v1_0_HLS_A_RAM_AUTO_1R1W is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2180.410 ; gain = 697.379
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2177.590 ; gain = 695.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2180.410 ; gain = 697.379
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2177.590 ; gain = 695.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2180.410 ; gain = 697.379
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2177.590 ; gain = 695.762
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2180.410 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2177.590 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ip/design_1_myip_v1_0_HLS_0_0/constraints/myip_v1_0_HLS_ooc.xdc] for cell 'inst'
-create_clock: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3016.902 ; gain = 23.895
+create_clock: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3019.277 ; gain = 23.645
 Finished Parsing XDC File [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ip/design_1_myip_v1_0_HLS_0_0/constraints/myip_v1_0_HLS_ooc.xdc] for cell 'inst'
 Parsing XDC File [C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.runs/design_1_myip_v1_0_HLS_0_0_synth_1/dont_touch.xdc]
 Finished Parsing XDC File [C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.runs/design_1_myip_v1_0_HLS_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 3016.902 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 3019.277 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.296 . Memory (MB): peak = 3027.926 ; gain = 11.023
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.315 . Memory (MB): peak = 3030.363 ; gain = 11.086
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:38 ; elapsed = 00:00:50 . Memory (MB): peak = 3027.926 ; gain = 1544.895
+Finished Constraint Validation : Time (s): cpu = 00:00:46 ; elapsed = 00:00:54 . Memory (MB): peak = 3030.363 ; gain = 1548.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -96,23 +97,23 @@ Start Loading Part and Timing Information
 Loading part: xck26-sfvc784-2LV-c
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:38 ; elapsed = 00:00:50 . Memory (MB): peak = 3027.926 ; gain = 1544.895
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:46 ; elapsed = 00:00:54 . Memory (MB): peak = 3030.363 ; gain = 1548.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.runs/design_1_myip_v1_0_HLS_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:50 . Memory (MB): peak = 3027.926 ; gain = 1544.895
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:54 . Memory (MB): peak = 3030.363 ; gain = 1548.535
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln72_reg_462_pp0_iter3_reg_reg' and it is trimmed from '7' to '6' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3.v:432]
-WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln72_reg_462_pp0_iter2_reg_reg' and it is trimmed from '7' to '6' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3.v:431]
-WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln72_reg_462_pp0_iter1_reg_reg' and it is trimmed from '7' to '6' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3.v:424]
-WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln72_reg_462_reg' and it is trimmed from '7' to '6' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3.v:423]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln72_reg_462_pp0_iter3_reg_reg' and it is trimmed from '7' to '6' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3.v:432]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln72_reg_462_pp0_iter2_reg_reg' and it is trimmed from '7' to '6' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3.v:431]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln72_reg_462_pp0_iter1_reg_reg' and it is trimmed from '7' to '6' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3.v:424]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln72_reg_462_reg' and it is trimmed from '7' to '6' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3.v:423]
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 INFO: [Synth 8-6904] The RAM "myip_v1_0_HLS_A_RAM_AUTO_1R1W:/ram_reg" of size (depth=64 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:43 ; elapsed = 00:00:59 . Memory (MB): peak = 3027.926 ; gain = 1544.895
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:54 ; elapsed = 00:01:06 . Memory (MB): peak = 3030.363 ; gain = 1548.535
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'inst/regslice_both_M_AXIS_V_keep_V_U' (myip_v1_0_HLS_regslice_both__parameterized0) to 'inst/regslice_both_M_AXIS_V_strb_V_U'
 ---------------------------------------------------------------------------------
@@ -734,31 +735,26 @@ BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Parallel Worker Creation Failure: Worker 1 has died.  Skipping 
-Parallel Worker Creation Failure: Worker 0 has died.  Skipping 
-Adjusting Job Scheduling: Worker 0 unavailable.  Skipping 
-Adjusting Job Scheduling: Worker 1 unavailable.  Skipping 
-Failed to find any parallel workers.  Continuing in single-core optimization.
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:41]
-WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U6/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:41]
-WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U7/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:41]
-WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U8/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:41]
-WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:34]
-WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/a_reg_reg' and it is trimmed from '27' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:33]
-WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U6/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:34]
-WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U6/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/a_reg_reg' and it is trimmed from '27' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:33]
-WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U7/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:34]
-WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U7/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/a_reg_reg' and it is trimmed from '27' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:33]
-WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U8/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:34]
-WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U8/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/a_reg_reg' and it is trimmed from '27' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:33]
-WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U8/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/b_reg_reg' and it is trimmed from '18' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:33]
-WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U6/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/b_reg_reg' and it is trimmed from '18' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:33]
-WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U7/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/b_reg_reg' and it is trimmed from '18' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:33]
-WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/b_reg_reg' and it is trimmed from '18' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/6288/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:33]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U6/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U7/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U8/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:34]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/a_reg_reg' and it is trimmed from '27' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:33]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U6/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:34]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U6/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/a_reg_reg' and it is trimmed from '27' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:33]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U7/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:34]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U7/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/a_reg_reg' and it is trimmed from '27' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:33]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U8/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:34]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U8/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/a_reg_reg' and it is trimmed from '27' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:33]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U8/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/b_reg_reg' and it is trimmed from '18' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:33]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U6/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/b_reg_reg' and it is trimmed from '18' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:33]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U7/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/b_reg_reg' and it is trimmed from '18' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:33]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/b_reg_reg' and it is trimmed from '18' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:33]
 DSP Report: Generating DSP mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg, operation Mode is: (A2*B'')'.
 DSP Report: register mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg.
 DSP Report: register mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg.
@@ -822,7 +818,7 @@ INFO: [Synth 8-6904] The RAM "inst/A_6_U/ram_reg" of size (depth=64 x width=8) i
 INFO: [Synth 8-6904] The RAM "inst/A_7_U/ram_reg" of size (depth=64 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
 INFO: [Synth 8-6904] The RAM "inst/C_0_U/ram_reg" of size (depth=64 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:01:34 . Memory (MB): peak = 3027.926 ; gain = 1544.895
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:02:09 . Memory (MB): peak = 3030.363 ; gain = 1548.535
 ---------------------------------------------------------------------------------
  Sort Area is  mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg_5 : 0 0 : 2001 2653 : Used 1 time 100
  Sort Area is  mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg_5 : 0 1 : 652 2653 : Used 1 time 100
@@ -875,13 +871,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:09 ; elapsed = 00:01:57 . Memory (MB): peak = 3027.926 ; gain = 1544.895
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:25 ; elapsed = 00:02:28 . Memory (MB): peak = 3030.363 ; gain = 1548.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:14 ; elapsed = 00:02:04 . Memory (MB): peak = 3027.926 ; gain = 1544.895
+Finished Timing Optimization : Time (s): cpu = 00:01:30 ; elapsed = 00:02:34 . Memory (MB): peak = 3030.363 ; gain = 1548.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -909,7 +905,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:15 ; elapsed = 00:02:05 . Memory (MB): peak = 3027.926 ; gain = 1544.895
+Finished Technology Mapping : Time (s): cpu = 00:01:31 ; elapsed = 00:02:35 . Memory (MB): peak = 3030.363 ; gain = 1548.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -927,37 +923,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:20 ; elapsed = 00:02:14 . Memory (MB): peak = 3027.926 ; gain = 1544.895
+Finished IO Insertion : Time (s): cpu = 00:01:38 ; elapsed = 00:02:43 . Memory (MB): peak = 3030.363 ; gain = 1548.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:20 ; elapsed = 00:02:14 . Memory (MB): peak = 3027.926 ; gain = 1544.895
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:38 ; elapsed = 00:02:43 . Memory (MB): peak = 3030.363 ; gain = 1548.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:21 ; elapsed = 00:02:15 . Memory (MB): peak = 3027.926 ; gain = 1544.895
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:38 ; elapsed = 00:02:43 . Memory (MB): peak = 3030.363 ; gain = 1548.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:21 ; elapsed = 00:02:15 . Memory (MB): peak = 3027.926 ; gain = 1544.895
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:38 ; elapsed = 00:02:43 . Memory (MB): peak = 3030.363 ; gain = 1548.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:21 ; elapsed = 00:02:15 . Memory (MB): peak = 3027.926 ; gain = 1544.895
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:38 ; elapsed = 00:02:43 . Memory (MB): peak = 3030.363 ; gain = 1548.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:21 ; elapsed = 00:02:15 . Memory (MB): peak = 3027.926 ; gain = 1544.895
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:38 ; elapsed = 00:02:43 . Memory (MB): peak = 3030.363 ; gain = 1548.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -1023,18 +1019,18 @@ Report Cell Usage:
 |21    |FDSE            |     1|
 +------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:21 ; elapsed = 00:02:15 . Memory (MB): peak = 3027.926 ; gain = 1544.895
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:38 ; elapsed = 00:02:43 . Memory (MB): peak = 3030.363 ; gain = 1548.535
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 21 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:49 ; elapsed = 00:01:47 . Memory (MB): peak = 3027.926 ; gain = 697.379
-Synthesis Optimization Complete : Time (s): cpu = 00:01:21 ; elapsed = 00:02:15 . Memory (MB): peak = 3027.926 ; gain = 1544.895
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:00 ; elapsed = 00:02:15 . Memory (MB): peak = 3030.363 ; gain = 695.762
+Synthesis Optimization Complete : Time (s): cpu = 00:01:38 ; elapsed = 00:02:45 . Memory (MB): peak = 3030.363 ; gain = 1548.535
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 3027.926 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 3030.363 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 82 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3027.926 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3030.363 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 80 instances were transformed.
   DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 8 instances
@@ -1042,14 +1038,14 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 
 Synth Design complete | Checksum: b50d0d7a
 INFO: [Common 17-83] Releasing license: Synthesis
-64 Infos, 26 Warnings, 0 Critical Warnings and 0 Errors encountered.
+65 Infos, 26 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:28 ; elapsed = 00:02:27 . Memory (MB): peak = 3027.926 ; gain = 2520.531
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 3027.926 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:47 ; elapsed = 00:02:58 . Memory (MB): peak = 3030.363 ; gain = 2523.801
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 3030.363 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.runs/design_1_myip_v1_0_HLS_0_0_synth_1/design_1_myip_v1_0_HLS_0_0.dcp' has been generated.
 INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_myip_v1_0_HLS_0_0, cache-ID = 91630b3a02b1aa5c
 INFO: [Coretcl 2-1174] Renamed 23 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 3027.926 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 3030.363 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.runs/design_1_myip_v1_0_HLS_0_0_synth_1/design_1_myip_v1_0_HLS_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_myip_v1_0_HLS_0_0_utilization_synth.rpt -pb design_1_myip_v1_0_HLS_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Mar 17 18:25:57 2025...
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 19 02:12:57 2025...

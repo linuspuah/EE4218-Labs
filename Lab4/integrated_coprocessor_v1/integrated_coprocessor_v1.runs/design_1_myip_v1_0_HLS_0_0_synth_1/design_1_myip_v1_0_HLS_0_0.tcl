@@ -87,6 +87,7 @@ set_property target_language Verilog [current_project]
 set_property board_part xilinx.com:kv260_som:part0:1.4 [current_project]
 set_property ip_repo_paths {
   c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/ip_repo/myip_1_1
+  c:/Users/sunil/VitisHLSip/myip_v1_unoptimized_HLS
   c:/Users/sunil/VitisHLSip/myip_v1_0_HLS/myip_v1_0_HLS
 } [current_project]
 update_ip_catalog

@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:hls:myip_v1_0_HLS:1.0
-// IP Revision: 2113999700
+// IP Revision: 2114001603
 
 (* X_CORE_INFO = "myip_v1_0_HLS,Vivado 2023.2" *)
 (* CHECK_LICENSE_TYPE = "design_1_myip_v1_0_HLS_0_0,myip_v1_0_HLS,{}" *)
-(* CORE_GENERATION_INFO = "design_1_myip_v1_0_HLS_0_0,myip_v1_0_HLS,{x_ipProduct=Vivado 2023.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=myip_v1_0_HLS,x_ipVersion=1.0,x_ipCoreRevision=2113999700,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "design_1_myip_v1_0_HLS_0_0,myip_v1_0_HLS,{x_ipProduct=Vivado 2023.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=myip_v1_0_HLS,x_ipVersion=1.0,x_ipCoreRevision=2114001603,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_myip_v1_0_HLS_0_0 (

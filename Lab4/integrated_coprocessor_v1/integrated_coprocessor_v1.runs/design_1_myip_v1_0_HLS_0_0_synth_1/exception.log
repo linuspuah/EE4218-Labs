@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file C:\Users\sunil\VivadoProjects\EE4218Labs\Lab4\integrated_coprocessor_v1\integrated_coprocessor_v1.runs\design_1_myip_v1_0_HLS_0_0_synth_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permission denied

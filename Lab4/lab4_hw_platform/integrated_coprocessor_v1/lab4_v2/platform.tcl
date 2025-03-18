@@ -17,3 +17,8 @@ platform generate -domains
 platform active {lab4_v2}
 catch {platform remove lab4_1}
 platform generate
+platform active {lab4_v2}
+bsp reload
+domain active {zynqmp_fsbl}
+bsp reload
+platform generate -domains 

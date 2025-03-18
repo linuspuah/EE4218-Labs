@@ -2,10 +2,10 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
--- Date        : Mon Mar 17 17:24:48 2025
+-- Date        : Mon Mar 17 17:24:47 2025
 -- Host        : linus_zenbook running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ip/design_1_axi_fifo_mm_s_0_1/design_1_axi_fifo_mm_s_0_1_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top design_1_axi_fifo_mm_s_0_1 -prefix
+--               design_1_axi_fifo_mm_s_0_1_ design_1_axi_fifo_mm_s_0_1_stub.vhdl
 -- Design      : design_1_axi_fifo_mm_s_0_1
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xck26-sfvc784-2LV-c

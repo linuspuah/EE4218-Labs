@@ -58,6 +58,7 @@ int word_cnt;
     // Load matrices A and B from the input stream
     for (word_cnt = 0; word_cnt < A_ROWS * A_COLS; word_cnt++) {
 #pragma HLS UNROLL
+#pragma HLS UNROLL
         read_input = S_AXIS.read();
         A[word_cnt / A_COLS][word_cnt % A_COLS] = read_input.data;  // Fill matrix A from stream
     }

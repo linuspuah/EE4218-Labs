@@ -2,10 +2,10 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-// Date        : Fri Feb 28 13:33:01 2025
+// Date        : Fri Feb 28 13:33:00 2025
 // Host        : LAPTOP-MBJHTN7L running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               c:/Users/sunil/desktop/NUS/EE4218/EE4218_Labs_clone/Lab_3/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_99M_0/design_1_rst_ps8_0_99M_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top design_1_rst_ps8_0_99M_0 -prefix
+//               design_1_rst_ps8_0_99M_0_ design_1_rst_ps8_0_99M_0_stub.v
 // Design      : design_1_rst_ps8_0_99M_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xck26-sfvc784-2LV-c
