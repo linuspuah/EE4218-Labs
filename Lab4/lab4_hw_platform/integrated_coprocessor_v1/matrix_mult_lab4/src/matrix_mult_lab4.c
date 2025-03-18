@@ -25,15 +25,24 @@
 #include "xllfifo.h"
 #include "xstatus.h"
 #include "stdio.h"
-
+#include "xil_assert.h"
+#include "xtmrctr.h"
 /***************** Macros *********************/
 //#define ENABLE_PRINT_STATEMENTS
-#define ENABLE_TCL_PROFILER
+//#define ENABLE_TCL_PROFILER
+
+#define ENABLE_AXI_TIMER
+#ifdef ENABLE_AXI_TIMER
+//#define TMRCTR_DEVICE_ID	XPAR_TMRCTR_0_DEVICE_ID
+#define TIMER_COUNTER_0   0
+#define CLOCK_FREQ_HZ     100000000
+#endif
+
 #define ENABLE_LAB3_HW
-//#define ENABLE_LAB4_HLS_HW
+#define ENABLE_LAB4_HLS_HW
 #define NUMBER_OF_INPUT_WORDS 520  // length of an input vector
 #define NUMBER_OF_OUTPUT_WORDS 64  // length of an input vector
-#define NUMBER_OF_TEST_VECTORS 1  // number of such test vectors (cases)
+#define NUMBER_OF_TEST_VECTORS 4  // number of such test vectors (cases)
 #define ROWA 64
 #define COLA 8
 #define ROWB COLA  // Must match COLA
@@ -43,10 +52,14 @@
 #define FIFO_DEV_ID_1		XPAR_AXI_FIFO_1_DEVICE_ID
 
 
+
+
 #define TIMEOUT_VALUE 1<<20 // timeout for reception
 /************************** Variable Definitions *****************************/
 u16 DeviceId_0 = FIFO_DEV_ID_0;
 u16 DeviceId_1 = FIFO_DEV_ID_1;
+/* The instance of the Timer Device */
+XTmrCtr TimerCounter;
 
 XLlFifo FifoInstance_0, FifoInstance_1; 	// Device instance
 XLlFifo *InstancePtr_0 = &FifoInstance_0; // Device pointer
@@ -63,6 +76,15 @@ void matrix_multiply_sw(int test_vector_index) {
 	int output_offset = test_vector_index * NUMBER_OF_OUTPUT_WORDS;
 
 	// Perform matrix multiplication: C = A * B (ROWA x 1 result)
+	#ifdef ENABLE_AXI_TIMER
+    u32 start_time, end_time, elapsed_time;
+	double elapsed_time_sec;
+	// Start the Timer
+	XTmrCtr_Reset(&TimerCounter, TIMER_COUNTER_0);
+	XTmrCtr_Start(&TimerCounter, TIMER_COUNTER_0);
+	start_time = XTmrCtr_GetValue(&TimerCounter, TIMER_COUNTER_0);
+	#endif
+
 	for (int i = 0; i < ROWA; i++) {
 		int sum = 0;
 		for (int j = 0; j < COLA; j++) {
@@ -71,6 +93,14 @@ void matrix_multiply_sw(int test_vector_index) {
 		}
 		test_result_expected_memory[output_offset + i] = (sum >> 8) & 0xFF;
 	}
+	#ifdef ENABLE_AXI_TIMER
+	end_time = XTmrCtr_GetValue(&TimerCounter, TIMER_COUNTER_0);
+	XTmrCtr_Stop(&TimerCounter, TIMER_COUNTER_0);
+	// Calculate elapsed time
+	elapsed_time = end_time - start_time;;
+	elapsed_time_sec = (double)elapsed_time / CLOCK_FREQ_HZ;
+	xil_printf("Execution time for %s: %u clock cycles (~%.6f sec)\r\n", "ARM Processor SW", elapsed_time, elapsed_time_sec);
+	#endif
 }
 
 /*****************************************************************************
@@ -114,10 +144,19 @@ int InitFifoInstance(XLlFifo *InstancePtr, u16 DeviceId) {
 int ProcessFifoData(XLlFifo *TxInstancePtr, XLlFifo *RxInstancePtr,
                     int *test_input_memory, int *result_memory,
                     int num_test_vectors, int num_input_words,
-                    int num_output_words, int timeout_value)
+                    int num_output_words, int timeout_value, const char *test_name)
 {
     int test_case_cnt, word_cnt;
     int Status;
+
+	#ifdef ENABLE_AXI_TIMER
+    u32 start_time, end_time, elapsed_time;
+	double elapsed_time_sec;
+	// Start the Timer
+	XTmrCtr_Reset(&TimerCounter, TIMER_COUNTER_0);
+	XTmrCtr_Start(&TimerCounter, TIMER_COUNTER_0);
+	start_time = XTmrCtr_GetValue(&TimerCounter, TIMER_COUNTER_0);
+	#endif
 
     for (test_case_cnt = 0; test_case_cnt < num_test_vectors; test_case_cnt++) {
 
@@ -162,6 +201,15 @@ int ProcessFifoData(XLlFifo *TxInstancePtr, XLlFifo *RxInstancePtr,
             result_memory[word_cnt + test_case_cnt * num_output_words] = XLlFifo_RxGetWord(RxInstancePtr);
         }
 
+		#ifdef ENABLE_AXI_TIMER
+        end_time = XTmrCtr_GetValue(&TimerCounter, TIMER_COUNTER_0);
+		XTmrCtr_Stop(&TimerCounter, TIMER_COUNTER_0);
+		// Calculate elapsed time
+		elapsed_time = end_time - start_time;;
+		elapsed_time_sec = (double)elapsed_time / CLOCK_FREQ_HZ;
+		xil_printf("Execution time for %s: %u clock cycles (~%.6f sec)\r\n", test_name, elapsed_time, elapsed_time_sec);
+		#endif
+
         Status = XLlFifo_IsRxDone(RxInstancePtr);
         if (Status != TRUE) {
             xil_printf("Failing in receive complete ... \r\n");
@@ -176,12 +224,12 @@ int ProcessFifoData(XLlFifo *TxInstancePtr, XLlFifo *RxInstancePtr,
 __attribute__((noinline))int ProcessFifoData_0() {
 	return ProcessFifoData(&FifoInstance_0, &FifoInstance_0, test_input_memory, result_memory,
 	NUMBER_OF_TEST_VECTORS, NUMBER_OF_INPUT_WORDS,
-	NUMBER_OF_OUTPUT_WORDS, TIMEOUT_VALUE);
+	NUMBER_OF_OUTPUT_WORDS, TIMEOUT_VALUE, "HDL co-processor");
 }
 __attribute__((noinline))int ProcessFifoData_1() {
 	return ProcessFifoData(&FifoInstance_1, &FifoInstance_1, test_input_memory, result_memory,
 	NUMBER_OF_TEST_VECTORS, NUMBER_OF_INPUT_WORDS,
-	NUMBER_OF_OUTPUT_WORDS, TIMEOUT_VALUE);
+	NUMBER_OF_OUTPUT_WORDS, TIMEOUT_VALUE, "HLS optimized co-processor");
 }
 #endif
 /*****************************************************************************
@@ -194,12 +242,25 @@ int main()
 	uint8_t currentByte = 0;
 	int currentByteIndex = 0;
 	int currentWordIndex = 0;
+	XTmrCtr *TmrCtrInstancePtr = &TimerCounter;
 	char RecvChar;
 	int success;
 
 	/************************** Initializations *****************************/
 //	XLlFifo_Config *Config;
-
+	/*
+	 * Perform a self-test to ensure that the hardware was built
+	 * correctly, use the 1st timer in the device (0)
+	 */
+	Status = XTmrCtr_Initialize(TmrCtrInstancePtr, XPAR_TMRCTR_0_DEVICE_ID);
+	if (Status != XST_SUCCESS) {
+	    xil_printf("Timer initialization failed!\n");
+	    return XST_FAILURE;
+	}
+// 	Status = XTmrCtr_SelfTest(TmrCtrInstancePtr, TIMER_COUNTER_0);
+//	if (Status != XST_SUCCESS) {
+//		return XST_FAILURE;
+//	}
 	// Initialize FIFO 0
 	Status = InitFifoInstance(InstancePtr_0, FIFO_DEV_ID_0);
 	if (Status != XST_SUCCESS) {
@@ -277,10 +338,10 @@ int main()
 	/************************** Run HW matrix mult *****************************/
 	int status0 = ProcessFifoData(&FifoInstance_0, &FifoInstance_0, test_input_memory, result_memory,
 								  NUMBER_OF_TEST_VECTORS, NUMBER_OF_INPUT_WORDS,
-								  NUMBER_OF_OUTPUT_WORDS, TIMEOUT_VALUE);
+								  NUMBER_OF_OUTPUT_WORDS, TIMEOUT_VALUE, "HDL co-processor");
 	int status1 = ProcessFifoData(&FifoInstance_1, &FifoInstance_1, test_input_memory, result_memory,
 									  NUMBER_OF_TEST_VECTORS, NUMBER_OF_INPUT_WORDS,
-									  NUMBER_OF_OUTPUT_WORDS, TIMEOUT_VALUE);
+									  NUMBER_OF_OUTPUT_WORDS, TIMEOUT_VALUE, "HLS optimized co-processor");
 	if (status0 == XST_SUCCESS && status1 == XST_SUCCESS) {
 		#ifdef ENABLE_PRINT_STATEMENTS
 		xil_printf("Both FIFOs completed successfully.\r\n");
@@ -297,11 +358,12 @@ int main()
 //	xil_printf(" Comparing data ...\r\n");
 	for (int word_cnt = 0; word_cnt < NUMBER_OF_TEST_VECTORS * NUMBER_OF_OUTPUT_WORDS; word_cnt++) {
 		success = success & (result_memory[word_cnt] == test_result_expected_memory[word_cnt]);
+		#ifdef ENABLE_PRINT_STATEMENTS
 		xil_printf("Result: %d\n", result_memory[word_cnt]);
-
 		if (result_memory[word_cnt] != test_result_expected_memory[word_cnt]) {
 			xil_printf("Mismatch at index %d: Expected %d, Got %d\n", word_cnt, test_result_expected_memory[word_cnt], result_memory[word_cnt]);
 		}
+		#endif
 	}
 
 	if (success != 1){
