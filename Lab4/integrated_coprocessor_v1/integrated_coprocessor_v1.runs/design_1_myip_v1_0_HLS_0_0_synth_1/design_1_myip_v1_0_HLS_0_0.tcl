@@ -95,7 +95,7 @@ set_property ip_output_repo c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integr
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.srcs/sources_1/bd/design_1/ip/design_1_myip_v1_0_HLS_0_0/design_1_myip_v1_0_HLS_0_0.xci
+read_ip -quiet c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.srcs/sources_1/bd/design_1/ip/design_1_myip_v1_0_HLS_0_0/design_1_myip_v1_0_HLS_0_0.xci
 set_property used_in_implementation false [get_files -all c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ip/design_1_myip_v1_0_HLS_0_0/constraints/myip_v1_0_HLS_ooc.xdc]
 
 OPTRACE "Adding files" END { }

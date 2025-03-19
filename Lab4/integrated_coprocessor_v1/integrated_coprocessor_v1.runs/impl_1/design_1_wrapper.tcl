@@ -134,9 +134,9 @@ OPTRACE "set parameters" START { }
   set_property webtalk.parent_dir C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.cache/wt [current_project]
   set_property parent.project_path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.xpr [current_project]
   set_property ip_repo_paths {
-  c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/ip_repo/myip_1_1
+  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/ip_repo/myip_1_1
   C:/Users/sunil/VitisHLSip/myip_v1_unoptimized_HLS
-  c:/Users/sunil/VitisHLSip/myip_v1_0_HLS/myip_v1_0_HLS
+  C:/Users/sunil/VitisHLSip/myip_v1_0_HLS/myip_v1_0_HLS
 } [current_project]
   update_ip_catalog
   set_property ip_output_repo C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.cache/ip [current_project]

@@ -3,8 +3,8 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Wed Mar 19 02:09:43 2025
-# Process ID: 16288
+# Start of session at: Wed Mar 19 15:03:18 2025
+# Process ID: 10888
 # Current directory: C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.runs/design_1_myip_v1_0_HLS_0_0_synth_1
 # Command line: vivado.exe -log design_1_myip_v1_0_HLS_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_myip_v1_0_HLS_0_0.tcl
 # Log file: C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.runs/design_1_myip_v1_0_HLS_0_0_synth_1/design_1_myip_v1_0_HLS_0_0.vds
@@ -12,7 +12,7 @@
 # Running On: linus_zenbook, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 4, Host memory: 16968 MB
 #-----------------------------------------------------------
 source design_1_myip_v1_0_HLS_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 455.559 ; gain = 183.035
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 456.383 ; gain = 183.371
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/ip_repo/myip_1_1'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sunil/VitisHLSip/myip_v1_unoptimized_HLS'.
@@ -28,68 +28,186 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
 INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 16008
+INFO: [Synth 8-7075] Helper process launched with PID 13136
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1861.414 ; gain = 379.586
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1862.133 ; gain = 380.582
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_myip_v1_0_HLS_0_0' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ip/design_1_myip_v1_0_HLS_0_0/synth/design_1_myip_v1_0_HLS_0_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS.v:9]
-INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_A_RAM_AUTO_1R1W' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_A_RAM_AUTO_1R1W.v:7]
-INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_A_RAM_AUTO_1R1W' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_A_RAM_AUTO_1R1W.v:7]
-INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_Block_entry68_proc2' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_Block_entry68_proc2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_regslice_both' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_regslice_both' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_regslice_both.v:11]
+INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_regslice_both__parameterized0' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_regslice_both__parameterized0' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_regslice_both.v:11]
+INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_regslice_both__parameterized1' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_regslice_both__parameterized1' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_Block_entry68_proc2' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_Block_entry68_proc2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc.v:9]
 WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
 WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
-INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_mul_8ns_8ns_16_1_1' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mul_8ns_8ns_16_1_1.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_mul_8ns_8ns_16_1_1' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mul_8ns_8ns_16_1_1.v:5]
-INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:49]
-INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:10]
-INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:10]
-INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:49]
-INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_flow_control_loop_pipe_sequential_init' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_flow_control_loop_pipe_sequential_init.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_flow_control_loop_pipe_sequential_init' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_flow_control_loop_pipe_sequential_init.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3.v:9]
-INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_regslice_both' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_regslice_both.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_regslice_both' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_regslice_both.v:11]
-INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_regslice_both__parameterized0' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_regslice_both.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_regslice_both__parameterized0' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_regslice_both.v:11]
-INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_regslice_both__parameterized1' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_regslice_both.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_regslice_both__parameterized1' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_regslice_both.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_mul_8ns_16s_16_1_1' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_mul_8ns_16s_16_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_mul_8ns_16s_16_1_1' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_mul_8ns_16s_16_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1.v:49]
+INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1.v:49]
+INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_flow_control_loop_pipe' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_flow_control_loop_pipe.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_flow_control_loop_pipe' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_flow_control_loop_pipe.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_Block_for_end52_proc3' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_Block_for_end52_proc3.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_Block_for_end52_proc3' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_Block_for_end52_proc3.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_fifo_w8_d64_S' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_fifo_w8_d64_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_fifo_w8_d64_S_ShiftReg' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_fifo_w8_d64_S.v:130]
+INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_fifo_w8_d64_S_ShiftReg' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_fifo_w8_d64_S.v:130]
+WARNING: [Synth 8-7071] port 'reset' of module 'myip_v1_0_HLS_fifo_w8_d64_S_ShiftReg' is unconnected for instance 'U_myip_v1_0_HLS_fifo_w8_d64_S_ShiftReg' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_fifo_w8_d64_S.v:53]
+WARNING: [Synth 8-7023] instance 'U_myip_v1_0_HLS_fifo_w8_d64_S_ShiftReg' of module 'myip_v1_0_HLS_fifo_w8_d64_S_ShiftReg' has 6 connections declared, but only 5 given [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_fifo_w8_d64_S.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_fifo_w8_d64_S' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_fifo_w8_d64_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_fifo_w16_d2_S' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_fifo_w16_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_fifo_w16_d2_S_ShiftReg' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_fifo_w16_d2_S.v:130]
+INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_fifo_w16_d2_S_ShiftReg' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_fifo_w16_d2_S.v:130]
+WARNING: [Synth 8-7071] port 'reset' of module 'myip_v1_0_HLS_fifo_w16_d2_S_ShiftReg' is unconnected for instance 'U_myip_v1_0_HLS_fifo_w16_d2_S_ShiftReg' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_fifo_w16_d2_S.v:53]
+WARNING: [Synth 8-7023] instance 'U_myip_v1_0_HLS_fifo_w16_d2_S_ShiftReg' of module 'myip_v1_0_HLS_fifo_w16_d2_S_ShiftReg' has 6 connections declared, but only 5 given [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_fifo_w16_d2_S.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_fifo_w16_d2_S' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_fifo_w16_d2_S.v:11]
+INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_start_for_Block_for_end52_proc3_U0' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_start_for_Block_for_end52_proc3_U0.v:11]
+INFO: [Synth 8-6157] synthesizing module 'myip_v1_0_HLS_start_for_Block_for_end52_proc3_U0_ShiftReg' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_start_for_Block_for_end52_proc3_U0.v:117]
+INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_start_for_Block_for_end52_proc3_U0_ShiftReg' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_start_for_Block_for_end52_proc3_U0.v:117]
+WARNING: [Synth 8-7071] port 'reset' of module 'myip_v1_0_HLS_start_for_Block_for_end52_proc3_U0_ShiftReg' is unconnected for instance 'U_myip_v1_0_HLS_start_for_Block_for_end52_proc3_U0_ShiftReg' [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_start_for_Block_for_end52_proc3_U0.v:50]
+WARNING: [Synth 8-7023] instance 'U_myip_v1_0_HLS_start_for_Block_for_end52_proc3_U0_ShiftReg' of module 'myip_v1_0_HLS_start_for_Block_for_end52_proc3_U0_ShiftReg' has 6 connections declared, but only 5 given [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_start_for_Block_for_end52_proc3_U0.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS_start_for_Block_for_end52_proc3_U0' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_start_for_Block_for_end52_proc3_U0.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'myip_v1_0_HLS' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS.v:9]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_myip_v1_0_HLS_0_0' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ip/design_1_myip_v1_0_HLS_0_0/synth/design_1_myip_v1_0_HLS_0_0.v:53]
-WARNING: [Synth 8-7129] Port rst in module myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port reset in module myip_v1_0_HLS_A_RAM_AUTO_1R1W is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module myip_v1_0_HLS_start_for_Block_for_end52_proc3_U0_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module myip_v1_0_HLS_fifo_w8_d64_S_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module myip_v1_0_HLS_fifo_w16_d2_S_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[1] in module myip_v1_0_HLS_fifo_w16_d2_S_ShiftReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_0_num_data_valid[6] in module myip_v1_0_HLS_Block_for_end52_proc3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_0_num_data_valid[5] in module myip_v1_0_HLS_Block_for_end52_proc3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_0_num_data_valid[4] in module myip_v1_0_HLS_Block_for_end52_proc3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_0_num_data_valid[3] in module myip_v1_0_HLS_Block_for_end52_proc3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_0_num_data_valid[2] in module myip_v1_0_HLS_Block_for_end52_proc3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_0_num_data_valid[1] in module myip_v1_0_HLS_Block_for_end52_proc3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_0_num_data_valid[0] in module myip_v1_0_HLS_Block_for_end52_proc3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_0_fifo_cap[6] in module myip_v1_0_HLS_Block_for_end52_proc3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_0_fifo_cap[5] in module myip_v1_0_HLS_Block_for_end52_proc3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_0_fifo_cap[4] in module myip_v1_0_HLS_Block_for_end52_proc3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_0_fifo_cap[3] in module myip_v1_0_HLS_Block_for_end52_proc3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_0_fifo_cap[2] in module myip_v1_0_HLS_Block_for_end52_proc3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_0_fifo_cap[1] in module myip_v1_0_HLS_Block_for_end52_proc3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_0_fifo_cap[0] in module myip_v1_0_HLS_Block_for_end52_proc3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ap_done_int in module myip_v1_0_HLS_flow_control_loop_pipe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_num_data_valid[6] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_num_data_valid[5] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_num_data_valid[4] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_num_data_valid[3] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_num_data_valid[2] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_num_data_valid[1] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_num_data_valid[0] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_fifo_cap[6] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_fifo_cap[5] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_fifo_cap[4] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_fifo_cap[3] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_fifo_cap[2] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_fifo_cap[1] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_fifo_cap[0] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_1_num_data_valid[6] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_1_num_data_valid[5] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_1_num_data_valid[4] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_1_num_data_valid[3] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_1_num_data_valid[2] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_1_num_data_valid[1] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_1_num_data_valid[0] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_1_fifo_cap[6] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_1_fifo_cap[5] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_1_fifo_cap[4] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_1_fifo_cap[3] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_1_fifo_cap[2] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_1_fifo_cap[1] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_1_fifo_cap[0] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_2_num_data_valid[6] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_2_num_data_valid[5] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_2_num_data_valid[4] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_2_num_data_valid[3] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_2_num_data_valid[2] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_2_num_data_valid[1] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_2_num_data_valid[0] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_2_fifo_cap[6] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_2_fifo_cap[5] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_2_fifo_cap[4] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_2_fifo_cap[3] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_2_fifo_cap[2] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_2_fifo_cap[1] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_2_fifo_cap[0] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_3_num_data_valid[6] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_3_num_data_valid[5] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_3_num_data_valid[4] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_3_num_data_valid[3] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_3_num_data_valid[2] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_3_num_data_valid[1] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_3_num_data_valid[0] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_3_fifo_cap[6] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_3_fifo_cap[5] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_3_fifo_cap[4] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_3_fifo_cap[3] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_3_fifo_cap[2] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_3_fifo_cap[1] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_3_fifo_cap[0] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_4_num_data_valid[6] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_4_num_data_valid[5] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_4_num_data_valid[4] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_4_num_data_valid[3] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_4_num_data_valid[2] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_4_num_data_valid[1] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_4_num_data_valid[0] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_4_fifo_cap[6] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_4_fifo_cap[5] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_4_fifo_cap[4] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_4_fifo_cap[3] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_4_fifo_cap[2] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_4_fifo_cap[1] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_4_fifo_cap[0] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_5_num_data_valid[6] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_5_num_data_valid[5] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_5_num_data_valid[4] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_5_num_data_valid[3] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_5_num_data_valid[2] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_5_num_data_valid[1] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_5_num_data_valid[0] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_5_fifo_cap[6] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_5_fifo_cap[5] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A_5_fifo_cap[4] in module myip_v1_0_HLS_Loop_VITIS_LOOP_92_3_proc is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2177.590 ; gain = 695.762
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2169.934 ; gain = 688.383
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2177.590 ; gain = 695.762
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2169.934 ; gain = 688.383
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2177.590 ; gain = 695.762
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2169.934 ; gain = 688.383
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2177.590 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2169.934 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ip/design_1_myip_v1_0_HLS_0_0/constraints/myip_v1_0_HLS_ooc.xdc] for cell 'inst'
-create_clock: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3019.277 ; gain = 23.645
 Finished Parsing XDC File [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ip/design_1_myip_v1_0_HLS_0_0/constraints/myip_v1_0_HLS_ooc.xdc] for cell 'inst'
 Parsing XDC File [C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.runs/design_1_myip_v1_0_HLS_0_0_synth_1/dont_touch.xdc]
 Finished Parsing XDC File [C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.runs/design_1_myip_v1_0_HLS_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 3019.277 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2839.562 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.315 . Memory (MB): peak = 3030.363 ; gain = 11.086
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.411 . Memory (MB): peak = 2852.402 ; gain = 12.840
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:46 ; elapsed = 00:00:54 . Memory (MB): peak = 3030.363 ; gain = 1548.535
+Finished Constraint Validation : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 2852.402 ; gain = 1370.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -97,111 +215,45 @@ Start Loading Part and Timing Information
 Loading part: xck26-sfvc784-2LV-c
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:46 ; elapsed = 00:00:54 . Memory (MB): peak = 3030.363 ; gain = 1548.535
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 2852.402 ; gain = 1370.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.runs/design_1_myip_v1_0_HLS_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:54 . Memory (MB): peak = 3030.363 ; gain = 1548.535
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 2852.402 ; gain = 1370.852
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln72_reg_462_pp0_iter3_reg_reg' and it is trimmed from '7' to '6' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3.v:432]
-WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln72_reg_462_pp0_iter2_reg_reg' and it is trimmed from '7' to '6' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3.v:431]
-WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln72_reg_462_pp0_iter1_reg_reg' and it is trimmed from '7' to '6' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3.v:424]
-WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln72_reg_462_reg' and it is trimmed from '7' to '6' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3.v:423]
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
-INFO: [Synth 8-6904] The RAM "myip_v1_0_HLS_A_RAM_AUTO_1R1W:/ram_reg" of size (depth=64 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:54 ; elapsed = 00:01:06 . Memory (MB): peak = 3030.363 ; gain = 1548.535
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 2852.402 ; gain = 1370.852
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-223] decloning instance 'inst/regslice_both_M_AXIS_V_keep_V_U' (myip_v1_0_HLS_regslice_both__parameterized0) to 'inst/regslice_both_M_AXIS_V_strb_V_U'
+INFO: [Synth 8-223] decloning instance 'inst/Block_for_end52_proc3_U0/regslice_both_M_AXIS_V_keep_V_U' (myip_v1_0_HLS_regslice_both__parameterized0) to 'inst/Block_for_end52_proc3_U0/regslice_both_M_AXIS_V_strb_V_U'
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
 	   4 Input   16 Bit       Adders := 1     
-	   2 Input    7 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 19    
+	   2 Input    3 Bit       Adders := 16    
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 8     
 +---Registers : 
+	               65 Bit    Registers := 1     
 	               32 Bit    Registers := 4     
 	               18 Bit    Registers := 4     
-	                8 Bit    Registers := 25    
-	                7 Bit    Registers := 1     
-	                6 Bit    Registers := 4     
+	               16 Bit    Registers := 32    
+	                8 Bit    Registers := 472   
+	                7 Bit    Registers := 19    
 	                4 Bit    Registers := 6     
-	                2 Bit    Registers := 7     
-	                1 Bit    Registers := 30    
-+---RAMs : 
-	              512 Bit	(64 X 8 bit)          RAMs := 9     
+	                3 Bit    Registers := 16    
+	                2 Bit    Registers := 8     
+	                1 Bit    Registers := 77    
 +---Muxes : 
-	   2 Input  587 Bit        Muxes := 2     
-	   2 Input  586 Bit        Muxes := 1     
-	   2 Input  585 Bit        Muxes := 1     
-	   2 Input  584 Bit        Muxes := 1     
-	   2 Input  583 Bit        Muxes := 1     
-	   2 Input  582 Bit        Muxes := 1     
-	   2 Input  581 Bit        Muxes := 1     
-	   2 Input  580 Bit        Muxes := 1     
-	   2 Input  579 Bit        Muxes := 1     
-	   2 Input  578 Bit        Muxes := 1     
-	   2 Input  577 Bit        Muxes := 1     
-	   2 Input  576 Bit        Muxes := 1     
-	   2 Input  575 Bit        Muxes := 1     
-	   2 Input  574 Bit        Muxes := 1     
-	   2 Input  573 Bit        Muxes := 1     
-	   2 Input  572 Bit        Muxes := 1     
-	   2 Input  571 Bit        Muxes := 1     
-	   2 Input  570 Bit        Muxes := 1     
-	   2 Input  569 Bit        Muxes := 1     
-	   2 Input  568 Bit        Muxes := 1     
-	   2 Input  567 Bit        Muxes := 1     
-	   2 Input  566 Bit        Muxes := 1     
-	   2 Input  565 Bit        Muxes := 1     
-	   2 Input  564 Bit        Muxes := 1     
-	   2 Input  563 Bit        Muxes := 1     
-	   2 Input  562 Bit        Muxes := 1     
-	   2 Input  561 Bit        Muxes := 1     
-	   2 Input  560 Bit        Muxes := 1     
-	   2 Input  559 Bit        Muxes := 1     
-	   2 Input  558 Bit        Muxes := 1     
-	   2 Input  557 Bit        Muxes := 1     
-	   2 Input  556 Bit        Muxes := 1     
-	   2 Input  555 Bit        Muxes := 1     
-	   2 Input  554 Bit        Muxes := 1     
-	   2 Input  553 Bit        Muxes := 1     
-	   2 Input  552 Bit        Muxes := 1     
-	   2 Input  551 Bit        Muxes := 1     
-	   2 Input  550 Bit        Muxes := 1     
-	   2 Input  549 Bit        Muxes := 1     
-	   2 Input  548 Bit        Muxes := 1     
-	   2 Input  547 Bit        Muxes := 1     
-	   2 Input  546 Bit        Muxes := 1     
-	   2 Input  545 Bit        Muxes := 1     
-	   2 Input  544 Bit        Muxes := 1     
-	   2 Input  543 Bit        Muxes := 1     
-	   2 Input  542 Bit        Muxes := 1     
-	   2 Input  541 Bit        Muxes := 1     
-	   2 Input  540 Bit        Muxes := 1     
-	   2 Input  539 Bit        Muxes := 1     
-	   2 Input  538 Bit        Muxes := 1     
-	   2 Input  537 Bit        Muxes := 1     
-	   2 Input  536 Bit        Muxes := 1     
-	   2 Input  535 Bit        Muxes := 1     
-	   2 Input  534 Bit        Muxes := 1     
-	   2 Input  533 Bit        Muxes := 1     
-	   2 Input  532 Bit        Muxes := 1     
-	   2 Input  531 Bit        Muxes := 1     
-	   2 Input  530 Bit        Muxes := 1     
-	   2 Input  529 Bit        Muxes := 1     
-	   2 Input  528 Bit        Muxes := 1     
-	   2 Input  527 Bit        Muxes := 1     
-	   2 Input  526 Bit        Muxes := 1     
-	   2 Input  525 Bit        Muxes := 1     
-	   2 Input  524 Bit        Muxes := 1     
-	   2 Input  522 Bit        Muxes := 1     
-	   2 Input  521 Bit        Muxes := 1     
-	   2 Input  520 Bit        Muxes := 1     
+	   2 Input  520 Bit        Muxes := 2     
 	   2 Input  519 Bit        Muxes := 1     
 	   2 Input  518 Bit        Muxes := 1     
 	   2 Input  517 Bit        Muxes := 1     
@@ -656,73 +708,73 @@ Detailed RTL Component Info :
 	   2 Input   68 Bit        Muxes := 1     
 	   2 Input   67 Bit        Muxes := 1     
 	   2 Input   66 Bit        Muxes := 1     
-	   2 Input   65 Bit        Muxes := 1     
-	   2 Input   64 Bit        Muxes := 1     
-	   2 Input   63 Bit        Muxes := 1     
-	   2 Input   62 Bit        Muxes := 1     
-	   2 Input   61 Bit        Muxes := 1     
-	   2 Input   60 Bit        Muxes := 1     
-	   2 Input   59 Bit        Muxes := 1     
-	   2 Input   58 Bit        Muxes := 1     
-	   2 Input   57 Bit        Muxes := 1     
-	   2 Input   56 Bit        Muxes := 1     
-	   2 Input   55 Bit        Muxes := 1     
-	   2 Input   54 Bit        Muxes := 1     
-	   2 Input   53 Bit        Muxes := 1     
-	   2 Input   52 Bit        Muxes := 1     
-	   2 Input   51 Bit        Muxes := 1     
-	   2 Input   50 Bit        Muxes := 1     
-	   2 Input   49 Bit        Muxes := 1     
-	   2 Input   48 Bit        Muxes := 1     
-	   2 Input   47 Bit        Muxes := 1     
-	   2 Input   46 Bit        Muxes := 1     
-	   2 Input   45 Bit        Muxes := 1     
-	   2 Input   44 Bit        Muxes := 1     
-	   2 Input   43 Bit        Muxes := 1     
-	   2 Input   42 Bit        Muxes := 1     
-	   2 Input   41 Bit        Muxes := 1     
-	   2 Input   40 Bit        Muxes := 1     
-	   2 Input   39 Bit        Muxes := 1     
-	   2 Input   38 Bit        Muxes := 1     
-	   2 Input   37 Bit        Muxes := 1     
-	   2 Input   36 Bit        Muxes := 1     
-	   2 Input   35 Bit        Muxes := 1     
-	   2 Input   34 Bit        Muxes := 1     
-	   2 Input   33 Bit        Muxes := 1     
-	   2 Input   32 Bit        Muxes := 3     
-	   2 Input   31 Bit        Muxes := 1     
-	   2 Input   30 Bit        Muxes := 1     
-	   2 Input   29 Bit        Muxes := 1     
-	   2 Input   28 Bit        Muxes := 1     
-	   2 Input   27 Bit        Muxes := 1     
-	   2 Input   26 Bit        Muxes := 1     
-	   2 Input   25 Bit        Muxes := 1     
-	   2 Input   24 Bit        Muxes := 1     
-	   2 Input   23 Bit        Muxes := 1     
-	   2 Input   22 Bit        Muxes := 1     
-	   2 Input   21 Bit        Muxes := 1     
-	   2 Input   20 Bit        Muxes := 1     
-	   2 Input   19 Bit        Muxes := 1     
-	   2 Input   18 Bit        Muxes := 1     
-	   2 Input   17 Bit        Muxes := 1     
-	   2 Input   16 Bit        Muxes := 1     
-	   2 Input   15 Bit        Muxes := 1     
-	   2 Input   14 Bit        Muxes := 1     
-	   2 Input   13 Bit        Muxes := 1     
-	   2 Input   12 Bit        Muxes := 1     
-	   2 Input   11 Bit        Muxes := 1     
-	   2 Input   10 Bit        Muxes := 1     
-	   2 Input    9 Bit        Muxes := 1     
+	   2 Input   65 Bit        Muxes := 3     
+	   2 Input   64 Bit        Muxes := 2     
+	   2 Input   63 Bit        Muxes := 2     
+	   2 Input   62 Bit        Muxes := 2     
+	   2 Input   61 Bit        Muxes := 2     
+	   2 Input   60 Bit        Muxes := 2     
+	   2 Input   59 Bit        Muxes := 2     
+	   2 Input   58 Bit        Muxes := 2     
+	   2 Input   57 Bit        Muxes := 2     
+	   2 Input   56 Bit        Muxes := 2     
+	   2 Input   55 Bit        Muxes := 2     
+	   2 Input   54 Bit        Muxes := 2     
+	   2 Input   53 Bit        Muxes := 2     
+	   2 Input   52 Bit        Muxes := 2     
+	   2 Input   51 Bit        Muxes := 2     
+	   2 Input   50 Bit        Muxes := 2     
+	   2 Input   49 Bit        Muxes := 2     
+	   2 Input   48 Bit        Muxes := 2     
+	   2 Input   47 Bit        Muxes := 2     
+	   2 Input   46 Bit        Muxes := 2     
+	   2 Input   45 Bit        Muxes := 2     
+	   2 Input   44 Bit        Muxes := 2     
+	   2 Input   43 Bit        Muxes := 2     
+	   2 Input   42 Bit        Muxes := 2     
+	   2 Input   41 Bit        Muxes := 2     
+	   2 Input   40 Bit        Muxes := 2     
+	   2 Input   39 Bit        Muxes := 2     
+	   2 Input   38 Bit        Muxes := 2     
+	   2 Input   37 Bit        Muxes := 2     
+	   2 Input   36 Bit        Muxes := 2     
+	   2 Input   35 Bit        Muxes := 2     
+	   2 Input   34 Bit        Muxes := 2     
+	   2 Input   33 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 4     
+	   2 Input   31 Bit        Muxes := 2     
+	   2 Input   30 Bit        Muxes := 2     
+	   2 Input   29 Bit        Muxes := 2     
+	   2 Input   28 Bit        Muxes := 2     
+	   2 Input   27 Bit        Muxes := 2     
+	   2 Input   26 Bit        Muxes := 2     
+	   2 Input   25 Bit        Muxes := 2     
+	   2 Input   24 Bit        Muxes := 2     
+	   2 Input   23 Bit        Muxes := 2     
+	   2 Input   22 Bit        Muxes := 2     
+	   2 Input   21 Bit        Muxes := 2     
+	   2 Input   20 Bit        Muxes := 2     
+	   2 Input   19 Bit        Muxes := 2     
+	   2 Input   18 Bit        Muxes := 2     
+	   2 Input   17 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 18    
+	   2 Input   15 Bit        Muxes := 2     
+	   2 Input   14 Bit        Muxes := 2     
+	   2 Input   13 Bit        Muxes := 2     
+	   2 Input   12 Bit        Muxes := 2     
+	   2 Input   11 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 2     
 	  64 Input    8 Bit        Muxes := 1     
-	   2 Input    8 Bit        Muxes := 1     
-	   2 Input    7 Bit        Muxes := 1     
-	   2 Input    6 Bit        Muxes := 1     
-	   2 Input    5 Bit        Muxes := 1     
-	   2 Input    4 Bit        Muxes := 4     
-	   2 Input    3 Bit        Muxes := 1     
-	   2 Input    2 Bit        Muxes := 8     
+	   2 Input    7 Bit        Muxes := 3     
+	   2 Input    6 Bit        Muxes := 11    
+	   2 Input    5 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 5     
+	   2 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 52    
 	   4 Input    2 Bit        Muxes := 7     
-	   2 Input    1 Bit        Muxes := 25    
+	   2 Input    1 Bit        Muxes := 93    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -739,129 +791,106 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:41]
-WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U6/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:41]
-WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U7/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:41]
-WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U8/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:41]
-WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:34]
-WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/a_reg_reg' and it is trimmed from '27' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:33]
-WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U6/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:34]
-WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U6/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/a_reg_reg' and it is trimmed from '27' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:33]
-WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U7/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:34]
-WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U7/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/a_reg_reg' and it is trimmed from '27' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:33]
-WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U8/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:34]
-WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U8/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/a_reg_reg' and it is trimmed from '27' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:33]
-WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U8/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/b_reg_reg' and it is trimmed from '18' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:33]
-WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U6/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/b_reg_reg' and it is trimmed from '18' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:33]
-WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U7/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/b_reg_reg' and it is trimmed from '18' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:33]
-WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/b_reg_reg' and it is trimmed from '18' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/db18/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1.v:33]
-DSP Report: Generating DSP mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg, operation Mode is: (A2*B'')'.
-DSP Report: register mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg.
-DSP Report: register mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg.
-DSP Report: register mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg.
-DSP Report: register mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg.
-DSP Report: operator mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m is absorbed into DSP mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg.
-DSP Report: Generating DSP mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (PCIN+A*B2)'.
-DSP Report: register mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg.
-DSP Report: register mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg.
-DSP Report: operator mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p is absorbed into DSP mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg.
-DSP Report: operator mul_8ns_8ns_16_1_1_U1/tmp_product is absorbed into DSP mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg.
-DSP Report: Generating DSP mac_muladd_8ns_8ns_16ns_16_4_1_U7/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg, operation Mode is: (A2*B'')'.
-DSP Report: register mac_muladd_8ns_8ns_16ns_16_4_1_U7/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP mac_muladd_8ns_8ns_16ns_16_4_1_U7/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg.
-DSP Report: register mac_muladd_8ns_8ns_16ns_16_4_1_U7/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP mac_muladd_8ns_8ns_16ns_16_4_1_U7/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg.
-DSP Report: register mac_muladd_8ns_8ns_16ns_16_4_1_U7/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP mac_muladd_8ns_8ns_16ns_16_4_1_U7/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg.
-DSP Report: register mac_muladd_8ns_8ns_16ns_16_4_1_U7/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP mac_muladd_8ns_8ns_16ns_16_4_1_U7/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg.
-DSP Report: operator mac_muladd_8ns_8ns_16ns_16_4_1_U7/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m is absorbed into DSP mac_muladd_8ns_8ns_16ns_16_4_1_U7/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg.
-DSP Report: Generating DSP mac_muladd_8ns_8ns_16ns_16_4_1_U7/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (PCIN+A*B2)'.
-DSP Report: register mac_muladd_8ns_8ns_16ns_16_4_1_U7/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_8ns_8ns_16ns_16_4_1_U7/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg.
-DSP Report: register mac_muladd_8ns_8ns_16ns_16_4_1_U7/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_8ns_8ns_16ns_16_4_1_U7/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg.
-DSP Report: operator mac_muladd_8ns_8ns_16ns_16_4_1_U7/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p is absorbed into DSP mac_muladd_8ns_8ns_16ns_16_4_1_U7/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg.
-DSP Report: operator mul_8ns_8ns_16_1_1_U3/tmp_product is absorbed into DSP mac_muladd_8ns_8ns_16ns_16_4_1_U7/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg.
-DSP Report: Generating DSP mac_muladd_8ns_8ns_16ns_16_4_1_U6/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg, operation Mode is: (A2*B'')'.
-DSP Report: register mac_muladd_8ns_8ns_16ns_16_4_1_U6/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP mac_muladd_8ns_8ns_16ns_16_4_1_U6/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg.
-DSP Report: register mac_muladd_8ns_8ns_16ns_16_4_1_U6/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP mac_muladd_8ns_8ns_16ns_16_4_1_U6/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg.
-DSP Report: register mac_muladd_8ns_8ns_16ns_16_4_1_U6/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP mac_muladd_8ns_8ns_16ns_16_4_1_U6/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg.
-DSP Report: register mac_muladd_8ns_8ns_16ns_16_4_1_U6/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP mac_muladd_8ns_8ns_16ns_16_4_1_U6/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg.
-DSP Report: operator mac_muladd_8ns_8ns_16ns_16_4_1_U6/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m is absorbed into DSP mac_muladd_8ns_8ns_16ns_16_4_1_U6/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg.
-DSP Report: Generating DSP mac_muladd_8ns_8ns_16ns_16_4_1_U6/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (PCIN+A*B2)'.
-DSP Report: register mac_muladd_8ns_8ns_16ns_16_4_1_U6/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_8ns_8ns_16ns_16_4_1_U6/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg.
-DSP Report: register mac_muladd_8ns_8ns_16ns_16_4_1_U6/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_8ns_8ns_16ns_16_4_1_U6/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg.
-DSP Report: operator mac_muladd_8ns_8ns_16ns_16_4_1_U6/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p is absorbed into DSP mac_muladd_8ns_8ns_16ns_16_4_1_U6/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg.
-DSP Report: operator mul_8ns_8ns_16_1_1_U2/tmp_product is absorbed into DSP mac_muladd_8ns_8ns_16ns_16_4_1_U6/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg.
-DSP Report: Generating DSP mac_muladd_8ns_8ns_16ns_16_4_1_U8/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg, operation Mode is: (A2*B'')'.
-DSP Report: register mac_muladd_8ns_8ns_16ns_16_4_1_U8/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP mac_muladd_8ns_8ns_16ns_16_4_1_U8/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg.
-DSP Report: register mac_muladd_8ns_8ns_16ns_16_4_1_U8/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP mac_muladd_8ns_8ns_16ns_16_4_1_U8/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg.
-DSP Report: register mac_muladd_8ns_8ns_16ns_16_4_1_U8/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP mac_muladd_8ns_8ns_16ns_16_4_1_U8/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg.
-DSP Report: register mac_muladd_8ns_8ns_16ns_16_4_1_U8/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP mac_muladd_8ns_8ns_16ns_16_4_1_U8/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg.
-DSP Report: operator mac_muladd_8ns_8ns_16ns_16_4_1_U8/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m is absorbed into DSP mac_muladd_8ns_8ns_16ns_16_4_1_U8/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg.
-DSP Report: Generating DSP mac_muladd_8ns_8ns_16ns_16_4_1_U8/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (PCIN+A*B2)'.
-DSP Report: register mac_muladd_8ns_8ns_16ns_16_4_1_U8/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_8ns_8ns_16ns_16_4_1_U8/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg.
-DSP Report: register mac_muladd_8ns_8ns_16ns_16_4_1_U8/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_8ns_8ns_16ns_16_4_1_U8/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg.
-DSP Report: operator mac_muladd_8ns_8ns_16ns_16_4_1_U8/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p is absorbed into DSP mac_muladd_8ns_8ns_16ns_16_4_1_U8/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg.
-DSP Report: operator mul_8ns_8ns_16_1_1_U4/tmp_product is absorbed into DSP mac_muladd_8ns_8ns_16ns_16_4_1_U8/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/p_reg_reg.
-INFO: [Synth 8-6904] The RAM "inst/A_U/ram_reg" of size (depth=64 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
-INFO: [Synth 8-6904] The RAM "inst/A_1_U/ram_reg" of size (depth=64 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
-INFO: [Synth 8-6904] The RAM "inst/A_2_U/ram_reg" of size (depth=64 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
-INFO: [Synth 8-6904] The RAM "inst/A_3_U/ram_reg" of size (depth=64 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
-INFO: [Synth 8-6904] The RAM "inst/A_4_U/ram_reg" of size (depth=64 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
-INFO: [Synth 8-6904] The RAM "inst/A_5_U/ram_reg" of size (depth=64 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
-INFO: [Synth 8-6904] The RAM "inst/A_6_U/ram_reg" of size (depth=64 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
-INFO: [Synth 8-6904] The RAM "inst/A_7_U/ram_reg" of size (depth=64 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
-INFO: [Synth 8-6904] The RAM "inst/C_0_U/ram_reg" of size (depth=64 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
-INFO: [Synth 8-6904] The RAM "inst/A_U/ram_reg" of size (depth=64 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
-INFO: [Synth 8-6904] The RAM "inst/A_1_U/ram_reg" of size (depth=64 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
-INFO: [Synth 8-6904] The RAM "inst/A_2_U/ram_reg" of size (depth=64 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
-INFO: [Synth 8-6904] The RAM "inst/A_3_U/ram_reg" of size (depth=64 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
-INFO: [Synth 8-6904] The RAM "inst/A_4_U/ram_reg" of size (depth=64 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
-INFO: [Synth 8-6904] The RAM "inst/A_5_U/ram_reg" of size (depth=64 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
-INFO: [Synth 8-6904] The RAM "inst/A_6_U/ram_reg" of size (depth=64 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
-INFO: [Synth 8-6904] The RAM "inst/A_7_U/ram_reg" of size (depth=64 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
-INFO: [Synth 8-6904] The RAM "inst/C_0_U/ram_reg" of size (depth=64 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+WARNING: [Synth 8-3936] Found unconnected internal register 'Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U24/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U24/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1.v:34]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U23/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U23/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1.v:34]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U22/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U22/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1.v:34]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U21/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '46' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U21/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '45' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1.v:34]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U24/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/a_reg_reg' and it is trimmed from '27' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1.v:33]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U23/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/a_reg_reg' and it is trimmed from '27' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1.v:33]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U22/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/a_reg_reg' and it is trimmed from '27' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1.v:33]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U21/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/a_reg_reg' and it is trimmed from '27' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1.v:33]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U24/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/b_reg_reg' and it is trimmed from '18' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1.v:33]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U22/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/b_reg_reg' and it is trimmed from '18' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1.v:33]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U23/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/b_reg_reg' and it is trimmed from '18' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1.v:33]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U21/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/b_reg_reg' and it is trimmed from '18' to '16' bits. [c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ipshared/18d4/hdl/verilog/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1.v:33]
+DSP Report: Generating DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U21/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg, operation Mode is: (A2*B'')'.
+DSP Report: register Loop_VITIS_LOOP_92_3_proc_U0/p_read_8_reg_359_reg is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U21/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: register Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U21/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U21/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: register Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U21/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U21/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: register Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U21/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U21/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: operator Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U21/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U21/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: Generating DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U21/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (PCIN+A''*B'')'.
+DSP Report: register Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U21/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U21/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U21/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U21/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register Loop_VITIS_LOOP_92_3_proc_U0/p_read_7_reg_354_pp0_iter1_reg_reg is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U21/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register Loop_VITIS_LOOP_92_3_proc_U0/p_read_7_reg_354_pp0_iter2_reg_reg is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U21/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U21/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U21/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U21/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U21/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator Loop_VITIS_LOOP_92_3_proc_U0/mul_8ns_16s_16_1_1_U17/tmp_product is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U21/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U23/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg, operation Mode is: (A2*B'')'.
+DSP Report: register Loop_VITIS_LOOP_92_3_proc_U0/p_read_3_reg_334_reg is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U23/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: register Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U23/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U23/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: register Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U23/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U23/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: register Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U23/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U23/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: operator Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U23/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U23/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: Generating DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U23/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (PCIN+A''*B'')'.
+DSP Report: register Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U23/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U23/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U23/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U23/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register Loop_VITIS_LOOP_92_3_proc_U0/p_read_4_reg_339_pp0_iter1_reg_reg is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U23/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register Loop_VITIS_LOOP_92_3_proc_U0/p_read_4_reg_339_pp0_iter2_reg_reg is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U23/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U23/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U23/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U23/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U23/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator Loop_VITIS_LOOP_92_3_proc_U0/mul_8ns_16s_16_1_1_U19/tmp_product is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U23/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U22/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg, operation Mode is: (A2*B'')'.
+DSP Report: register Loop_VITIS_LOOP_92_3_proc_U0/p_read_5_reg_344_reg is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U22/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: register Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U22/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U22/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: register Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U22/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U22/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: register Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U22/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U22/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: operator Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U22/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U22/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: Generating DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U22/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (PCIN+A''*B'')'.
+DSP Report: register Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U22/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U22/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U22/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U22/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register Loop_VITIS_LOOP_92_3_proc_U0/p_read_6_reg_349_pp0_iter1_reg_reg is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U22/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register Loop_VITIS_LOOP_92_3_proc_U0/p_read_6_reg_349_pp0_iter2_reg_reg is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U22/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U22/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U22/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U22/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U22/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator Loop_VITIS_LOOP_92_3_proc_U0/mul_8ns_16s_16_1_1_U18/tmp_product is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U22/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U24/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg, operation Mode is: (A2*B'')'.
+DSP Report: register Loop_VITIS_LOOP_92_3_proc_U0/p_read_1_reg_324_reg is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U24/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: register Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U24/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U24/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: register Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U24/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U24/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: register Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U24/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U24/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: operator Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U24/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U24/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: Generating DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U24/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (PCIN+A''*B'')'.
+DSP Report: register Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U24/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U24/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U24/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U24/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register Loop_VITIS_LOOP_92_3_proc_U0/p_read_2_reg_329_pp0_iter1_reg_reg is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U24/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register Loop_VITIS_LOOP_92_3_proc_U0/p_read_2_reg_329_pp0_iter2_reg_reg is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U24/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U24/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U24/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U24/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U24/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator Loop_VITIS_LOOP_92_3_proc_U0/mul_8ns_16s_16_1_1_U20/tmp_product is absorbed into DSP Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U24/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/p_reg_reg.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:02:09 . Memory (MB): peak = 3030.363 ; gain = 1548.535
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:29 . Memory (MB): peak = 2852.402 ; gain = 1370.852
 ---------------------------------------------------------------------------------
- Sort Area is  mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg_5 : 0 0 : 2001 2653 : Used 1 time 100
- Sort Area is  mac_muladd_8ns_8ns_16ns_16_4_1_U5/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg_5 : 0 1 : 652 2653 : Used 1 time 100
- Sort Area is  mac_muladd_8ns_8ns_16ns_16_4_1_U6/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg_3 : 0 0 : 2001 2653 : Used 1 time 100
- Sort Area is  mac_muladd_8ns_8ns_16ns_16_4_1_U6/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg_3 : 0 1 : 652 2653 : Used 1 time 100
- Sort Area is  mac_muladd_8ns_8ns_16ns_16_4_1_U7/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg_4 : 0 0 : 2001 2653 : Used 1 time 100
- Sort Area is  mac_muladd_8ns_8ns_16ns_16_4_1_U7/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg_4 : 0 1 : 652 2653 : Used 1 time 100
- Sort Area is  mac_muladd_8ns_8ns_16ns_16_4_1_U8/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg_0 : 0 0 : 2001 2653 : Used 1 time 100
- Sort Area is  mac_muladd_8ns_8ns_16ns_16_4_1_U8/myip_v1_0_HLS_mac_muladd_8ns_8ns_16ns_16_4_1_DSP48_0_U/m_reg_reg_0 : 0 1 : 652 2653 : Used 1 time 100
+ Sort Area is  Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U21/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg_5 : 0 0 : 2001 3068 : Used 1 time 0
+ Sort Area is  Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U21/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg_5 : 0 1 : 1067 3068 : Used 1 time 0
+ Sort Area is  Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U22/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg_3 : 0 0 : 2001 3068 : Used 1 time 0
+ Sort Area is  Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U22/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg_3 : 0 1 : 1067 3068 : Used 1 time 0
+ Sort Area is  Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U23/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg_4 : 0 0 : 2001 3068 : Used 1 time 0
+ Sort Area is  Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U23/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg_4 : 0 1 : 1067 3068 : Used 1 time 0
+ Sort Area is  Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U24/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg_0 : 0 0 : 2001 3068 : Used 1 time 0
+ Sort Area is  Loop_VITIS_LOOP_92_3_proc_U0/mac_muladd_8ns_16s_16ns_16_4_1_U24/myip_v1_0_HLS_mac_muladd_8ns_16s_16ns_16_4_1_DSP48_0_U/m_reg_reg_0 : 0 1 : 1067 3068 : Used 1 time 0
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 
-Distributed RAM: Preliminary Mapping Report (see note below)
-+------------+---------------+-----------+----------------------+---------------+
-|Module Name | RTL Object    | Inference | Size (Depth x Width) | Primitives    | 
-+------------+---------------+-----------+----------------------+---------------+
-|inst        | A_U/ram_reg   | Implied   | 64 x 8               | RAM64X1S x 8  | 
-|inst        | A_1_U/ram_reg | Implied   | 64 x 8               | RAM64X1S x 8  | 
-|inst        | A_2_U/ram_reg | Implied   | 64 x 8               | RAM64X1S x 8  | 
-|inst        | A_3_U/ram_reg | Implied   | 64 x 8               | RAM64X1S x 8  | 
-|inst        | A_4_U/ram_reg | Implied   | 64 x 8               | RAM64X1S x 8  | 
-|inst        | A_5_U/ram_reg | Implied   | 64 x 8               | RAM64X1S x 8  | 
-|inst        | A_6_U/ram_reg | Implied   | 64 x 8               | RAM64X1S x 8  | 
-|inst        | A_7_U/ram_reg | Implied   | 64 x 8               | RAM64X1S x 8  | 
-|inst        | C_0_U/ram_reg | Implied   | 64 x 8               | RAM64X1S x 8  | 
-+------------+---------------+-----------+----------------------+---------------+
-
-Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
-
 DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
-+-----------------------------------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Module Name                                          | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
-+-----------------------------------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3 | (A2*B'')'    | 16     | 16     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 0    | 
-|myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3 | (PCIN+A*B2)' | 9      | 9      | -      | -      | 16     | 0    | 1    | -    | -    | -     | 0    | 1    | 
-|myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3 | (A2*B'')'    | 16     | 16     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 0    | 
-|myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3 | (PCIN+A*B2)' | 9      | 9      | -      | -      | 16     | 0    | 1    | -    | -    | -     | 0    | 1    | 
-|myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3 | (A2*B'')'    | 16     | 16     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 0    | 
-|myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3 | (PCIN+A*B2)' | 9      | 9      | -      | -      | 16     | 0    | 1    | -    | -    | -     | 0    | 1    | 
-|myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3 | (A2*B'')'    | 16     | 16     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 0    | 
-|myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3 | (PCIN+A*B2)' | 9      | 9      | -      | -      | 16     | 0    | 1    | -    | -    | -     | 0    | 1    | 
-+-----------------------------------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
++--------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name   | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|myip_v1_0_HLS | (A2*B'')'       | 16     | 16     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 0    | 
+|myip_v1_0_HLS | (PCIN+A''*B'')' | 16     | 9      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|myip_v1_0_HLS | (A2*B'')'       | 16     | 16     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 0    | 
+|myip_v1_0_HLS | (PCIN+A''*B'')' | 16     | 9      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|myip_v1_0_HLS | (A2*B'')'       | 16     | 16     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 0    | 
+|myip_v1_0_HLS | (PCIN+A''*B'')' | 16     | 9      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|myip_v1_0_HLS | (A2*B'')'       | 16     | 16     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 0    | 
+|myip_v1_0_HLS | (PCIN+A''*B'')' | 16     | 9      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
++--------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
 ---------------------------------------------------------------------------------
@@ -871,41 +900,19 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:25 ; elapsed = 00:02:28 . Memory (MB): peak = 3030.363 ; gain = 1548.535
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:16 ; elapsed = 00:01:45 . Memory (MB): peak = 2852.402 ; gain = 1370.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:30 ; elapsed = 00:02:34 . Memory (MB): peak = 3030.363 ; gain = 1548.535
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start ROM, RAM, DSP, Shift Register and Retiming Reporting
----------------------------------------------------------------------------------
-
-Distributed RAM: Final Mapping Report
-+------------+---------------+-----------+----------------------+---------------+
-|Module Name | RTL Object    | Inference | Size (Depth x Width) | Primitives    | 
-+------------+---------------+-----------+----------------------+---------------+
-|inst        | A_U/ram_reg   | Implied   | 64 x 8               | RAM64X1S x 8  | 
-|inst        | A_1_U/ram_reg | Implied   | 64 x 8               | RAM64X1S x 8  | 
-|inst        | A_2_U/ram_reg | Implied   | 64 x 8               | RAM64X1S x 8  | 
-|inst        | A_3_U/ram_reg | Implied   | 64 x 8               | RAM64X1S x 8  | 
-|inst        | A_4_U/ram_reg | Implied   | 64 x 8               | RAM64X1S x 8  | 
-|inst        | A_5_U/ram_reg | Implied   | 64 x 8               | RAM64X1S x 8  | 
-|inst        | A_6_U/ram_reg | Implied   | 64 x 8               | RAM64X1S x 8  | 
-|inst        | A_7_U/ram_reg | Implied   | 64 x 8               | RAM64X1S x 8  | 
-|inst        | C_0_U/ram_reg | Implied   | 64 x 8               | RAM64X1S x 8  | 
-+------------+---------------+-----------+----------------------+---------------+
-
----------------------------------------------------------------------------------
-Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+Finished Timing Optimization : Time (s): cpu = 00:01:26 ; elapsed = 00:01:56 . Memory (MB): peak = 2861.828 ; gain = 1380.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:31 ; elapsed = 00:02:35 . Memory (MB): peak = 3030.363 ; gain = 1548.535
+Finished Technology Mapping : Time (s): cpu = 00:01:31 ; elapsed = 00:02:00 . Memory (MB): peak = 2964.473 ; gain = 1482.922
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -923,48 +930,48 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:38 ; elapsed = 00:02:43 . Memory (MB): peak = 3030.363 ; gain = 1548.535
+Finished IO Insertion : Time (s): cpu = 00:01:37 ; elapsed = 00:02:07 . Memory (MB): peak = 2979.254 ; gain = 1497.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:38 ; elapsed = 00:02:43 . Memory (MB): peak = 3030.363 ; gain = 1548.535
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:37 ; elapsed = 00:02:07 . Memory (MB): peak = 2979.254 ; gain = 1497.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:38 ; elapsed = 00:02:43 . Memory (MB): peak = 3030.363 ; gain = 1548.535
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:37 ; elapsed = 00:02:07 . Memory (MB): peak = 2979.254 ; gain = 1497.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:38 ; elapsed = 00:02:43 . Memory (MB): peak = 3030.363 ; gain = 1548.535
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:37 ; elapsed = 00:02:07 . Memory (MB): peak = 2979.254 ; gain = 1497.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:38 ; elapsed = 00:02:43 . Memory (MB): peak = 3030.363 ; gain = 1548.535
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:38 ; elapsed = 00:02:08 . Memory (MB): peak = 2979.254 ; gain = 1497.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:38 ; elapsed = 00:02:43 . Memory (MB): peak = 3030.363 ; gain = 1548.535
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:38 ; elapsed = 00:02:08 . Memory (MB): peak = 2979.254 ; gain = 1497.703
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 
-Static Shift Register Report:
-+--------------+-----------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|Module Name   | RTL Name                                                                                | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
-+--------------+-----------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|myip_v1_0_HLS | grp_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3_fu_4908/ap_loop_exit_ready_pp0_iter3_reg_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-+--------------+-----------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+Dynamic Shift Register Report:
++------------+-----------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name        | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+-----------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | SRL_SIG_reg[63] | 8      | 8          | 0      | 16      | 8      | 0      | 0      | 
++------------+-----------------+--------+------------+--------+---------+--------+--------+--------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -974,18 +981,18 @@ Start Writing Synthesis Report
 ---------------------------------------------------------------------------------
 
 DSP Final Report (the ' indicates corresponding REG is set)
-+-----------------------------------------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Module Name                                          | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
-+-----------------------------------------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3 | (A''*B'')'     | 8      | 8      | -      | -      | 0      | 2    | 2    | -    | -    | -     | 0    | 1    | 
-|myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3 | (PCIN+A'*B'')' | 8      | 8      | -      | -      | 16     | 1    | 2    | -    | -    | -     | 0    | 1    | 
-|myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3 | (A''*B'')'     | 8      | 8      | -      | -      | 0      | 2    | 2    | -    | -    | -     | 0    | 1    | 
-|myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3 | (PCIN+A'*B'')' | 8      | 8      | -      | -      | 16     | 1    | 2    | -    | -    | -     | 0    | 1    | 
-|myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3 | (A''*B'')'     | 8      | 8      | -      | -      | 0      | 2    | 2    | -    | -    | -     | 0    | 1    | 
-|myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3 | (PCIN+A'*B'')' | 8      | 8      | -      | -      | 16     | 1    | 2    | -    | -    | -     | 0    | 1    | 
-|myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3 | (A''*B'')'     | 8      | 8      | -      | -      | 0      | 2    | 2    | -    | -    | -     | 0    | 1    | 
-|myip_v1_0_HLS_myip_v1_0_HLS_Pipeline_VITIS_LOOP_72_3 | (PCIN+A'*B'')' | 8      | 8      | -      | -      | 16     | 1    | 2    | -    | -    | -     | 0    | 1    | 
-+-----------------------------------------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
++--------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name   | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|myip_v1_0_HLS | (A'*B'')'       | 8      | 8      | -      | -      | 0      | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|myip_v1_0_HLS | (PCIN+A''*B'')' | 8      | 8      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|myip_v1_0_HLS | (A'*B'')'       | 8      | 8      | -      | -      | 0      | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|myip_v1_0_HLS | (PCIN+A''*B'')' | 8      | 8      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|myip_v1_0_HLS | (A'*B'')'       | 8      | 8      | -      | -      | 0      | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|myip_v1_0_HLS | (PCIN+A''*B'')' | 8      | 8      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|myip_v1_0_HLS | (A'*B'')'       | 8      | 8      | -      | -      | 0      | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|myip_v1_0_HLS | (PCIN+A''*B'')' | 8      | 8      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
++--------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 
 Report BlackBoxes: 
@@ -998,7 +1005,7 @@ Report Cell Usage:
 +------+----------------+------+
 |      |Cell            |Count |
 +------+----------------+------+
-|1     |CARRY8          |     2|
+|1     |CARRY8          |    11|
 |2     |DSP_ALU         |     8|
 |3     |DSP_A_B_DATA    |     8|
 |5     |DSP_C_DATA      |     8|
@@ -1007,45 +1014,60 @@ Report Cell Usage:
 |9     |DSP_OUTPUT      |     8|
 |10    |DSP_PREADD      |     8|
 |11    |DSP_PREADD_DATA |     8|
-|12    |LUT1            |     1|
-|13    |LUT2            |    66|
-|14    |LUT3            |    89|
-|15    |LUT4            |   122|
-|16    |LUT5            |   205|
-|17    |LUT6            |   395|
-|18    |RAM64X1S        |    72|
-|19    |SRL16E          |     1|
-|20    |FDRE            |   711|
-|21    |FDSE            |     1|
+|12    |LUT1            |    29|
+|13    |LUT2            |   567|
+|14    |LUT3            |   570|
+|15    |LUT4            |   385|
+|16    |LUT5            |   429|
+|17    |LUT6            |  1691|
+|18    |MUXF7           |    72|
+|19    |SRLC32E         |   144|
+|20    |FDRE            |  4533|
+|21    |FDSE            |   109|
 +------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:38 ; elapsed = 00:02:43 . Memory (MB): peak = 3030.363 ; gain = 1548.535
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:38 ; elapsed = 00:02:08 . Memory (MB): peak = 2979.254 ; gain = 1497.703
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 21 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:00 ; elapsed = 00:02:15 . Memory (MB): peak = 3030.363 ; gain = 695.762
-Synthesis Optimization Complete : Time (s): cpu = 00:01:38 ; elapsed = 00:02:45 . Memory (MB): peak = 3030.363 ; gain = 1548.535
+Synthesis finished with 0 errors, 0 critical warnings and 129 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:05 ; elapsed = 00:01:47 . Memory (MB): peak = 2979.254 ; gain = 815.234
+Synthesis Optimization Complete : Time (s): cpu = 00:01:38 ; elapsed = 00:02:09 . Memory (MB): peak = 2979.254 ; gain = 1497.703
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 3030.363 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 82 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.119 . Memory (MB): peak = 2991.297 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 91 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/C_0_U/U_myip_v1_0_HLS_fifo_w8_d64_S_ShiftReg/SRL_SIG_reg[63][0]_mux. inst/C_0_U/U_myip_v1_0_HLS_fifo_w8_d64_S_ShiftReg/SRL_SIG_reg[63][0]_mux 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/C_0_U/U_myip_v1_0_HLS_fifo_w8_d64_S_ShiftReg/SRL_SIG_reg[63][1]_mux. inst/C_0_U/U_myip_v1_0_HLS_fifo_w8_d64_S_ShiftReg/SRL_SIG_reg[63][1]_mux 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/C_0_U/U_myip_v1_0_HLS_fifo_w8_d64_S_ShiftReg/SRL_SIG_reg[63][2]_mux. inst/C_0_U/U_myip_v1_0_HLS_fifo_w8_d64_S_ShiftReg/SRL_SIG_reg[63][2]_mux 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/C_0_U/U_myip_v1_0_HLS_fifo_w8_d64_S_ShiftReg/SRL_SIG_reg[63][3]_mux. inst/C_0_U/U_myip_v1_0_HLS_fifo_w8_d64_S_ShiftReg/SRL_SIG_reg[63][3]_mux 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/C_0_U/U_myip_v1_0_HLS_fifo_w8_d64_S_ShiftReg/SRL_SIG_reg[63][4]_mux. inst/C_0_U/U_myip_v1_0_HLS_fifo_w8_d64_S_ShiftReg/SRL_SIG_reg[63][4]_mux 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/C_0_U/U_myip_v1_0_HLS_fifo_w8_d64_S_ShiftReg/SRL_SIG_reg[63][5]_mux. inst/C_0_U/U_myip_v1_0_HLS_fifo_w8_d64_S_ShiftReg/SRL_SIG_reg[63][5]_mux 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/C_0_U/U_myip_v1_0_HLS_fifo_w8_d64_S_ShiftReg/SRL_SIG_reg[63][6]_mux. inst/C_0_U/U_myip_v1_0_HLS_fifo_w8_d64_S_ShiftReg/SRL_SIG_reg[63][6]_mux 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
+INFO: [Constraints 18-8706] Failed to create MUXF7 shape for instance inst/C_0_U/U_myip_v1_0_HLS_fifo_w8_d64_S_ShiftReg/SRL_SIG_reg[63][7]_mux. inst/C_0_U/U_myip_v1_0_HLS_fifo_w8_d64_S_ShiftReg/SRL_SIG_reg[63][7]_mux 
+	to bel F7MUX_AB. Flop can not be placed in the same row as its driver in order to avoid hold issue since they either have different clock signals or not driven by global clock.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3030.363 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3008.176 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 80 instances were transformed.
+  A total of 8 instances were transformed.
   DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 8 instances
-  RAM64X1S => RAM64X1S (RAMS64E): 72 instances
 
-Synth Design complete | Checksum: b50d0d7a
+Synth Design complete | Checksum: 6a2a31f3
 INFO: [Common 17-83] Releasing license: Synthesis
-65 Infos, 26 Warnings, 0 Critical Warnings and 0 Errors encountered.
+70 Infos, 126 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:47 ; elapsed = 00:02:58 . Memory (MB): peak = 3030.363 ; gain = 2523.801
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 3030.363 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:49 ; elapsed = 00:02:20 . Memory (MB): peak = 3008.176 ; gain = 2501.383
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 3008.176 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.runs/design_1_myip_v1_0_HLS_0_0_synth_1/design_1_myip_v1_0_HLS_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_myip_v1_0_HLS_0_0, cache-ID = 91630b3a02b1aa5c
-INFO: [Coretcl 2-1174] Renamed 23 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 3030.363 ; gain = 0.000
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_myip_v1_0_HLS_0_0, cache-ID = 86d0293f74d5a6d0
+INFO: [Coretcl 2-1174] Renamed 51 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 3008.176 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.runs/design_1_myip_v1_0_HLS_0_0_synth_1/design_1_myip_v1_0_HLS_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_myip_v1_0_HLS_0_0_utilization_synth.rpt -pb design_1_myip_v1_0_HLS_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Mar 19 02:12:57 2025...
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 19 15:05:54 2025...

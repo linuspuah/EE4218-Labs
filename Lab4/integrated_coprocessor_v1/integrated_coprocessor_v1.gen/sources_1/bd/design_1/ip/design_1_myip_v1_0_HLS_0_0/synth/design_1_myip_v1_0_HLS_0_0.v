@@ -48,80 +48,80 @@
 
 
 // IP VLNV: xilinx.com:hls:myip_v1_0_HLS:1.0
-// IP Revision: 2114001603
+// IP Revision: 2114002380
 
 (* X_CORE_INFO = "myip_v1_0_HLS,Vivado 2023.2" *)
 (* CHECK_LICENSE_TYPE = "design_1_myip_v1_0_HLS_0_0,myip_v1_0_HLS,{}" *)
-(* CORE_GENERATION_INFO = "design_1_myip_v1_0_HLS_0_0,myip_v1_0_HLS,{x_ipProduct=Vivado 2023.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=myip_v1_0_HLS,x_ipVersion=1.0,x_ipCoreRevision=2114001603,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "design_1_myip_v1_0_HLS_0_0,myip_v1_0_HLS,{x_ipProduct=Vivado 2023.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=myip_v1_0_HLS,x_ipVersion=1.0,x_ipCoreRevision=2114002380,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_myip_v1_0_HLS_0_0 (
-  ap_clk,
-  ap_rst_n,
   S_AXIS_TVALID,
   S_AXIS_TREADY,
   S_AXIS_TDATA,
-  S_AXIS_TLAST,
   S_AXIS_TKEEP,
   S_AXIS_TSTRB,
+  S_AXIS_TLAST,
   M_AXIS_TVALID,
   M_AXIS_TREADY,
   M_AXIS_TDATA,
-  M_AXIS_TLAST,
   M_AXIS_TKEEP,
-  M_AXIS_TSTRB
+  M_AXIS_TSTRB,
+  M_AXIS_TLAST,
+  ap_clk,
+  ap_rst_n
 );
 
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_clk, ASSOCIATED_BUSIF S_AXIS:M_AXIS, ASSOCIATED_RESET ap_rst_n, FREQ_HZ 99999001, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_zynq_ultra_ps_e_0_0_pl_clk0, INSERT_VIP 0" *)
-(* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 ap_clk CLK" *)
-input wire ap_clk;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_rst_n, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
-(* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 ap_rst_n RST" *)
-input wire ap_rst_n;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS TVALID" *)
 input wire S_AXIS_TVALID;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS TREADY" *)
 output wire S_AXIS_TREADY;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS TDATA" *)
 input wire [31 : 0] S_AXIS_TDATA;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS TLAST" *)
-input wire [0 : 0] S_AXIS_TLAST;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS TKEEP" *)
 input wire [3 : 0] S_AXIS_TKEEP;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_AXIS, TDATA_NUM_BYTES 4, TUSER_WIDTH 0, TDEST_WIDTH 0, TID_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 99999001, PHASE 0.0, CLK_DOMAIN design_1_zynq_ultra_ps_e_0_0_pl_clk0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS TSTRB" *)
 input wire [3 : 0] S_AXIS_TSTRB;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_AXIS, TDATA_NUM_BYTES 4, TUSER_WIDTH 0, TDEST_WIDTH 0, TID_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 99999001, PHASE 0.0, CLK_DOMAIN design_1_zynq_ultra_ps_e_0_0_pl_clk0, INSERT_VIP 0" *)
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS TLAST" *)
+input wire [0 : 0] S_AXIS_TLAST;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TVALID" *)
 output wire M_AXIS_TVALID;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TREADY" *)
 input wire M_AXIS_TREADY;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TDATA" *)
 output wire [31 : 0] M_AXIS_TDATA;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TLAST" *)
-output wire [0 : 0] M_AXIS_TLAST;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TKEEP" *)
 output wire [3 : 0] M_AXIS_TKEEP;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_AXIS, TDATA_NUM_BYTES 4, TUSER_WIDTH 0, TDEST_WIDTH 0, TID_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 99999001, PHASE 0.0, CLK_DOMAIN design_1_zynq_ultra_ps_e_0_0_pl_clk0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TSTRB" *)
 output wire [3 : 0] M_AXIS_TSTRB;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_AXIS, TDATA_NUM_BYTES 4, TUSER_WIDTH 0, TDEST_WIDTH 0, TID_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 99999001, PHASE 0.0, CLK_DOMAIN design_1_zynq_ultra_ps_e_0_0_pl_clk0, INSERT_VIP 0" *)
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TLAST" *)
+output wire [0 : 0] M_AXIS_TLAST;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_clk, ASSOCIATED_BUSIF S_AXIS:M_AXIS, ASSOCIATED_RESET ap_rst_n, FREQ_HZ 99999001, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_zynq_ultra_ps_e_0_0_pl_clk0, INSERT_VIP 0" *)
+(* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 ap_clk CLK" *)
+input wire ap_clk;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_rst_n, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
+(* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 ap_rst_n RST" *)
+input wire ap_rst_n;
 
 (* SDX_KERNEL = "true" *)
 (* SDX_KERNEL_TYPE = "hls" *)
 (* SDX_KERNEL_SYNTH_INST = "inst" *)
   myip_v1_0_HLS inst (
-    .ap_clk(ap_clk),
-    .ap_rst_n(ap_rst_n),
     .S_AXIS_TVALID(S_AXIS_TVALID),
     .S_AXIS_TREADY(S_AXIS_TREADY),
     .S_AXIS_TDATA(S_AXIS_TDATA),
-    .S_AXIS_TLAST(S_AXIS_TLAST),
     .S_AXIS_TKEEP(S_AXIS_TKEEP),
     .S_AXIS_TSTRB(S_AXIS_TSTRB),
+    .S_AXIS_TLAST(S_AXIS_TLAST),
     .M_AXIS_TVALID(M_AXIS_TVALID),
     .M_AXIS_TREADY(M_AXIS_TREADY),
     .M_AXIS_TDATA(M_AXIS_TDATA),
-    .M_AXIS_TLAST(M_AXIS_TLAST),
     .M_AXIS_TKEEP(M_AXIS_TKEEP),
-    .M_AXIS_TSTRB(M_AXIS_TSTRB)
+    .M_AXIS_TSTRB(M_AXIS_TSTRB),
+    .M_AXIS_TLAST(M_AXIS_TLAST),
+    .ap_clk(ap_clk),
+    .ap_rst_n(ap_rst_n)
   );
 endmodule

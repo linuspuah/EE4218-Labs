@@ -83,3 +83,15 @@ timestamp=[2025-03-19 02:51:38], mode=BUILD, duration=0:00:00.762, duration_ms=7
 timestamp=[2025-03-19 02:52:39], mode=BUILD, duration=0:00:00.131, duration_ms=131, data={name=matrix_mult_lab4, configuration=Debug, clean_build=false}
 timestamp=[2025-03-19 02:53:34], mode=BUILD, duration=0:00:00.767, duration_ms=767, data={name=matrix_mult_lab4, configuration=Debug, clean_build=false}
 timestamp=[2025-03-19 02:57:16], mode=BUILD, duration=0:00:00.836, duration_ms=836, data={name=matrix_mult_lab4, configuration=Debug, clean_build=false}
+timestamp=[2025-03-19 14:27:38], mode=WORKBENCH_START, duration=0:01:04.537, duration_ms=64537, data={}
+timestamp=[2025-03-19 14:27:38], mode=WORKBENCH_UI_INIT, duration=0:00:00.483, duration_ms=483, data={editors_count=14, platform_editors_count=9, projects_count=8, platform_projects_count=2, active_platform_editor=false, projects=HDL_HLS_v2_platform_project,RemoteSystemsTempFiles,lab4_v2,matrix_mult_lab4,matrix_mult_lab4_Traces,matrix_mult_lab4_system,xtmrctr_polled_example_1,xtmrctr_polled_example_1_system}
+timestamp=[2025-03-19 14:27:40], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.147, duration_ms=1147, data={}
+timestamp=[2025-03-19 14:29:11], mode=PLATFORM_CREATION, duration=0:00:27.204, duration_ms=27204, data={platform_source=dsa, os=standalone, processor=psu_cortexa53, platform=null}
+timestamp=[2025-03-19 14:32:03], mode=PLATFORM_GENERATION, duration=0:00:52.517, duration_ms=52517, data={name=HDL_HLS_v3_platform_proj}
+timestamp=[2025-03-19 14:32:08], mode=BUILD, duration=0:00:01.099, duration_ms=1099, data={name=matrix_mult_lab4, configuration=Debug, clean_build=false}
+timestamp=[2025-03-19 14:36:49], mode=PLATFORM_GENERATION, duration=0:00:03.028, duration_ms=3028, data={name=HDL_HLS_v3_platform_proj}
+timestamp=[2025-03-19 14:36:49], mode=BUILD, duration=0:00:00.132, duration_ms=132, data={name=matrix_mult_lab4, configuration=Debug, clean_build=false}
+timestamp=[2025-03-19 14:43:14], mode=BUILD, duration=0:00:01.168, duration_ms=1168, data={name=matrix_mult_lab4, configuration=Debug, clean_build=false}
+timestamp=[2025-03-19 15:15:06], mode=PLATFORM_CREATION, duration=0:00:29.031, duration_ms=29031, data={platform_source=dsa, os=standalone, processor=psu_cortexa53, platform=null}
+timestamp=[2025-03-19 15:16:18], mode=PLATFORM_GENERATION, duration=0:00:51.869, duration_ms=51869, data={name=HDL_HLS_v4_platform_proj}
+timestamp=[2025-03-19 15:19:23], mode=BUILD, duration=0:00:00.996, duration_ms=996, data={name=matrix_mult_lab4, configuration=Debug, clean_build=false}

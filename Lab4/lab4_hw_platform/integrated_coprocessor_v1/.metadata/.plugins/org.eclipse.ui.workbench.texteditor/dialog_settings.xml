@@ -1,35 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="InitFifoInstance"/>
+		<item key="selection" value="NUM_ITERATIONS"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="InitFifoInstance"/>
-			<item value="ProcessFifoData_0"/>
-			<item value="ENABLE_PRINT_STATEMENTS"/>
+			<item value="NUM_ITERATIONS"/>
+			<item value="XUartPs_SendByte"/>
 			<item value="ENABLE_TCL_PROFILER"/>
 			<item value="ProcessFifoData"/>
-			<item value="xil_print"/>
-			<item value="result_memory"/>
-			<item value="word_cnt"/>
-			<item value="config"/>
-			<item value="Config"/>
-			<item value="test_input_memory"/>
-			<item value="status0"/>
-			<item value="DeviceId"/>
-			<item value="instanceptr"/>
-			<item value="instanceptw"/>
+			<item value="FifoInstance_1"/>
+			<item value="FifoInstance_2"/>
+			<item value="InstancePtr_2"/>
+			<item value="InstancePtr_1"/>
+			<item value="result:"/>
+			<item value="FifoInstance_0"/>
+			<item value="ENABLE_AXI_TIMER"/>
+			<item value="clock cycles"/>
+			<item value="def ENABLE_P"/>
+			<item value="result"/>
+			<item value="TmrCtrNumber"/>
 		</list>
 		<list key="replacehistory">
+			<item value="ENABLE_TCF_PROFILER"/>
+			<item value="for (int i = 0; i &lt; NUM_ITERATIONS; i++) {"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="941"/>
-		<item key="DIALOG_Y_ORIGIN" value="359"/>
+		<item key="DIALOG_X_ORIGIN" value="654"/>
+		<item key="DIALOG_Y_ORIGIN" value="562"/>
 		<item key="DIALOG_WIDTH" value="284"/>
 		<item key="DIALOG_HEIGHT" value="283"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|5|0|Segoe UI"/>

@@ -3,7 +3,7 @@
 	<name>matrix_mult_lab4</name>
 	<comment>Created by Vitis v2023.2</comment>
 	<projects>
-		<project>HDL_HLS_v2_platform_project</project>
+		<project>HDL_HLS_v4_platform_proj</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

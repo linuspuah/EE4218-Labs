@@ -4,7 +4,7 @@
     "xci_name": "design_1_myip_v1_unoptimized_0_0",
     "cell_name": "myip_v1_unoptimized_0",
     "component_reference": "xilinx.com:hls:myip_v1_unoptimized_HLS:1.0",
-    "ip_revision": "2114001604",
+    "ip_revision": "2114002331",
     "gen_directory": "../../../../../../integrated_coprocessor_v1.gen/sources_1/bd/design_1/ip/design_1_myip_v1_unoptimized_0_0",
     "parameters": {
       "component_parameters": {
@@ -30,7 +30,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "2114001604" } ],
+        "IPREVISION": [ { "value": "2114002331" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../integrated_coprocessor_v1.gen/sources_1/bd/design_1/ip/design_1_myip_v1_unoptimized_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],

@@ -2,10 +2,10 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-// Date        : Wed Mar 19 02:13:09 2025
+// Date        : Wed Mar 19 02:13:08 2025
 // Host        : linus_zenbook running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               c:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_v1.gen/sources_1/bd/design_1/ip/design_1_axi_timer_0_0/design_1_axi_timer_0_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top design_1_axi_timer_0_0 -prefix
+//               design_1_axi_timer_0_0_ design_1_axi_timer_0_0_stub.v
 // Design      : design_1_axi_timer_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xck26-sfvc784-2LV-c

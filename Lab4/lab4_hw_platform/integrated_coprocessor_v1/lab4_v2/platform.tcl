@@ -22,3 +22,6 @@ bsp reload
 domain active {zynqmp_fsbl}
 bsp reload
 platform generate -domains 
+platform active {lab4_v2}
+domain active {standalone_domain}
+bsp reload
