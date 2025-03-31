@@ -25,3 +25,4 @@ platform generate -domains
 platform active {lab4_v2}
 domain active {standalone_domain}
 bsp reload
+platform active {lab4_v2}

@@ -1,0 +1,21 @@
+01:28:01 **** Incremental Build of configuration Debug for project MLP_Neural_network_project ****
+make all 
+'Building file: ../src/MLP_neural_network_project.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/MLP_neural_network_project.o" -IC:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/export/HDL_HLS_v2_platform_project/sw/HDL_HLS_v2_platform_project/standalone_domain/bspinclude/include -MMD -MP -MF"src/MLP_neural_network_project.d" -MT"src/MLP_neural_network_project.o" -o "src/MLP_neural_network_project.o" "../src/MLP_neural_network_project.c"
+'Finished building: ../src/MLP_neural_network_project.c'
+' '
+'Building target: MLP_Neural_network_project.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/export/HDL_HLS_v2_platform_project/sw/HDL_HLS_v2_platform_project/standalone_domain/bsplib/lib -o "MLP_Neural_network_project.elf"  ./src/MLP_neural_network_project.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MLP_Neural_network_project.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size MLP_Neural_network_project.elf  |tee "MLP_Neural_network_project.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 135644	   5864	  23964	 165472	  28660	MLP_Neural_network_project.elf
+'Finished building: MLP_Neural_network_project.elf.size'
+' '
+
+01:28:02 Build Finished (took 800ms)
+

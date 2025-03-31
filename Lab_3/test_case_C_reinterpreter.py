@@ -14,8 +14,8 @@ def process_input():
 
         # Try to convert the input to a hexadecimal number
         try:
-            hex_value = int(user_input.strip(), 16)
-            hex_values.append(hex_value)
+            decimal_value = int(user_input)  # Treat input as decimal value
+            hex_values.append(decimal_value)
         except ValueError:
             print("Invalid hex input, please enter a valid hex number.")
 

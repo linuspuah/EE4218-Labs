@@ -16,3 +16,5 @@ platform write
 platform generate -domains 
 platform active {HDL_HLS_v2_platform_project}
 platform generate
+platform active {HDL_HLS_v2_platform_project}
+platform generate

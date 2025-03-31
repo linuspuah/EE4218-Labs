@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<systemproject:SystemProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdsproject="http://www.xilinx.com/sdsproject" xmlns:systemproject="http://www.xilinx.com/systemproject" name="MLP_Neural_network_project_system" platform="C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/export/HDL_HLS_v2_platform_project/HDL_HLS_v2_platform_project.xpfm" platformUID="xilinx:kv260_som::0.0(custom)" sysConfig="HDL_HLS_v2_platform_project" runtime="C/C++" rootFSLocation="" linuxImage="" sysroot="">
+  <configuration name="Debug" id="com.xilinx.sdx.system.managedbuilder.debugConfiguration.1089089276">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="MLP_Neural_network_project" domainName="standalone_domain" domainPrettyName="standalone on psu_cortexa53_0" appBuildConfig="Debug"/>
+      <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
+    </configBuildOptions>
+  </configuration>
+  <configuration name="Release" id="com.xilinx.sdx.system.managedbuilder.releaseConfiguration.152972655">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="MLP_Neural_network_project" domainName="standalone_domain" domainPrettyName="standalone on psu_cortexa53_0" appBuildConfig="Release"/>
+      <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
+    </configBuildOptions>
+  </configuration>
+</systemproject:SystemProject>

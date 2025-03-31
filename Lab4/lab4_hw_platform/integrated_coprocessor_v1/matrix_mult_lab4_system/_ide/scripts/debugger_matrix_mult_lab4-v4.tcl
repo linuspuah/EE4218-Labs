@@ -24,9 +24,9 @@ set mode [expr [mrd -value 0xFF5E0200] & 0xf]
 targets -set -nocase -filter {name =~ "*A53*#0"}
 rst -processor
 dow C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v4_platform_proj/export/HDL_HLS_v4_platform_proj/sw/HDL_HLS_v4_platform_proj/boot/fsbl.elf
-set bp_33_15_fsbl_bp [bpadd -addr &XFsbl_Exit]
+set bp_3_41_fsbl_bp [bpadd -addr &XFsbl_Exit]
 con -block -timeout 60
-bpremove $bp_33_15_fsbl_bp
+bpremove $bp_3_41_fsbl_bp
 targets -set -nocase -filter {name =~ "*A53*#0"}
 rst -processor
 dow C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/matrix_mult_lab4/Debug/matrix_mult_lab4.elf
