@@ -1,4 +1,4 @@
-01:28:01 **** Incremental Build of configuration Debug for project MLP_Neural_network_project ****
+14:45:01 **** Incremental Build of configuration Debug for project MLP_Neural_network_project ****
 make all 
 'Building file: ../src/MLP_neural_network_project.c'
 'Invoking: ARM v8 gcc compiler'
@@ -17,5 +17,5 @@ aarch64-none-elf-size MLP_Neural_network_project.elf  |tee "MLP_Neural_network_p
 'Finished building: MLP_Neural_network_project.elf.size'
 ' '
 
-01:28:02 Build Finished (took 800ms)
+14:45:03 Build Finished (took 2s.103ms)
 

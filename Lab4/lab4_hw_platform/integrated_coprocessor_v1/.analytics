@@ -124,3 +124,7 @@ timestamp=[2025-04-01 01:21:25], mode=BUILD, duration=0:00:00.828, duration_ms=8
 timestamp=[2025-04-01 01:24:24], mode=BUILD, duration=0:00:00.839, duration_ms=839, data={name=MLP_Neural_network_project, configuration=Debug, clean_build=false}
 timestamp=[2025-04-01 01:26:03], mode=BUILD, duration=0:00:00.757, duration_ms=757, data={name=MLP_Neural_network_project, configuration=Debug, clean_build=false}
 timestamp=[2025-04-01 01:28:02], mode=BUILD, duration=0:00:00.813, duration_ms=813, data={name=MLP_Neural_network_project, configuration=Debug, clean_build=false}
+timestamp=[2025-04-02 14:43:47], mode=WORKBENCH_START, duration=0:00:21.604, duration_ms=21604, data={}
+timestamp=[2025-04-02 14:43:47], mode=WORKBENCH_UI_INIT, duration=0:00:00.312, duration_ms=312, data={editors_count=22, platform_editors_count=16, projects_count=12, platform_projects_count=4, active_platform_editor=false, projects=HDL_HLS_v2_platform_project,HDL_HLS_v3_platform_proj,HDL_HLS_v4_platform_proj,MLP_Neural_network_project,MLP_Neural_network_project_system,RemoteSystemsTempFiles,lab4_v2,matrix_mult_lab4,matrix_mult_lab4_Traces,matrix_mult_lab4_system,xtmrctr_polled_example_1,xtmrctr_polled_example_1_system}
+timestamp=[2025-04-02 14:43:49], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.396, duration_ms=1396, data={}
+timestamp=[2025-04-02 14:45:03], mode=BUILD, duration=0:00:02.160, duration_ms=2160, data={name=MLP_Neural_network_project, configuration=Debug, clean_build=false}

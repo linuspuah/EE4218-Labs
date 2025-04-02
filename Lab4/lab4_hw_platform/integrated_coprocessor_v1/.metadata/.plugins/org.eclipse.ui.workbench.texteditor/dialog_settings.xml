@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="GetValue"/>
+		<item key="selection" value="&amp;"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="getvalue"/>
-			<item value="NUM_ITERATIONS"/>
-			<item value="ENABLE_TCF_PROFILER"/>
-			<item value="XUartPs_SendByte"/>
-			<item value="ENABLE_TCL_PROFILER"/>
-			<item value="ProcessFifoData"/>
-			<item value="FifoInstance_1"/>
-			<item value="FifoInstance_2"/>
-			<item value="InstancePtr_2"/>
-			<item value="InstancePtr_1"/>
-			<item value="result:"/>
-			<item value="FifoInstance_0"/>
-			<item value="ENABLE_AXI_TIMER"/>
-			<item value="clock cycles"/>
-			<item value="def ENABLE_P"/>
+			<item value="&amp;"/>
+			<item value="\n"/>
+			<item value="/n"/>
+			<item value="xil_printf"/>
+			<item value="activ_func_sigmoid"/>
+			<item value="sigmoid"/>
+			<item value="readInHexData"/>
+			<item value="totalWords"/>
+			<item value="read"/>
+			<item value="matrix_multiply_neuron"/>
+			<item value="i"/>
+			<item value="j"/>
+			<item value="MAX_VALUE"/>
+			<item value="neuron_result_memory"/>
+			<item value="matrix_multiply_sw"/>
 		</list>
 		<list key="replacehistory">
 			<item value="ENABLE_TCF_PROFILER"/>
@@ -30,10 +30,10 @@
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="843"/>
-		<item key="DIALOG_Y_ORIGIN" value="243"/>
-		<item key="DIALOG_WIDTH" value="385"/>
-		<item key="DIALOG_HEIGHT" value="523"/>
-		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|5|0|Segoe UI"/>
+		<item key="DIALOG_X_ORIGIN" value="986"/>
+		<item key="DIALOG_Y_ORIGIN" value="249"/>
+		<item key="DIALOG_WIDTH" value="289"/>
+		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 </section>

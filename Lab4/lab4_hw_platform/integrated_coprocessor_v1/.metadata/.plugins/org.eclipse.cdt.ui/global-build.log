@@ -1,6 +1,6 @@
 Nothing to build in platform 'HDL_HLS_v2_platform_project'
 
-01:28:01 **** Incremental Build of configuration Debug for project MLP_Neural_network_project ****
+14:45:01 **** Incremental Build of configuration Debug for project MLP_Neural_network_project ****
 make all 
 'Building file: ../src/MLP_neural_network_project.c'
 'Invoking: ARM v8 gcc compiler'

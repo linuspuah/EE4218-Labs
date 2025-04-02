@@ -85,11 +85,15 @@ void matrix_multiply_neuron(int num_rows, int num_cols, int* weight_vector, int*
 	for (int test_index = 0; test_index < num_rows; test_index++) { //for each test case
 		for (int j = 0; j < NUM_NEURONS; j++) { //for each neuron
 			int sum = 0;
+			int round_up = 0;
 			for (int k = 0; k < num_cols; k++) { //each column
 				sum += test_input_memory[test_index * num_cols + k] *
 						weight_vector[k + j * num_cols];
 			}
-			result_vector[j + test_index * NUM_NEURONS] = activ_func_sigmoid[((sum >> 8) & 0xFF) - 1];
+			if (sum & 0x80) {
+				round_up = 1;  // Round up by adding 1
+			}
+			result_vector[j + test_index * NUM_NEURONS] = activ_func_sigmoid[((sum >> 8) & 0xFF) + round_up  - 1];
 		}
 	}
 	#ifdef ENABLE_AXI_TIMER
