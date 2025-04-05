@@ -51,10 +51,14 @@ void matrix_mult_result(const ap_uint<8> N1[NUMBER_OF_TEST_INPUTS],
                  const ap_uint<8> WEIGHT[NUMBER_OF_NEURONS + 1],
                  ap_uint<8>* RES) {
 #pragma HLS INLINE
-
+    // Left shift by 8 to multiply with weight0 but Right shift by 8 bits (division by 256)
     for (int i = 0; i < NUMBER_OF_TEST_INPUTS; i++) { // for each test case
-        uint16_t sum = WEIGHT[0] + N1[i]*WEIGHT[1] + N2[i]*WEIGHT[2];
-        RES[i] = (sum >> 8) & 0xFF; // Right shift by 8 bits (division by 256)
+        ap_int<8> round_up = 0;
+        ap_int<16> sum = (N1[i]*WEIGHT[1] + N2[i]*WEIGHT[2]);
+        if (sum & 0x80) {
+            round_up = 1;  // Round up by adding 1
+        }
+        RES[i] = (WEIGHT[0] + (sum >> 8) + round_up) & 0xFF; 
     }
 }
 

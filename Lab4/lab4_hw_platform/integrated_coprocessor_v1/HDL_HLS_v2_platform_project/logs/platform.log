@@ -6741,3 +6741,699 @@ C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coproc
 C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/lab4_v2/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_3||
 
 TRACE::2025-03-31.17:08:55::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-04-06.02:59:20::SCWPlatform::Trying to open the hw design at C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:20::SCWPlatform::DSA given C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:20::SCWPlatform::DSA absoulate path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:20::SCWPlatform::DSA directory C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw
+TRACE::2025-04-06.02:59:20::SCWPlatform:: Platform Path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:20::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-04-06.02:59:20::SCWPlatform::Do not have an existing db opened. 
+TRACE::2025-04-06.02:59:30::SCWPlatform::Opened new HwDB with name design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWReader::Active system found as  HDL_HLS_v2_platform_project
+TRACE::2025-04-06.02:59:30::SCWReader::Handling sysconfig HDL_HLS_v2_platform_project
+TRACE::2025-04-06.02:59:30::SCWDomain::checking for install qemu data   : 
+TRACE::2025-04-06.02:59:30::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2023.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/
+TRACE::2025-04-06.02:59:30::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2023.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/qemu_args.txt
+TRACE::2025-04-06.02:59:30::SCWDomain:: Using the PMUQEMU args from install at  : C:/Xilinx/Vitis/2023.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/pmu_args.txt
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to open the hw design at C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA given C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA absoulate path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA directory C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Platform Path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to open the hw design at C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA given C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA absoulate path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA directory C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Platform Path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to open the hw design at C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA given C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA absoulate path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA directory C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Platform Path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-06.02:59:30::SCWReader::Boot application domain added for zynqmp_fsbl
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to open the hw design at C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA given C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA absoulate path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA directory C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Platform Path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-06.02:59:30::SCWMssOS::Checking the sw design at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2025-04-06.02:59:30::SCWMssOS::No sw design opened at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS::mss exists loading the mss file  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS::Opened the sw design from mss  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS::Adding the swdes entry C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss with des name system
+TRACE::2025-04-06.02:59:30::SCWMssOS::updating the scw layer about changes
+TRACE::2025-04-06.02:59:30::SCWMssOS::Opened the sw design.  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to open the hw design at C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA given C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA absoulate path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA directory C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Platform Path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-06.02:59:30::SCWMssOS::Checking the sw design at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2025-04-06.02:59:30::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS:: library already available in sw design:  xilffs:5.1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to open the hw design at C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA given C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA absoulate path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA directory C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Platform Path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-06.02:59:30::SCWMssOS::Checking the sw design at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2025-04-06.02:59:30::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS:: library already available in sw design:  xilsecure:5.2
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to open the hw design at C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA given C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA absoulate path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA directory C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Platform Path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-06.02:59:30::SCWMssOS::Checking the sw design at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2025-04-06.02:59:30::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS:: library already available in sw design:  xilpm:5.1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to open the hw design at C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA given C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA absoulate path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA directory C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Platform Path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-06.02:59:30::SCWMssOS::Checking the sw design at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2025-04-06.02:59:30::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to open the hw design at C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA given C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA absoulate path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA directory C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Platform Path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-06.02:59:30::SCWMssOS::Checking the sw design at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2025-04-06.02:59:30::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to open the hw design at C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA given C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA absoulate path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA directory C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Platform Path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-06.02:59:30::SCWMssOS::Checking the sw design at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2025-04-06.02:59:30::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to open the hw design at C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA given C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA absoulate path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA directory C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Platform Path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-06.02:59:30::SCWMssOS::Checking the sw design at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2025-04-06.02:59:30::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to open the hw design at C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA given C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA absoulate path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA directory C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Platform Path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-06.02:59:30::SCWMssOS::Checking the sw design at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2025-04-06.02:59:30::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to open the hw design at C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA given C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA absoulate path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA directory C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Platform Path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-06.02:59:30::SCWMssOS::Checking the sw design at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2025-04-06.02:59:30::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to open the hw design at C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA given C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA absoulate path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA directory C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Platform Path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-06.02:59:30::SCWMssOS::Checking the sw design at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2025-04-06.02:59:30::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to open the hw design at C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA given C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA absoulate path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA directory C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Platform Path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-06.02:59:30::SCWMssOS::Checking the sw design at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2025-04-06.02:59:30::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS::Saving the mss changes C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-04-06.02:59:30::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-04-06.02:59:30::SCWMssOS::Commit changes completed.
+TRACE::2025-04-06.02:59:30::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2025-04-06.02:59:30::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to open the hw design at C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA given C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA absoulate path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA directory C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Platform Path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-06.02:59:30::SCWMssOS::Checking the sw design at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2025-04-06.02:59:30::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWReader::No isolation master present  
+TRACE::2025-04-06.02:59:30::SCWDomain::checking for install qemu data   : 
+TRACE::2025-04-06.02:59:30::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2023.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/
+TRACE::2025-04-06.02:59:30::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2023.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/qemu_args.txt
+TRACE::2025-04-06.02:59:30::SCWDomain:: Using the PMUQEMU args from install at  : C:/Xilinx/Vitis/2023.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/pmu_args.txt
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to open the hw design at C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA given C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA absoulate path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA directory C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Platform Path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-06.02:59:30::SCWReader::Boot application domain added for zynqmp_pmufw
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to open the hw design at C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA given C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA absoulate path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA directory C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Platform Path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-06.02:59:30::SCWMssOS::Checking the sw design at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2025-04-06.02:59:30::SCWMssOS::No sw design opened at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS::mss exists loading the mss file  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS::Opened the sw design from mss  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS::Adding the swdes entry C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss with des name system_0
+TRACE::2025-04-06.02:59:30::SCWMssOS::updating the scw layer about changes
+TRACE::2025-04-06.02:59:30::SCWMssOS::Opened the sw design.  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to open the hw design at C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA given C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA absoulate path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA directory C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Platform Path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-06.02:59:30::SCWMssOS::Checking the sw design at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-04-06.02:59:30::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS:: library already available in sw design:  xilfpga:6.5
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to open the hw design at C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA given C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA absoulate path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA directory C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Platform Path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-06.02:59:30::SCWMssOS::Checking the sw design at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-04-06.02:59:30::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS:: library already available in sw design:  xilsecure:5.2
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to open the hw design at C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA given C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA absoulate path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA directory C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Platform Path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-06.02:59:30::SCWMssOS::Checking the sw design at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-04-06.02:59:30::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS:: library already available in sw design:  xilskey:7.5
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to open the hw design at C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA given C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA absoulate path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA directory C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Platform Path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-06.02:59:30::SCWMssOS::Checking the sw design at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-04-06.02:59:30::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to open the hw design at C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA given C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA absoulate path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA directory C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Platform Path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-06.02:59:30::SCWMssOS::Checking the sw design at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-04-06.02:59:30::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS::Saving the mss changes C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-04-06.02:59:30::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-04-06.02:59:30::SCWMssOS::Commit changes completed.
+TRACE::2025-04-06.02:59:30::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2025-04-06.02:59:30::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to open the hw design at C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA given C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA absoulate path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA directory C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Platform Path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-06.02:59:30::SCWMssOS::Checking the sw design at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-04-06.02:59:30::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWReader::No isolation master present  
+TRACE::2025-04-06.02:59:30::SCWDomain::checking for install qemu data   : 
+TRACE::2025-04-06.02:59:30::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2023.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/
+TRACE::2025-04-06.02:59:30::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2023.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/qemu_args.txt
+TRACE::2025-04-06.02:59:30::SCWDomain:: Using the PMUQEMU args from install at  : C:/Xilinx/Vitis/2023.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/pmu_args.txt
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to open the hw design at C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA given C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA absoulate path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA directory C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Platform Path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to open the hw design at C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA given C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA absoulate path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA directory C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Platform Path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to open the hw design at C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA given C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA absoulate path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA directory C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Platform Path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-06.02:59:30::SCWMssOS::Checking the sw design at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-04-06.02:59:30::SCWMssOS::No sw design opened at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS::mss exists loading the mss file  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS::Opened the sw design from mss  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS::Adding the swdes entry C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/psu_cortexa53_0/standalone_domain/bsp/system.mss with des name system_1
+TRACE::2025-04-06.02:59:30::SCWMssOS::updating the scw layer about changes
+TRACE::2025-04-06.02:59:30::SCWMssOS::Opened the sw design.  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS::Saving the mss changes C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-04-06.02:59:30::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-04-06.02:59:30::SCWMssOS::Commit changes completed.
+TRACE::2025-04-06.02:59:30::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2025-04-06.02:59:30::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to open the hw design at C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA given C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA absoulate path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform::DSA directory C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Platform Path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.02:59:30::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-04-06.02:59:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-04-06.02:59:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-06.02:59:30::SCWMssOS::Checking the sw design at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2025-04-06.02:59:30::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-04-06.02:59:30::SCWReader::No isolation master present  
+LOG::2025-04-06.03:03:42::SCWPlatform::Started generating the artifacts platform HDL_HLS_v2_platform_project
+TRACE::2025-04-06.03:03:42::SCWPlatform::Sanity checking of platform is completed
+LOG::2025-04-06.03:03:42::SCWPlatform::Started generating the artifacts for system configuration HDL_HLS_v2_platform_project
+LOG::2025-04-06.03:03:42::SCWSystem::Checking the domain zynqmp_fsbl
+LOG::2025-04-06.03:03:42::SCWSystem::Doing application build for :  zynqmp_fsbl
+TRACE::2025-04-06.03:03:42::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2025-04-06.03:03:42::SCWDomain::Skipping the build for domain :  zynqmp_fsbl
+LOG::2025-04-06.03:03:42::SCWSystem::Checking the domain zynqmp_pmufw
+LOG::2025-04-06.03:03:42::SCWSystem::Doing application build for :  zynqmp_pmufw
+TRACE::2025-04-06.03:03:42::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2025-04-06.03:03:42::SCWDomain::Skipping the build for domain :  zynqmp_pmufw
+LOG::2025-04-06.03:03:42::SCWSystem::Checking the domain standalone_domain
+LOG::2025-04-06.03:03:42::SCWSystem::Not a boot domain 
+LOG::2025-04-06.03:03:42::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2025-04-06.03:03:42::SCWDomain::Generating domain artifcats
+TRACE::2025-04-06.03:03:42::SCWMssOS::Generating standalone artifcats
+TRACE::2025-04-06.03:03:42::SCWMssOS::Copying the qemu file from  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/resources/HDL_HLS_v2_platform_project/standalone_domain/qemu_args.txt To C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/export/HDL_HLS_v2_platform_project/sw/HDL_HLS_v2_platform_project/qemu/
+TRACE::2025-04-06.03:03:42::SCWMssOS::Copying the qemu file from  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/resources/HDL_HLS_v2_platform_project/standalone_domain/qemu_args.txt To C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/export/HDL_HLS_v2_platform_project/sw/HDL_HLS_v2_platform_project/qemu/
+TRACE::2025-04-06.03:03:42::SCWMssOS::Copying the qemu file from  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/resources/HDL_HLS_v2_platform_project/standalone_domain/qemu_args.txt To C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/export/HDL_HLS_v2_platform_project/sw/HDL_HLS_v2_platform_project/standalone_domain/qemu/
+TRACE::2025-04-06.03:03:42::SCWMssOS::Copying the qemu file from  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/resources/HDL_HLS_v2_platform_project/standalone_domain/qemu_args.txt To C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/export/HDL_HLS_v2_platform_project/sw/HDL_HLS_v2_platform_project/standalone_domain/qemu/
+TRACE::2025-04-06.03:03:42::SCWMssOS:: Copying the user libraries. 
+TRACE::2025-04-06.03:03:42::SCWPlatform::Trying to open the hw design at C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.03:03:42::SCWPlatform::DSA given C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.03:03:42::SCWPlatform::DSA absoulate path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.03:03:42::SCWPlatform::DSA directory C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw
+TRACE::2025-04-06.03:03:42::SCWPlatform:: Platform Path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.03:03:42::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-04-06.03:03:42::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-04-06.03:03:42::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-04-06.03:03:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-06.03:03:42::SCWMssOS::Checking the sw design at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-04-06.03:03:42::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/lab4_v2/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_4||
+C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/lab4_v2/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system_2||
+C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/lab4_v2/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_3||
+
+TRACE::2025-04-06.03:03:42::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-04-06.03:03:42::SCWMssOS::Completed writing the mss file at C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/psu_cortexa53_0/standalone_domain/bsp
+TRACE::2025-04-06.03:03:42::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-04-06.03:03:42::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2025-04-06.03:03:42::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2025-04-06.03:03:42::SCWDomain::Skipping the build for domain :  standalone_domain
+TRACE::2025-04-06.03:03:42::SCWMssOS::skipping the bsp build ... 
+TRACE::2025-04-06.03:03:42::SCWMssOS::Copying to export directory.
+TRACE::2025-04-06.03:03:43::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2025-04-06.03:03:43::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2025-04-06.03:03:43::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2025-04-06.03:03:43::SCWSystem::Completed Processing the sysconfig HDL_HLS_v2_platform_project
+LOG::2025-04-06.03:03:43::SCWPlatform::Completed generating the artifacts for system configuration HDL_HLS_v2_platform_project
+TRACE::2025-04-06.03:03:43::SCWPlatform::Started preparing the platform 
+TRACE::2025-04-06.03:03:43::SCWSystem::Writing the bif file for system config HDL_HLS_v2_platform_project
+TRACE::2025-04-06.03:03:43::SCWSystem::dir created 
+TRACE::2025-04-06.03:03:43::SCWSystem::Writing the bif 
+TRACE::2025-04-06.03:03:43::SCWPlatform::Started writing the spfm file 
+TRACE::2025-04-06.03:03:43::SCWPlatform::Started writing the xpfm file 
+TRACE::2025-04-06.03:03:43::SCWPlatform::Completed generating the platform
+TRACE::2025-04-06.03:03:43::SCWMssOS::Saving the mss changes C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-04-06.03:03:43::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-04-06.03:03:43::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-04-06.03:03:43::SCWMssOS::Commit changes completed.
+TRACE::2025-04-06.03:03:43::SCWMssOS::Saving the mss changes C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-04-06.03:03:43::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-04-06.03:03:43::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-04-06.03:03:43::SCWMssOS::Commit changes completed.
+TRACE::2025-04-06.03:03:43::SCWMssOS::Saving the mss changes C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-04-06.03:03:43::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-04-06.03:03:43::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-04-06.03:03:43::SCWMssOS::Commit changes completed.
+TRACE::2025-04-06.03:03:43::SCWPlatform::Trying to open the hw design at C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.03:03:43::SCWPlatform::DSA given C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.03:03:43::SCWPlatform::DSA absoulate path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.03:03:43::SCWPlatform::DSA directory C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw
+TRACE::2025-04-06.03:03:43::SCWPlatform:: Platform Path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.03:03:43::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-04-06.03:03:43::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-04-06.03:03:43::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-04-06.03:03:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-06.03:03:43::SCWMssOS::Checking the sw design at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-04-06.03:03:43::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/lab4_v2/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_4||
+C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/lab4_v2/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system_2||
+C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/lab4_v2/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_3||
+
+TRACE::2025-04-06.03:03:43::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2025-04-06.03:03:43::SCWPlatform::Trying to open the hw design at C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.03:03:43::SCWPlatform::DSA given C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.03:03:43::SCWPlatform::DSA absoulate path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.03:03:43::SCWPlatform::DSA directory C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw
+TRACE::2025-04-06.03:03:43::SCWPlatform:: Platform Path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.03:03:43::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-04-06.03:03:43::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-04-06.03:03:43::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-04-06.03:03:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-06.03:03:43::SCWMssOS::Checking the sw design at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-04-06.03:03:43::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/lab4_v2/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_4||
+C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/lab4_v2/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system_2||
+C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/lab4_v2/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_3||
+
+TRACE::2025-04-06.03:03:43::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2025-04-06.03:03:43::SCWPlatform::Trying to open the hw design at C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.03:03:43::SCWPlatform::DSA given C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.03:03:43::SCWPlatform::DSA absoulate path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.03:03:43::SCWPlatform::DSA directory C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw
+TRACE::2025-04-06.03:03:43::SCWPlatform:: Platform Path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.03:03:43::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-04-06.03:03:43::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-04-06.03:03:43::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-04-06.03:03:43::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-06.03:03:43::SCWMssOS::Checking the sw design at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-04-06.03:03:43::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/lab4_v2/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_4||
+C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/lab4_v2/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system_2||
+C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/lab4_v2/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_3||
+
+TRACE::2025-04-06.03:03:43::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-04-06.03:03:43::SCWWriter::formatted JSON is {
+	"platformName":	"HDL_HLS_v2_platform_project",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"HDL_HLS_v2_platform_project",
+	"platHandOff":	"C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/design_HDL_HLS_v1_v2_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_HDL_HLS_v1_v2_wrapper.xsa",
+	"deviceType":	"zynqMP",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"psu_cortexa53_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP      -Wall -fmessage-length=0 -DARMA53_64 -Os -flto -ffat-lto-objects  ",
+	"pmufwExtraCompilerFlags":	"-MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-objects  ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"HDL_HLS_v2_platform_project",
+	"systems":	[{
+			"systemName":	"HDL_HLS_v2_platform_project",
+			"systemDesc":	"HDL_HLS_v2_platform_project",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"HDL_HLS_v2_platform_project",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynqmp_fsbl",
+					"domainDispName":	"zynqmp_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"psu_cortexa53_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.0",
+					"mssFile":	"",
+					"md5Digest":	"c7c8fa58e044570b55d2f2ba60dc3bc0",
+					"compatibleApp":	"zynqmp_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"64-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:5.1", "xilsecure:5.2", "xilpm:5.1"],
+					"libOptions":	{
+						"standalone":	{
+							"zynqmp_fsbl_bsp":	"true",
+							"libOptionNames":	["zynqmp_fsbl_bsp"]
+						},
+						"xilffs":	{
+							"read_only":	"true",
+							"use_mkfs":	"false",
+							"libOptionNames":	["read_only", "use_mkfs"]
+						},
+						"xilsecure":	{
+							"tpm_support":	"true",
+							"libOptionNames":	["tpm_support"]
+						},
+						"libsContainingOptions":	["standalone", "xilffs", "xilsecure"]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"zynqmp_pmufw",
+					"domainDispName":	"zynqmp_pmufw",
+					"domainDesc":	"PMUFW Application BSP - Auto Generated.",
+					"processors":	"psu_pmu_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.0",
+					"mssFile":	"",
+					"md5Digest":	"1e2c2e6c384f779e1a2c71f2a9256e16",
+					"compatibleApp":	"zynqmp_pmufw",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilfpga:6.5", "xilsecure:5.2", "xilskey:7.5"],
+					"libOptions":	{
+						"psu_pmu_0":	{
+							"extra_compiler_flags":	"-g -ffunction-sections -fdata-sections -Wall -Wextra -fno-tree-loop-distribute-patterns  -Os -flto -ffat-lto-objects",
+							"libOptionNames":	["extra_compiler_flags"]
+						},
+						"libsContainingOptions":	["psu_pmu_0"]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on psu_cortexa53_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"psu_cortexa53_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/HDL_HLS_v2_platform_project/standalone_domain/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/HDL_HLS_v2_platform_project/standalone_domain/qemu",
+					"pmuQemuArgs":	"<platformDir>/resources/HDL_HLS_v2_platform_project/standalone_domain/pmu_args.txt",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.0",
+					"mssFile":	"",
+					"md5Digest":	"e970e3844aeffe5da67223332ff51269",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"64-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2025-04-06.03:03:43::SCWPlatform::updated the xpfm file.
+TRACE::2025-04-06.03:03:44::SCWPlatform::Trying to open the hw design at C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.03:03:44::SCWPlatform::DSA given C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.03:03:44::SCWPlatform::DSA absoulate path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.03:03:44::SCWPlatform::DSA directory C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw
+TRACE::2025-04-06.03:03:44::SCWPlatform:: Platform Path C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/hw/design_HDL_HLS_v1_v2_wrapper.xsa
+TRACE::2025-04-06.03:03:44::SCWPlatform:: Unique name xilinx:kv260_som::0.0
+TRACE::2025-04-06.03:03:44::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-04-06.03:03:44::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-04-06.03:03:44::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-04-06.03:03:44::SCWMssOS::Checking the sw design at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2025-04-06.03:03:44::SCWMssOS::DEBUG:  swdes dump  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/lab4_v2/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_4||
+C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/lab4_v2/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system_2||
+C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/lab4_v2/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_3||
+
+TRACE::2025-04-06.03:03:44::SCWMssOS::Sw design exists and opened at  C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/psu_cortexa53_0/standalone_domain/bsp/system.mss

@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="&amp;"/>
+		<item key="selection" value="matrix_multiply_result"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="matrix_multiply_result"/>
+			<item value="storing"/>
+			<item value="sto"/>
+			<item value="test_result_expected_memory"/>
+			<item value="NUMBER_OF_OUTPUT_WORDS"/>
+			<item value="expected"/>
+			<item value="test_expected"/>
+			<item value="readInHexData"/>
+			<item value="read"/>
+			<item value="vector_input_memory"/>
+			<item value="test_input_memory"/>
+			<item value="round_up"/>
+			<item value="matrix_multiply_neuron"/>
 			<item value="&amp;"/>
 			<item value="\n"/>
-			<item value="/n"/>
-			<item value="xil_printf"/>
-			<item value="activ_func_sigmoid"/>
-			<item value="sigmoid"/>
-			<item value="readInHexData"/>
-			<item value="totalWords"/>
-			<item value="read"/>
-			<item value="matrix_multiply_neuron"/>
-			<item value="i"/>
-			<item value="j"/>
-			<item value="MAX_VALUE"/>
-			<item value="neuron_result_memory"/>
-			<item value="matrix_multiply_sw"/>
 		</list>
 		<list key="replacehistory">
 			<item value="ENABLE_TCF_PROFILER"/>
@@ -30,10 +30,10 @@
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="986"/>
-		<item key="DIALOG_Y_ORIGIN" value="249"/>
-		<item key="DIALOG_WIDTH" value="289"/>
+		<item key="DIALOG_X_ORIGIN" value="1479"/>
+		<item key="DIALOG_Y_ORIGIN" value="337"/>
+		<item key="DIALOG_WIDTH" value="284"/>
 		<item key="DIALOG_HEIGHT" value="391"/>
-		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|5|0|Segoe UI"/>
 	</section>
 </section>
