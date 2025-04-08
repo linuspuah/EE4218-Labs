@@ -1,0 +1,21 @@
+19:33:27 **** Incremental Build of configuration Debug for project MLP_NN_App_Proj ****
+make all 
+'Building file: ../src/MLP_NN_src.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/MLP_NN_src.o" -IC:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Platform_Project_HLS_v3/export/MLP_NN_Platform_Project_HLS_v3/sw/MLP_NN_Platform_Project_HLS_v3/standalone_domain/bspinclude/include -MMD -MP -MF"src/MLP_NN_src.d" -MT"src/MLP_NN_src.o" -o "src/MLP_NN_src.o" "../src/MLP_NN_src.c"
+'Finished building: ../src/MLP_NN_src.c'
+' '
+'Building target: MLP_NN_App_Proj.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Platform_Project_HLS_v3/export/MLP_NN_Platform_Project_HLS_v3/sw/MLP_NN_Platform_Project_HLS_v3/standalone_domain/bsplib/lib -o "MLP_NN_App_Proj.elf"  ./src/MLP_NN_src.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MLP_NN_App_Proj.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size MLP_NN_App_Proj.elf  |tee "MLP_NN_App_Proj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 140444	   5816	  24460	 170720	  29ae0	MLP_NN_App_Proj.elf
+'Finished building: MLP_NN_App_Proj.elf.size'
+' '
+
+19:33:28 Build Finished (took 933ms)
+

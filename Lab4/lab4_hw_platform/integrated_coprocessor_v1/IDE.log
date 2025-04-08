@@ -6352,3 +6352,534 @@ con
 
 03:06:04 INFO  : Launch script is exported to file 'C:\Users\sunil\VivadoProjects\EE4218Labs\Lab4\lab4_hw_platform\integrated_coprocessor_v1\MLP_Neural_network_project_system\_ide\scripts\debugger_matrix_mult_lab4-v4.tcl'
 03:08:17 INFO  : Disconnected from the channel tcfchan#10.
+17:00:24 DEBUG : Logs will be stored at 'C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/IDE.log'.
+17:00:26 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\sunil\VivadoProjects\EE4218Labs\Lab4\lab4_hw_platform\integrated_coprocessor_v1\temp_xsdb_launch_script.tcl
+17:00:31 INFO  : XSCT server has started successfully.
+17:00:31 INFO  : plnx-install-location is set to ''
+17:00:31 INFO  : Successfully done setting XSCT server connection channel  
+17:00:31 INFO  : Successfully done setting workspace for the tool. 
+17:00:33 INFO  : Registering command handlers for Vitis TCF services
+17:00:33 INFO  : Platform repository initialization has completed.
+17:00:38 INFO  : Successfully done query RDI_DATADIR 
+17:01:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:01:05 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1NH42KNRVA' is selected.
+17:01:05 INFO  : 'jtag frequency' command is executed.
+17:01:05 INFO  : Sourcing of 'C:/Xilinx/Vitis/2023.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+17:01:07 INFO  : Context for 'APU' is selected.
+17:01:07 INFO  : System reset is completed.
+17:01:10 INFO  : 'after 3000' command is executed.
+17:01:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1NH42KNRVA" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1NH42KNRVA-04724093-0"}' command is executed.
+17:01:18 INFO  : Device configured successfully with "C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/matrix_mult_lab4/_ide/bitstream/design_HDL_HLS_v4_wrapper.bit"
+17:01:18 INFO  : Context for 'APU' is selected.
+17:01:19 INFO  : Hardware design and registers information is loaded from 'C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v4_platform_proj/export/HDL_HLS_v4_platform_proj/hw/design_HDL_HLS_v4_wrapper.xsa'.
+17:01:19 INFO  : 'configparams force-mem-access 1' command is executed.
+17:01:19 INFO  : Context for 'APU' is selected.
+17:01:19 INFO  : Boot mode is read from the target.
+17:01:37 INFO  : Boot mode of the target is set to jtag.
+17:01:37 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:01:37 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:01:37 INFO  : The application 'C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v4_platform_proj/export/HDL_HLS_v4_platform_proj/sw/HDL_HLS_v4_platform_proj/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:01:37 INFO  : 'set bp_1_37_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+17:01:39 INFO  : 'con -block -timeout 60' command is executed.
+17:01:39 INFO  : 'bpremove $bp_1_37_fsbl_bp' command is executed.
+17:01:39 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:01:39 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:01:39 ERROR : Memory write error at 0x0. Cortex-A53 #0: EDITR not ready
+17:01:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2023.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1NH42KNRVA" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1NH42KNRVA-04724093-0"}
+fpga -file C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/matrix_mult_lab4/_ide/bitstream/design_HDL_HLS_v4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v4_platform_proj/export/HDL_HLS_v4_platform_proj/hw/design_HDL_HLS_v4_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+mask_write 0xFF5E0200 0xf000 0
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v4_platform_proj/export/HDL_HLS_v4_platform_proj/sw/HDL_HLS_v4_platform_proj/boot/fsbl.elf
+set bp_1_37_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_1_37_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/MLP_Neural_network_project/Debug/MLP_Neural_network_project.elf
+----------------End of Script----------------
+
+17:01:39 ERROR : Memory write error at 0x0. Cortex-A53 #0: EDITR not ready
+17:02:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:02:09 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1NH42KNRVA' is selected.
+17:02:09 INFO  : 'jtag frequency' command is executed.
+17:02:09 INFO  : Sourcing of 'C:/Xilinx/Vitis/2023.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+17:02:09 INFO  : Context for 'APU' is selected.
+17:02:10 INFO  : System reset is completed.
+17:02:13 INFO  : 'after 3000' command is executed.
+17:02:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1NH42KNRVA" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1NH42KNRVA-04724093-0"}' command is executed.
+17:02:17 INFO  : Device configured successfully with "C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/matrix_mult_lab4/_ide/bitstream/design_HDL_HLS_v4_wrapper.bit"
+17:02:17 INFO  : Context for 'APU' is selected.
+17:02:17 INFO  : Hardware design and registers information is loaded from 'C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v4_platform_proj/export/HDL_HLS_v4_platform_proj/hw/design_HDL_HLS_v4_wrapper.xsa'.
+17:02:17 INFO  : 'configparams force-mem-access 1' command is executed.
+17:02:17 INFO  : Context for 'APU' is selected.
+17:02:17 INFO  : Boot mode is read from the target.
+17:02:17 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:02:18 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:02:18 INFO  : The application 'C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v4_platform_proj/export/HDL_HLS_v4_platform_proj/sw/HDL_HLS_v4_platform_proj/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:02:18 INFO  : 'set bp_2_18_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+17:02:18 INFO  : 'con -block -timeout 60' command is executed.
+17:02:18 INFO  : 'bpremove $bp_2_18_fsbl_bp' command is executed.
+17:02:18 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:02:18 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:02:19 INFO  : The application 'C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/MLP_Neural_network_project/Debug/MLP_Neural_network_project.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:02:19 INFO  : 'configparams force-mem-access 0' command is executed.
+17:02:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2023.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1NH42KNRVA" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1NH42KNRVA-04724093-0"}
+fpga -file C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/matrix_mult_lab4/_ide/bitstream/design_HDL_HLS_v4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v4_platform_proj/export/HDL_HLS_v4_platform_proj/hw/design_HDL_HLS_v4_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v4_platform_proj/export/HDL_HLS_v4_platform_proj/sw/HDL_HLS_v4_platform_proj/boot/fsbl.elf
+set bp_2_18_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_2_18_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/MLP_Neural_network_project/Debug/MLP_Neural_network_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:02:19 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:02:19 INFO  : 'con' command is executed.
+17:02:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+17:02:19 INFO  : Launch script is exported to file 'C:\Users\sunil\VivadoProjects\EE4218Labs\Lab4\lab4_hw_platform\integrated_coprocessor_v1\MLP_Neural_network_project_system\_ide\scripts\debugger_matrix_mult_lab4-v4.tcl'
+17:08:00 INFO  : Disconnected from the channel tcfchan#1.
+17:08:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:08:43 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1NH42KNRVA' is selected.
+17:08:43 INFO  : 'jtag frequency' command is executed.
+17:08:43 INFO  : Sourcing of 'C:/Xilinx/Vitis/2023.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+17:08:46 INFO  : Context for 'APU' is selected.
+17:08:46 INFO  : System reset is completed.
+17:08:49 INFO  : 'after 3000' command is executed.
+17:08:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1NH42KNRVA" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1NH42KNRVA-04724093-0"}' command is executed.
+17:08:55 INFO  : Device configured successfully with "C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/matrix_mult_lab4/_ide/bitstream/design_HDL_HLS_v4_wrapper.bit"
+17:08:55 INFO  : Context for 'APU' is selected.
+17:09:05 INFO  : Hardware design and registers information is loaded from 'C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v4_platform_proj/export/HDL_HLS_v4_platform_proj/hw/design_HDL_HLS_v4_wrapper.xsa'.
+17:09:05 INFO  : 'configparams force-mem-access 1' command is executed.
+17:09:05 INFO  : Context for 'APU' is selected.
+17:09:05 INFO  : Boot mode is read from the target.
+17:09:05 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:09:05 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:09:06 INFO  : The application 'C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v4_platform_proj/export/HDL_HLS_v4_platform_proj/sw/HDL_HLS_v4_platform_proj/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:09:06 INFO  : 'set bp_9_6_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+17:09:06 INFO  : 'con -block -timeout 60' command is executed.
+17:09:06 INFO  : 'bpremove $bp_9_6_fsbl_bp' command is executed.
+17:09:06 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:09:06 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:09:07 INFO  : The application 'C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/MLP_Neural_network_project/Debug/MLP_Neural_network_project.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:09:07 INFO  : 'configparams force-mem-access 0' command is executed.
+17:09:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2023.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1NH42KNRVA" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1NH42KNRVA-04724093-0"}
+fpga -file C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/matrix_mult_lab4/_ide/bitstream/design_HDL_HLS_v4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v4_platform_proj/export/HDL_HLS_v4_platform_proj/hw/design_HDL_HLS_v4_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v4_platform_proj/export/HDL_HLS_v4_platform_proj/sw/HDL_HLS_v4_platform_proj/boot/fsbl.elf
+set bp_9_6_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_9_6_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/MLP_Neural_network_project/Debug/MLP_Neural_network_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:09:07 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:09:07 INFO  : 'con' command is executed.
+17:09:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+17:09:07 INFO  : Launch script is exported to file 'C:\Users\sunil\VivadoProjects\EE4218Labs\Lab4\lab4_hw_platform\integrated_coprocessor_v1\MLP_Neural_network_project_system\_ide\scripts\debugger_matrix_mult_lab4-v4.tcl'
+17:10:58 INFO  : Disconnected from the channel tcfchan#2.
+17:11:02 INFO  : Checking for BSP changes to sync application flags for project 'MLP_Neural_network_project'...
+17:11:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:11:25 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1NH42KNRVA' is selected.
+17:11:25 INFO  : 'jtag frequency' command is executed.
+17:11:25 INFO  : Sourcing of 'C:/Xilinx/Vitis/2023.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+17:11:27 INFO  : Context for 'APU' is selected.
+17:11:28 INFO  : System reset is completed.
+17:11:31 INFO  : 'after 3000' command is executed.
+17:11:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1NH42KNRVA" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1NH42KNRVA-04724093-0"}' command is executed.
+17:11:37 INFO  : Device configured successfully with "C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/matrix_mult_lab4/_ide/bitstream/design_HDL_HLS_v4_wrapper.bit"
+17:11:37 INFO  : Context for 'APU' is selected.
+17:11:47 INFO  : Hardware design and registers information is loaded from 'C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v4_platform_proj/export/HDL_HLS_v4_platform_proj/hw/design_HDL_HLS_v4_wrapper.xsa'.
+17:11:47 INFO  : 'configparams force-mem-access 1' command is executed.
+17:11:47 INFO  : Context for 'APU' is selected.
+17:11:47 INFO  : Boot mode is read from the target.
+17:11:47 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:11:47 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:11:47 INFO  : The application 'C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v4_platform_proj/export/HDL_HLS_v4_platform_proj/sw/HDL_HLS_v4_platform_proj/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:11:47 INFO  : 'set bp_11_47_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+17:11:47 INFO  : 'con -block -timeout 60' command is executed.
+17:11:47 INFO  : 'bpremove $bp_11_47_fsbl_bp' command is executed.
+17:11:48 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:11:48 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:11:48 INFO  : The application 'C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/MLP_Neural_network_project/Debug/MLP_Neural_network_project.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:11:48 INFO  : 'configparams force-mem-access 0' command is executed.
+17:11:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2023.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1NH42KNRVA" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1NH42KNRVA-04724093-0"}
+fpga -file C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/matrix_mult_lab4/_ide/bitstream/design_HDL_HLS_v4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v4_platform_proj/export/HDL_HLS_v4_platform_proj/hw/design_HDL_HLS_v4_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v4_platform_proj/export/HDL_HLS_v4_platform_proj/sw/HDL_HLS_v4_platform_proj/boot/fsbl.elf
+set bp_11_47_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_11_47_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/MLP_Neural_network_project/Debug/MLP_Neural_network_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:11:49 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:11:49 INFO  : 'con' command is executed.
+17:11:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+17:11:49 INFO  : Launch script is exported to file 'C:\Users\sunil\VivadoProjects\EE4218Labs\Lab4\lab4_hw_platform\integrated_coprocessor_v1\MLP_Neural_network_project_system\_ide\scripts\debugger_matrix_mult_lab4-v4.tcl'
+17:16:18 INFO  : Disconnected from the channel tcfchan#3.
+17:16:30 INFO  : Checking for BSP changes to sync application flags for project 'MLP_Neural_network_project'...
+17:16:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:16:37 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1NH42KNRVA' is selected.
+17:16:37 INFO  : 'jtag frequency' command is executed.
+17:16:37 INFO  : Sourcing of 'C:/Xilinx/Vitis/2023.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+17:16:40 INFO  : Context for 'APU' is selected.
+17:16:40 INFO  : System reset is completed.
+17:16:43 INFO  : 'after 3000' command is executed.
+17:16:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1NH42KNRVA" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1NH42KNRVA-04724093-0"}' command is executed.
+17:16:49 INFO  : Device configured successfully with "C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/matrix_mult_lab4/_ide/bitstream/design_HDL_HLS_v4_wrapper.bit"
+17:16:49 INFO  : Context for 'APU' is selected.
+17:16:49 INFO  : Hardware design and registers information is loaded from 'C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v4_platform_proj/export/HDL_HLS_v4_platform_proj/hw/design_HDL_HLS_v4_wrapper.xsa'.
+17:16:49 INFO  : 'configparams force-mem-access 1' command is executed.
+17:16:49 INFO  : Context for 'APU' is selected.
+17:16:49 INFO  : Boot mode is read from the target.
+17:16:49 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:16:50 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:16:50 INFO  : The application 'C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v4_platform_proj/export/HDL_HLS_v4_platform_proj/sw/HDL_HLS_v4_platform_proj/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:16:50 INFO  : 'set bp_16_50_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+17:16:50 INFO  : 'con -block -timeout 60' command is executed.
+17:16:50 INFO  : 'bpremove $bp_16_50_fsbl_bp' command is executed.
+17:16:50 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:16:50 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:16:51 INFO  : The application 'C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/MLP_Neural_network_project/Debug/MLP_Neural_network_project.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:16:51 INFO  : 'configparams force-mem-access 0' command is executed.
+17:16:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2023.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1NH42KNRVA" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1NH42KNRVA-04724093-0"}
+fpga -file C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/matrix_mult_lab4/_ide/bitstream/design_HDL_HLS_v4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v4_platform_proj/export/HDL_HLS_v4_platform_proj/hw/design_HDL_HLS_v4_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v4_platform_proj/export/HDL_HLS_v4_platform_proj/sw/HDL_HLS_v4_platform_proj/boot/fsbl.elf
+set bp_16_50_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_16_50_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/MLP_Neural_network_project/Debug/MLP_Neural_network_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:16:51 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:16:51 INFO  : 'con' command is executed.
+17:16:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+17:16:51 INFO  : Launch script is exported to file 'C:\Users\sunil\VivadoProjects\EE4218Labs\Lab4\lab4_hw_platform\integrated_coprocessor_v1\MLP_Neural_network_project_system\_ide\scripts\debugger_matrix_mult_lab4-v4.tcl'
+17:25:25 INFO  : Disconnected from the channel tcfchan#4.
+17:25:25 INFO  : Checking for BSP changes to sync application flags for project 'MLP_Neural_network_project'...
+17:25:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:25:36 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1NH42KNRVA' is selected.
+17:25:36 INFO  : 'jtag frequency' command is executed.
+17:25:36 INFO  : Sourcing of 'C:/Xilinx/Vitis/2023.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+17:25:36 INFO  : Context for 'APU' is selected.
+17:25:36 INFO  : System reset is completed.
+17:25:39 INFO  : 'after 3000' command is executed.
+17:25:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1NH42KNRVA" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1NH42KNRVA-04724093-0"}' command is executed.
+17:25:44 INFO  : Device configured successfully with "C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/matrix_mult_lab4/_ide/bitstream/design_HDL_HLS_v4_wrapper.bit"
+17:25:44 INFO  : Context for 'APU' is selected.
+17:25:44 INFO  : Hardware design and registers information is loaded from 'C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v4_platform_proj/export/HDL_HLS_v4_platform_proj/hw/design_HDL_HLS_v4_wrapper.xsa'.
+17:25:44 INFO  : 'configparams force-mem-access 1' command is executed.
+17:25:44 INFO  : Context for 'APU' is selected.
+17:25:44 INFO  : Boot mode is read from the target.
+17:25:44 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:25:44 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:25:45 INFO  : The application 'C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v4_platform_proj/export/HDL_HLS_v4_platform_proj/sw/HDL_HLS_v4_platform_proj/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:25:45 INFO  : 'set bp_25_45_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+17:25:45 INFO  : 'con -block -timeout 60' command is executed.
+17:25:45 INFO  : 'bpremove $bp_25_45_fsbl_bp' command is executed.
+17:25:45 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:25:45 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:25:46 INFO  : The application 'C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/MLP_Neural_network_project/Debug/MLP_Neural_network_project.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:25:46 INFO  : 'configparams force-mem-access 0' command is executed.
+17:25:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2023.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1NH42KNRVA" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1NH42KNRVA-04724093-0"}
+fpga -file C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/matrix_mult_lab4/_ide/bitstream/design_HDL_HLS_v4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v4_platform_proj/export/HDL_HLS_v4_platform_proj/hw/design_HDL_HLS_v4_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v4_platform_proj/export/HDL_HLS_v4_platform_proj/sw/HDL_HLS_v4_platform_proj/boot/fsbl.elf
+set bp_25_45_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_25_45_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/MLP_Neural_network_project/Debug/MLP_Neural_network_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:25:46 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:25:46 INFO  : 'con' command is executed.
+17:25:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+17:25:46 INFO  : Launch script is exported to file 'C:\Users\sunil\VivadoProjects\EE4218Labs\Lab4\lab4_hw_platform\integrated_coprocessor_v1\MLP_Neural_network_project_system\_ide\scripts\debugger_matrix_mult_lab4-v4.tcl'
+17:27:54 INFO  : Disconnected from the channel tcfchan#5.
+17:29:06 INFO  : Checking for BSP changes to sync application flags for project 'MLP_Neural_network_project'...
+17:29:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:29:12 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1NH42KNRVA' is selected.
+17:29:13 INFO  : 'jtag frequency' command is executed.
+17:29:13 INFO  : Sourcing of 'C:/Xilinx/Vitis/2023.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+17:29:16 INFO  : Context for 'APU' is selected.
+17:29:16 INFO  : System reset is completed.
+17:29:19 INFO  : 'after 3000' command is executed.
+17:29:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1NH42KNRVA" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1NH42KNRVA-04724093-0"}' command is executed.
+17:29:25 INFO  : Device configured successfully with "C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/matrix_mult_lab4/_ide/bitstream/design_HDL_HLS_v4_wrapper.bit"
+17:29:25 INFO  : Context for 'APU' is selected.
+17:29:25 INFO  : Hardware design and registers information is loaded from 'C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v4_platform_proj/export/HDL_HLS_v4_platform_proj/hw/design_HDL_HLS_v4_wrapper.xsa'.
+17:29:25 INFO  : 'configparams force-mem-access 1' command is executed.
+17:29:25 INFO  : Context for 'APU' is selected.
+17:29:25 INFO  : Boot mode is read from the target.
+17:29:25 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:29:25 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:29:26 INFO  : The application 'C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v4_platform_proj/export/HDL_HLS_v4_platform_proj/sw/HDL_HLS_v4_platform_proj/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:29:26 INFO  : 'set bp_29_26_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+17:29:26 INFO  : 'con -block -timeout 60' command is executed.
+17:29:26 INFO  : 'bpremove $bp_29_26_fsbl_bp' command is executed.
+17:29:26 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:29:26 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:29:27 INFO  : The application 'C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/MLP_Neural_network_project/Debug/MLP_Neural_network_project.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:29:27 INFO  : 'configparams force-mem-access 0' command is executed.
+17:29:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2023.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1NH42KNRVA" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1NH42KNRVA-04724093-0"}
+fpga -file C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/matrix_mult_lab4/_ide/bitstream/design_HDL_HLS_v4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v4_platform_proj/export/HDL_HLS_v4_platform_proj/hw/design_HDL_HLS_v4_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v4_platform_proj/export/HDL_HLS_v4_platform_proj/sw/HDL_HLS_v4_platform_proj/boot/fsbl.elf
+set bp_29_26_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_29_26_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/MLP_Neural_network_project/Debug/MLP_Neural_network_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:29:27 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:29:27 INFO  : 'con' command is executed.
+17:29:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+17:29:27 INFO  : Launch script is exported to file 'C:\Users\sunil\VivadoProjects\EE4218Labs\Lab4\lab4_hw_platform\integrated_coprocessor_v1\MLP_Neural_network_project_system\_ide\scripts\debugger_matrix_mult_lab4-v4.tcl'
+17:32:02 INFO  : Disconnected from the channel tcfchan#6.
+17:32:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:32:08 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1NH42KNRVA' is selected.
+17:32:08 INFO  : 'jtag frequency' command is executed.
+17:32:08 INFO  : Sourcing of 'C:/Xilinx/Vitis/2023.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+17:32:08 INFO  : Context for 'APU' is selected.
+17:32:08 INFO  : System reset is completed.
+17:32:11 INFO  : 'after 3000' command is executed.
+17:32:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1NH42KNRVA" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1NH42KNRVA-04724093-0"}' command is executed.
+17:32:16 INFO  : Device configured successfully with "C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/matrix_mult_lab4/_ide/bitstream/design_HDL_HLS_v4_wrapper.bit"
+17:32:16 INFO  : Context for 'APU' is selected.
+17:32:16 INFO  : Hardware design and registers information is loaded from 'C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v4_platform_proj/export/HDL_HLS_v4_platform_proj/hw/design_HDL_HLS_v4_wrapper.xsa'.
+17:32:16 INFO  : 'configparams force-mem-access 1' command is executed.
+17:32:16 INFO  : Context for 'APU' is selected.
+17:32:16 INFO  : Boot mode is read from the target.
+17:32:16 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:32:16 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:32:17 INFO  : The application 'C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v4_platform_proj/export/HDL_HLS_v4_platform_proj/sw/HDL_HLS_v4_platform_proj/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:32:17 INFO  : 'set bp_32_17_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+17:32:17 INFO  : 'con -block -timeout 60' command is executed.
+17:32:17 INFO  : 'bpremove $bp_32_17_fsbl_bp' command is executed.
+17:32:17 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:32:17 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:32:18 INFO  : The application 'C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/MLP_Neural_network_project/Debug/MLP_Neural_network_project.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:32:18 INFO  : 'configparams force-mem-access 0' command is executed.
+17:32:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2023.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1NH42KNRVA" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1NH42KNRVA-04724093-0"}
+fpga -file C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/matrix_mult_lab4/_ide/bitstream/design_HDL_HLS_v4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v4_platform_proj/export/HDL_HLS_v4_platform_proj/hw/design_HDL_HLS_v4_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v4_platform_proj/export/HDL_HLS_v4_platform_proj/sw/HDL_HLS_v4_platform_proj/boot/fsbl.elf
+set bp_32_17_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_32_17_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/MLP_Neural_network_project/Debug/MLP_Neural_network_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:32:18 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:32:18 INFO  : 'con' command is executed.
+17:32:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+17:32:18 INFO  : Launch script is exported to file 'C:\Users\sunil\VivadoProjects\EE4218Labs\Lab4\lab4_hw_platform\integrated_coprocessor_v1\MLP_Neural_network_project_system\_ide\scripts\debugger_matrix_mult_lab4-v4.tcl'
+17:38:54 INFO  : Disconnected from the channel tcfchan#7.
+17:41:59 INFO  : Checking for BSP changes to sync application flags for project 'MLP_Neural_network_project'...
+17:42:10 INFO  : Checking for BSP changes to sync application flags for project 'MLP_Neural_network_project'...
+17:42:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:42:17 INFO  : Jtag cable 'Xilinx X-MLCC-01 XFL1NH42KNRVA' is selected.
+17:42:17 INFO  : 'jtag frequency' command is executed.
+17:42:17 INFO  : Sourcing of 'C:/Xilinx/Vitis/2023.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+17:42:19 INFO  : Context for 'APU' is selected.
+17:42:19 INFO  : System reset is completed.
+17:42:22 INFO  : 'after 3000' command is executed.
+17:42:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1NH42KNRVA" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1NH42KNRVA-04724093-0"}' command is executed.
+17:42:29 INFO  : Device configured successfully with "C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/matrix_mult_lab4/_ide/bitstream/design_HDL_HLS_v4_wrapper.bit"
+17:42:29 INFO  : Context for 'APU' is selected.
+17:42:29 INFO  : Hardware design and registers information is loaded from 'C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v4_platform_proj/export/HDL_HLS_v4_platform_proj/hw/design_HDL_HLS_v4_wrapper.xsa'.
+17:42:29 INFO  : 'configparams force-mem-access 1' command is executed.
+17:42:29 INFO  : Context for 'APU' is selected.
+17:42:29 INFO  : Boot mode is read from the target.
+17:42:29 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:42:29 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:42:30 INFO  : The application 'C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v4_platform_proj/export/HDL_HLS_v4_platform_proj/sw/HDL_HLS_v4_platform_proj/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:42:30 INFO  : 'set bp_42_30_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+17:42:30 INFO  : 'con -block -timeout 60' command is executed.
+17:42:30 INFO  : 'bpremove $bp_42_30_fsbl_bp' command is executed.
+17:42:30 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:42:30 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:42:31 INFO  : The application 'C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/MLP_Neural_network_project/Debug/MLP_Neural_network_project.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:42:31 INFO  : 'configparams force-mem-access 0' command is executed.
+17:42:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/Vitis/2023.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx X-MLCC-01 XFL1NH42KNRVA" && level==0 && jtag_device_ctx=="jsn-X-MLCC-01-XFL1NH42KNRVA-04724093-0"}
+fpga -file C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/matrix_mult_lab4/_ide/bitstream/design_HDL_HLS_v4_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v4_platform_proj/export/HDL_HLS_v4_platform_proj/hw/design_HDL_HLS_v4_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v4_platform_proj/export/HDL_HLS_v4_platform_proj/sw/HDL_HLS_v4_platform_proj/boot/fsbl.elf
+set bp_42_30_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_42_30_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/MLP_Neural_network_project/Debug/MLP_Neural_network_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:42:31 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:42:31 INFO  : 'con' command is executed.
+17:42:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+17:42:31 INFO  : Launch script is exported to file 'C:\Users\sunil\VivadoProjects\EE4218Labs\Lab4\lab4_hw_platform\integrated_coprocessor_v1\MLP_Neural_network_project_system\_ide\scripts\debugger_matrix_mult_lab4-v4.tcl'
+18:44:02 INFO  : Result from executing command 'getProjects': HDL_HLS_v2_platform_project;HDL_HLS_v3_platform_proj;HDL_HLS_v4_platform_proj;MLP_NN_Project_EE4218;lab4_v2
+18:44:02 INFO  : Result from executing command 'getPlatforms': HDL_HLS_v2_platform_project|C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v2_platform_project/export/HDL_HLS_v2_platform_project/HDL_HLS_v2_platform_project.xpfm;HDL_HLS_v3_platform_proj|C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v3_platform_proj/export/HDL_HLS_v3_platform_proj/HDL_HLS_v3_platform_proj.xpfm;HDL_HLS_v4_platform_proj|C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/HDL_HLS_v4_platform_proj/export/HDL_HLS_v4_platform_proj/HDL_HLS_v4_platform_proj.xpfm;integrated_coprocessor_fifo|C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/integrated_coprocessor_v1/integrated_coprocessor_fifo/export/integrated_coprocessor_fifo/integrated_coprocessor_fifo.xpfm;lab4_v2|C:/Users/sunil/VivadoProjects/EE4218Labs/Lab4/lab4_hw_platform/integrated_coprocessor_v1/lab4_v2/export/lab4_v2/lab4_v2.xpfm;xilinx_zcu102_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_202320_1/xilinx_zcu102_base_202320_1.xpfm;xilinx_zcu102_base_dfx_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_dfx_202320_1/xilinx_zcu102_base_dfx_202320_1.xpfm;xilinx_zcu104_base_202320_1|C:/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu104_base_202320_1/xilinx_zcu104_base_202320_1.xpfm
+18:45:37 INFO  : Disconnected from the channel tcfchan#8.

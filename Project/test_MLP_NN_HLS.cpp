@@ -37,9 +37,8 @@ void mlp_nn_HLS(hls::stream<AXIS_wLAST>& S_AXIS, hls::stream<AXIS_wLAST>& M_AXIS
 #define NUMBER_OF_INPUT_WORDS 8  // length of an input vector
 #define NUMBER_OF_OUTPUT_WORDS 1  // length of an input vector
 #define NUMBER_OF_TEST_VECTORS 64  // number of such test vectors (cases)
-#define NUMBER_OF_SIGMOID 256
 #define NUMBER_OF_WEIGHTS 19
-#define TOTAL_NUMBER_OF_INPUTS NUMBER_OF_TEST_VECTORS*NUMBER_OF_INPUT_WORDS + NUMBER_OF_WEIGHTS + NUMBER_OF_SIGMOID
+#define TOTAL_NUMBER_OF_INPUTS NUMBER_OF_TEST_VECTORS*NUMBER_OF_INPUT_WORDS + NUMBER_OF_WEIGHTS
 
 
 /************************** Variable Definitions *****************************/

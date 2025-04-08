@@ -1,0 +1,494 @@
+/******************************************************************************
+* Copyright (C) 2023 Advanced Micro Devices, Inc. All Rights Reserved.
+* SPDX-License-Identifier: MIT
+******************************************************************************/
+/*
+ * helloworld.c: simple test application
+ *
+ * This application configures UART 16550 to baud rate 9600.
+ * PS7 UART (Zynq) is not initialized by this application, since
+ * bootrom/bsp configures it to baud rate 115200
+ *
+ * ------------------------------------------------
+ * | UART TYPE   BAUD RATE                        |
+ * ------------------------------------------------
+ *   uartns550   9600
+ *   uartlite    Configurable only in HW design
+ *   ps7_uart    115200 (configured by bootrom/bsp)
+ */
+
+/***************************** Include Files *********************************/
+#include "xparameters.h"
+#include "xil_exception.h"
+#include "xstreamer.h"
+#include "xil_cache.h"
+#include "xllfifo.h"
+#include "xstatus.h"
+#include "stdio.h"
+#include "xil_assert.h"
+#include "xtmrctr.h"
+/***************** Macros *********************/
+#define ENABLE_PRINT_STATEMENTS
+//#define ENABLE_TCF_PROFILER
+
+//#define ENABLE_AXI_TIMER
+#ifdef ENABLE_AXI_TIMER
+//#define TMRCTR_DEVICE_ID	XPAR_TMRCTR_0_DEVICE_ID
+#define TIMER_COUNTER_0   0
+#define CLOCK_FREQ_HZ     100000000
+#endif
+#define WORD_SIZE 4
+#define NUMBER_OF_INPUT_WORDS 8  // length of an input vector
+#define NUMBER_OF_OUTPUT_WORDS 1
+#define NUMBER_OF_TEST_VECTORS 64  // number of such test vectors (cases)
+#define ROWA NUMBER_OF_TEST_VECTORS // Num rows
+#define COLA 8 // Num cols
+#define ROWB COLA  // Must match COLA
+#define COLB 1 //num cols
+#define NUM_NEURONS 2
+#define NUM_OUT_WEIGHTS 3
+#define MAX_VALUE 256
+#define NUM_ITERATIONS 1000
+#define FIFO_DEV_ID_0	   	XPAR_AXI_FIFO_0_DEVICE_ID
+#define FIFO_DEV_ID_1		XPAR_AXI_FIFO_1_DEVICE_ID
+#define TIMEOUT_VALUE 1<<20 // timeout for reception
+
+/************************** Variable Definitions *****************************/
+/* The instance of the Timer Device */
+XTmrCtr TimerCounter;
+
+int test_input_memory [NUMBER_OF_TEST_VECTORS*NUMBER_OF_INPUT_WORDS]; //= { 0x10, 0x08, 0x08, 0x2A, 0x00, 0x62, 0x56, 0x0C, 0x16, 0x3B, 0x1F, 0x5B, 0x74, 0x2C, 0x0F, 0x73, 0x10, 0x08, 0x12, 0x4A, 0x1B, 0x65, 0x12, 0x3B, 0x18, 0x12, 0x58, 0x41, 0x4B, 0x7C, 0x72, 0x29, 0x43, 0x5B, 0x40, 0x04, 0x5D, 0x17, 0x32, 0x4D, 0x3F, 0x1B, 0x44, 0x64, 0x7D, 0x53, 0x66, 0x5C, 0x2D, 0x57, 0x31, 0x6A, 0x33, 0x25, 0x01, 0x10, 0x11, 0x0B, 0x67, 0x13, 0x2C, 0x6F, 0x51, 0x41, 0x0D, 0x08, 0x7B, 0x4B, 0x0C, 0x10, 0x44, 0x3A, 0x14, 0x69, 0x37, 0x1D, 0x6D, 0x73, 0x2F, 0x6A, 0x46, 0x35, 0x71, 0x3D, 0x08, 0x49, 0x4C, 0x56, 0x6A, 0x1E, 0x47, 0x4B, 0x10, 0x56, 0x3D, 0x4A, 0x41, 0x68, 0x13, 0x1F, 0x79, 0x54, 0x31, 0x3B, 0x7D, 0x57, 0x26, 0x6D, 0x58, 0x4F, 0x54, 0x62, 0x7B, 0x74, 0x0D, 0x6F, 0x26, 0x49, 0x30, 0x47, 0x65, 0x6C, 0x58, 0x4C, 0x00, 0x2B, 0x43, 0x64, 0x52, 0x03, 0x5D, 0x5A, 0x16, 0x5E, 0x29, 0x6A, 0x7B, 0x29, 0x03, 0x6F, 0x13, 0x45, 0x55, 0x03, 0x77, 0x60, 0x09, 0x5E, 0x1B, 0x24, 0x30, 0x70, 0x16, 0x31, 0x1F, 0x29, 0x18, 0x05, 0x1A, 0x13, 0x3D, 0x09, 0x6E, 0x5D, 0x7E, 0x3E, 0x3E, 0x12, 0x33, 0x4D, 0x31, 0x3E, 0x15, 0x5C, 0x44, 0x62, 0x43, 0x0C, 0x1D, 0x04, 0x25, 0x4A, 0x36, 0x7C, 0x2C, 0x45, 0x00, 0x2B, 0x23, 0x14, 0x68, 0x0C, 0x3E, 0x14, 0x73, 0x70, 0x2F, 0x6E, 0x04, 0x3E, 0x78, 0x76, 0x63, 0x5E, 0x37, 0x1C, 0x1D, 0x71, 0x58, 0x62, 0x05, 0x14, 0x36, 0x7D, 0x64, 0x7B, 0x00, 0x31, 0x76, 0x3F, 0x76, 0x7F, 0x71, 0x5E, 0x1D, 0x5C, 0x11, 0x61, 0x2E, 0x69, 0x15, 0x43, 0x06, 0x2A, 0x6E, 0x5B, 0x23, 0x16, 0x44, 0x5F, 0x7A, 0x23, 0x57, 0x25, 0x08, 0x05, 0x13, 0x1D, 0x56, 0x49, 0x4B, 0x2E, 0x2E, 0x50, 0x08, 0x4E, 0x76, 0x7E, 0x2D, 0x2C, 0x1A, 0x3B, 0x68, 0x60, 0x61, 0x15, 0x71, 0x13, 0x77, 0x03, 0x40, 0x08, 0x28, 0x6B, 0x45, 0x77, 0x03, 0x70, 0x39, 0x0F, 0x11, 0x1D, 0x4B, 0x72, 0x29, 0x1E, 0x3B, 0x6E, 0x78, 0x6B, 0x1D, 0x55, 0x28, 0x06, 0x21, 0x4E, 0x6A, 0x10, 0x23, 0x58, 0x16, 0x62, 0x36, 0x72, 0x30, 0x57, 0x1C, 0x7E, 0x73, 0x73, 0x4E, 0x22, 0x59, 0x0E, 0x64, 0x77, 0x66, 0x4C, 0x56, 0x2F, 0x66, 0x54, 0x62, 0x50, 0x44, 0x55, 0x2A, 0x34, 0x2B, 0x1E, 0x04, 0x1E, 0x7B, 0x7B, 0x2D, 0x70, 0x20, 0x7B, 0x09, 0x49, 0x69, 0x00, 0x23, 0x3A, 0x2B, 0x6C, 0x0C, 0x59, 0x50, 0x24, 0x43, 0x58, 0x46, 0x25, 0x48, 0x5F, 0x75, 0x24, 0x5D, 0x31, 0x59, 0x19, 0x38, 0x52, 0x03, 0x1B, 0x19, 0x48, 0x77, 0x3A, 0x41, 0x62, 0x63, 0x3C, 0x16, 0x5C, 0x34, 0x6C, 0x6E, 0x56, 0x2B, 0x26, 0x76, 0x5D, 0x46, 0x3F, 0x41, 0x05, 0x53, 0x16, 0x61, 0x05, 0x35, 0x2E, 0x73, 0x29, 0x05, 0x70, 0x4D, 0x5A, 0x12, 0x69, 0x6F, 0x01, 0x01, 0x2B, 0x6A, 0x72, 0x58, 0x4C, 0x0D, 0x72, 0x1D, 0x38, 0x42, 0x0F, 0x7C, 0x71, 0x1A, 0x6E, 0x4D, 0x3A, 0x42, 0x0F, 0x79, 0x45, 0x60, 0x2A, 0x14, 0x48, 0x51, 0x3A, 0x00, 0x23, 0x3A, 0x1E, 0x35, 0x72, 0x0E, 0x52, 0x1F, 0x5C, 0x60, 0x18, 0x6B, 0x56, 0x4A, 0x28, 0x14, 0x20, 0x7A, 0x55, 0x01, 0x44, 0x26, 0x42, 0x6F, 0x7A, 0x1F, 0x12, 0x4F, 0x20, 0x56, 0x08, 0x60, 0x69, 0x7C, 0x46, 0x1A, 0x2E, 0x73, 0x4A, 0x05, 0x0F, 0x28, 0x27, 0x43, 0x36, 0x03, 0x30, 0x31, 0x7D, 0x3D, 0x38, 0x07, 0x7E, 0x74, 0x5F, 0x45, 0x1D, 0x0B, 0x01, 0x6C, 0x28, 0x28, 0x15, 0x38, 0x4D, 0x4A, 0x24, 0x42, 0x2C, 0x70, 0x3A, 0x13, 0x4B, 0x0B, 0x34, 0x35, 0x27, 0x1F, 0x6B, 0x48, 0x7D, 0x5B, 0x58, 0x1B, 0x41, 0x03, 0x53, 0x30, 0x72, 0x36, 0x34, 0x55, 0x5B, 0x6C, 0x01, 0x0C, 0x3D, 0x65, 0x33, 0x1F, 0x0A, 0x35, 0x7F, 0x15, 0x14, 0x72, 0x3D, 0x0D, 0x1E, 0x11, 0x24, 0x66, 0x2E, 0x73, 0x34, 0x79, 0x53, 0x3D, 0x2C, 0x4D, 0x74, 0x0F, 0x10, 0x13, 0x0E, 0x75, 0x20, 0x77, 0x5E, 0x75, 0x1E, 0x0E, 0x75, 0x0C, 0x31, 0x7F, 0x41, 0x5A, 0x6D, 0x10, 0x3F, 0x68, 0x06, 0x12, 0x36, 0x1D, 0x6C, 0x6B, 0x73, 0x55, 0x1F, 0x0D, 0x07, 0x47, 0x04, 0x15, 0x1C, 0x61, 0x60, 0x5C, 0x7A, 0x15, 0x3C, 0x4A, 0x5C, 0x24, 0x55, 0x00, 0x6C, 0x06, 0x57, 0x6E, 0x7A, 0x78, 0x5A, 0x19, 0x0E, 0x57, 0x47, 0x35, 0x6A, 0x38, 0x51, 0x29, 0x17, 0x69, 0x2F, 0x4F, 0x43, 0x4D, 0x04, 0x50, 0x69, 0x37, 0x01, 0x5D, 0x1E, 0x14, 0x0D, 0x5F, 0x06, 0x15, 0x14, 0x15, 0x57, 0x7E, 0x6C, 0x26, 0x05, 0x5F, 0x1D, 0x7D, 0x63, 0x1E, 0x08, 0x49, 0x7D, 0x58, 0x51, 0x31, 0x30, 0x2D, 0x0D, 0x0F, 0x7B, 0x00, 0x45, 0x60, 0x3D, 0x49, 0x4B, 0x51, 0x67, 0x56, 0x2D, 0x59, 0x46, 0x35, 0x48, 0x5A, 0x4D, 0x3C, 0x10, 0x66, 0x6D, 0x22, 0x5D, 0x63, 0x5C, 0x5D, 0x25, 0x2F, 0x18, 0x16, 0x18, 0x3A, 0x79, 0x5D, 0x48, 0x0A, 0x02, 0x49, 0x26, 0x5A, 0x06, 0x42, 0x0E, 0x17, 0x2D, 0x09, 0x53, 0x01, 0x18, 0x56, 0x3A, 0x34, 0x6A, 0x33, 0x54, 0x16, 0x30, 0x5D, 0x2E, 0x2C, 0x1C, 0x5E, 0x58, 0x75, 0x6B, 0x20, 0x71, 0x05, 0x1C, 0x5B, 0x68, 0x48, 0x6C, 0x07, 0x78, 0x2E, 0x3D, 0x7B, 0x38, 0x2D, 0x50, 0x2A, 0x7B, 0x5A, 0x33, 0x10, 0x7A, 0x57, 0x25, 0x6A, 0x23, 0x77, 0x0A, 0x3A, 0x0D, 0x49, 0x76, 0x2E, 0x02, 0x6B, 0x04, 0x76, 0x55, 0x51, 0x48, 0x7B, 0x34, 0x0C, 0x5F, 0x24, 0x55, 0x3E, 0x5B, 0x06, 0x16, 0x18, 0x54, 0x78, 0x6F, 0x7A, 0x6B, 0x01, 0x23, 0x5E, 0x4F, 0x7A, 0x18, 0x0C, 0x6A, 0x01, 0x38, 0x58, 0x64, 0x34, 0x00, 0x2F, 0x78, 0x13, 0x37, 0x01, 0x24, 0x78, 0x45, 0x34, 0x79, 0x50, 0x0A, 0x1C, 0x44, 0x24, 0x4B, 0x6F, 0x68, 0x58, 0x1A, 0x63, 0x4F, 0x21, 0x58, 0x30, 0x50, 0x66, 0x36, 0x3A, 0x48, 0x22, 0x3D, 0x35, 0x00, 0x25, 0x78, 0x4F, 0x65, 0x3F, 0x08, 0x5F, 0x61, 0x4F, 0x07, 0x60, 0x0E, 0x77, 0x0F, 0x0E, 0x12, 0x08, 0x2F, 0x06, 0x6F, 0x59, 0x71, 0x25, 0x53, 0x5D, 0x7D, 0x22, 0x7D, 0x4C, 0x53, 0x33, 0x21, 0x27, 0x3F, 0x44, 0x5E, 0x09, 0x36, 0x4C, 0x5F, 0x45, 0x24, 0x6E, 0x22, 0x3E, 0x0C, 0x4A, 0x4B, 0x43, 0x22, 0x19, 0x1B, 0x64, 0x17, 0x36, 0x3A, 0x60, 0x51, 0x0A, 0x3D, 0x3B, 0x2F, 0x5A, 0x35, 0x0C, 0x6C, 0x2F, 0x31, 0x3B, 0x0C, 0x32, 0x50, 0x3C, 0x7F, 0x22, 0x76, 0x3E, 0x2D, 0x42, 0x7A, 0x2F, 0x09, 0x53, 0x03, 0x57, 0x28, 0x26, 0x2E, 0x53, 0x50, 0x3F, 0x1F, 0x4B, 0x1E, 0x2C, 0x29, 0x5D, 0x46, 0x61, 0x38, 0x7C, 0x7F, 0x69, 0x77, 0x14, 0x63, 0x56, 0x6B, 0x62, 0x0D, 0x58, 0x39, 0x6E, 0x6A, 0x14, 0x76, 0x23, 0x06, 0x0D, 0x7C, 0x31, 0x50, 0x51, 0x3D, 0x0F, 0x30, 0x43, 0x36, 0x43, 0x2B, 0x76, 0x46, 0x0B, 0x57, 0x17, 0x1B, 0x31, 0x15, 0x21, 0x2A, 0x4A, 0x4D, 0x3C, 0x1C, 0x62, 0x78, 0x08, 0x13, 0x25, 0x33, 0x67, 0x75, 0x63, 0x67, 0x46, 0x0F, 0x1A, 0x19, 0x00, 0x50, 0x51, 0x5B, 0x6F, 0x2B, 0x7D, 0x3B, 0x4B, 0x65, 0x2F, 0x42, 0x14, 0x79, 0x7A, 0x5B, 0x05, 0x0F, 0x6A, 0x2B, 0x5F, 0x55, 0x17, 0x19, 0x42, 0x22, 0x17, 0x60, 0x1A, 0x75, 0x56, 0x2B, 0x26, 0x45, 0x4A, 0x31, 0x23, 0x24, 0x1C, 0x69, 0x1E, 0x30, 0x1D, 0x58, 0x6A, 0x70, 0x20, 0x5E, 0x50, 0x25, 0x1A, 0x28, 0x04, 0x7E, 0x45, 0x12 }; // 4 inputs * 2
+int neuron_result_memory[NUM_NEURONS * ROWA];
+int test_result_expected_memory [NUMBER_OF_TEST_VECTORS*NUMBER_OF_OUTPUT_WORDS];
+int weight_vector_full [NUM_NEURONS * NUMBER_OF_INPUT_WORDS + NUM_OUT_WEIGHTS]; //= { 0x1A, 0x19, 0x1F, 0x1D, 0x16, 0x01, 0x0B, 0x1A, 0x06, 0x12, 0x06, 0x1A, 0x01, 0x1C, 0x09, 0x2D, 0x50, 0x32, 0xC8 };
+int activ_func_sigmoid [MAX_VALUE] = { 0x0C, 0x0C, 0x0C, 0x0C, 0x0D, 0x0D, 0x0D, 0x0E, 0x0E, 0x0E, 0x0F, 0x0F, 0x0F, 0x10, 0x10, 0x10, 0x11, 0x11, 0x12, 0x12, 0x12, 0x13, 0x13, 0x14, 0x14, 0x15, 0x15, 0x15, 0x16, 0x16, 0x17, 0x17, 0x18, 0x18, 0x19, 0x1A, 0x1A, 0x1B, 0x1B, 0x1C, 0x1C, 0x1D, 0x1E, 0x1E, 0x1F, 0x20, 0x20, 0x21, 0x22, 0x22, 0x23, 0x24, 0x24, 0x25, 0x26, 0x27, 0x27, 0x28, 0x29, 0x2A, 0x2B, 0x2C, 0x2C, 0x2D, 0x2E, 0x2F, 0x30, 0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x37, 0x38, 0x39, 0x3A, 0x3B, 0x3C, 0x3D, 0x3E, 0x3F, 0x40, 0x42, 0x43, 0x44, 0x45, 0x46, 0x48, 0x49, 0x4A, 0x4B, 0x4C, 0x4E, 0x4F, 0x50, 0x52, 0x53, 0x54, 0x56, 0x57, 0x58, 0x5A, 0x5B, 0x5C, 0x5E, 0x5F, 0x61, 0x62, 0x63, 0x65, 0x66, 0x68, 0x69, 0x6B, 0x6C, 0x6E, 0x6F, 0x71, 0x72, 0x74, 0x75, 0x77, 0x78, 0x7A, 0x7B, 0x7D, 0x7E, 0x80, 0x81, 0x82, 0x84, 0x85, 0x87, 0x88, 0x8A, 0x8B, 0x8D, 0x8E, 0x90, 0x91, 0x93, 0x94, 0x96, 0x97, 0x99, 0x9A, 0x9C, 0x9D, 0x9E, 0xA0, 0xA1, 0xA3, 0xA4, 0xA5, 0xA7, 0xA8, 0xA9, 0xAB, 0xAC, 0xAD, 0xAF, 0xB0, 0xB1, 0xB3, 0xB4, 0xB5, 0xB6, 0xB7, 0xB9, 0xBA, 0xBB, 0xBC, 0xBD, 0xBF, 0xC0, 0xC1, 0xC2, 0xC3, 0xC4, 0xC5, 0xC6, 0xC7, 0xC8, 0xC9, 0xCA, 0xCB, 0xCC, 0xCD, 0xCE, 0xCF, 0xD0, 0xD1, 0xD2, 0xD3, 0xD3, 0xD4, 0xD5, 0xD6, 0xD7, 0xD8, 0xD8, 0xD9, 0xDA, 0xDB, 0xDB, 0xDC, 0xDD, 0xDD, 0xDE, 0xDF, 0xDF, 0xE0, 0xE1, 0xE1, 0xE2, 0xE3, 0xE3, 0xE4, 0xE4, 0xE5, 0xE5, 0xE6, 0xE7, 0xE7, 0xE8, 0xE8, 0xE9, 0xE9, 0xEA, 0xEA, 0xEA, 0xEB, 0xEB, 0xEC, 0xEC, 0xED, 0xED, 0xED, 0xEE, 0xEE, 0xEF, 0xEF, 0xEF, 0xF0, 0xF0, 0xF0, 0xF1, 0xF1, 0xF1, 0xF2, 0xF2, 0xF2, 0xF3, 0xF3, 0xF3 };
+int result_memory_SW [NUMBER_OF_TEST_VECTORS*NUMBER_OF_OUTPUT_WORDS]; // same size as test_result_expected_memory
+int result_memory_HLS [NUMBER_OF_TEST_VECTORS*NUMBER_OF_OUTPUT_WORDS]; // same size as test_result_expected_memory
+
+/* FIFO instantiations*/
+u16 HLS_Fifo = FIFO_DEV_ID_0; //HLS
+//u16 DeviceId_1 = FIFO_DEV_ID_1; //HDL
+XLlFifo FifoInstance_HLS, FifoInstance_HDL; 	// Device instance
+XLlFifo *FifoPtr_HLS = &FifoInstance_HLS; // Device pointer
+// XLlFifo *FifoPtr_HDL = &FifoInstance_HDL;
+
+/*****************************************************************************
+* Initialise FIFO instances
+******************************************************************************/
+int InitFifoInstance(XLlFifo *InstancePtr, u16 DeviceId) {
+    XLlFifo_Config *Config;
+    int Status;
+
+    // Lookup the configuration for the given device ID
+    Config = XLlFfio_LookupConfig(DeviceId);
+    if (!Config) {
+        xil_printf("No config found for %d\r\n", DeviceId);
+        return XST_FAILURE;
+    }
+
+    // Initialize the FIFO with the configuration
+    Status = XLlFifo_CfgInitialize(InstancePtr, Config, Config->BaseAddress);
+    if (Status != XST_SUCCESS) {
+        xil_printf("Initialization failed for Device ID %d\r\n", DeviceId);
+        return XST_FAILURE;
+    }
+
+    // Check for the Reset value
+    Status = XLlFifo_Status(InstancePtr);
+    XLlFifo_IntClear(InstancePtr, 0xffffffff); // Clear any interrupts
+
+    // Verify the FIFO status after reset
+    Status = XLlFifo_Status(InstancePtr);
+    if (Status != 0x0) {
+        xil_printf("\nERROR: Reset value of ISR0: 0x%x. Expected: 0x0\r\n", Status);
+        return XST_FAILURE;
+    }
+
+    return XST_SUCCESS;
+}
+
+/*****************************************************************************
+* Check answers
+******************************************************************************/
+/* Compare the data send with the data received */
+int compare_results(int* result_memory, int* test_result_expected_memory) {
+    xil_printf(" Comparing data ...\r\n");
+    int success = 1;
+	for (int word_cnt = 0; word_cnt < NUMBER_OF_TEST_VECTORS * NUMBER_OF_OUTPUT_WORDS; word_cnt++) {
+		success = success & (result_memory[word_cnt] == test_result_expected_memory[word_cnt]);
+		#ifdef ENABLE_PRINT_STATEMENTS
+		xil_printf("Result: %d\n", result_memory[word_cnt]);
+		if (result_memory[word_cnt] != test_result_expected_memory[word_cnt]) {
+			xil_printf("Mismatch at index %d: Expected %d, Got %d\n", word_cnt, test_result_expected_memory[word_cnt], result_memory[word_cnt]);
+		}
+		#endif
+	}
+
+	if (success != 1){
+		xil_printf("Test Failed\r\n");
+		return XST_FAILURE;
+	}
+
+	xil_printf("Test Success\r\n");
+	return XST_SUCCESS;
+}
+/*****************************************************************************
+* Send and Receive FIFO Data
+******************************************************************************/
+int TxSend(XLlFifo *InstancePtr, int  *SourceAddr, int num_packets, int packet_len)
+{
+
+	int i;
+	int j;
+	xil_printf(" Transmitting Data ... \r\n");
+
+	for(i=0 ; i < num_packets ; i++){
+		/* Writing into the FIFO Transmit Port Buffer */
+		for (j=0 ; j < packet_len ; j++){
+			if( XLlFifo_iTxVacancy(InstancePtr) ){
+				XLlFifo_TxPutWord(InstancePtr,
+					*(SourceAddr+(i*packet_len)+j));
+			}
+		}
+
+	}
+
+	/* Start Transmission by writing transmission length into the TLR */
+	XLlFifo_iTxSetLen(InstancePtr, (num_packets * WORD_SIZE));
+
+	/* Check for Transmission completion */
+	while( !(XLlFifo_IsTxDone(InstancePtr)) ){
+
+	}
+
+	/* Transmission Complete */
+	return XST_SUCCESS;
+}
+int ProcessFifoData(XLlFifo *TxInstancePtr, XLlFifo *RxInstancePtr, int* weight_vector,
+                    int *test_input_memory, int *result_memory,
+                    int num_test_vectors, int num_input_words,
+                    int num_output_words, int timeout_value, const char *test_name)
+{
+    int test_case_cnt, word_cnt;
+    int Status;
+
+	#ifdef ENABLE_AXI_TIMER
+    u32 start_time, end_time, elapsed_time;
+	double elapsed_time_sec;
+	// Start the Timer
+	XTmrCtr_Reset(&TimerCounter, TIMER_COUNTER_0);
+	XTmrCtr_Start(&TimerCounter, TIMER_COUNTER_0);
+	start_time = XTmrCtr_GetValue(&TimerCounter, TIMER_COUNTER_0);
+	#endif
+
+    /******************** Input test cases to Coprocessor : Transmit the Data Stream ***********************/
+//	Status = TxSend(TxInstancePtr, test_input_memory, NUMBER_OF_TEST_VECTORS*NUMBER_OF_INPUT_WORDS, );
+//		if (Status != XST_SUCCESS){
+//			xil_printf("Transmission of Data failed\n\r");
+//			return XST_FAILURE;
+//		}
+
+	for (test_case_cnt = 0; test_case_cnt < num_test_vectors; test_case_cnt++) {
+
+		#if defined(ENABLE_PRINT_STATEMENTS) || !defined(ENABLE_TCF_PROFILER)
+    	xil_printf("Transmitting Data for test case %d ... \r\n", test_case_cnt);
+		#endif
+        /* Writing into the FIFO Transmit Port Buffer */
+        for (word_cnt = 0; word_cnt < num_input_words; word_cnt++) {
+			XLlFifo_TxPutWord(TxInstancePtr, test_input_memory[word_cnt + test_case_cnt * num_input_words]);
+        }
+
+        /* Start Transmission by writing transmission length (number of bytes = 4* number of words) into the TLR */
+
+    }
+	XLlFifo_iTxSetLen(TxInstancePtr, num_input_words * WORD_SIZE);
+	while (!(XLlFifo_IsTxDone(TxInstancePtr))) {
+		// Optionally add a timeout check if needed
+	}
+	/******************** Input weights to Coprocessor : Transmit the Data Stream ***********************/
+//	Status = TxSend(TxInstancePtr, weight_vector, );
+//			if (Status != XST_SUCCESS){
+//				xil_printf("Transmission of Data failed\n\r");
+//				return XST_FAILURE;
+//			}
+    for (int weight_count = 0; weight_count < NUM_NEURONS * NUMBER_OF_INPUT_WORDS + NUM_OUT_WEIGHTS; weight_count++) {
+		#if defined(ENABLE_PRINT_STATEMENTS) || !defined(ENABLE_TCF_PROFILER)
+		xil_printf("Transmitting Data for weight %d ... \r\n", weight_count);
+		#endif
+		XLlFifo_TxPutWord(TxInstancePtr, weight_vector[weight_count]);
+
+		/* Start Transmission by writing transmission length (number of bytes = 4* number of words) into the TLR */
+	}
+    XLlFifo_iTxSetLen(TxInstancePtr,NUM_NEURONS * NUMBER_OF_INPUT_WORDS + NUM_OUT_WEIGHTS * WORD_SIZE);
+    while (!(XLlFifo_IsTxDone(TxInstancePtr))) {
+		// Optionally add a timeout check if needed
+	}
+	/* Transmission Complete */
+
+    /******************** Output from Coprocessor : Receive the Data Stream ***********************/
+    for (test_case_cnt = 0; test_case_cnt < num_test_vectors; test_case_cnt++) {
+    	#if defined(ENABLE_PRINT_STATEMENTS) || !defined(ENABLE_TCF_PROFILER)
+        xil_printf("Receiving data for test case %d ... \r\n", test_case_cnt);
+		#endif
+        int timeout_count = timeout_value;
+        // wait for coprocessor to send data, subject to a timeout
+        while (!XLlFifo_iRxOccupancy(RxInstancePtr)) {
+            timeout_count--;
+            if (timeout_count == 0) {
+                xil_printf("Timeout while waiting for data ... \r\n");
+                return XST_FAILURE;
+            }
+        }
+
+        // we are expecting only one packet of data per test case
+        u32 ReceiveLength = XLlFifo_iRxGetLen(RxInstancePtr) / WORD_SIZE;
+        for (word_cnt = 0; word_cnt < ReceiveLength; word_cnt++) {
+            // read one word at a time
+            result_memory[word_cnt + test_case_cnt * num_output_words] = XLlFifo_RxGetWord(RxInstancePtr);
+        }
+
+		#ifdef ENABLE_AXI_TIMER
+        end_time = XTmrCtr_GetValue(&TimerCounter, TIMER_COUNTER_0);
+		XTmrCtr_Stop(&TimerCounter, TIMER_COUNTER_0);
+		// Calculate elapsed time
+		elapsed_time = end_time - start_time;;
+		elapsed_time_sec = (double)elapsed_time / CLOCK_FREQ_HZ;
+		xil_printf("Execution time for %s: %u clock cycles (~%.6f sec)\r\n", test_name, elapsed_time, elapsed_time_sec);
+		#endif
+
+        Status = XLlFifo_IsRxDone(RxInstancePtr);
+        if (Status != TRUE) {
+            xil_printf("Failing in receive complete ... \r\n");
+            return XST_FAILURE;
+        }
+        /* Reception Complete */
+    }
+
+    return XST_SUCCESS;
+}
+
+/*****************************************************************************
+* SW Matrix Multiply divide by 256 fn
+******************************************************************************/
+void matrix_multiply_neuron(int num_rows, int num_cols, int* weight_vector, int* result_vector) {
+// Get the starting index in the input memory
+
+	// Perform matrix multiplication: C = A * B (ROWA x 1 result)
+	#ifdef ENABLE_AXI_TIMER
+    u32 start_time, end_time, elapsed_time;
+	double elapsed_time_sec;
+	// Start the Timer
+	XTmrCtr_Reset(&TimerCounter, TIMER_COUNTER_0);
+	XTmrCtr_Start(&TimerCounter, TIMER_COUNTER_0);
+	start_time = XTmrCtr_GetValue(&TimerCounter, TIMER_COUNTER_0);
+	#endif
+	for (int test_index = 0; test_index < num_rows; test_index++) { //for each test case
+		for (int j = 0; j < NUM_NEURONS; j++) { //for each neuron
+			int sum = 0;
+			int round_up = 0;
+			for (int k = 0; k < num_cols; k++) { //each column
+				sum += test_input_memory[test_index * num_cols + k] *
+						weight_vector[k + j * num_cols];
+			}
+			if (sum & 0x80) {
+				round_up = 1;  // Round up by adding 1
+			}
+			result_vector[j + test_index * NUM_NEURONS] = activ_func_sigmoid[((sum >> 8) & 0xFF) + round_up  - 1];
+		}
+	}
+	#ifdef ENABLE_AXI_TIMER
+	end_time = XTmrCtr_GetValue(&TimerCounter, TIMER_COUNTER_0);
+	XTmrCtr_Stop(&TimerCounter, TIMER_COUNTER_0);
+	// Calculate elapsed time
+	elapsed_time = end_time - start_time;;
+	elapsed_time_sec = (double)elapsed_time / CLOCK_FREQ_HZ;
+	xil_printf("Execution time for %s: %u clock cycles (~%.6f sec)\r\n", "ARM Processor SW", elapsed_time, elapsed_time_sec);
+	#endif
+}
+
+void matrix_multiply_result(int num_rows, int num_cols, int* weight_vector, int* result_vector) {
+
+
+	// Perform matrix multiplication: C = A * B (ROWA x 1 result)
+	#ifdef ENABLE_AXI_TIMER
+    u32 start_time, end_time, elapsed_time;
+	double elapsed_time_sec;
+	// Start the Timer
+	XTmrCtr_Reset(&TimerCounter, TIMER_COUNTER_0);
+	XTmrCtr_Start(&TimerCounter, TIMER_COUNTER_0);
+	start_time = XTmrCtr_GetValue(&TimerCounter, TIMER_COUNTER_0);
+	#endif
+
+	for (int test_index = 0; test_index < num_rows; test_index++) {
+		int round_up = 0;
+		int sum = neuron_result_memory[test_index * NUM_NEURONS] * weight_vector[NUM_NEURONS * NUMBER_OF_INPUT_WORDS + 1]
+				+ neuron_result_memory[test_index * NUM_NEURONS + 1] * weight_vector[NUM_NEURONS * NUMBER_OF_INPUT_WORDS + 2];
+		if (sum & 0x80) {
+			round_up = 1;  // Round up by adding 1
+		}
+		result_vector[test_index] = (weight_vector[NUM_NEURONS * NUMBER_OF_INPUT_WORDS] + (sum >> 8) + round_up) & 0xFF;
+		xil_printf("%d\r\n", result_vector[test_index]);
+	}
+	#ifdef ENABLE_AXI_TIMER
+	end_time = XTmrCtr_GetValue(&TimerCounter, TIMER_COUNTER_0);
+	XTmrCtr_Stop(&TimerCounter, TIMER_COUNTER_0);
+	// Calculate elapsed time
+	elapsed_time = end_time - start_time;;
+	elapsed_time_sec = (double)elapsed_time / CLOCK_FREQ_HZ;
+	xil_printf("Execution time for %s: %u clock cycles (~%.6f sec)\r\n", "ARM Processor SW", elapsed_time, elapsed_time_sec);
+	#endif
+}
+
+/*****************************************************************************
+* Read and store data
+******************************************************************************/
+void readInHexData_testInput(int totalWords, int* vector_input_memory) {
+    char RecvChar;
+    uint8_t currentByte = 0;
+    int currentByteIndex = 0;
+    int currentWordIndex = 0;
+
+    /************************** Initializations *****************************/
+    int Status = XST_SUCCESS;
+    Status = InitFifoInstance(FifoPtr_HLS, HLS_Fifo);
+    	if (Status != XST_SUCCESS) {
+    	    xil_printf("Failed to initialize HLS FIFO 0\r\n");
+    	    return;
+    	}
+
+    while (1) {
+    	if(currentWordIndex % 8 ==0){
+    		vector_input_memory[currentWordIndex] = 255; // for bias
+    		currentWordIndex++;
+    		continue;
+    	}
+        // Read the character input
+        scanf("%c", &RecvChar);
+
+        // If the character is a valid hexadecimal digit
+        if ((RecvChar >= '0' && RecvChar <= '9') || (RecvChar >= 'A' && RecvChar <= 'F') || (RecvChar >= 'a' && RecvChar <= 'f')) {
+            // Convert hex char to its integer value and update the current byte
+            if (RecvChar >= '0' && RecvChar <= '9') {
+                currentByte = (currentByte << 4) | (RecvChar - '0');  // Left shift and OR with the hex value
+            } else if (RecvChar >= 'A' && RecvChar <= 'F') {
+                currentByte = (currentByte << 4) | (RecvChar - 'A' + 10);
+            } else if (RecvChar >= 'a' && RecvChar <= 'f') {
+                currentByte = (currentByte << 4) | (RecvChar - 'a' + 10);
+            }
+
+            currentByteIndex++;
+
+            // After two hex characters (one byte), store it in the memory
+            if (currentByteIndex == 2) {
+                if (currentWordIndex < totalWords) {
+                    vector_input_memory[currentWordIndex] = currentByte;
+                    #ifdef ENABLE_PRINT_STATEMENTS
+                    xil_printf("Storing %d in index [%d]\n", currentByte, currentWordIndex);
+                    #endif
+                    currentWordIndex++;
+                    if (currentWordIndex == totalWords) {
+                        break;
+                    }
+                }
+                // Reset for the next byte
+                currentByte = 0;
+                currentByteIndex = 0;
+            }
+        }
+    }
+}
+void readInHexData_store(int totalWords, int* vector_input_memory) {
+    char RecvChar;
+    uint8_t currentByte = 0;
+    int currentByteIndex = 0;
+    int currentWordIndex = 0;
+
+    while (1) {
+        // Read the character input
+        scanf("%c", &RecvChar);
+
+        // If the character is a valid hexadecimal digit
+        if ((RecvChar >= '0' && RecvChar <= '9') || (RecvChar >= 'A' && RecvChar <= 'F') || (RecvChar >= 'a' && RecvChar <= 'f')) {
+            // Convert hex char to its integer value and update the current byte
+            if (RecvChar >= '0' && RecvChar <= '9') {
+                currentByte = (currentByte << 4) | (RecvChar - '0');  // Left shift and OR with the hex value
+            } else if (RecvChar >= 'A' && RecvChar <= 'F') {
+                currentByte = (currentByte << 4) | (RecvChar - 'A' + 10);
+            } else if (RecvChar >= 'a' && RecvChar <= 'f') {
+                currentByte = (currentByte << 4) | (RecvChar - 'a' + 10);
+            }
+
+            currentByteIndex++;
+
+            // After two hex characters (one byte), store it in the memory
+            if (currentByteIndex == 2) {
+                if (currentWordIndex < totalWords) {
+                    vector_input_memory[currentWordIndex] = currentByte;
+                    #ifdef ENABLE_PRINT_STATEMENTS
+                    xil_printf("Storing %d in index [%d]\n", currentByte, currentWordIndex);
+                    #endif
+                    currentWordIndex++;
+                    if (currentWordIndex == totalWords) {
+                        break;
+                    }
+                }
+                // Reset for the next byte
+                currentByte = 0;
+                currentByteIndex = 0;
+            }
+        }
+    }
+}
+/*****************************************************************************
+* Main function
+* Takes input where each test cases has 7 cols and weights vectors to do MLP NN calculation and returns result
+******************************************************************************/
+int main()
+{
+	int Status = XST_SUCCESS;
+	//, test_case_cnt = 0;
+
+	XTmrCtr *TmrCtrInstancePtr = &TimerCounter;
+
+	/************************** Initializations *****************************/
+//	XLlFifo_Config *Config;
+	/*
+	 * Perform a self-test to ensure that the hardware was built
+	 * correctly, use the 1st timer in the device (0)
+	 */
+	Status = XTmrCtr_Initialize(TmrCtrInstancePtr, XPAR_TMRCTR_0_DEVICE_ID);
+	if (Status != XST_SUCCESS) {
+	    xil_printf("Timer initialization failed!\n");
+	    return XST_FAILURE;
+	}
+	/************** Run a software version of the hardware function to validate results ************/
+	// instead of hard-coding the results in test_result_expected_memory
+	xil_printf("Reading Data ");
+	readInHexData_testInput(NUMBER_OF_TEST_VECTORS * NUMBER_OF_INPUT_WORDS, &test_input_memory[0]);
+	readInHexData_store(NUM_NEURONS * NUMBER_OF_INPUT_WORDS + NUM_OUT_WEIGHTS, &weight_vector_full[0]);
+	readInHexData_store(NUMBER_OF_TEST_VECTORS * NUMBER_OF_OUTPUT_WORDS, &test_result_expected_memory[0]);
+	xil_printf("Finish Reading Data ");
+	/**************************  SW Calculate Results for all test vectors *****************************/
+	matrix_multiply_neuron(ROWA, COLA, &weight_vector_full[0], &neuron_result_memory[0]);
+	matrix_multiply_result(ROWA, NUM_NEURONS, &weight_vector_full[0], &result_memory_SW[0]);
+
+	int status_HLS = ProcessFifoData(&FifoInstance_HDL, &FifoInstance_HDL, &weight_vector_full[0], test_input_memory, result_memory_HLS,
+									  NUMBER_OF_TEST_VECTORS, NUMBER_OF_INPUT_WORDS,
+									  NUMBER_OF_OUTPUT_WORDS, TIMEOUT_VALUE, "HDL co-processor");
+	if (status_HLS == XST_SUCCESS) {
+			#ifdef ENABLE_PRINT_STATEMENTS
+			xil_printf("FIFO completed successfully.\r\n");
+			#endif
+	}
+	/************************** Checking correctness of results *****************************/
+
+	int status = compare_results(&result_memory_SW[0], &test_result_expected_memory[0]);
+	status = compare_results(&result_memory_HLS[0], &test_result_expected_memory[0]);
+
+	return XST_SUCCESS;
+}
+
+
+
+
+
