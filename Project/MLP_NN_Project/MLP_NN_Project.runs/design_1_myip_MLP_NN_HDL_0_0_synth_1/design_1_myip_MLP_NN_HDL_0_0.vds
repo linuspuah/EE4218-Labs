@@ -1,0 +1,574 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Apr  9 13:50:05 2025
+# Process ID: 15408
+# Current directory: C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/design_1_myip_MLP_NN_HDL_0_0_synth_1
+# Command line: vivado.exe -log design_1_myip_MLP_NN_HDL_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_myip_MLP_NN_HDL_0_0.tcl
+# Log file: C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/design_1_myip_MLP_NN_HDL_0_0_synth_1/design_1_myip_MLP_NN_HDL_0_0.vds
+# Journal file: C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/design_1_myip_MLP_NN_HDL_0_0_synth_1\vivado.jou
+# Running On: linus_zenbook, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 4, Host memory: 16968 MB
+#-----------------------------------------------------------
+source design_1_myip_MLP_NN_HDL_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 456.168 ; gain = 182.684
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sunil/VivadoProjects/EE4218Labs/Project/ip_repo/myip_MLP_NN_HDL_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sunil/VitisHLSip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.cache/ip 
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_myip_MLP_NN_HDL_0_0
+Command: synth_design -top design_1_myip_MLP_NN_HDL_0_0 -part xck26-sfvc784-2LV-c -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 16060
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1860.262 ; gain = 378.309
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_myip_MLP_NN_HDL_0_0' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ip/design_1_myip_MLP_NN_HDL_0_0/synth/design_1_myip_MLP_NN_HDL_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'myip_v1_1' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/myip_v1_1.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/myip_v1_1.v:209]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/myip_v1_1.v:188]
+INFO: [Synth 8-6157] synthesizing module 'memory_RAM' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/memory_RAM.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'memory_RAM' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/memory_RAM.v:20]
+INFO: [Synth 8-6157] synthesizing module 'memory_RAM__parameterized0' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/memory_RAM.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'memory_RAM__parameterized0' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/memory_RAM.v:20]
+INFO: [Synth 8-6157] synthesizing module 'memory_RAM__parameterized1' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/memory_RAM.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'memory_RAM__parameterized1' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/memory_RAM.v:20]
+INFO: [Synth 8-6157] synthesizing module 'memory_RAM__parameterized2' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/memory_RAM.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'memory_RAM__parameterized2' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/memory_RAM.v:20]
+INFO: [Synth 8-6157] synthesizing module 'memory_RAM__parameterized3' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/memory_RAM.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'memory_RAM__parameterized3' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/memory_RAM.v:20]
+INFO: [Synth 8-6157] synthesizing module 'matrix_multiply_v2' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:20]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'sigmoid.mem'; please make sure the file is added to project and has read permission, ignoring [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:61]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'matrix_multiply_v2' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:20]
+INFO: [Synth 8-6157] synthesizing module 'matrix_multipy_res' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multipy_res.v:23]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'sigmoid.mem'; please make sure the file is added to project and has read permission, ignoring [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multipy_res.v:64]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multipy_res.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'matrix_multipy_res' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multipy_res.v:23]
+WARNING: [Synth 8-689] width (6) of port connection 'RES_write_address' does not match port width (7) of module 'matrix_multipy_res' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/myip_v1_1.v:635]
+INFO: [Synth 8-6155] done synthesizing module 'myip_v1_1' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/myip_v1_1.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_myip_MLP_NN_HDL_0_0' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ip/design_1_myip_MLP_NN_HDL_0_0/synth/design_1_myip_MLP_NN_HDL_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element rounding_reg was removed.  [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:98]
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: Unable to determine number of words or word size in RAM. 
+	2: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+WARNING: [Synth 8-3848] Net SIGMOID_VALUES in module/entity matrix_multiply_v2 does not have driver. [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multiply.v:55]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-6014] Unused sequential element rounding_reg was removed.  [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/matrix_multipy_res.v:101]
+WARNING: [Synth 8-6014] Unused sequential element read_counter_reg was removed.  [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/myip_v1_1.v:192]
+WARNING: [Synth 8-6014] Unused sequential element sum_reg was removed.  [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ipshared/d221/src/myip_v1_1.v:194]
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[31] in module myip_v1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[30] in module myip_v1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[29] in module myip_v1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[28] in module myip_v1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[27] in module myip_v1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[26] in module myip_v1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[25] in module myip_v1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[24] in module myip_v1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[23] in module myip_v1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[22] in module myip_v1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[21] in module myip_v1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[20] in module myip_v1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[19] in module myip_v1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[18] in module myip_v1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[17] in module myip_v1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[16] in module myip_v1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[15] in module myip_v1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[14] in module myip_v1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[13] in module myip_v1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[12] in module myip_v1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[11] in module myip_v1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[10] in module myip_v1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[9] in module myip_v1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[8] in module myip_v1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TLAST in module myip_v1_1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1987.465 ; gain = 505.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 1987.465 ; gain = 505.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 1987.465 ; gain = 505.512
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1987.465 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2040.539 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.080 . Memory (MB): peak = 2059.852 ; gain = 19.035
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:37 . Memory (MB): peak = 2059.852 ; gain = 577.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:37 . Memory (MB): peak = 2059.852 ; gain = 577.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:37 . Memory (MB): peak = 2059.852 ; gain = 577.898
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'matrix_multiply_v2'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'matrix_multipy_res'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'myip_v1_1'
+INFO: [Synth 8-802] inferred FSM for state register 'read_in_state_reg' in module 'myip_v1_1'
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "memory_RAM:/RAM_reg"
+INFO: [Synth 8-6904] The RAM "memory_RAM__parameterized0:/RAM_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "memory_RAM__parameterized1:/RAM_reg" of size (depth=256 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "memory_RAM__parameterized2:/RAM_reg" of size (depth=4 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "memory_RAM__parameterized3:/RAM_reg" of size (depth=64 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+           wait_for_data |                             1000 |                             1000
+                 summing |                             0100 |                             0100
+            write_to_mem |                             0010 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'matrix_multiply_v2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+           wait_for_data |                             1000 |                             1000
+                 summing |                             0100 |                             0100
+            write_to_mem |                             0010 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'matrix_multipy_res'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                 write_A |                             1000 |                             1000
+                 write_B |                             0100 |                             0100
+                 write_C |                             0010 |                             0010
+            write_weight |                             0001 |                             0001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'read_in_state_reg' in module 'myip_v1_1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    Idle |                          1000000 |                          1000000
+             Read_Inputs |                          0100000 |                          0100000
+            Initialise_N |                          0010000 |                          0010000
+              Compute_AB |                          0001000 |                          0001000
+              Compute_AC |                          0000100 |                          0000100
+               Compute_2 |                          0000010 |                          0000010
+           Write_Outputs |                          0000001 |                          0000001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'myip_v1_1'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:38 . Memory (MB): peak = 2059.852 ; gain = 577.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    9 Bit       Adders := 3     
+	   2 Input    8 Bit       Adders := 11    
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 6     
+	   2 Input    2 Bit       Adders := 6     
++---Registers : 
+	               32 Bit    Registers := 6     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 20    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 6     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 29    
++---RAMs : 
+	               4K Bit	(512 X 8 bit)          RAMs := 1     
+	               2K Bit	(256 X 8 bit)          RAMs := 1     
+	              512 Bit	(64 X 8 bit)          RAMs := 1     
+	               64 Bit	(8 X 8 bit)          RAMs := 2     
+	               32 Bit	(4 X 8 bit)          RAMs := 1     
++---Muxes : 
+	   4 Input   32 Bit        Muxes := 3     
+	   2 Input    9 Bit        Muxes := 3     
+	   4 Input    9 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 7     
+	   4 Input    8 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 2     
+	   8 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   8 Input    6 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 3     
+	   5 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 6     
+	   4 Input    3 Bit        Muxes := 2     
+	   5 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 5     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 34    
+	   4 Input    1 Bit        Muxes := 33    
+	   3 Input    1 Bit        Muxes := 4     
+	   5 Input    1 Bit        Muxes := 22    
+	   8 Input    1 Bit        Muxes := 41    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-6904] The RAM "design_1_myip_MLP_NN_HDL_0_0/inst/B_RAM/RAM_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "design_1_myip_MLP_NN_HDL_0_0/inst/C_RAM/RAM_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "design_1_myip_MLP_NN_HDL_0_0/inst/weight_RAM/RAM_reg" of size (depth=4 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "design_1_myip_MLP_NN_HDL_0_0/inst/N_RAM/RAM_reg" of size (depth=256 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "design_1_myip_MLP_NN_HDL_0_0/inst/RES_RAM/RAM_reg" of size (depth=64 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-3917] design design_1_myip_MLP_NN_HDL_0_0 has port M_AXIS_TDATA[31] driven by constant 0
+INFO: [Synth 8-3917] design design_1_myip_MLP_NN_HDL_0_0 has port M_AXIS_TDATA[30] driven by constant 0
+INFO: [Synth 8-3917] design design_1_myip_MLP_NN_HDL_0_0 has port M_AXIS_TDATA[29] driven by constant 0
+INFO: [Synth 8-3917] design design_1_myip_MLP_NN_HDL_0_0 has port M_AXIS_TDATA[28] driven by constant 0
+INFO: [Synth 8-3917] design design_1_myip_MLP_NN_HDL_0_0 has port M_AXIS_TDATA[27] driven by constant 0
+INFO: [Synth 8-3917] design design_1_myip_MLP_NN_HDL_0_0 has port M_AXIS_TDATA[26] driven by constant 0
+INFO: [Synth 8-3917] design design_1_myip_MLP_NN_HDL_0_0 has port M_AXIS_TDATA[25] driven by constant 0
+INFO: [Synth 8-3917] design design_1_myip_MLP_NN_HDL_0_0 has port M_AXIS_TDATA[24] driven by constant 0
+INFO: [Synth 8-3917] design design_1_myip_MLP_NN_HDL_0_0 has port M_AXIS_TDATA[23] driven by constant 0
+INFO: [Synth 8-3917] design design_1_myip_MLP_NN_HDL_0_0 has port M_AXIS_TDATA[22] driven by constant 0
+INFO: [Synth 8-3917] design design_1_myip_MLP_NN_HDL_0_0 has port M_AXIS_TDATA[21] driven by constant 0
+INFO: [Synth 8-3917] design design_1_myip_MLP_NN_HDL_0_0 has port M_AXIS_TDATA[20] driven by constant 0
+INFO: [Synth 8-3917] design design_1_myip_MLP_NN_HDL_0_0 has port M_AXIS_TDATA[19] driven by constant 0
+INFO: [Synth 8-3917] design design_1_myip_MLP_NN_HDL_0_0 has port M_AXIS_TDATA[18] driven by constant 0
+INFO: [Synth 8-3917] design design_1_myip_MLP_NN_HDL_0_0 has port M_AXIS_TDATA[17] driven by constant 0
+INFO: [Synth 8-3917] design design_1_myip_MLP_NN_HDL_0_0 has port M_AXIS_TDATA[16] driven by constant 0
+INFO: [Synth 8-3917] design design_1_myip_MLP_NN_HDL_0_0 has port M_AXIS_TDATA[15] driven by constant 0
+INFO: [Synth 8-3917] design design_1_myip_MLP_NN_HDL_0_0 has port M_AXIS_TDATA[14] driven by constant 0
+INFO: [Synth 8-3917] design design_1_myip_MLP_NN_HDL_0_0 has port M_AXIS_TDATA[13] driven by constant 0
+INFO: [Synth 8-3917] design design_1_myip_MLP_NN_HDL_0_0 has port M_AXIS_TDATA[12] driven by constant 0
+INFO: [Synth 8-3917] design design_1_myip_MLP_NN_HDL_0_0 has port M_AXIS_TDATA[11] driven by constant 0
+INFO: [Synth 8-3917] design design_1_myip_MLP_NN_HDL_0_0 has port M_AXIS_TDATA[10] driven by constant 0
+INFO: [Synth 8-3917] design design_1_myip_MLP_NN_HDL_0_0 has port M_AXIS_TDATA[9] driven by constant 0
+INFO: [Synth 8-3917] design design_1_myip_MLP_NN_HDL_0_0 has port M_AXIS_TDATA[8] driven by constant 0
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[31] in module design_1_myip_MLP_NN_HDL_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[30] in module design_1_myip_MLP_NN_HDL_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[29] in module design_1_myip_MLP_NN_HDL_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[28] in module design_1_myip_MLP_NN_HDL_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[27] in module design_1_myip_MLP_NN_HDL_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[26] in module design_1_myip_MLP_NN_HDL_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[25] in module design_1_myip_MLP_NN_HDL_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[24] in module design_1_myip_MLP_NN_HDL_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[23] in module design_1_myip_MLP_NN_HDL_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[22] in module design_1_myip_MLP_NN_HDL_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[21] in module design_1_myip_MLP_NN_HDL_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[20] in module design_1_myip_MLP_NN_HDL_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[19] in module design_1_myip_MLP_NN_HDL_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[18] in module design_1_myip_MLP_NN_HDL_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[17] in module design_1_myip_MLP_NN_HDL_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[16] in module design_1_myip_MLP_NN_HDL_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[15] in module design_1_myip_MLP_NN_HDL_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[14] in module design_1_myip_MLP_NN_HDL_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[13] in module design_1_myip_MLP_NN_HDL_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[12] in module design_1_myip_MLP_NN_HDL_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[11] in module design_1_myip_MLP_NN_HDL_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[10] in module design_1_myip_MLP_NN_HDL_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[9] in module design_1_myip_MLP_NN_HDL_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TDATA[8] in module design_1_myip_MLP_NN_HDL_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_TLAST in module design_1_myip_MLP_NN_HDL_0_0 is either unconnected or has no load
+RAM ("design_1_myip_MLP_NN_HDL_0_0/inst/A_RAM/RAM_reg") is too shallow (depth = 512) to use URAM. Choosing BRAM instead of URAM 
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "design_1_myip_MLP_NN_HDL_0_0/inst/A_RAM/RAM_reg"
+INFO: [Synth 8-6904] The RAM "design_1_myip_MLP_NN_HDL_0_0/inst/B_RAM/RAM_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "design_1_myip_MLP_NN_HDL_0_0/inst/C_RAM/RAM_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "design_1_myip_MLP_NN_HDL_0_0/inst/weight_RAM/RAM_reg" of size (depth=4 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "design_1_myip_MLP_NN_HDL_0_0/inst/N_RAM/RAM_reg" of size (depth=256 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "design_1_myip_MLP_NN_HDL_0_0/inst/RES_RAM/RAM_reg" of size (depth=64 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:46 . Memory (MB): peak = 2059.852 ; gain = 577.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++-----------------------------+-------------------------+-----------+----------------------+----------------+
+|Module Name                  | RTL Object              | Inference | Size (Depth x Width) | Primitives     | 
++-----------------------------+-------------------------+-----------+----------------------+----------------+
+|design_1_myip_MLP_NN_HDL_0_0 | inst/weight_RAM/RAM_reg | Implied   | 4 x 8                | RAM16X1S x 8   | 
+|design_1_myip_MLP_NN_HDL_0_0 | inst/N_RAM/RAM_reg      | Implied   | 256 x 8              | RAM256X1S x 8  | 
+|design_1_myip_MLP_NN_HDL_0_0 | inst/RES_RAM/RAM_reg    | Implied   | 64 x 8               | RAM64X1S x 8   | 
++-----------------------------+-------------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:01:14 . Memory (MB): peak = 2523.906 ; gain = 1041.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:01:14 . Memory (MB): peak = 2524.277 ; gain = 1042.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++-----------------------------+-------------------------+-----------+----------------------+----------------+
+|Module Name                  | RTL Object              | Inference | Size (Depth x Width) | Primitives     | 
++-----------------------------+-------------------------+-----------+----------------------+----------------+
+|design_1_myip_MLP_NN_HDL_0_0 | inst/weight_RAM/RAM_reg | Implied   | 4 x 8                | RAM16X1S x 8   | 
+|design_1_myip_MLP_NN_HDL_0_0 | inst/N_RAM/RAM_reg      | Implied   | 256 x 8              | RAM256X1S x 8  | 
+|design_1_myip_MLP_NN_HDL_0_0 | inst/RES_RAM/RAM_reg    | Implied   | 64 x 8               | RAM64X1S x 8   | 
++-----------------------------+-------------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:01:14 . Memory (MB): peak = 2552.914 ; gain = 1070.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:01:24 . Memory (MB): peak = 2552.914 ; gain = 1070.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:01:24 . Memory (MB): peak = 2552.914 ; gain = 1070.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:01:24 . Memory (MB): peak = 2552.914 ; gain = 1070.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:01:24 . Memory (MB): peak = 2552.914 ; gain = 1070.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:01:24 . Memory (MB): peak = 2552.914 ; gain = 1070.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:01:24 . Memory (MB): peak = 2552.914 ; gain = 1070.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY8    |     8|
+|2     |LUT1      |    11|
+|3     |LUT2      |    60|
+|4     |LUT3      |    51|
+|5     |LUT4      |    58|
+|6     |LUT5      |    55|
+|7     |LUT6      |    74|
+|8     |RAM16X1S  |     8|
+|9     |RAM256X1S |     1|
+|10    |RAM64X1S  |     8|
+|11    |FDRE      |   184|
+|12    |FDSE      |     1|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:01:24 . Memory (MB): peak = 2552.914 ; gain = 1070.961
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 26 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:01:20 . Memory (MB): peak = 2552.914 ; gain = 998.574
+Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:01:24 . Memory (MB): peak = 2552.914 ; gain = 1070.961
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2563.113 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 25 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2588.676 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 17 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 8 instances
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 1 instance 
+  RAM64X1S => RAM64X1S (RAMS64E): 8 instances
+
+Synth Design complete | Checksum: 382ef3a2
+INFO: [Common 17-83] Releasing license: Synthesis
+92 Infos, 158 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:01 ; elapsed = 00:01:42 . Memory (MB): peak = 2588.676 ; gain = 2081.461
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2588.676 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/design_1_myip_MLP_NN_HDL_0_0_synth_1/design_1_myip_MLP_NN_HDL_0_0.dcp' has been generated.
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Coretcl 2-1174] Renamed 7 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2588.676 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/design_1_myip_MLP_NN_HDL_0_0_synth_1/design_1_myip_MLP_NN_HDL_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_myip_MLP_NN_HDL_0_0_utilization_synth.rpt -pb design_1_myip_MLP_NN_HDL_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Apr  9 13:52:07 2025...

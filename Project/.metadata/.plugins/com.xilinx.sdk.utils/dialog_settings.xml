@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item key="scw_hwspec" value="C:\Users\sunil\VivadoProjects\EE4218Labs\Project\MLP_NN_Project"/>
+	<item key="debug_files_selection" value="C:\Users\sunil\VivadoProjects\EE4218Labs\Project\MLP_NN_Platform_Project_HLS_v3\hw"/>
 </section>

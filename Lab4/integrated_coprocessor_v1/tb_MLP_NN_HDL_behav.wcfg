@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_MLP_NN_HDL_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_MLP_NN_HDL" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="504,838.333 ns"></ZoomStartTime>
+      <ZoomEndTime time="505,026.334 ns"></ZoomEndTime>
+      <Cursor1Time time="505,900.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="64" />
+   <wvobject fp_name="/tb_MLP_NN_HDL/ARESETN" type="logic">
+      <obj_property name="ElementShortName">ARESETN</obj_property>
+      <obj_property name="ObjectShortName">ARESETN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/S_AXIS_TREADY" type="logic">
+      <obj_property name="ElementShortName">S_AXIS_TREADY</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_TREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/S_AXIS_TDATA" type="array">
+      <obj_property name="ElementShortName">S_AXIS_TDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_TDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/S_AXIS_TLAST" type="logic">
+      <obj_property name="ElementShortName">S_AXIS_TLAST</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_TLAST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/S_AXIS_TVALID" type="logic">
+      <obj_property name="ElementShortName">S_AXIS_TVALID</obj_property>
+      <obj_property name="ObjectShortName">S_AXIS_TVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/M_AXIS_TVALID" type="logic">
+      <obj_property name="ElementShortName">M_AXIS_TVALID</obj_property>
+      <obj_property name="ObjectShortName">M_AXIS_TVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/M_AXIS_TDATA" type="array">
+      <obj_property name="ElementShortName">M_AXIS_TDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXIS_TDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/M_AXIS_TLAST" type="logic">
+      <obj_property name="ElementShortName">M_AXIS_TLAST</obj_property>
+      <obj_property name="ObjectShortName">M_AXIS_TLAST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/M_AXIS_TREADY" type="logic">
+      <obj_property name="ElementShortName">M_AXIS_TREADY</obj_property>
+      <obj_property name="ObjectShortName">M_AXIS_TREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/test_input_memory" type="array">
+      <obj_property name="ElementShortName">test_input_memory[0:531][7:0]</obj_property>
+      <obj_property name="ObjectShortName">test_input_memory[0:531][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/test_result_expected_memory" type="array">
+      <obj_property name="ElementShortName">test_result_expected_memory[0:63][7:0]</obj_property>
+      <obj_property name="ObjectShortName">test_result_expected_memory[0:63][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/result_memory" type="array">
+      <obj_property name="ElementShortName">result_memory[0:63][7:0]</obj_property>
+      <obj_property name="ObjectShortName">result_memory[0:63][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/word_cnt" type="array">
+      <obj_property name="ElementShortName">word_cnt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">word_cnt[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/input_cnt" type="array">
+      <obj_property name="ElementShortName">input_cnt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">input_cnt[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/output_cnt" type="array">
+      <obj_property name="ElementShortName">output_cnt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">output_cnt[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/success" type="logic">
+      <obj_property name="ElementShortName">success</obj_property>
+      <obj_property name="ObjectShortName">success</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/M_AXIS_TLAST_prev" type="logic">
+      <obj_property name="ElementShortName">M_AXIS_TLAST_prev</obj_property>
+      <obj_property name="ObjectShortName">M_AXIS_TLAST_prev</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/NUMBER_OF_WEIGHTS" type="array">
+      <obj_property name="ElementShortName">NUMBER_OF_WEIGHTS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NUMBER_OF_WEIGHTS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/NUMBER_OF_INPUT_WORDS" type="array">
+      <obj_property name="ElementShortName">NUMBER_OF_INPUT_WORDS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NUMBER_OF_INPUT_WORDS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/NUMBER_OF_OUTPUT_WORDS" type="array">
+      <obj_property name="ElementShortName">NUMBER_OF_OUTPUT_WORDS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NUMBER_OF_OUTPUT_WORDS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/NUMBER_OF_TEST_VECTORS" type="array">
+      <obj_property name="ElementShortName">NUMBER_OF_TEST_VECTORS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NUMBER_OF_TEST_VECTORS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/width" type="array">
+      <obj_property name="ElementShortName">width[31:0]</obj_property>
+      <obj_property name="ObjectShortName">width[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/A_write_data_in" type="array">
+      <obj_property name="ElementShortName">A_write_data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">A_write_data_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/A_write_address" type="array">
+      <obj_property name="ElementShortName">A_write_address[8:0]</obj_property>
+      <obj_property name="ObjectShortName">A_write_address[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/B_write_data_in" type="array">
+      <obj_property name="ElementShortName">B_write_data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">B_write_data_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/B_write_address" type="array">
+      <obj_property name="ElementShortName">B_write_address[2:0]</obj_property>
+      <obj_property name="ObjectShortName">B_write_address[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/C_write_data_in" type="array">
+      <obj_property name="ElementShortName">C_write_data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">C_write_data_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/C_write_address" type="array">
+      <obj_property name="ElementShortName">C_write_address[2:0]</obj_property>
+      <obj_property name="ObjectShortName">C_write_address[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/weight_write_data_in" type="array">
+      <obj_property name="ElementShortName">weight_write_data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">weight_write_data_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/weight_write_address" type="array">
+      <obj_property name="ElementShortName">weight_write_address[1:0]</obj_property>
+      <obj_property name="ObjectShortName">weight_write_address[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/ACLK" type="logic">
+      <obj_property name="ElementShortName">ACLK</obj_property>
+      <obj_property name="ObjectShortName">ACLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/N_write_address" type="array">
+      <obj_property name="ElementShortName">N_write_address[7:0]</obj_property>
+      <obj_property name="ObjectShortName">N_write_address[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/N_write_data_in" type="array">
+      <obj_property name="ElementShortName">N_write_data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">N_write_data_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/N_write_data_reg" type="array">
+      <obj_property name="ElementShortName">N_write_data_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">N_write_data_reg[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/N_write_en_AB" type="logic">
+      <obj_property name="ElementShortName">N_write_en_AB</obj_property>
+      <obj_property name="ObjectShortName">N_write_en_AB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/shifted_N_write_address_AB" type="array">
+      <obj_property name="ElementShortName">shifted_N_write_address_AB[7:0]</obj_property>
+      <obj_property name="ObjectShortName">shifted_N_write_address_AB[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/N_write_data_in" type="array">
+      <obj_property name="ElementShortName">N_write_data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">N_write_data_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/matrix_multiply_A_B/A_read_en" type="logic">
+      <obj_property name="ElementShortName">A_read_en</obj_property>
+      <obj_property name="ObjectShortName">A_read_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/matrix_multiply_A_B/A_read_address" type="array">
+      <obj_property name="ElementShortName">A_read_address[8:0]</obj_property>
+      <obj_property name="ObjectShortName">A_read_address[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/matrix_multiply_A_B/A_read_data_out" type="array">
+      <obj_property name="ElementShortName">A_read_data_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">A_read_data_out[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/matrix_multiply_A_B/B_read_data_out" type="array">
+      <obj_property name="ElementShortName">B_read_data_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">B_read_data_out[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/matrix_multiply_A_B/sum" type="array">
+      <obj_property name="ElementShortName">sum[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sum[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/matrix_multiply_A_B/RES_write_address" type="array">
+      <obj_property name="ElementShortName">RES_write_address[7:0]</obj_property>
+      <obj_property name="ObjectShortName">RES_write_address[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/matrix_multiply_A_B/RES_write_data_in" type="array">
+      <obj_property name="ElementShortName">RES_write_data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">RES_write_data_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/shifted_N_write_address_AB" type="array">
+      <obj_property name="ElementShortName">shifted_N_write_address_AB[7:0]</obj_property>
+      <obj_property name="ObjectShortName">shifted_N_write_address_AB[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/shifted_N_write_address_AC" type="array">
+      <obj_property name="ElementShortName">shifted_N_write_address_AC[7:0]</obj_property>
+      <obj_property name="ObjectShortName">shifted_N_write_address_AC[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/N_RAM/write_en" type="logic">
+      <obj_property name="ElementShortName">write_en</obj_property>
+      <obj_property name="ObjectShortName">write_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/N_RAM/write_address" type="array">
+      <obj_property name="ElementShortName">write_address[7:0]</obj_property>
+      <obj_property name="ObjectShortName">write_address[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/N_RAM/write_data_in" type="array">
+      <obj_property name="ElementShortName">write_data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">write_data_in[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/N_write_en" type="logic">
+      <obj_property name="ElementShortName">N_write_en</obj_property>
+      <obj_property name="ObjectShortName">N_write_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/N_read_en" type="logic">
+      <obj_property name="ElementShortName">N_read_en</obj_property>
+      <obj_property name="ObjectShortName">N_read_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/N_write_address" type="array">
+      <obj_property name="ElementShortName">N_write_address[7:0]</obj_property>
+      <obj_property name="ObjectShortName">N_write_address[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/N_write_data_reg" type="array">
+      <obj_property name="ElementShortName">N_write_data_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">N_write_data_reg[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/matrix_multiply_final/A_read_data_out" type="array">
+      <obj_property name="ElementShortName">A_read_data_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">A_read_data_out[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/matrix_multiply_final/B_read_data_out" type="array">
+      <obj_property name="ElementShortName">B_read_data_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">B_read_data_out[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/N_read_en" type="logic">
+      <obj_property name="ElementShortName">N_read_en</obj_property>
+      <obj_property name="ObjectShortName">N_read_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/N_read_address" type="array">
+      <obj_property name="ElementShortName">N_read_address[7:0]</obj_property>
+      <obj_property name="ObjectShortName">N_read_address[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/N_read_data_out" type="array">
+      <obj_property name="ElementShortName">N_read_data_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">N_read_data_out[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/RES_write_en" type="logic">
+      <obj_property name="ElementShortName">RES_write_en</obj_property>
+      <obj_property name="ObjectShortName">RES_write_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/matrix_multiply_final/RES_write_address" type="array">
+      <obj_property name="ElementShortName">RES_write_address[6:0]</obj_property>
+      <obj_property name="ObjectShortName">RES_write_address[6:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/RES_write_data_in" type="array">
+      <obj_property name="ElementShortName">RES_write_data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">RES_write_data_in[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/matrix_multiply_final/A_read_en" type="logic">
+      <obj_property name="ElementShortName">A_read_en</obj_property>
+      <obj_property name="ObjectShortName">A_read_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/matrix_multiply_final/A_read_address" type="array">
+      <obj_property name="ElementShortName">A_read_address[7:0]</obj_property>
+      <obj_property name="ObjectShortName">A_read_address[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_MLP_NN_HDL/U1/matrix_multiply_final/A_read_data_out" type="array">
+      <obj_property name="ElementShortName">A_read_data_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">A_read_data_out[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>
