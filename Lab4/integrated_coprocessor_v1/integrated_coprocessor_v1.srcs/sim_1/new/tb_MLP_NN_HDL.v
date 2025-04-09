@@ -110,7 +110,7 @@ module tb_MLP_NN_HDL(
                 for(output_cnt=0; output_cnt < NUMBER_OF_TEST_VECTORS*NUMBER_OF_OUTPUT_WORDS;)
                 begin
                     M_AXIS_TREADY = 1'b1;	// we are now ready to receive data
-                    if(M_AXIS_TLAST | ~M_AXIS_TLAST_prev) // receive data until the falling edge of M_AXIS_TLAST
+                    while(M_AXIS_TLAST | ~M_AXIS_TLAST_prev) // receive data until the falling edge of M_AXIS_TLAST
                     begin
                         if(M_AXIS_TVALID)
                         begin

@@ -2262,7 +2262,7 @@
       },
       "myip_MLP_NN_HDL_0": {
         "vlnv": "xilinx.com:user:myip_MLP_NN_HDL:1.0",
-        "ip_revision": "3",
+        "ip_revision": "5",
         "xci_name": "design_1_myip_MLP_NN_HDL_0_0",
         "xci_path": "ip\\design_1_myip_MLP_NN_HDL_0_0\\design_1_myip_MLP_NN_HDL_0_0.xci",
         "inst_hier_path": "myip_MLP_NN_HDL_0"
@@ -2411,10 +2411,10 @@
           "axi_fifo_mm_s_1/s_axi_aresetn",
           "ps8_0_axi_periph/M03_ARESETN",
           "ps8_0_axi_periph/M04_ARESETN",
-          "myip_MLP_NN_HDL_0/ARESETN",
           "axi_fifo_mm_s_2/s_axi_aresetn",
           "ps8_0_axi_periph/M05_ARESETN",
-          "ps8_0_axi_periph/M06_ARESETN"
+          "ps8_0_axi_periph/M06_ARESETN",
+          "myip_MLP_NN_HDL_0/ARESETN"
         ]
       },
       "zynq_ultra_ps_e_0_pl_clk0": {
@@ -2433,10 +2433,10 @@
           "axi_fifo_mm_s_1/s_axi_aclk",
           "ps8_0_axi_periph/M03_ACLK",
           "ps8_0_axi_periph/M04_ACLK",
-          "myip_MLP_NN_HDL_0/ACLK",
           "axi_fifo_mm_s_2/s_axi_aclk",
           "ps8_0_axi_periph/M05_ACLK",
-          "ps8_0_axi_periph/M06_ACLK"
+          "ps8_0_axi_periph/M06_ACLK",
+          "myip_MLP_NN_HDL_0/ACLK"
         ]
       },
       "zynq_ultra_ps_e_0_pl_resetn0": {

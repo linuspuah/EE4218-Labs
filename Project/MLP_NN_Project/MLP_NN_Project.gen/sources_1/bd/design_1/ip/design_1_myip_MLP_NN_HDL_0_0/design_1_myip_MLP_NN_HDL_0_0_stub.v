@@ -2,7 +2,7 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-// Date        : Wed Apr  9 13:52:07 2025
+// Date        : Wed Apr  9 15:43:56 2025
 // Host        : linus_zenbook running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ip/design_1_myip_MLP_NN_HDL_0_0/design_1_myip_MLP_NN_HDL_0_0_stub.v

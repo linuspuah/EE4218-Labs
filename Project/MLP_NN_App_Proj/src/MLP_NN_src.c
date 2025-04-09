@@ -28,9 +28,9 @@
 #include "xil_assert.h"
 #include "xtmrctr.h"
 /***************** Macros *********************/
-#define ENABLE_PRINT_STATEMENTS
+//#define ENABLE_PRINT_STATEMENTS
 //#define DISABLE_HDL_IP
-//#define ENABLE_AXI_TIMER
+#define ENABLE_AXI_TIMER
 #ifdef ENABLE_AXI_TIMER
 #define TIMER_COUNTER_0   0
 #define CLOCK_FREQ_HZ     100000000
@@ -56,7 +56,7 @@
 #ifdef ENABLE_AXI_TIMER
 #define FIFO_DEV_ID_2		XPAR_AXI_FIFO_2_DEVICE_ID
 #endif
-#define TIMEOUT_VALUE 1<<2 // timeout for reception
+#define TIMEOUT_VALUE 1<<30 // timeout for reception
 
 /************************** Variable Definitions *****************************/
 /* The instance of the Timer Device */
@@ -127,12 +127,12 @@ int compare_results(int* result_memory, int* test_result_expected_memory, const 
     int success = 1;
 	for (int word_cnt = 0; word_cnt < NUMBER_OF_TEST_VECTORS * NUMBER_OF_OUTPUT_WORDS; word_cnt++) {
 		success = success & (result_memory[word_cnt] == test_result_expected_memory[word_cnt]);
-		#ifdef ENABLE_PRINT_STATEMENTS
-		//xil_printf("Result: %d\n", result_memory[word_cnt]);
 		if (result_memory[word_cnt] != test_result_expected_memory[word_cnt]) {
+#ifdef ENABLE_PRINT_STATEMENTS
 			xil_printf("Mismatch at index %d: Expected %d, Got %d\n", word_cnt, test_result_expected_memory[word_cnt], result_memory[word_cnt]);
+#endif
 		}
-		#endif
+
 	}
 
 	if (success != 1){
@@ -151,8 +151,9 @@ int TxSend(XLlFifo *InstancePtr, int  *SourceAddr, int num_packets, int packet_l
 
 	int i;
 	int j;
+#ifdef ENABLE_PRINT_STATEMENTS
 	xil_printf(" Transmitting Data ... \r\n");
-
+#endif
 	for(i=0 ; i < num_packets ; i++){
 		/* Writing into the FIFO Transmit Port Buffer */
 		for (j=0 ; j < packet_len ; j++){
@@ -180,7 +181,7 @@ int ProcessFifoData(XLlFifo *TxInstancePtr, XLlFifo *RxInstancePtr, int* weight_
                     int num_output_words, int timeout_value,
 					int num_weights, const char *test_name)
 {
-    int test_case_cnt, word_cnt;
+    int test_case_cnt, word_cnt = 0;
     int Status;
 
 	#ifdef ENABLE_AXI_TIMER
@@ -200,6 +201,9 @@ int ProcessFifoData(XLlFifo *TxInstancePtr, XLlFifo *RxInstancePtr, int* weight_
 		#endif
         /* Writing into the FIFO Transmit Port Buffer */
         for (word_cnt = 0; word_cnt < num_input_words; word_cnt++) {
+        	while (!XLlFifo_iTxVacancy(TxInstancePtr)) {
+				// Wait or do something else
+			}
 			XLlFifo_TxPutWord(TxInstancePtr, test_input_memory[word_cnt + test_case_cnt * num_input_words]);
         }
         /* Start Transmission by writing transmission length (number of bytes = 4* number of words) into the TLR */
@@ -214,6 +218,9 @@ int ProcessFifoData(XLlFifo *TxInstancePtr, XLlFifo *RxInstancePtr, int* weight_
 		#ifdef ENABLE_PRINT_STATEMENTS
 		xil_printf("Transmitting Data for weight %d ... \r\n", weight_count);
 		#endif
+		while (!XLlFifo_iTxVacancy(TxInstancePtr)) {
+		    // Wait or do something else
+		}
 		XLlFifo_TxPutWord(TxInstancePtr, weight_vector[weight_count]);
 	}
 
@@ -222,43 +229,56 @@ int ProcessFifoData(XLlFifo *TxInstancePtr, XLlFifo *RxInstancePtr, int* weight_
     while (!(XLlFifo_IsTxDone(TxInstancePtr))) {
 	}
     /******************** Output from Coprocessor : Receive the Data Stream ***********************/
-    for (test_case_cnt = 0; test_case_cnt < num_test_vectors; test_case_cnt++) {
-		#ifdef ENABLE_PRINT_STATEMENTS
-        xil_printf("Receiving data for test case %d ... \r\n", test_case_cnt);
-		#endif
-        int timeout_count = timeout_value;
-        // wait for coprocessor to send data, subject to a timeout
-        while (!XLlFifo_iRxOccupancy(RxInstancePtr)) {
-            timeout_count--;
-            if (timeout_count == 0) {
-                xil_printf("Timeout while waiting for data ... \r\n");
-                return XST_FAILURE;
-            }
-        }
-
-        // we are expecting only one packet of data per test case
-        u32 ReceiveLength = XLlFifo_iRxGetLen(RxInstancePtr) / WORD_SIZE;
-        for (word_cnt = 0; word_cnt < ReceiveLength; word_cnt++) {
-            // read one word at a time
-            result_memory[word_cnt + test_case_cnt * num_output_words] = XLlFifo_RxGetWord(RxInstancePtr);
-        }
-
-		#ifdef ENABLE_AXI_TIMER
-        end_time = XTmrCtr_GetValue(&TimerCounter, TIMER_COUNTER_0);
-		XTmrCtr_Stop(&TimerCounter, TIMER_COUNTER_0);
-		// Calculate elapsed time
-		elapsed_time = end_time - start_time;;
-		elapsed_time_sec = (double)elapsed_time / CLOCK_FREQ_HZ;
-		xil_printf("Execution time for %s: %u clock cycles (~%.6f sec)\r\n", test_name, elapsed_time, elapsed_time_sec);
-		#endif
-
-        Status = XLlFifo_IsRxDone(RxInstancePtr);
-        if (Status != TRUE) {
-            xil_printf("Failing in receive complete ... \r\n");
-            return XST_FAILURE;
-        }
-        /* Reception Complete */
+    int word_count_total = 0;
+    if(word_count_total < NUMBER_OF_TEST_VECTORS*NUMBER_OF_OUTPUT_WORDS){
+		while(!XLlFifo_iRxOccupancy(RxInstancePtr)) {
+		}
+		/* Read Receive Length */
+		int ReceiveLength = (XLlFifo_iRxGetLen(RxInstancePtr))/WORD_SIZE;
+		for (word_cnt = 0; word_cnt < ReceiveLength; word_cnt++) {
+			// read one word at a time
+			result_memory[word_count_total] = XLlFifo_RxGetWord(RxInstancePtr);
+			word_count_total++;
+		}
     }
+
+//    for (test_case_cnt = 0; test_case_cnt < num_test_vectors; test_case_cnt++) {
+//		#ifdef ENABLE_PRINT_STATEMENTS
+//        xil_printf("Receiving data for test case %d ... \r\n", test_case_cnt);
+//		#endif
+//        int timeout_count = timeout_value;
+//        // wait for coprocessor to send data, subject to a timeout
+//        while (!XLlFifo_iRxOccupancy(RxInstancePtr)) {
+//            timeout_count--;
+//            if (timeout_count == 0) {
+//                xil_printf("Timeout while waiting for data ... \r\n");
+//                return XST_FAILURE;
+//            }
+//        }
+//
+//        // we are expecting only one packet of data per test case
+//        u32 ReceiveLength = XLlFifo_iRxGetLen(RxInstancePtr) / WORD_SIZE;
+//        for (word_cnt = 0; word_cnt < ReceiveLength; word_cnt++) {
+//            // read one word at a time
+//            result_memory[word_cnt + test_case_cnt * num_output_words] = XLlFifo_RxGetWord(RxInstancePtr);
+//        }
+//
+//
+//        Status = XLlFifo_IsRxDone(RxInstancePtr);
+//        if (Status != TRUE) {
+//            xil_printf("Failing in receive complete ... \r\n");
+//            return XST_FAILURE;
+//        }
+//        /* Reception Complete */
+//    }
+	#ifdef ENABLE_AXI_TIMER
+	end_time = XTmrCtr_GetValue(&TimerCounter, TIMER_COUNTER_0);
+	XTmrCtr_Stop(&TimerCounter, TIMER_COUNTER_0);
+	// Calculate elapsed time
+	elapsed_time = end_time - start_time;;
+	elapsed_time_sec = (double)elapsed_time / CLOCK_FREQ_HZ;
+	xil_printf("Execution time for %s: %u clock cycles (~%.6f sec)\r\n", test_name, elapsed_time, elapsed_time_sec);
+	#endif
 
     return XST_SUCCESS;
 }
@@ -298,7 +318,7 @@ void matrix_multiply_neuron(int num_rows, int num_cols, int* weight_vector, int*
 	// Calculate elapsed time
 	elapsed_time = end_time - start_time;;
 	elapsed_time_sec = (double)elapsed_time / CLOCK_FREQ_HZ;
-	xil_printf("Execution time for %s: %u clock cycles (~%.6f sec)\r\n", "ARM Processor SW", elapsed_time, elapsed_time_sec);
+	xil_printf("Execution time for %s: %u clock cycles (~%.6f sec)\r\n", "ARM Processor SW part 1", elapsed_time, elapsed_time_sec);
 	#endif
 }
 
@@ -324,7 +344,9 @@ void matrix_multiply_result(int num_rows, int num_cols, int* weight_vector, int*
 			round_up = 1;  // Round up by adding 1
 		}
 		result_vector[test_index] = ((sum >> 8) + round_up) & 0xFF;
+#ifdef ENABLE_PRINT_STATEMENTS
 		xil_printf("%d\r\n", result_vector[test_index]);
+#endif
 	}
 	#ifdef ENABLE_AXI_TIMER
 	end_time = XTmrCtr_GetValue(&TimerCounter, TIMER_COUNTER_0);
@@ -332,7 +354,7 @@ void matrix_multiply_result(int num_rows, int num_cols, int* weight_vector, int*
 	// Calculate elapsed time
 	elapsed_time = end_time - start_time;;
 	elapsed_time_sec = (double)elapsed_time / CLOCK_FREQ_HZ;
-	xil_printf("Execution time for %s: %u clock cycles (~%.6f sec)\r\n", "ARM Processor SW", elapsed_time, elapsed_time_sec);
+	xil_printf("Execution time for %s: %u clock cycles (~%.6f sec)\r\n", "ARM Processor SW part 2", elapsed_time, elapsed_time_sec);
 	#endif
 }
 
@@ -358,14 +380,14 @@ void readInHexData_testInput(int totalWords, int* vector_input_memory) {
 	Status = InitFifoInstance(FifoPtr_HDL, HDL_Fifo);
 	if (Status != XST_SUCCESS) {
 		xil_printf("Failed to initialize HDL FIFO\r\n");
-		return XST_FAILURE;
+		return;
 	}
 #endif
 #ifdef ENABLE_AXI_TIMER
 	Status = InitFifoInstance(FifoPtr_Loopback, Loopback_Fifo);
 	if (Status != XST_SUCCESS) {
 		xil_printf("Failed to initialize Loopback FIFO\r\n");
-		return XST_FAILURE;
+		return;
 	}
 #endif
     while (1) {
@@ -471,11 +493,15 @@ int main()
 	}
 	/************** Run a software version of the hardware function to validate results ************/
 	// instead of hard-coding the results in test_result_expected_memory
+#ifdef ENABLE_PRINT_STATEMENTS
 	xil_printf("Reading Data ");
+#endif ENABLE_PRINT_STATEMENTS
 	readInHexData_testInput(NUMBER_OF_TEST_VECTORS * NUMBER_OF_INPUT_WORDS, &test_input_memory[0]);
 	readInHexData_store(NUM_NEURONS * NUMBER_OF_INPUT_WORDS + NUM_OUT_WEIGHTS, &weight_vector_full[0]);
 	readInHexData_store(NUMBER_OF_TEST_VECTORS * NUMBER_OF_OUTPUT_WORDS, &test_result_expected_memory[0]);
+#ifdef ENABLE_PRINT_STATEMENTS
 	xil_printf("Finish Reading Data ");
+#endif
 	weight_vector_full[NUM_NEURONS * NUMBER_OF_INPUT_WORDS + NUM_OUT_WEIGHTS] = 0; // last index 0 (for HDL purposes)
 
 	/**************************  SW Calculate Results for all test vectors *****************************/

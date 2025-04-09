@@ -14,7 +14,7 @@ ECHO is off.
     ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source design_1_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 456.109 ; gain = 181.367
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 455.500 ; gain = 182.449
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sunil/VivadoProjects/EE4218Labs/Project/ip_repo/myip_MLP_NN_HDL_1_0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sunil/VitisHLSip'.
@@ -33,48 +33,48 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 14808
+INFO: [Synth 8-7075] Helper process launched with PID 13328
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1891.812 ; gain = 381.836
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1889.855 ; gain = 380.559
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_fifo_mm_s_0_0' [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-17260-linus_zenbook/realtime/design_1_axi_fifo_mm_s_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_fifo_mm_s_0_0' (0#1) [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-17260-linus_zenbook/realtime/design_1_axi_fifo_mm_s_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_fifo_mm_s_0_0' [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-6080-linus_zenbook/realtime/design_1_axi_fifo_mm_s_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_fifo_mm_s_0_0' (0#1) [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-6080-linus_zenbook/realtime/design_1_axi_fifo_mm_s_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_axi_fifo_mm_s_0_0' is unconnected for instance 'axi_fifo_mm_s_0' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:253]
 WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'design_1_axi_fifo_mm_s_0_0' is unconnected for instance 'axi_fifo_mm_s_0' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:253]
 WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'design_1_axi_fifo_mm_s_0_0' is unconnected for instance 'axi_fifo_mm_s_0' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:253]
 WARNING: [Synth 8-7023] instance 'axi_fifo_mm_s_0' of module 'design_1_axi_fifo_mm_s_0_0' has 65 connections declared, but only 62 given [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:253]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_fifo_mm_s_0_2' [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-17260-linus_zenbook/realtime/design_1_axi_fifo_mm_s_0_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_fifo_mm_s_0_2' (0#1) [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-17260-linus_zenbook/realtime/design_1_axi_fifo_mm_s_0_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_fifo_mm_s_0_2' [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-6080-linus_zenbook/realtime/design_1_axi_fifo_mm_s_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_fifo_mm_s_0_2' (0#1) [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-6080-linus_zenbook/realtime/design_1_axi_fifo_mm_s_0_2_stub.v:6]
 WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_axi_fifo_mm_s_0_2' is unconnected for instance 'axi_fifo_mm_s_1' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:316]
 WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'design_1_axi_fifo_mm_s_0_2' is unconnected for instance 'axi_fifo_mm_s_1' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:316]
 WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'design_1_axi_fifo_mm_s_0_2' is unconnected for instance 'axi_fifo_mm_s_1' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:316]
 WARNING: [Synth 8-7023] instance 'axi_fifo_mm_s_1' of module 'design_1_axi_fifo_mm_s_0_2' has 65 connections declared, but only 62 given [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:316]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_fifo_mm_s_1_0' [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-17260-linus_zenbook/realtime/design_1_axi_fifo_mm_s_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_fifo_mm_s_1_0' (0#1) [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-17260-linus_zenbook/realtime/design_1_axi_fifo_mm_s_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_fifo_mm_s_1_0' [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-6080-linus_zenbook/realtime/design_1_axi_fifo_mm_s_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_fifo_mm_s_1_0' (0#1) [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-6080-linus_zenbook/realtime/design_1_axi_fifo_mm_s_1_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_axi_fifo_mm_s_1_0' is unconnected for instance 'axi_fifo_mm_s_2' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:379]
 WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'design_1_axi_fifo_mm_s_1_0' is unconnected for instance 'axi_fifo_mm_s_2' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:379]
 WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'design_1_axi_fifo_mm_s_1_0' is unconnected for instance 'axi_fifo_mm_s_2' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:379]
 WARNING: [Synth 8-7023] instance 'axi_fifo_mm_s_2' of module 'design_1_axi_fifo_mm_s_1_0' has 65 connections declared, but only 62 given [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:379]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_timer_0_0' [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-17260-linus_zenbook/realtime/design_1_axi_timer_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_timer_0_0' (0#1) [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-17260-linus_zenbook/realtime/design_1_axi_timer_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_timer_0_0' [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-6080-linus_zenbook/realtime/design_1_axi_timer_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_timer_0_0' (0#1) [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-6080-linus_zenbook/realtime/design_1_axi_timer_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'generateout0' of module 'design_1_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:442]
 WARNING: [Synth 8-7071] port 'generateout1' of module 'design_1_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:442]
 WARNING: [Synth 8-7071] port 'pwm0' of module 'design_1_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:442]
 WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:442]
 WARNING: [Synth 8-7023] instance 'axi_timer_0' of module 'design_1_axi_timer_0_0' has 26 connections declared, but only 22 given [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:442]
-INFO: [Synth 8-6157] synthesizing module 'design_1_myip_MLP_NN_HDL_0_0' [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-17260-linus_zenbook/realtime/design_1_myip_MLP_NN_HDL_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_myip_MLP_NN_HDL_0_0' (0#1) [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-17260-linus_zenbook/realtime/design_1_myip_MLP_NN_HDL_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_myip_mlp_nn_HLS_0_0' [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-17260-linus_zenbook/realtime/design_1_myip_mlp_nn_HLS_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_myip_mlp_nn_HLS_0_0' (0#1) [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-17260-linus_zenbook/realtime/design_1_myip_mlp_nn_HLS_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_myip_MLP_NN_HDL_0_0' [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-6080-linus_zenbook/realtime/design_1_myip_MLP_NN_HDL_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_myip_MLP_NN_HDL_0_0' (0#1) [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-6080-linus_zenbook/realtime/design_1_myip_MLP_NN_HDL_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_myip_mlp_nn_HLS_0_0' [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-6080-linus_zenbook/realtime/design_1_myip_mlp_nn_HLS_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_myip_mlp_nn_HLS_0_0' (0#1) [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-6080-linus_zenbook/realtime/design_1_myip_mlp_nn_HLS_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'M_AXIS_TKEEP' of module 'design_1_myip_mlp_nn_HLS_0_0' is unconnected for instance 'myip_mlp_nn_HLS_0' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:476]
 WARNING: [Synth 8-7071] port 'M_AXIS_TSTRB' of module 'design_1_myip_mlp_nn_HLS_0_0' is unconnected for instance 'myip_mlp_nn_HLS_0' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:476]
 WARNING: [Synth 8-7023] instance 'myip_mlp_nn_HLS_0' of module 'design_1_myip_mlp_nn_HLS_0_0' has 14 connections declared, but only 12 given [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:476]
 INFO: [Synth 8-6157] synthesizing module 'design_1_ps8_0_axi_periph_0' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:773]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_QJIMLI' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:2603]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-17260-linus_zenbook/realtime/design_1_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (0#1) [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-17260-linus_zenbook/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-6080-linus_zenbook/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (0#1) [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-6080-linus_zenbook/realtime/design_1_auto_pc_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_auto_pc_0' is unconnected for instance 'auto_pc' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:2842]
 WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_auto_pc_0' is unconnected for instance 'auto_pc' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:2842]
 WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_0' has 60 connections declared, but only 58 given [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:2842]
@@ -82,15 +82,15 @@ INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_QJIMLI' (0#1) [c
 INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1D3SAH3' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:2903]
 INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1D3SAH3' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:2903]
 INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_P3UMW5' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:3161]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_1' [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-17260-linus_zenbook/realtime/design_1_auto_pc_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_1' (0#1) [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-17260-linus_zenbook/realtime/design_1_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_1' [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-6080-linus_zenbook/realtime/design_1_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_1' (0#1) [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-6080-linus_zenbook/realtime/design_1_auto_pc_1_stub.v:6]
 WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_auto_pc_1' is unconnected for instance 'auto_pc' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:3400]
 WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_auto_pc_1' is unconnected for instance 'auto_pc' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:3400]
 WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_1' has 60 connections declared, but only 58 given [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:3400]
 INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_P3UMW5' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:3161]
 INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_1E9R4HW' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:3461]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_2' [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-17260-linus_zenbook/realtime/design_1_auto_pc_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_2' (0#1) [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-17260-linus_zenbook/realtime/design_1_auto_pc_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_2' [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-6080-linus_zenbook/realtime/design_1_auto_pc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_2' (0#1) [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-6080-linus_zenbook/realtime/design_1_auto_pc_2_stub.v:6]
 WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_auto_pc_2' is unconnected for instance 'auto_pc' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:3700]
 WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_auto_pc_2' is unconnected for instance 'auto_pc' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:3700]
 WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_2' has 60 connections declared, but only 58 given [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:3700]
@@ -98,8 +98,8 @@ INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_1E9R4HW' (0#1) [
 INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_NB1YAO' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:3761]
 INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_NB1YAO' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:3761]
 INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_1FZ4A9T' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:4019]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_3' [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-17260-linus_zenbook/realtime/design_1_auto_pc_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_3' (0#1) [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-17260-linus_zenbook/realtime/design_1_auto_pc_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_3' [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-6080-linus_zenbook/realtime/design_1_auto_pc_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_3' (0#1) [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-6080-linus_zenbook/realtime/design_1_auto_pc_3_stub.v:6]
 WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_auto_pc_3' is unconnected for instance 'auto_pc' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:4258]
 WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_auto_pc_3' is unconnected for instance 'auto_pc' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:4258]
 WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_3' has 60 connections declared, but only 58 given [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:4258]
@@ -108,8 +108,8 @@ INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_MPDFMR' [c:/Users/sun
 INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_MPDFMR' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:4319]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1A7ZMW4' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:4577]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1A7ZMW4' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:4577]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-17260-linus_zenbook/realtime/design_1_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (0#1) [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-17260-linus_zenbook/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-6080-linus_zenbook/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (0#1) [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-6080-linus_zenbook/realtime/design_1_xbar_0_stub.v:6]
 WARNING: [Synth 8-689] width (24) of port connection 'm_axi_arqos' does not match port width (28) of module 'design_1_xbar_0' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:2530]
 WARNING: [Synth 8-689] width (24) of port connection 'm_axi_arregion' does not match port width (28) of module 'design_1_xbar_0' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:2532]
 WARNING: [Synth 8-689] width (24) of port connection 'm_axi_awqos' does not match port width (28) of module 'design_1_xbar_0' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:2542]
@@ -118,15 +118,15 @@ WARNING: [Synth 8-7071] port 'm_axi_awuser' of module 'design_1_xbar_0' is uncon
 WARNING: [Synth 8-7071] port 'm_axi_aruser' of module 'design_1_xbar_0' is unconnected for instance 'xbar' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:2520]
 WARNING: [Synth 8-7023] instance 'xbar' of module 'design_1_xbar_0' has 82 connections declared, but only 80 given [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:2520]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_ps8_0_axi_periph_0' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:773]
-INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps8_0_99M_0' [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-17260-linus_zenbook/realtime/design_1_rst_ps8_0_99M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps8_0_99M_0' (0#1) [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-17260-linus_zenbook/realtime/design_1_rst_ps8_0_99M_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps8_0_99M_0' [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-6080-linus_zenbook/realtime/design_1_rst_ps8_0_99M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps8_0_99M_0' (0#1) [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-6080-linus_zenbook/realtime/design_1_rst_ps8_0_99M_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:720]
 WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:720]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:720]
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:720]
 WARNING: [Synth 8-7023] instance 'rst_ps8_0_99M' of module 'design_1_rst_ps8_0_99M_0' has 10 connections declared, but only 6 given [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:720]
-INFO: [Synth 8-6157] synthesizing module 'design_1_zynq_ultra_ps_e_0_0' [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-17260-linus_zenbook/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_zynq_ultra_ps_e_0_0' (0#1) [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-17260-linus_zenbook/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_zynq_ultra_ps_e_0_0' [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-6080-linus_zenbook/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_zynq_ultra_ps_e_0_0' (0#1) [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/.Xil/Vivado-6080-linus_zenbook/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'design_1' (0#1) [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/synth/design_1.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
 WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_1A7ZMW4 is either unconnected or has no load
@@ -218,24 +218,24 @@ WARNING: [Synth 8-7129] Port M06_ARESETN in module design_1_ps8_0_axi_periph_0 i
 WARNING: [Synth 8-7129] Port S00_ACLK in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S00_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2013.789 ; gain = 503.812
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 2012.457 ; gain = 503.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2013.789 ; gain = 503.812
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2012.457 ; gain = 503.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2013.789 ; gain = 503.812
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2012.457 ; gain = 503.160
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.089 . Memory (MB): peak = 2013.789 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 2012.457 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0'
-create_clock: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2020.012 ; gain = 6.121
+create_clock: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2020.113 ; gain = 7.656
 Finished Parsing XDC File [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0'
 Parsing XDC File [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ip/design_1_axi_fifo_mm_s_0_0/design_1_axi_fifo_mm_s_0_0/design_1_axi_fifo_mm_s_0_0_in_context.xdc] for cell 'design_1_i/axi_fifo_mm_s_0'
 Finished Parsing XDC File [c:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.gen/sources_1/bd/design_1/ip/design_1_axi_fifo_mm_s_0_0/design_1_axi_fifo_mm_s_0_0/design_1_axi_fifo_mm_s_0_0_in_context.xdc] for cell 'design_1_i/axi_fifo_mm_s_0'
@@ -265,16 +265,16 @@ Parsing XDC File [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Projec
 Finished Parsing XDC File [C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2020.012 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2020.113 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 The system cannot find the path specified.
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2020.012 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2020.113 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 2020.012 ; gain = 510.035
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:29 . Memory (MB): peak = 2020.113 ; gain = 510.816
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -282,7 +282,7 @@ Start Loading Part and Timing Information
 Loading part: xck26-sfvc784-2LV-c
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 2020.012 ; gain = 510.035
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:29 . Memory (MB): peak = 2020.113 ; gain = 510.816
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -303,10 +303,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/myip_MLP_NN_HDL_0. (co
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_fifo_mm_s_1. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_fifo_mm_s_2. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 2020.012 ; gain = 510.035
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:29 . Memory (MB): peak = 2020.113 ; gain = 510.816
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 2020.012 ; gain = 510.035
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:29 . Memory (MB): peak = 2020.113 ; gain = 510.816
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -342,25 +342,25 @@ WARNING: [Synth 8-7129] Port M05_ACLK in module design_1_ps8_0_axi_periph_0 is e
 WARNING: [Synth 8-7129] Port M05_ARESETN in module design_1_ps8_0_axi_periph_0 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 2020.012 ; gain = 510.035
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:32 . Memory (MB): peak = 2020.113 ; gain = 510.816
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:53 ; elapsed = 00:00:59 . Memory (MB): peak = 2553.344 ; gain = 1043.367
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:50 . Memory (MB): peak = 2542.637 ; gain = 1033.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:00:59 . Memory (MB): peak = 2553.344 ; gain = 1043.367
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:50 . Memory (MB): peak = 2542.770 ; gain = 1033.473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:53 ; elapsed = 00:00:59 . Memory (MB): peak = 2565.184 ; gain = 1055.207
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:50 . Memory (MB): peak = 2553.742 ; gain = 1044.445
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -378,37 +378,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:00 ; elapsed = 00:01:06 . Memory (MB): peak = 2577.977 ; gain = 1068.000
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:59 . Memory (MB): peak = 2567.500 ; gain = 1058.203
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:00 ; elapsed = 00:01:06 . Memory (MB): peak = 2577.977 ; gain = 1068.000
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:59 . Memory (MB): peak = 2567.500 ; gain = 1058.203
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:00 ; elapsed = 00:01:06 . Memory (MB): peak = 2577.977 ; gain = 1068.000
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:59 . Memory (MB): peak = 2567.500 ; gain = 1058.203
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:00 ; elapsed = 00:01:06 . Memory (MB): peak = 2577.977 ; gain = 1068.000
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:59 . Memory (MB): peak = 2567.500 ; gain = 1058.203
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:00 ; elapsed = 00:01:06 . Memory (MB): peak = 2577.977 ; gain = 1068.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:59 . Memory (MB): peak = 2567.500 ; gain = 1058.203
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:00 ; elapsed = 00:01:06 . Memory (MB): peak = 2577.977 ; gain = 1068.000
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:59 . Memory (MB): peak = 2567.500 ; gain = 1058.203
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -448,16 +448,16 @@ Report Cell Usage:
 |13    |design_1_zynq_ultra_ps_e_0 |     1|
 +------+---------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:00 ; elapsed = 00:01:06 . Memory (MB): peak = 2577.977 ; gain = 1068.000
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:59 . Memory (MB): peak = 2567.500 ; gain = 1058.203
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 17 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:41 ; elapsed = 00:00:56 . Memory (MB): peak = 2577.977 ; gain = 1061.777
-Synthesis Optimization Complete : Time (s): cpu = 00:01:00 ; elapsed = 00:01:06 . Memory (MB): peak = 2577.977 ; gain = 1068.000
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:48 . Memory (MB): peak = 2567.500 ; gain = 1050.547
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:59 . Memory (MB): peak = 2567.500 ; gain = 1058.203
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 2577.977 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.085 . Memory (MB): peak = 2567.500 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2627.332 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2616.695 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -466,7 +466,7 @@ Synth Design complete | Checksum: edee8b80
 INFO: [Common 17-83] Releasing license: Synthesis
 72 Infos, 146 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:10 ; elapsed = 00:01:19 . Memory (MB): peak = 2632.316 ; gain = 2116.484
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:01:11 . Memory (MB): peak = 2621.676 ; gain = 2105.164
 INFO: [Common 17-1381] The checkpoint 'C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Project/MLP_NN_Project.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Apr  9 13:55:26 2025...
+INFO: [Common 17-206] Exiting Vivado at Wed Apr  9 15:45:35 2025...

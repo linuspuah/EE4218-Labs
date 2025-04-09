@@ -4,7 +4,7 @@
     "xci_name": "design_1_myip_MLP_NN_HDL_0_0",
     "cell_name": "myip_MLP_NN_HDL_0",
     "component_reference": "xilinx.com:user:myip_MLP_NN_HDL:1.0",
-    "ip_revision": "3",
+    "ip_revision": "5",
     "gen_directory": "../../../../../../MLP_NN_Project.gen/sources_1/bd/design_1/ip/design_1_myip_MLP_NN_HDL_0_0",
     "parameters": {
       "component_parameters": {
@@ -25,7 +25,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "3" } ],
+        "IPREVISION": [ { "value": "5" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../MLP_NN_Project.gen/sources_1/bd/design_1/ip/design_1_myip_MLP_NN_HDL_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],

@@ -1,35 +1,29 @@
-14:19:55 **** Incremental Build of configuration Debug for project MLP_NN_App_Proj ****
+18:29:31 **** Incremental Build of configuration Debug for project MLP_NN_App_Proj ****
 make all 
 'Building file: ../src/MLP_NN_src.c'
 'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/MLP_NN_src.o" -IC:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Platform_Project_HDL_HLS_v1/export/MLP_NN_Platform_Project_HDL_HLS_v1/sw/MLP_NN_Platform_Project_HDL_HLS_v1/standalone_domain/bspinclude/include -MMD -MP -MF"src/MLP_NN_src.d" -MT"src/MLP_NN_src.o" -o "src/MLP_NN_src.o" "../src/MLP_NN_src.c"
-In file included from C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Platform_Project_HDL_HLS_v1/export/MLP_NN_Platform_Project_HDL_HLS_v1/sw/MLP_NN_Platform_Project_HDL_HLS_v1/standalone_domain/bspinclude/include/xil_io.h:51,
-                 from C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Platform_Project_HDL_HLS_v1/export/MLP_NN_Platform_Project_HDL_HLS_v1/sw/MLP_NN_Platform_Project_HDL_HLS_v1/standalone_domain/bspinclude/include/xllfifo_hw.h:45,
-                 from C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Platform_Project_HDL_HLS_v1/export/MLP_NN_Platform_Project_HDL_HLS_v1/sw/MLP_NN_Platform_Project_HDL_HLS_v1/standalone_domain/bspinclude/include/xllfifo.h:182,
-                 from ../src/MLP_NN_src.c:25:
-../src/MLP_NN_src.c: In function 'readInHexData_testInput':
-C:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Platform_Project_HDL_HLS_v1/export/MLP_NN_Platform_Project_HDL_HLS_v1/sw/MLP_NN_Platform_Project_HDL_HLS_v1/standalone_domain/bspinclude/include/xstatus.h:45:41: warning: 'return' with a value, in function returning void [-Wreturn-type]
-   45 | #define XST_FAILURE                     1L
-      |                                         ^~
-../src/MLP_NN_src.c:361:24: note: in expansion of macro 'XST_FAILURE'
-  361 |                 return XST_FAILURE;
-      |                        ^~~~~~~~~~~
-../src/MLP_NN_src.c:342:6: note: declared here
-  342 | void readInHexData_testInput(int totalWords, int* vector_input_memory) {
-      |      ^~~~~~~~~~~~~~~~~~~~~~~
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/MLP_NN_src.o" -IC:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_HDL_HLS_v2/export/MLP_NN_HDL_HLS_v2/sw/MLP_NN_HDL_HLS_v2/standalone_domain/bspinclude/include -MMD -MP -MF"src/MLP_NN_src.d" -MT"src/MLP_NN_src.o" -o "src/MLP_NN_src.o" "../src/MLP_NN_src.c"
+../src/MLP_NN_src.c: In function 'ProcessFifoData':
+../src/MLP_NN_src.c:185:9: warning: unused variable 'Status' [-Wunused-variable]
+  185 |     int Status;
+      |         ^~~~~~
+../src/MLP_NN_src.c: In function 'main':
+../src/MLP_NN_src.c:498:8: warning: extra tokens at end of #endif directive [-Wendif-labels]
+  498 | #endif ENABLE_PRINT_STATEMENTS
+      |        ^~~~~~~~~~~~~~~~~~~~~~~
 'Finished building: ../src/MLP_NN_src.c'
 ' '
 'Building target: MLP_NN_App_Proj.elf'
 'Invoking: ARM v8 gcc linker'
-aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_Platform_Project_HDL_HLS_v1/export/MLP_NN_Platform_Project_HDL_HLS_v1/sw/MLP_NN_Platform_Project_HDL_HLS_v1/standalone_domain/bsplib/lib -o "MLP_NN_App_Proj.elf"  ./src/MLP_NN_src.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/sunil/VivadoProjects/EE4218Labs/Project/MLP_NN_HDL_HLS_v2/export/MLP_NN_HDL_HLS_v2/sw/MLP_NN_HDL_HLS_v2/standalone_domain/bsplib/lib -o "MLP_NN_App_Proj.elf"  ./src/MLP_NN_src.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 'Finished building target: MLP_NN_App_Proj.elf'
 ' '
 'Invoking: ARM v8 Print Size'
 aarch64-none-elf-size MLP_NN_App_Proj.elf  |tee "MLP_NN_App_Proj.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 140940	   5880	  24988	 171808	  29f20	MLP_NN_App_Proj.elf
+ 140812	   5880	  24988	 171680	  29ea0	MLP_NN_App_Proj.elf
 'Finished building: MLP_NN_App_Proj.elf.size'
 ' '
 
-14:19:55 Build Finished (took 813ms)
+18:29:32 Build Finished (took 819ms)
 

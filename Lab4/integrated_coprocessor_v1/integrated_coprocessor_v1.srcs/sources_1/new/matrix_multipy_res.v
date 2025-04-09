@@ -61,7 +61,7 @@ module matrix_multipy_res
 	begin
         if (Start)
         begin
-            $readmemh("sigmoid.mem", SIGMOID_VALUES); // add the .mem file to the project or specify the complete path
+            //$readmemh("sigmoid.mem", SIGMOID_VALUES); // add the .mem file to the project or specify the complete path
             case (state)
 				wait_for_data:
 				begin

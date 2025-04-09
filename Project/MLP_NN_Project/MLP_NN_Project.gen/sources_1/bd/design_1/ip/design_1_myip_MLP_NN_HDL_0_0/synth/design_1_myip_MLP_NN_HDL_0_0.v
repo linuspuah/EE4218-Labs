@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:user:myip_MLP_NN_HDL:1.0
-// IP Revision: 3
+// IP Revision: 5
 
 (* X_CORE_INFO = "myip_v1_1,Vivado 2023.2" *)
 (* CHECK_LICENSE_TYPE = "design_1_myip_MLP_NN_HDL_0_0,myip_v1_1,{}" *)
-(* CORE_GENERATION_INFO = "design_1_myip_MLP_NN_HDL_0_0,myip_v1_1,{x_ipProduct=Vivado 2023.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=myip_MLP_NN_HDL,x_ipVersion=1.0,x_ipCoreRevision=3,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "design_1_myip_MLP_NN_HDL_0_0,myip_v1_1,{x_ipProduct=Vivado 2023.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=myip_MLP_NN_HDL,x_ipVersion=1.0,x_ipCoreRevision=5,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_myip_MLP_NN_HDL_0_0 (
   ACLK,

@@ -3,7 +3,7 @@
 	<name>MLP_NN_App_Proj</name>
 	<comment>Created by Vitis v2023.2</comment>
 	<projects>
-		<project>MLP_NN_Platform_Project_HDL_HLS_v1</project>
+		<project>MLP_NN_HDL_HLS_v2</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
